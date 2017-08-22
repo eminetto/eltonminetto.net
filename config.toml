@@ -1,0 +1,46 @@
+baseurl = "http://eltonminetto.net/"
+languageCode = "en-us"
+title = "Elton Minetto"
+theme = "eminetto"
+pygmentsuseclasses = true
+PygmentsCodeFences = true
+disqusShortname = "elton-minetto"
+googleAnalytics = "UA-584603-1"
+
+[Params]
+  # logo = "img/avatar-icon.png"
+  subtitle = "Desenvolvedor, professor, palestrante e escritor"
+
+[Author]
+  name = "Elton Minetto"
+  email = "eminetto@gmail.com"
+  facebook = "eminetto"
+  github = "eminetto"
+  twitter = "eminetto"
+  linkedin = "in/eminetto"
+  # stackoverflow = "XXXXXXX/username"
+  # soundcloud = "username"
+  # wikipedia = "username"
+
+[[menu.main]]
+    name = "Livros"
+    url = "https://leanpub.com/u/eminetto"
+    weight = 1
+
+[[menu.main]]
+    name = "Palestras"
+    url = "/talks/"
+    weight = 2
+[[menu.main]]
+    name = "A semana PHP"
+    url = "http://asemanaphp.com.br"
+    weight = 3
+[[menu.main]]
+    name = "A semana Go"
+    url = "http://asemanago.com.br"
+    weight = 4
+[[menu.main]]
+    name = "Sobre"
+    url = "/about/"
+    weight = 5
+
