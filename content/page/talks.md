@@ -12,6 +12,38 @@ url = "/talks"
 
 # 2017
 
+### Semana Acadêmica - IFC
+
+**Quando**: 20/09/2017
+
+**Onde**: Araquari/SC
+
+[Iniciando um novo projeto: decisões de arquitetura](https://www.slideshare.net/secret/gxvzIOCzyAj7Ei)
+
+### Semana Acadêmica - UDESC
+
+**Quando**: 19/09/2017
+
+**Onde**: Joinville/SC
+
+[Introdução a Go](https://www.slideshare.net/eminetto/introduo-a-go)
+
+### Evento Hoje
+
+**Quando**: 16/09/2017
+
+**Onde**: Concórdia/SC
+
+Painel Startups: Networking
+
+### PHP Community Summit 
+
+**Quando**: 01/09/2017
+
+**Onde**: São Paulo/SP
+
+Painel: Carreiras
+
 ### AWS Meetup
 
 **Quando**: 16/08/2017
@@ -27,6 +59,14 @@ Case Compufácil e AWS [Slides](https://www.slideshare.net/eminetto/o-case-da-co
 **Onde**: Joinville/SC
 
 [Dicas de carreira pra desenvolvedores em startups](https://www.slideshare.net/eminetto/start-you)
+
+### PHPub
+
+**Quando**: 14/06/2017
+
+**Onde**: São Luis/MA
+
+[Memórias das trincheiras - parte 2](https://www.slideshare.net/eminetto/memrias-das-trincheiras-parte-2)
 
 ### Encontro Locaweb
 
