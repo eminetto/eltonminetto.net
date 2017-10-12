@@ -12,6 +12,15 @@ url = "/talks"
 
 # 2017
 
+### Agile Trends Florianópolis
+
+**Quando**: 10/10/2017
+
+**Onde**: Florianópolis/SC
+
+[Slides: Metodologias ágeis interativas](http://www.slideshare.net/eminetto/metodologias-geis-interativas)
+
+
 ### Semana Acadêmica - IFC
 
 **Quando**: 20/09/2017
