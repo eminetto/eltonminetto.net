@@ -12,13 +12,22 @@ url = "/talks"
 
 # 2017
 
+### Meetup Go 
+
+**Quando**: 09/11/2017
+
+**Onde**: Joinville/SC
+
+[Building APIs using Go](https://www.slideshare.net/eminetto/building-apis-using-go)
+
+
 ### Agile Trends Florianópolis
 
 **Quando**: 10/10/2017
 
 **Onde**: Florianópolis/SC
 
-[Slides: Metodologias ágeis interativas](http://www.slideshare.net/eminetto/metodologias-geis-interativas)
+[Metodologias ágeis interativas](http://www.slideshare.net/eminetto/metodologias-geis-interativas)
 
 
 ### Semana Acadêmica - IFC
