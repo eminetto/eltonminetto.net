@@ -12,6 +12,22 @@ url = "/talks"
 
 # 2017
 
+### PHP Conference Brasil
+
+**Quando**: 09/12/2017
+
+**Onde**: Osasco/SP
+
+[12 factor in the PHP world](https://www.slideshare.net/eminetto/12-factor-in-the-php-world)
+
+### PHP Conference Brasil
+
+**Quando**: 08/12/2017
+
+**Onde**: Osasco/SP
+
+[Modernizando projetos legados usando APIs](https://www.slideshare.net/eminetto/modernizando-projetos-legados-usando-apis)
+
 ### Meetup Go 
 
 **Quando**: 09/11/2017
