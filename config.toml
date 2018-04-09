@@ -14,7 +14,7 @@ googleAnalytics = "UA-584603-1"
 [Author]
   name = "Elton Minetto"
   email = "eminetto@gmail.com"
-  facebook = "eminetto"
+  # facebook = "eminetto"
   github = "eminetto"
   twitter = "eminetto"
   linkedin = "in/eminetto"
