@@ -1,7 +1,7 @@
 baseurl = "http://eltonminetto.net/"
 languageCode = "en-us"
 title = "Elton Minetto"
-theme = "hugo-paper"
+theme = "paper"
 pygmentsuseclasses = true
 PygmentsCodeFences = true
 disqusShortname = "elton-minetto"
