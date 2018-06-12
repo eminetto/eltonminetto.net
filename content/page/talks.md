@@ -10,6 +10,92 @@ url = "/talks"
 
 +++
 
+# 2018
+
+### The Developers Conference
+
+**Quando**: 21/07/2018
+
+**Onde**: São Paulo/SP
+
+Clean architecture em Golang
+
+### StartupSC Summit
+
+**Quando**: 12/07/2018
+
+**Onde**: Florianópolis/SC
+
+Desafios tecnológicos de uma fintech (mediador do painel)
+
+
+### Webminar KingHost
+
+**Quando**: 27/06/2018
+
+**Onde**: Webminar
+
+PHP: Tendências da linguagem para os próximos anos
+
+
+### Academia Dev ContaAzul
+
+**Quando**: 23/06/2018
+
+**Onde**: Joinville/SC
+
+Programar != desenvolver software
+
+### PHPSC Conference
+
+**Quando**: 09/06/2018
+
+**Onde**: Florianópolis/SC
+
+[Clean architecture em PHP](https://www.slideshare.net/eminetto/clean-architecture-em-php)
+
+### Meetup Go
+
+**Quando**: 19/05/2018
+
+**Onde**: Florianópolis/SC
+
+[Clean architecture em Golang](https://www.slideshare.net/eminetto/clean-architecture-in-golang)
+
+### The Developers Conference
+
+**Quando**: 21/04/2018
+
+**Onde**: Florianópolis/SC
+
+[Clean architecture em Golang](https://www.slideshare.net/eminetto/clean-architecture-in-golang)
+
+
+### Aula inaugural da turma de Sistemas para Internet da IELUSC
+
+**Quando**: 26/03/2018
+
+**Onde**: Joinville/SC
+
+[A Jornada do desenvolvedor](https://www.slideshare.net/eminetto/a-jornada-do-desenvolvedor-92047194)
+
+### PVTalks 14
+
+**Quando**: 19/03/2018
+
+**Onde**: Blumenau/SC
+
+[Product and Technology: how to build a killer roadmap!](https://www.slideshare.net/eminetto/product-and-technology-91320524)
+
+### MIDILAB Overflow
+
+**Quando**: 06/03/2018
+
+**Onde**: Florianópolis/SC
+
+[Code:Nation Tech Stack](https://www.slideshare.net/eminetto/codenation-tech-stack)
+
+
 # 2017
 
 ### PHP Conference Brasil
