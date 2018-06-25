@@ -44,7 +44,7 @@ PHP: Tendências da linguagem para os próximos anos
 
 **Onde**: Joinville/SC
 
-Programar != desenvolver software
+[Programar != desenvolver software](https://www.slideshare.net/eminetto/programar-desenvolver-software)
 
 ### PHPSC Conference
 
