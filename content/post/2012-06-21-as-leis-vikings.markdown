@@ -17,7 +17,7 @@ São quatro grandes leis, com subdivisões, que eram usadas como regras para os 
 
 Fiz uma tradução:
 
-###Seja corajoso e agressivo
+### Seja corajoso e agressivo
 
 * Seja direto
 
