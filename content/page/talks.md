@@ -12,13 +12,47 @@ url = "/talks"
 
 # 2018
 
+### Agile Trends Floripa
+
+**Quando**: 10/10/2018
+
+**Onde**: Florianópolis/SC
+
+Gerenciando uma startup no Github Projects
+
+### InterCon
+
+**Quando**: 06/10/2018
+
+**Onde**: São Paulo/SP
+
+[Clean Architecture](https://www.slideshare.net/eminetto/clean-architecture-118686697)
+
+### GopherCon
+
+**Quando**: 29/09/2018
+
+**Onde**: Florianópolis/SC
+
+[Serverless em Go](https://www.slideshare.net/eminetto/serverless-em-go)
+
+
+### Evento Hoje
+
+**Quando**: 21/09/2018
+
+**Onde**: Concórdia/SC
+
+Painel: As startups precisam morrer!
+
+
 ### The Developers Conference
 
 **Quando**: 21/07/2018
 
 **Onde**: São Paulo/SP
 
-Clean architecture em Golang
+[Clean architecture em Golang](https://www.slideshare.net/eminetto/clean-architecture-em-go-v2)
 
 ### StartupSC Summit
 
