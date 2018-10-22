@@ -228,7 +228,7 @@ Case Compufácil e AWS [Slides](https://www.slideshare.net/eminetto/o-case-da-co
 
 **Onde**: Curitiba/PR
 
-…e então entendi como a agilidade realmente funciona!
+[…e então entendi como a agilidade realmente funciona!](https://www.youtube.com/watch?v=QUlHPiwGjW8&feature=youtu.be)
 
 ### DevSpot
 
