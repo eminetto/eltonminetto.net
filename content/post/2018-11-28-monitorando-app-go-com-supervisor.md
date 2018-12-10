@@ -92,7 +92,7 @@ Para atualizar o binário basta executar os comandos:
 Após acessarmos a API algumas vezes podemos ver o conteúdo do log no arquivo ```/var/log/api.log```, conforme configurado no ```/etc/supervisor/conf.d/api.conf```:
 
 ```
- cat /var/log/api.log 
+cat /var/log/api.log 
 2018/11/28 23:22:12 main.go:28: 127.0.0.1:42282 GET /
 2018/11/28 23:22:13 main.go:28: 127.0.0.1:42284 GET /
 2018/11/28 23:22:14 main.go:28: 127.0.0.1:42286 GET /

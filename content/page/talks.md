@@ -12,13 +12,23 @@ url = "/talks"
 
 # 2018
 
+### PHP Conference Brasil
+
+**Quando**: 07/12/2018
+
+**Onde**: Porto Alegre/RS
+
+[Clean architecture](https://www.slideshare.net/eminetto/clean-architecture-118686697)
+
+[Programar != desenvolver software](https://www.slideshare.net/eminetto/programar-desenvolver-software/eminetto/programar-desenvolver-software)
+
 ### Agile Trends Floripa
 
 **Quando**: 10/10/2018
 
 **Onde**: Florianópolis/SC
 
-Gerenciando uma startup no Github Projects
+[Gerenciando uma startup no Github Projects](https://www.slideshare.net/eminetto/gerenciando-uma-startup-no-github-projects)
 
 ### InterCon
 
