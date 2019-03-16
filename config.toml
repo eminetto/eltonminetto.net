@@ -1,46 +1,56 @@
 baseurl = "https://eltonminetto.net/"
-languageCode = "en-us"
+DefaultContentLanguage = "pt-br"
+# DefaultContentLanguage = "en"
+# languageCode = "en-us"
 title = "Elton Minetto"
 theme = "paper"
 pygmentsuseclasses = true
 PygmentsCodeFences = true
 disqusShortname = "elton-minetto"
 googleAnalytics = "UA-584603-1"
-
-[Params]
-  # logo = "img/avatar-icon.png"
-  subtitle = "Desenvolvedor, professor, palestrante e escritor"
-
 [Author]
-  name = "Elton Minetto"
-  email = "eminetto@gmail.com"
-  # facebook = "eminetto"
-  github = "eminetto"
-  twitter = "eminetto"
-  linkedin = "in/eminetto"
-  # stackoverflow = "XXXXXXX/username"
-  # soundcloud = "username"
-  # wikipedia = "username"
+    name = "Elton Minetto"
+    email = "eminetto@gmail.com"
+    github = "eminetto"
+    twitter = "eminetto"
+    linkedin = "in/eminetto"
 
-[[menu.main]]
-    name = "Livros"
-    url = "https://leanpub.com/u/eminetto"
-    weight = 1
+[languages]
+  [languages.en]
+    # [Params]
+    # logo = "img/avatar-icon.png"
+    subtitle = "Developer, teacher, speaker and writer"
+    [[menu.en]]
+        name = "Talks"
+        url = "/talks/"
+        weight = 1
+    [[menu.en]]
+        name = "About"
+        url = "/about/"
+        weight = 5
+  [languages.pt-br]
+    # [Params]
+    # logo = "img/avatar-icon.png"
+    subtitle = "Desenvolvedor, professor, palestrante e escritor"
 
-[[menu.main]]
-    name = "Palestras"
-    url = "/talks/"
-    weight = 2
-[[menu.main]]
-    name = "A semana PHP"
-    url = "http://asemanaphp.com.br"
-    weight = 3
-[[menu.main]]
-    name = "A semana Go"
-    url = "http://asemanago.com.br"
-    weight = 4
-[[menu.main]]
-    name = "Sobre"
-    url = "/about/"
-    weight = 5
+    [[menu.pt]]
+        name = "Livros"
+        url = "https://leanpub.com/u/eminetto"
+        weight = 1
 
+    [[menu.pt]]
+        name = "Palestras"
+        url = "/talks/"
+        weight = 2
+    [[menu.pt]]
+        name = "A semana PHP"
+        url = "http://asemanaphp.com.br"
+        weight = 3
+    [[menu.pt]]
+        name = "A semana Go"
+        url = "http://asemanago.com.br"
+        weight = 4
+    [[menu.pt]]
+        name = "Sobre"
+        url = "/sobre/"
+        weight = 5

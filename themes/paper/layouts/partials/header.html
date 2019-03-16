@@ -38,19 +38,29 @@
 </head>
 <body class="{{if eq .Kind `page` }}single{{else}}list{{end}}">
   <header class="header">
-    {{ if .IsHome }}
+    {{ if eq .Site.Language.Lang `pt-br`}}
     <h1 class="title"><a href="{{ `/` }}"><span></span>{{ .Site.Title }}</a></h1>
     {{ else }}
-    <p class="title"><a href="{{ `/` }}"><span></span>{{ .Site.Title }}</a></p>
+    <h1 class="title"><a href="{{ `/en` }}"><span></span>{{ .Site.Title }}</a></h1>
     {{ end }}
     <button class="menu-toggle" type="button"></button>
     <nav class="menu">
       <ul>
         {{ $currentPage := . }}
-        {{ range .Site.Menus.main }}
-        <li class="{{ if $currentPage.IsMenuCurrent `main` . }}active{{ end }}">
-          <a href="{{ .URL }}">{{ .Name }}</a>
-        </li>
+        {{ if eq .Site.Language.Lang `pt-br`}}
+          {{ range .Site.Menus.pt }}
+          <li class="{{ if $currentPage.IsMenuCurrent `main` . }}active{{ end }}">
+            <a href="{{ .URL }}">{{ .Name }}</a>
+          </li>
+          {{ end }}
+           <li><a href="/en"><img src="http://localhost:1313/images/posts/usa.png" width="25"></a></li>
+        {{ else }}
+          {{ range .Site.Menus.en }}
+          <li class="{{ if $currentPage.IsMenuCurrent `main` . }}active{{ end }}">
+            <a href="{{ .URL }}">{{ .Name }}</a>
+          </li>
+          {{ end }}
+          <li><a href="/"><img src="http://localhost:1313/images/posts/brazil.png" width="25"></a></li>
         {{ end }}
         <li>
           <form id="busca" action="http://www.google.com/search" target="_blank">
@@ -58,6 +68,7 @@
             <input type="search" name="q" placeholder="Search">
           </form>
         </li>
+        
       </ul>
     </nav>
   </header>
