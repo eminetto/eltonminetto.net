@@ -53,14 +53,14 @@
             <a href="{{ .URL }}">{{ .Name }}</a>
           </li>
           {{ end }}
-           <li><a href="/en"><img src="http://localhost:1313/images/posts/usa.png" width="25"></a></li>
+           <li><a href="/en"><img src="/images/posts/usa.png" width="25"></a></li>
         {{ else }}
           {{ range .Site.Menus.en }}
           <li class="{{ if $currentPage.IsMenuCurrent `main` . }}active{{ end }}">
             <a href="{{ .URL }}">{{ .Name }}</a>
           </li>
           {{ end }}
-          <li><a href="/"><img src="http://localhost:1313/images/posts/brazil.png" width="25"></a></li>
+          <li><a href="/"><img src="/images/posts/brazil.png" width="25"></a></li>
         {{ end }}
         <li>
           <form id="busca" action="http://www.google.com/search" target="_blank">
