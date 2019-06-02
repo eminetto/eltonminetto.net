@@ -166,7 +166,7 @@ func (l *loginService) Login(userName, password string) {
 
 ## Wrap all primitives and Strings in classes
 
-Esta regra sugere que os tipos primitivos que possuem comportamento devem ser encapsulados, no nosso caso, em *structs* e não em *classes*. Vamos ver o exemplo:
+Esta regra sugere que os tipos primitivos **que possuem comportamento** devem ser encapsulados, no nosso caso, em *structs* ou *types* e não em *classes*. Desta forma, a lógica do comportamento fica encapsulado e de fácil manutenção. Vamos ver o exemplo:
 
 ```go
 package ecommerce
@@ -189,7 +189,7 @@ func (o order) Submit() (int64, error) {
 }
 ```
 
-Aplicando a regra:
+Aplicando a regra, usando *structs*:
 
 ```go
 package ecommerce
@@ -199,43 +199,88 @@ import (
 )
 
 type order struct {
-	pid productId
-	cid customerId
+	pid productID
+	cid customerID
 }
 
-type productId struct {
+type productID struct {
 	id int64
 }
 
-// some methods on productId struct
+// some methods on productID struct
 
-type customerId struct {
+type customerID struct {
 	id int64
 }
 
-// some methods on customerId struct
+// some methods on customerID struct
 
-type orderId struct {
+type orderID struct {
 	id int64
 }
 
-func (oid orderId) String() string {
+func (oid orderID) String() string {
 	return strconv.FormatInt(oid.id, 10)
 }
 
-// some other methods on orderId struct
+// some other methods on orderID struct
 
 func CreateOrder(pid int64, cid int64) order {
 	return order{
-		pid: productId{pid}, cid: customerId{cid},
+		pid: productID{pid}, cid: customerID{cid},
 	}
 }
 
-func (o order) Submit() (orderId, error) {
+func (o order) Submit() (orderID, error) {
 	// do some logic
 
 	return orderId{int64(3252345234)}, nil
 }
+```
+
+Outra possível refatoração, mais idiomática, usando *types* poderia ser:
+
+```go
+package ecommerce
+
+import (
+	"strconv"
+)
+
+type order struct {
+	pid productID
+	cid customerID
+}
+
+type productID int64
+
+
+// some methods on productID type
+
+type customerID int64
+
+// some methods on customerID type
+
+type orderID int64
+
+func (oid orderID) String() string {
+	return strconv.FormatInt(int64(oid), 10)
+}
+
+// some other methods on orderID type
+
+func CreateOrder(pid int64, cid int64) order {
+	return order{
+		pid: productID(pid), cid: customerID(cid),
+	}
+}
+
+func (o order) Submit() (orderID, error) {
+	// do some logic
+
+	return orderID(int64(3252345234)), nil
+}
+
 ```
 
 Além de ficar mais legível o código alterado permite fácil evolução das regras de negócio e maior segurança em relação ao que estamos manipulando.
@@ -549,6 +594,9 @@ type Repository interface {
  
 Alguns exemplos usados neste post foram adaptados a partir do repositório: [https://github.com/rafos/object-calisthenics-in-go](https://github.com/rafos/object-calisthenics-in-go)
  
+ ## Agradecimentos
+ 
+ Obrigado Wagner Riffel e Francisco Oliveira pelas sugestões de melhorias quanto aos exemplos. 
  
  
  
