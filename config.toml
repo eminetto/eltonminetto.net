@@ -4,8 +4,8 @@ DefaultContentLanguage = "pt-br"
 # languageCode = "en-us"
 title = "Elton Minetto"
 theme = "paper"
-pygmentsuseclasses = true
-PygmentsCodeFences = true
+pygmentsUseClasses = true
+pygmentsCodefences = true
 disqusShortname = "elton-minetto"
 googleAnalytics = "UA-584603-1"
 [Author]
