@@ -10,6 +10,117 @@ url = "/talks"
 
 +++
 
+# 2019
+
+### PHP Conference Brasil
+
+**Quando**: 05 a 07/12/2019
+
+**Onde**: Porto Alegre/RS
+
+[Full Stack vs Full Cycle Developer](https://phpconference.com.br)
+
+### GopherCon Brasil
+
+**Quando**: 27 e 28/09/2019
+
+**Onde**: Florianópolis/SC
+
+[Coordenação do evento](http://2019.gopherconbr.org)
+
+
+### MicroServiços e MacroNegócios
+
+**Quando**: 14/09/2019
+
+**Onde**: Curitiba/PR
+
+[Golang e microserviços: nascidos um para o outro](http://msmn.com.br)
+
+### 2o RDGoConf - Evento interno da [Resultados Digitais](https://www.rdstation.com)
+
+**Quando**: 12/09/2019
+
+**Onde**: Florianópolis/SC
+
+Golang e microserviços: nascidos um para o outro
+
+### Codecon.dev
+
+**Quando**: 31/07/2019
+
+**Onde**: Joinville/SC
+
+[Golang e microserviços: nascidos um para o outro](https://codecon.dev)
+
+
+### Startup Summit: organizador do palco de tecnologia e produto
+
+**Quando**: 15 e 16/08/2019
+
+**Onde**: Florianópolis/SC
+
+[Startup Summit](https://www.summit.sebrae.com.br)
+
+### Meetup Go
+
+**Quando**: 24/07/2019
+
+**Onde**: Florianópolis/SC
+
+[Object Calisthenics em Go](https://www.slideshare.net/eminetto/object-calisthenics-em-go)
+
+### Evento Sociesc
+
+**Quando**: 29/06/2019
+
+**Onde**: Joinville/SC
+
+[Programar != desenvolver software](https://www.slideshare.net/eminetto/programar-desenvolver-software-v2-152192472)
+
+
+
+### Bate-papo sobre Microserviços com a equipe da [mobLee](https://www.moblee.net)
+
+**Quando**: 09/05/2019
+
+**Onde**: Florianópolis/SC
+
+Microserviços
+
+### Podcast Dev na estrada
+
+**Quando**: 26/04/2019
+
+**Onde**: Podcast
+
+[Microserviços](https://devnaestrada.com.br/2019/04/26/microservicos.html)
+
+### TDC: Organizador da trilha de Go
+
+**Quando**: 23/04/2019
+
+**Onde**: Florianópolis/SC
+
+[Trilha Go](http://www.thedevelopersconference.com.br/tdc/2019/florianopolis/trilha-go)
+
+### PHP Experience
+
+**Quando**: 05/04/2019
+
+**Onde**: São Paulo/SP
+
+[Full Stack vs Full Cycle Developer](https://www.slideshare.net/eminetto/full-stack-vs-full-cycle-developers)
+
+### Podcast Simplificando
+
+**Quando**: 06/02/2019
+
+**Onde**: Podcast
+
+[Programação Web: Como Aprender, Lendas e Modinhas](https://robsoncristian.com/simplificando-episodio-13-programacao-web-com-elton-minetto/)
+
+
 # 2018
 
 ### PHP Conference Brasil
