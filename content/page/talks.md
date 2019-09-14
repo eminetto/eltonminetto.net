@@ -35,7 +35,7 @@ url = "/talks"
 
 **Onde**: Curitiba/PR
 
-[Golang e microserviços: nascidos um para o outro](http://msmn.com.br)
+[Golang e microserviços: nascidos um para o outro](https://www.slideshare.net/eminetto/go-e-microservios-nascidos-um-para-o-outro)
 
 ### 2o RDGoConf - Evento interno da [Resultados Digitais](https://www.rdstation.com)
 
@@ -43,7 +43,7 @@ url = "/talks"
 
 **Onde**: Florianópolis/SC
 
-Golang e microserviços: nascidos um para o outro
+[Golang e microserviços: nascidos um para o outro](https://www.slideshare.net/eminetto/go-e-microservios-nascidos-um-para-o-outro)
 
 ### Codecon.dev
 
@@ -51,7 +51,7 @@ Golang e microserviços: nascidos um para o outro
 
 **Onde**: Joinville/SC
 
-[Golang e microserviços: nascidos um para o outro](https://codecon.dev)
+[Golang e microserviços: nascidos um para o outro](https://www.slideshare.net/eminetto/go-e-microservios-nascidos-um-para-o-outro)
 
 
 ### Startup Summit: organizador do palco de tecnologia e produto
