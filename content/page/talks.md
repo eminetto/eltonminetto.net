@@ -12,14 +12,6 @@ url = "/talks"
 
 # 2019
 
-### PHP Conference Brasil
-
-**Quando**: 05 a 07/12/2019
-
-**Onde**: Porto Alegre/RS
-
-[Full Stack vs Full Cycle Developer](https://phpconference.com.br)
-
 ### GopherCon Brasil
 
 **Quando**: 27 e 28/09/2019
