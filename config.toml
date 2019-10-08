@@ -3,11 +3,16 @@ DefaultContentLanguage = "pt-br"
 # DefaultContentLanguage = "en"
 # languageCode = "en-us"
 title = "Elton Minetto"
-theme = "paper"
+#theme = "paper"
+#theme = "pixyll"
+theme = "journal"
 pygmentsUseClasses = true
 pygmentsCodefences = true
 disqusShortname = "elton-minetto"
 googleAnalytics = "UA-584603-1"
+[params]
+  githubUsername = "eminetto"
+  twitterUsername = "eminetto"
 [Author]
     name = "Elton Minetto"
     email = "eminetto@gmail.com"
@@ -19,7 +24,7 @@ googleAnalytics = "UA-584603-1"
   [languages.en]
     # [Params]
     # logo = "img/avatar-icon.png"
-    subtitle = "Developer, teacher, speaker and writer"
+    tagline = "Developer, teacher, speaker and writer"
     [[menu.en]]
         name = "Talks"
         url = "/talks/"
@@ -31,7 +36,7 @@ googleAnalytics = "UA-584603-1"
   [languages.pt-br]
     # [Params]
     # logo = "img/avatar-icon.png"
-    subtitle = "Desenvolvedor, professor, palestrante e escritor"
+    tagline = "Desenvolvedor, professor, palestrante e escritor"
 
     [[menu.pt]]
         name = "Livros"

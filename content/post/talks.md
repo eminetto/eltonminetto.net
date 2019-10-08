@@ -1,6 +1,6 @@
 +++
 bigimg = ""
-date = "2016-07-11T21:25:09-03:00"
+date = "2016-07-11T21:01:03-03:00"
 subtitle = ""
 title = "Palestras"
 aliases = [
