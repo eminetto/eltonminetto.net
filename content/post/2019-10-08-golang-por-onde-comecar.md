@@ -39,6 +39,6 @@ Sou grande fã de newsletters como forma de me manter atualizado das novidades d
 [Golang Weekly](https://golangweekly.com) - Lista bem extensa, em inglês.
 
 
-Uma dica final: se você está iniciando na linguagem, mantenha-se focado nos conceitos mais fundamentais antes de se aprofundar em assuntos mais complexos como ```go routines```. Sei que alguns dos principais pontos de interesse em Go são a concorrência e a performance, mas é importante primeiro dominar os fundamentos antes de começar a se aventurar nestes tópicos mais profundos.
+Uma dica final: se você está iniciando na linguagem, mantenha-se focado nos conceitos mais fundamentais antes de se aprofundar em assuntos mais complexos como `go routines`. Sei que alguns dos principais pontos de interesse em Go *são* a concorrência e a performance, mas é importante primeiro dominar os fundamentos antes de começar a se aventurar nestes tópicos mais profundos.
 
 Neste post eu tentei citar algumas das fontes que foram importantes para mim quando comecei a aprender. Se lembrar de mais algum link importante por favor use o espaço de comentários abaixo para complementar este pequeno guia. 
