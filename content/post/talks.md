@@ -10,6 +10,16 @@ url = "/talks"
 
 +++
 
+# 2020
+
+### Aula Magna curso de Sistemas para Internet, da Faculdade Alfa
+
+**Quando**: 14/02/2020
+
+**Onde**: Umuarama/PR
+
+[A jornada do desenvolvedor](https://speakerdeck.com/eminetto/a-jornada-do-desenvolvedor)
+
 # 2019
 
 ### GopherCon Brasil
