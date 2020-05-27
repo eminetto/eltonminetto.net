@@ -12,6 +12,50 @@ url = "/talks"
 
 # 2020
 
+### Por que e como usamos Go na Codenation
+
+**Quando**: 27/05/2020
+
+**Onde**: Canal do Youtube do evento [quarentech](http://quarentech.ielusc.br)
+
+[Video](https://www.youtube.com/watch?v=Z-JQOCSdxdU)
+
+[Slides](https://speakerdeck.com/eminetto/por-que-e-como-usamos-go-na-codenation)
+
+### Live sobre testes em Go
+
+**Quando**: 20/05/2020
+
+**Onde**: Canal do Youtube do Grupo de usuários Go de Belo Horizonte
+
+[Live sobre testes em Go](https://www.youtube.com/watch?v=JtRdUnGX5qg)
+
+### Os diferentes caminhos para carreira de um(a) dev
+
+**Quando**: 28/04/2020
+
+**Onde**: Canal do Youtube Projeto Reboot
+
+[Os diferentes caminhos para carreira de um(a) dev](https://www.youtube.com/watch?v=afaag-FJDV8)
+
+
+### Podcast Full Cycle: Go Lang: A Linguagem do Futuro
+
+**Quando**: 27/04/2020
+
+**Onde**: Canal do Youtube Full Cycle
+
+[Podcast Full Cycle: Go Lang: A Linguagem do Futuro](https://www.youtube.com/watch?v=rzCtX_qN0Bw&t=5s)
+
+
+### PHPSP Live! #1 - Painel: Tempos de Isolamento
+
+**Quando**: 28/03/2020
+
+**Onde**: Canal do Youtube do PHPSP
+
+[PHPSP Live! #1 - Painel: Tempos de Isolamento](https://www.youtube.com/watch?v=e8ffmdYsqrw)
+
 ### Aula Magna curso de Sistemas para Internet, da Faculdade Alfa
 
 **Quando**: 14/02/2020
