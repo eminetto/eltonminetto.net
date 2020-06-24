@@ -12,6 +12,17 @@ url = "/talks"
 
 # 2020
 
+### Da ideia ao Speaker Deck
+
+**Quando**: 23/06/2020
+
+**Onde**: Canal do Youtube 
+
+[Video](https://www.youtube.com/watch?v=X0iEiifDXmg)
+
+[Slides](https://speakerdeck.com/eminetto/da-ideia-ao-speaker-deck)
+
+
 ### Por que e como usamos Go na Codenation
 
 **Quando**: 27/05/2020
