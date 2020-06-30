@@ -1,5 +1,5 @@
 +++
-title = "Clean Architecture, 2 anos e meio depois"
+title = "Clean Architecture, 2 anos depois"
 subtitle = ""
 date = "2020-06-29T10:54:24+02:00"
 bigimg = ""
