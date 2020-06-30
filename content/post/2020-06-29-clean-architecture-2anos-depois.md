@@ -31,17 +31,29 @@ Abaixo faço uma explicação do que significa cada diretório do projeto.
 
 ## Camada Entity
 
-Vamos começar pela camada mais interna da arquitetura:
+Vamos começar pela camada mais interna da arquitetura.
+
+De acordo com o [post do Uncle Bob](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html):
+
+> Entities encapsulate *Enterprise wide* business rules. An entity can be an object with methods, or it can be a set of data structures and functions. It doesn’t matter so long as the entities could be used by many different applications in the enterprise.
+
+A estrutura ficou desta forma:
 
 [![entity](/images/posts/1-entity_book.png)](/images/posts/1-entity_book.png)
 
-Neste pacote temos a definição da entidade (`book.go`) e da interface do `Repository` e `UseCase` (em `interface.go`). Também temos as implementações do repositório em `MySQL` (`repository_mysql.go`) e em memória (`repository_inmem.go`), assim como a implementação do `UseCase` (em `service.go`). O `UseCase` deste pacote implementa as operações básicas em relação a entidade, o famoso `CRUD`. Também encontramos os `mocks` gerados pelo `Gomock`, conforme explicado neste [post](https://eltonminetto.dev/post/2019-12-19-usando-gomock/). Estes mocks são usados pelas demais camadas da arquitetura durante os testes.
+Neste pacote temos a definição da entidade (`entity.go`) e da interface do `Repository` e `Manager` (em `interface.go`). O `Manager` vai usar um `Repository` para realizar as operações básicas na entidade, como o famoso `CRUD` . Também temos as implementações do repositório em `MySQL` (`repository_mysql.go`) e em memória (`repository_inmem.go`), assim como a implementação da interface `Manager` (em `manager.go`).Também encontramos os `mocks` gerados pelo `Gomock`, conforme explicado neste [post](https://eltonminetto.dev/post/2019-12-19-usando-gomock/). Estes mocks são usados pelas demais camadas da arquitetura durante os testes.
 
 ## Camada UseCase
 
+De acordo com o Uncle Bob:
+
+> The software in this layer contains application specific business rules. It encapsulates and implements all of the use cases of the system
+
+A estrutura ficou desta forma:
+
 [![domain](/images/posts/2-domain_loan.png)](/images/posts/2-domain_loan.png)
 
-Nos demais pacotes dentro de `domain` implementamos as regras de negócio do nosso produto. De acordo com a definição da arquitetura, estes `UseCases` fazem uso das entidades e dos serviços que fazem o tratamento das mesmas (o `CRUD`). Também é possível ver a existência de mocks, que são usados pelas outras camadas da arquitetura.
+Nos pacotes dentro de `domain/usecase` implementamos as regras de negócio do nosso produto. De acordo com a definição da arquitetura, estes `UseCases` fazem uso das entidades e dos `managers` que fazem o tratamento das mesmas (o `CRUD`). Também é possível ver a existência de mocks, que são usados pelas outras camadas da arquitetura.
 
 ## Camada Controller
 
@@ -60,9 +72,9 @@ dataSourceName := fmt.Sprintf("%s:%s@tcp(%s:3306)/%s?parseTime=true", config.DB_
       log.Fatal(err.Error())
    }
    defer db.Close()
-   repo := book.NewMySQLRepoRepository(db)
-   service := book.NewService(repo)
-   all, err := service.Search(query)
+   repo := book.NewMySQLRepository(db)
+   manager := book.NewManager(repo)
+   all, err := manager.Search(query)
    if err != nil {
       log.Fatal(err)
    }
@@ -128,4 +140,6 @@ Além dos pacotes comentados acima, podemos incluir na nossa aplicação outros 
 No [README.md do repositório](https://github.com/eminetto/clean-architecture-go-v2) constam mais detalhes, como instruções para compilação e exemplos de uso.
 
 Espero com este post fortalecer minha recomendação quanto a esta arquitetura e também receber feedbacks quanto aos códigos. Se você quer aprender a usar esta arquitetura em sua linguagem favorita, fica a sugestão para usar este repositório como exemplo para este aprendizado. Assim podemos ter diferentes implementações, em diferentes linguagens, para facilitar a comparação.
+
+Agradecimentos especiais ao amigo [Gustavo Schirmer](https://twitter.com/hurrycaner) que deu ótimos feedbacks sobre o texto e os códigos. 
 
