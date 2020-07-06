@@ -127,7 +127,7 @@ type User struct {
 
 Com isso ganhamos maior controle em relação a como uma entidade será entregue pela `API`.
 
-No último pacote da `API` encontramos os `middlewares`, que são usados por vários `endpoins`:
+No último pacote da `API` encontramos os `middlewares`, que são usados por vários `endpoints`:
 
 [![middlware](/images/posts/7-middleware.png)](/images/posts/7-middleware.png)
 
