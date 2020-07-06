@@ -1,7 +1,7 @@
 +++
 title = "Clean Architecture, 2 years later"
 subtitle = ""
-date = "2020-06-29T10:54:24+02:00"
+date = "2020-07-06T10:54:24+02:00"
 bigimg = ""
 
 +++
