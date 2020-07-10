@@ -5,6 +5,10 @@ date = "2018-03-05T10:54:24+02:00"
 bigimg = ""
 +++
 
+# Update
+
+I published an updated version of this post. Check it out at: [Clean Architecture, 2 years later](https://eltonminetto.net/en/post/2020-07-06-clean-architecture-2years-later/)
+
 ## What is Clean Architecture?
 
 In his book “Clean Architecture: A Craftsman’s Guide to Software Structure and Design” famous author Robert “Uncle Bob” Martin presents an architecture with some important points like testability and independence of frameworks, databases and interfaces.
