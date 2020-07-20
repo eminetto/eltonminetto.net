@@ -30,6 +30,16 @@ Resolvi transformar esta resposta em um post, no intuito de ajudar mais pessoas.
 
 [A Linguagem de Programação Go](https://www.amazon.com.br/Linguagem-Programação-Go-Alan-Donovan/dp/8575225464/ref=asc_df_8575225464/?tag=googleshopp00-20&linkCode=df0&hvadid=379792215563&hvpos=1o1&hvnetw=g&hvrand=1123707988589617331&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1001706&hvtargid=pla-396486666170&psc=1) - Existem outros bons livros no mercado, mas esse foi o que eu comprei e posso recomendar. É muito bom e bem completo, indo do básico até tópicos mais avançados. 
 
+## Comunidades
+
+Algumas comunidades que eu participo:
+
+[Telegram da comunidade Go de Santa Catarina](https://t.me/golang_sc)
+
+[Telegram da comunidade Go Brasil](https://t.me/go_br)
+
+[Gophers no Slack](https://invite.slack.golangbridge.org/)
+
 ## Newsletters
 
 Sou grande fã de newsletters como forma de me manter atualizado das novidades do mercado. 
