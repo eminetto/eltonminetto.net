@@ -12,6 +12,42 @@ url = "/talks"
 
 # 2020
 
+
+### Arquitetura de Software e Clean Architecture
+
+**Quando**: 12/09/2020
+
+**Onde**: [https://codecon.dev](https://codecon.dev)
+
+Arquitetura de Software e Clean Architecture
+
+
+### Arquitetura de Software e Clean Architecture
+
+**Quando**: 22/08/2020
+
+**Onde**: [https://confloss.com.br](https://confloss.com.br)
+
+Arquitetura de Software e Clean Architecture
+
+
+### Arquitetura de Software e Clean Architecture
+
+**Quando**: 25/07/2020
+
+**Onde**: [LIVE] MeeTrybe #01 | Arquitetura de Software
+
+[Arquitetura de Software e Clean Architecture](https://www.youtube.com/watch?v=3fmUp3PICLo&feature=youtu.be)
+
+
+### Go e microserviços. Nascidos um para o outro
+
+**Quando**: 18/07/2020
+
+**Onde**: Vida de Programador Weekend
+
+[Go e microserviços: nascidos um para o outro](https://www.slideshare.net/eminetto/go-e-microservios-nascidos-um-para-o-outro))
+
 ### Da ideia ao Speaker Deck
 
 **Quando**: 23/06/2020
