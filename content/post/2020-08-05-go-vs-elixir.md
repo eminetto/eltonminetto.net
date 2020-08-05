@@ -71,7 +71,7 @@ O lado bom disso é que existem frameworks muito maduros, como o [Phoenix](https
 
 **Pattern Matching**
 
-*Pattern maching* é uma das features mais poderosas e assim como muitas outras herdada da Erlang, que é a linguagem em que Elixir se basea.
+*Pattern maching* é uma das features mais poderosas e assim como muitas outras herdada da Erlang, que é a linguagem em que Elixir se baseia.
 
 Nestes dois posts o [Philip Sampaio](http://philipsampaio.com.br/) faz uma ótima introdução: 
 
