@@ -23,7 +23,7 @@ Quem me conhece sabe que eu sou muito fã de música, especialmente rock e heavy
 
 Então, seguindo essa minha tradição, aqui vai mais uma analogia: 
 
-> Go é o Motorhead, Elixir é o Pink Floid
+> Go é o Motorhead, Elixir é o Pink Floyd
 
 Esclarecendo um pouco:
 
@@ -159,6 +159,6 @@ Se você é dev Go e quer começar a aprender Elixir, eu recomendo a leitura dos
 
 Se você conhece Elixir e encontrou erros no meu texto por favor comente abaixo, para me ajudar a aprender da forma correta. 
 
-P.S.: se eu gosto mais de Motorhead ou Pink Floid? Talvez essa foto do meu gato Lemmy dê uma dica ;)
+P.S.: se eu gosto mais de Motorhead ou Pink Floyd? Talvez essa foto do meu gato Lemmy dê uma dica ;)
 
 [![lemmy](/images/posts/lemmy.jpg)](/images/posts/lemmy.jpg)
