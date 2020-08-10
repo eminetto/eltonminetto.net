@@ -12,7 +12,6 @@ url = "/talks"
 
 # 2020
 
-
 ### Arquitetura de Software e Clean Architecture
 
 **Quando**: 12/09/2020
@@ -29,6 +28,15 @@ Arquitetura de Software e Clean Architecture
 **Onde**: [https://confloss.com.br](https://confloss.com.br)
 
 Arquitetura de Software e Clean Architecture
+
+
+### Bate papo sobre a importância de conhecer mais de uma linguagem
+
+**Quando**: 12/08/2020
+
+**Onde**: Canal do grupo PHPPR
+
+[Bate papo sobre a importância de conhecer mais de uma linguagem](https://www.youtube.com/watch?v=I3lJNXMpk20)
 
 
 ### Arquitetura de Software e Clean Architecture

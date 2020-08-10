@@ -48,14 +48,6 @@ googleAnalytics = "UA-584603-1"
         url = "/talks/"
         weight = 2
     [[menu.pt]]
-        name = "A semana PHP"
-        url = "http://asemanaphp.com.br"
-        weight = 3
-    [[menu.pt]]
-        name = "A semana Go"
-        url = "http://asemanago.com.br"
-        weight = 4
-    [[menu.pt]]
         name = "Sobre"
         url = "/sobre/"
         weight = 5
