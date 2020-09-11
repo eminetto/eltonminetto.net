@@ -20,6 +20,14 @@ url = "/talks"
 
 Arquitetura de Software e Clean Architecture
 
+### Arquitetura de Software e Clean Architecture
+
+**Quando**: 10/09/2020
+
+**Onde**: [Meetup Golang Campinas](https://www.youtube.com/watch?v=VOYv8SwNPNA)
+
+Arquitetura de Software e Clean Architecture
+
 
 ### Arquitetura de Software e Clean Architecture
 
