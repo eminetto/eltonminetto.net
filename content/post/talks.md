@@ -18,7 +18,8 @@ url = "/talks"
 
 **Onde**: [https://codecon.dev](https://codecon.dev)
 
-Arquitetura de Software e Clean Architecture
+[Arquitetura de Software e Clean Architecture](https://speakerdeck.com/eminetto/arquitetura-de-software-e-a-clean-architecture)
+
 
 ### Arquitetura de Software e Clean Architecture
 
@@ -26,7 +27,7 @@ Arquitetura de Software e Clean Architecture
 
 **Onde**: [Meetup Golang Campinas](https://www.youtube.com/watch?v=VOYv8SwNPNA)
 
-Arquitetura de Software e Clean Architecture
+[Arquitetura de Software e Clean Architecture](https://speakerdeck.com/eminetto/arquitetura-de-software-e-a-clean-architecture)
 
 
 ### Arquitetura de Software e Clean Architecture
@@ -35,7 +36,7 @@ Arquitetura de Software e Clean Architecture
 
 **Onde**: [https://confloss.com.br](https://confloss.com.br)
 
-Arquitetura de Software e Clean Architecture
+[Arquitetura de Software e Clean Architecture](https://speakerdeck.com/eminetto/arquitetura-de-software-e-a-clean-architecture)
 
 
 ### Bate papo sobre a importância de conhecer mais de uma linguagem
