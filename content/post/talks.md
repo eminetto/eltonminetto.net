@@ -36,7 +36,9 @@ url = "/talks"
 
 **Onde**: [https://confloss.com.br](https://confloss.com.br)
 
-[Arquitetura de Software e Clean Architecture](https://speakerdeck.com/eminetto/arquitetura-de-software-e-a-clean-architecture)
+[Slides](https://speakerdeck.com/eminetto/arquitetura-de-software-e-a-clean-architecture)
+
+[Video](https://youtu.be/BXfbpsf3juQ)
 
 
 ### Bate papo sobre a importância de conhecer mais de uma linguagem
