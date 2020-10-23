@@ -12,6 +12,14 @@ url = "/talks"
 
 # 2020
 
+### A jornada do desenvolvedor
+
+**Quando**: 22/10/2020
+
+**Onde**: [devBagé](https://www.youtube.com/channel/UCILT04KRKUNZeMvq89B-BAA)
+
+[Video](https://www.youtube.com/watch?v=PAu9yqo2y54)
+
 ### Arquitetura de Software e Clean Architecture
 
 **Quando**: 12/09/2020
