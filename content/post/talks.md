@@ -12,6 +12,25 @@ url = "/talks"
 
 # 2020
 
+### Arquitetura de Software e Clean Architecture
+
+**Quando**: 31/10/2020
+
+**Onde**: [Hacktoberfest Brazil 2020](https://www.youtube.com/channel/UCCYPO7eeV4RNplvKcFGtMZg)
+
+[Slides](https://speakerdeck.com/eminetto/arquitetura-de-software-e-a-clean-architecture)
+
+[Video](https://www.youtube.com/watch?v=pUl1eTTCcc4)
+
+### Painel: Grandes Empresas no mundo Open Source
+
+**Quando**: 31/10/2020
+
+**Onde**: [Hacktoberfest Brazil 2020](https://www.youtube.com/channel/UCCYPO7eeV4RNplvKcFGtMZg)
+
+[Video](https://www.youtube.com/watch?v=uBPJup0zF-8)
+
+
 ### A jornada do desenvolvedor
 
 **Quando**: 22/10/2020
