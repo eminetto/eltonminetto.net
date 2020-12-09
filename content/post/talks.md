@@ -12,6 +12,12 @@ url = "/talks"
 
 # 2020
 
+### Painel: Virei Tech Leader, e agora?
+
+**Quando**: 05/12/2020
+
+**Onde**: PHP Conference Brasil
+
 ### Arquitetura de Software e Clean Architecture
 
 **Quando**: 31/10/2020
