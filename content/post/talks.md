@@ -18,6 +18,8 @@ url = "/talks"
 
 **Onde**: PHP Conference Brasil
 
+[Vídeo](https://www.youtube.com/watch?v=dRJd3pxU15M)
+
 ### Arquitetura de Software e Clean Architecture
 
 **Quando**: 31/10/2020
