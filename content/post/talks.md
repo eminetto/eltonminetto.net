@@ -10,6 +10,16 @@ url = "/talks"
 
 +++
 
+# 2021
+
+### Microsserviços usando Go kit
+
+**Quando**: 04/02/2021
+
+**Onde**: 11 Meetup (online) da comunidade Go de SC
+
+[Slides](https://speakerdeck.com/eminetto/microsservicos-usando-go-kit)
+
 # 2020
 
 ### Painel: Virei Tech Leader, e agora?
