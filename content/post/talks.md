@@ -12,6 +12,15 @@ url = "/talks"
 
 # 2021
 
+### JORNADA DEV | Bate-papo com Elton Minetto
+
+**Quando**: 14/04/2021
+
+**Onde**: Canal da Trybe no Youtube
+
+[Video](https://www.youtube.com/watch?v=nq4FiWQBYKQ)
+
+
 ### Microsserviços usando Go kit
 
 **Quando**: 04/02/2021
@@ -19,6 +28,8 @@ url = "/talks"
 **Onde**: 11 Meetup (online) da comunidade Go de SC
 
 [Slides](https://speakerdeck.com/eminetto/microsservicos-usando-go-kit)
+
+[Video](https://youtu.be/LUlWQs05t1w?t=3140)
 
 # 2020
 
