@@ -1,8 +1,8 @@
 [context.production.environment]
 HUGO_VERSION = "0.79.0"
 
-#[[redirects]]
-#  from = "https://eltonminetto.net/*"
-#  to = "https://eltonminetto.dev/:splat"
-#  status = 301
-#  force = true
+[[redirects]]
+  from = "https://eltonminetto.net/*"
+  to = "https://eltonminetto.dev/:splat"
+  status = 301
+  force = true
