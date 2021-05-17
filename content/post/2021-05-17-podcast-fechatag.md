@@ -8,4 +8,4 @@ Fui convidado pelo ídolo [@femontanha](https://twitter.com/femontanha) para bat
 
 [Confira o vídeo](https://www.youtube.com/watch?v=J3PBB0ujvHY) e assine o podcast para ouvir todos os episódios. 
 
-Gostei bastante deste projeto, que tem um foco diferente da maioria dos podcast sobre tecnologia, dando espaço para conhecermos mais sobre as pessoas que seguimos nas redes sociais e grupos de usuários. Foi um prazer participar deste projeto.
+Gostei bastante deste projeto, que tem um foco diferente da maioria dos podcasts sobre tecnologia, dando espaço para conhecermos mais sobre as pessoas que seguimos nas redes sociais e grupos de usuários. Foi um prazer participar deste projeto.
