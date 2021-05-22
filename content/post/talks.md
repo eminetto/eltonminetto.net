@@ -12,6 +12,29 @@ url = "/talks"
 
 # 2021
 
+### Arquitetura de Software e a Clean Architecture
+
+**Quando**: 24/05/2021
+
+**Onde**: Evento interno do time da PicPay
+
+
+### Podcast FECHATAG
+
+**Quando**: 17/05/2021
+
+**Onde**: Podcast FECHATAG
+
+[Video](https://www.youtube.com/watch?v=J3PBB0ujvHY)
+
+### Podcast Vida de Programador
+
+**Quando**: 26/04/2021
+
+**Onde**: Podcast Vida de Programador
+
+[Audio](https://anchor.fm/vidadeprogramador/episodes/Episdio-33---Programador--empreendedor-e-ruivo--feat--Elton-Minetto-evlmur)
+
 ### JORNADA DEV | Bate-papo com Elton Minetto
 
 **Quando**: 14/04/2021
