@@ -12,6 +12,13 @@ url = "/talks"
 
 # 2021
 
+### Turbine sua carreira em TI com o AC/DC
+
+**Quando**: 02/06/2021
+
+**Onde**: [DioCast – O seu podcast sobre Linux e tecnologia](https://open.spotify.com/show/1kcAbYFSTkfbwm01y4g7vR)
+
+
 ### Arquitetura de Software e a Clean Architecture
 
 **Quando**: 24/05/2021
