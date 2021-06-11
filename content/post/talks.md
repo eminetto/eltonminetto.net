@@ -12,6 +12,13 @@ url = "/talks"
 
 # 2021
 
+### Espaguetes, lasanhas e raviolis: Arquitetura de Software
+
+**Quando**: 10/06/2021
+
+**Onde**: [TrybeCast: na minha máquina roda](https://www.youtube.com/watch?v=MZ73QbAyKB4)
+
+
 ### Turbine sua carreira em TI com o AC/DC
 
 **Quando**: 02/06/2021
