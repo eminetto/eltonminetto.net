@@ -12,6 +12,16 @@ url = "/talks"
 
 # 2021
 
+### Programação, Software Livre e Carreira
+
+**Quando**: 18/07/2021
+
+**Onde**: 
+
+- [Canal do YouTube da Confloss](https://www.youtube.com/watch?v=cKDs52cVRXc)
+- [Podcast da Confloss](https://soundcloud.com/confloss/entrevista-com-elton-minetto-programacao-software-livre-e-carreira)
+
+
 ### Espaguetes, lasanhas e raviolis: Arquitetura de Software
 
 **Quando**: 10/06/2021
