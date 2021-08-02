@@ -12,6 +12,14 @@ url = "/talks"
 
 # 2021
 
+### Carreira em tecnologia
+
+**Quando**: 01/08/2021
+
+**Onde**: 
+
+- [Podcast Tech Leadership Rocks](https://techleadership.rocks/2021/08/01/carreira-em-tecnologia-com-elton-minetto/)
+
 ### Programação, Software Livre e Carreira
 
 **Quando**: 18/07/2021
