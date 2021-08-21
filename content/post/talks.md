@@ -12,6 +12,15 @@ url = "/talks"
 
 # 2021
 
+### Microsserviços usando Go kit
+
+**Quando**: 21/08/2021
+
+**Onde**: Confloss 2021
+
+[Slides](https://speakerdeck.com/eminetto/microsservicos-usando-go-kit)
+
+
 ### Carreira em tecnologia
 
 **Quando**: 01/08/2021
