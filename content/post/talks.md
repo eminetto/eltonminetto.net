@@ -12,6 +12,15 @@ url = "/talks"
 
 # 2021
 
+### Arquitetura de Software e a Clean Architecture
+
+**Quando**: 26/08/2021
+
+**Onde**: TDC Transformation
+
+[Slides](https://speakerdeck.com/eminetto/arquitetura-de-software-e-a-clean-architecture)
+
+
 ### Microsserviços usando Go kit
 
 **Quando**: 21/08/2021
