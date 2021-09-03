@@ -1,5 +1,5 @@
 [context.production.environment]
-HUGO_VERSION = "0.79.0"
+HUGO_VERSION = "0.83.1"
 
 [[redirects]]
   from = "https://eltonminetto.net/*"
