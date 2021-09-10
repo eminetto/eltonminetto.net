@@ -12,6 +12,24 @@ url = "/talks"
 
 # 2021
 
+### Jornada Dev
+
+**Quando**: 10/09/2021
+
+**Onde**: Evento interno da [Sambatech](https://sambatech.com)
+
+[Slides](https://speakerdeck.com/eminetto/dev-journey)
+
+
+### Jornada Dev
+
+**Quando**: 03/09/2021
+
+**Onde**: Trybe Summer Talks
+
+[Slides](https://speakerdeck.com/eminetto/dev-journey)
+
+
 ### Arquitetura de Software e a Clean Architecture
 
 **Quando**: 26/08/2021
