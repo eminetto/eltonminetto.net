@@ -12,6 +12,23 @@ url = "/talks"
 
 # 2021
 
+### Go, o que, por que e como?
+
+**Quando**: 27/09/2021
+
+**Onde**: [Seniortec](https://www.senior.com.br/seniortec/)
+
+[Slides](https://speakerdeck.com/eminetto/go-o-que-por-que-e-como)
+
+
+### Painel: Developer Experience
+
+**Quando**: 25/09/2021
+
+**Onde**: [Codecon](https://codecon.dev)
+
+
+
 ### Jornada Dev
 
 **Quando**: 10/09/2021
