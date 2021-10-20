@@ -12,6 +12,15 @@ url = "/talks"
 
 # 2021
 
+### A Importância das Comunidades Abertas e Projetos Open Source
+
+**Quando**: 19/10/2021
+
+**Onde**: [HACKTOBERFEST Trybe](https://go.betrybe.com/hacktoberfesttrybe)
+
+[Vídeo](https://www.youtube.com/watch?v=xDQvufNBReM)
+
+
 ### Go, o que, por que e como?
 
 **Quando**: 27/09/2021
