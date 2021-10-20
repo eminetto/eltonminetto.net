@@ -22,6 +22,9 @@ languages:
             Content: "Sou desenvolvedor de software, professor, palestrante e escritor"
         menu:
             main:
+                - name: maisquesenior.dev
+                  url: "https://maisquesenior.dev" 
+                  weight: 1
                 - name: Livros
                   url: "https://leanpub.com/u/eminetto" 
                   weight: 5
