@@ -10,6 +10,17 @@ url = "/talks"
 
 +++
 
+# 2022
+
+### O pepel do tech leader no aprendizado
+
+**Quando**: 20/01/2022
+
+**Onde**: [Podcast Orange Juice](https://www.youtube.com/c/OrangeJuiceFC)
+
+[Vídeo](https://youtu.be/p1T4vwjhkF0)
+
+
 # 2021
 
 ### A Importância das Comunidades Abertas e Projetos Open Source
