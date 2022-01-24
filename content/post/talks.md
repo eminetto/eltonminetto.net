@@ -12,7 +12,7 @@ url = "/talks"
 
 # 2022
 
-### O pepel do tech leader no aprendizado
+### O papel do tech leader no aprendizado
 
 **Quando**: 20/01/2022
 
