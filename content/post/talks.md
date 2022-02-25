@@ -12,6 +12,13 @@ url = "/talks"
 
 # 2022
 
+### Go
+
+**Quando**: 24/02/2022
+
+**Onde**: [TallerCast](https://blog.taller.net.br/go-tallercast-12/)
+
+
 ### O papel do tech leader no aprendizado
 
 **Quando**: 20/01/2022
