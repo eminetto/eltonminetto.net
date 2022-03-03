@@ -12,6 +12,15 @@ url = "/talks"
 
 # 2022
 
+### Arquitetura de Software e a Clean Architecture
+
+**Quando**: 03/03/2022
+
+**Onde**: Evento interno da Trybe
+
+[Slides](https://speakerdeck.com/eminetto/arquitetura-de-software-e-a-clean-architecture)
+
+
 ### Go
 
 **Quando**: 24/02/2022
