@@ -12,11 +12,30 @@ url = "/talks"
 
 # 2022
 
+### Masterclass de Arquitetura de Software e Clean Architecture
+
+**Quando**: 15/03/2022
+
+**Onde**: Evento interno com estudantes da Trybe
+
+[Slides](https://speakerdeck.com/eminetto/arquitetura-de-software-e-a-clean-architecture)
+
+
+
+### Live sobre Arquitetura de Software
+
+**Quando**: 10/03/2022
+
+**Onde**: Canal do Youtube do Cassio Botaro
+
+[Video](https://www.youtube.com/watch?v=n0OC8GGm3n8)
+
+
 ### Arquitetura de Software e a Clean Architecture
 
 **Quando**: 03/03/2022
 
-**Onde**: Evento interno da Trybe
+**Onde**: Evento interno da equipe de desenvolvimento da Trybe
 
 [Slides](https://speakerdeck.com/eminetto/arquitetura-de-software-e-a-clean-architecture)
 
