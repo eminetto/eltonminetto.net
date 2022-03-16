@@ -158,3 +158,5 @@ Eu executei várias vezes o benchmark e na maioria a versão feita com Generics 
 Este post não é um estudo avançado, com benchmarks cientificamente comprovados, é apenas um teste básico. Então mais fontes devem ser consultadas antes de tomarmos uma decisão final, mas a primeira impressão é que estamos ganhando uma feature importante sem perda perceptível de performance. 
 
 Eu acredito que vou esperar a versão final desta funcionalidade estar mais madura, provavelmente depois da 1.18.x, para colocá-la em produção, mas vejo uma grande evolução nas aplicações Go nos próximos meses. A empolgação está começando a aumentar :)
+
+**Update:** O [Tiago Temporin](https://twitter.com/_ttemporin) deu continuidade ao benchmark, [mas olhando para o consumo de memória](https://aprendagolang.com.br/2022/03/16/benchmark-generics-unique-vs-unique/).
