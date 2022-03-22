@@ -12,11 +12,20 @@ url = "/talks"
 
 # 2022
 
+### Arquitetura de Software e a Clean Architecture
+
+**Quando**: 22/03/2022
+
+**Onde**: Evento interno da equipe de desenvolvimento da [Unico](https://unico.io)
+
+[Slides](https://speakerdeck.com/eminetto/arquitetura-de-software-e-a-clean-architecture)
+
+
 ### Masterclass de Arquitetura de Software e Clean Architecture
 
 **Quando**: 15/03/2022
 
-**Onde**: Evento interno com estudantes da Trybe
+**Onde**: Evento interno com estudantes da [Trybe](https://betrybe.com)
 
 [Slides](https://speakerdeck.com/eminetto/arquitetura-de-software-e-a-clean-architecture)
 
@@ -35,7 +44,7 @@ url = "/talks"
 
 **Quando**: 03/03/2022
 
-**Onde**: Evento interno da equipe de desenvolvimento da Trybe
+**Onde**: Evento interno da equipe de desenvolvimento da [Trybe](https://betrybe.com)
 
 [Slides](https://speakerdeck.com/eminetto/arquitetura-de-software-e-a-clean-architecture)
 
