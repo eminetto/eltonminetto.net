@@ -12,6 +12,14 @@ url = "/talks"
 
 # 2022
 
+### Introdução a Go
+
+**Quando**: 10/05/2022
+
+**Onde**: Trybe Talks, evento interno da [Trybe](https://betrybe.com)
+
+[Slides](https://speakerdeck.com/eminetto/introducao-a-go)
+
 ### Arquitetura de Software e a Clean Architecture
 
 **Quando**: 22/03/2022
