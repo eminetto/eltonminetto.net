@@ -12,6 +12,13 @@ url = "/talks"
 
 # 2022
 
+### Reflexões sobre Design de Software
+
+**Quando**: 19/05/2022
+
+**Onde**: [Canal do YouTube](https://www.youtube.com/playlist?list=PL0qudqr7_CuQ5lI5rFvLD8Bh_rMPlbuUt)
+ 
+
 ### Introdução a Go
 
 **Quando**: 10/05/2022
