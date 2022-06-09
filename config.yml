@@ -6,7 +6,7 @@ enableInlineShortcodes: true
 enableRobotsTXT: true
 DefaultContentLanguage: "pt"
 
-googleAnalytics: UA-584603-1
+googleAnalytics: G-6205WZZT80
 
 minify:
     disableXML: true
