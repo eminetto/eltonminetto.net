@@ -21,7 +21,8 @@
     </div>
     {{- end }}
   </header>
-  {{- $isHidden := .Params.cover.hidden | default .Site.Params.cover.hiddenInSingle | default .Site.Params.cover.hidden }}
+  {{- $isHidden := .Params.cover.hidden | default .Site.Params.cover.hiddenInSingle | default .Site.Params.cover.hidden
+  }}
   {{- partial "cover.html" (dict "cxt" . "IsHome" false "isHidden" $isHidden) }}
   {{- if (.Param "ShowToc") }}
   {{- partial "toc.html" . }}
