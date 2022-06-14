@@ -13,23 +13,23 @@ Para tentar responder essa dúvida eu imaginei um processo, um "framework" talve
 
 O primeiro passo é exercitar seus dons artísticos (coisa que eu obviamente não tenho) e criar uma série de círculos, com você no centro:
 
-[![c1](/images/posts/c1.png)](/images/posts/c1.png)
+[![Três círculos vazios sobrepostos com um emoji de pessoa pensando no centro](/images/posts/c1.png)](/images/posts/c1.png)
 
 No primeiro círculo ao seu redor, anote os tópicos/tecnologias que, se você se especializar, vão causar o maior impacto possível na sua carreira neste momento. Para exemplificar, vou fazer o meu desenho:
 
-[![c2](/images/posts/c2.png)](/images/posts/c2.png)
+[![Três círculos sobrepostos com um emoji de pessoa pensando no centro e tópicos preenchidos no primeiro círculo](/images/posts/c2.png)](/images/posts/c2.png)
 
 Neste momento, em Junho de 2022, os tópicos que causam mais impacto no meu desempenho são Go, Kubernetes, Performance e Kafka. São os assuntos que eu vou me aprofundar muito nas próximas semanas e meses, pois são os que vão ajudar muito nos meus resultados. 
 
 A seguir podemos preencher o próximo círculo:
 
-[![c3](/images/posts/c3.png)](/images/posts/c3.png)
+[![Três círculos sobrepostos com um emoji de pessoa pensando no centro e tópicos preenchidos nos dois círculos internos](/images/posts/c3.png)](/images/posts/c3.png)
 
 São assuntos igualmente importantes e interessantes, mas eu vou dar menos foco neles a curto prazo. Sempre que eu encontrar algum tópico relacionado a eles eu vou salvá-lo em um bookmark, documento do Notion, To Do list, etc, para me aprofundar em outro momento. 
 
 E o último círculo eu preencho com assuntos que não vou me aprofundar muito neste momento, mas quero manter no meu "radar", tendo um conhecimento superficial, mas que sei que serão importantes em breve.
 
-[![c4](/images/posts/c4.png)](/images/posts/c4.png)
+[![Três círculos sobrepostos com um emoji de pessoa pensando no centro e tópicos preenchidos nos três círculos](/images/posts/c4.png)](/images/posts/c4.png)
 
 Assuntos que estão fora deste radar eu vou apenas observar de longe, no máximo saber para o que servem, quais suas vantagens, etc. Por exemplo, todo o universo "crypto” ou mesmo o desenvolvimento frontend, apesar de interessantes e importantes, não vou observar agora, pois eles não causam tanto impacto no meu desempenho a curto e médio prazo.  Com isso eu ganho foco e diminuo a [síndrome de FOMO](https://pt.wikipedia.org/wiki/S%C3%ADndrome_de_FOMO).
 
