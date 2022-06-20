@@ -14,6 +14,15 @@ url = "/talks"
 
 ### Reflexões sobre Design de Software
 
+**Quando**: 20/06/2022
+
+**Onde**: Evento interno do time da PicPay
+
+[Slides](https://speakerdeck.com/eminetto/reflexoes-sobre-design-de-software)
+
+
+### Reflexões sobre Design de Software
+
 **Quando**: 19/05/2022
 
 **Onde**: [Canal do YouTube](https://www.youtube.com/playlist?list=PL0qudqr7_CuQ5lI5rFvLD8Bh_rMPlbuUt)
