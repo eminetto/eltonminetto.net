@@ -12,6 +12,15 @@ url = "/talks"
 
 # 2022
 
+### Latino TALKS Carreiras: Que competências preciso ter no mercado de trabalho
+
+**Quando**: 22/06/2022
+
+**Onde**: Canal de YouTube do Latinoware
+
+[Video](https://www.youtube.com/watch?v=e74dwjW-2LU)
+
+
 ### Reflexões sobre Design de Software
 
 **Quando**: 20/06/2022
