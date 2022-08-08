@@ -63,9 +63,9 @@ params:
     ShowReadingTime: false
     defaultTheme: auto
     ShowShareButtons: true
-    displayFullLangName: true
-    disqusShortname: "elton-minetto"
-    comments: true
+    #displayFullLangName: true
+    #disqusShortname: "elton-minetto"
+    #comments: true
 
     # images: ""
     # assets:
