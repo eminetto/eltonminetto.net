@@ -2,6 +2,11 @@
 title: "Aplicativos Indispensaveis em 2022"
 date: 2022-07-31T21:00:19-03:00
 draft: false
+author: eminetto
+categories:
+    - "Web Development"
+    - "Blogging"
+    - "Web Design"  
 ---
 
 Desde 2014 venho fazendo, de tempos em tempos, uma lista dos aplicativos que mais uso, com o objetivo de ajudar a divulgar alguns produtos interessantes.

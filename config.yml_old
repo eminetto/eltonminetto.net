@@ -1,7 +1,7 @@
 baseURL: "https://eltonminetto.dev/"
 title: "Elton Minetto"
 paginate: 10
-theme: papermod
+theme: primula
 enableInlineShortcodes: true
 enableRobotsTXT: true
 DefaultContentLanguage: "pt"
@@ -54,7 +54,7 @@ outputs:
     home:
         - HTML
         - RSS
-        - JSON
+        # - JSON
 
 params:
     env: production

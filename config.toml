@@ -1,0 +1,10 @@
+baseURL = "http://example.org/"  
+languageCode = "en-us"  
+title = "My New Hugo Site"  
+theme = "primula"
+author = "eminetto"
+
+# [params]  
+#     categories = ["Web Development","Blogging","Web Design"]  
+[taxonomies]  
+  category = "categories"  
