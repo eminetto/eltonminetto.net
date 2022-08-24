@@ -1,37 +1,79 @@
 {{ define "main" }}
+<!-- ======================== START HERO AREA HERE ====================================== -->
+<div class="bannner-area pb-100 pt-85 clearfix">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 ">
+                <div class="banner" style="background-image:url(/images/authors/eminetto.png)">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="banner-text d-flex justify-content-center">
+                    <div class="banner-text-wrap">
+                        <div class="title-text mb-4">
+                            <h2 class="wow fadeInUp animated" data-wow-delay="300ms" data-wow-duration="1s"
+                                style=" animation-duration: 2s; animation-delay: 300ms;"><a href="post-details.html">
+                                    {{ .Site.Title }}
+                                </a></h2>
+                        </div>
+                        <p class="wow fadeInUp animated" data-wow-delay="1s" data-wow-duration="1s"
+                            style=" animation-duration: 2s; animation-delay: 300ms;">
+                            {{- $lang := .Lang}}
+                            {{ if eq $lang "en" }} I'm a software developer, teacher, speaker and writer {{ end }}
+                            {{ if eq $lang "pt" }} Sou desenvolvedor de software, professor, palestrante e escritor {{
+                            end }}
+                        </p>
+                        {{ if eq $lang "en" }}
+                        <div class="btn-read"><a href="/about">Read More</a></div>
+                        {{end}}
+                        {{ if eq $lang "pt" }}
+                        <div class="btn-read"><a href="/sobre">Leia mais</a></div>
+                        {{end}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ======================== END HERO AREA HERE ====================================== -->
+
 {{.Content}}
-<ul>
-    {{ range (.Paginator).Pages }}
-    <li>
-        <a href="{{.Permalink}}">{{.Title}}</a>
-    </li>
-    <section>
-        <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
-    </section>
+<div class="main-content-area clearfix">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-md-10 offset-md-2 offset-lg-2">
+                <div class="blog-list">
+                    {{ range (.Paginator).Pages }}
+                    <div class="list-block block-one wow fadeIn" data-wow-duration="2s">
+                        <span>{{ .PublishDate.Format "January 2, 2006" }}</span>
+                        <h2><a href="{{.Permalink}}">{{.Title}}</a></h2>
+                        <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }} </p>
+                        <div class="btn-read"><a href="{{.Permalink}}">Read More</a></div>
+                    </div>
+                    {{end}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{- $pages := union .RegularPages .Sections }}
 
-    {{end}}
-    -----
-    {{- $pages := union .RegularPages .Sections }}
+{{- if .IsHome }}
+{{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
+{{- end }}
 
-    {{- if .IsHome }}
-    {{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
-    {{- end }}
-
-    {{- $paginator := .Paginate $pages }}
-    {{- if gt $paginator.TotalPages 1 }}
-    <footer>
-        <nav>
-            {{- if $paginator.HasPrev }}
-            <a href="{{ $paginator.Prev.URL | absURL }}">« {{ i18n "prev_page" }}</a>
-            {{- end }}
-            {{- if $paginator.HasNext }}
-            <a href="{{ $paginator.Next.URL | absURL }}">{{ i18n "next_page" }} »</a>
-            {{- end }}
-        </nav>
-    </footer>
-    {{- end }}
-
-    ----
-    {{ template "_internal/pagination.html" . }}
-</ul>
+{{- $paginator := .Paginate $pages }}
+{{- if gt $paginator.TotalPages 1 }}
+<footer>
+    <nav>
+        {{- if $paginator.HasPrev }}
+        <a href="{{ $paginator.Prev.URL | absURL }}">« {{ i18n "prev_page" }}</a>
+        {{- end }}
+        {{- if $paginator.HasNext }}
+        <a href="{{ $paginator.Next.URL | absURL }}">{{ i18n "next_page" }} »</a>
+        {{- end }}
+    </nav>
+</footer>
+{{- end }}
+{{ template "_internal/pagination.html" . }}
 {{ end }}

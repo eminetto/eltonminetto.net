@@ -5,8 +5,19 @@
     <meta name="description"
         content="{{ with .Description }}{{ . }}{{ else }}{{ with .Summary }}{{ . }}{{ else }}{{ .Site.Params.description }}{{end }}{{ end }}">
     <link rel="canonical" href="{{ .Permalink }}" />
-    <link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
+    <link rel="shortcut icon" type="image/png" href="/assets/">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <!--Owlcarousel CSS -->
+    <link rel="stylesheet" href="/assets/css/owl.carousel.min.css" />
+    <!-- Font awesome CSS -->
+    <link rel="stylesheet" href="/assets/css/fontawesome-all.min.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="/assets/css/animate.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="/style.css">
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700" rel="stylesheet">
     {{ template "_internal/opengraph.html" . }}
     {{ template "_internal/twitter_cards.html" . }}
 </head>
-<link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
