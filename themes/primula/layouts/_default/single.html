@@ -1,47 +1,58 @@
 {{ define "main" }}
-<section>
-    <article>
-        <div>
-            {{ $author := index .Site.Data.authors (.Params.author | default "eminetto") }}
-            <h1>{{ .Title }}</h1>
-            <div>
-                <div>
-                    <img src="{{ $author.avatar }}">
-                </div>
-                <div>
-                    <p>By
-                        {{- if $author -}}
-                        {{ $author.name }}
-                        {{- end -}}
-                    </p>
-                    <p><time>{{ .PublishDate.Format "January 2, 2006" }}</time> |
-                        {{ .ReadingTime }} {{ if eq .ReadingTime 1 }} minute {{ else }} minutes {{ end }} read</p>
-                </div>
-                <div>
-                    {{ range $idx, $category := .Site.Params.categories }}
-                    <div><a href="{{ " categories/" | relURL }}{{ $category | urlize }}">{{ $category
-                            }}</a></div>
-                    {{- end }}
+{{- $lang := .Lang}}
+<!-- ======================== START PAGE TITLE AREA HERE ====================================== -->
+<div class="post-title page-title-area pb-100 pt-85 clearfix">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="page-title text-center">
+                    <h1>{{ .Title }}</h1>
                 </div>
             </div>
-            <div>
-                {{ .Content }}
-            </div>
-        </div>
-    </article>
-</section>
-<div>
-    <div>
-        <div>
-            {{ with .PrevInSection }}
-            <button><a href="{{ .Permalink }}">&#8592; Previous Post: {{ .Title }}</a> </button>
-            {{ end }}
-        </div>
-        <div>
-            {{ with .NextInSection }}
-            <button><a href="{{ .Permalink }}">Next Post: {{ .Title }} &#8594;</a></button>
-            {{ end }}
         </div>
     </div>
 </div>
+<!-- ======================== END PAGE TITLE AREA HERE ====================================== -->
+<div class="post-content-area pb-100 clearfix">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="s-post-details">
+                    <div class="post-image">
+                        <img src="assets/images/post-image.png" alt="" />
+                        <div class="post-meta d-flex mb-30">
+                            <p><i class="fa fa-user"></i>
+                                {{ if eq $lang "en" }} <a href="/about">Elton Minetto</a> {{end}} 
+                                {{ if eq $lang "pt" }} <a href="/sobre">Elton Minetto</a> {{end}}
+                            </p>
+                            <p class=" ml-40"><i class="fa fa-clock-o"></i>{{ .PublishDate.Format "January 2, 2006" }}</p>
+                        </div>
+                    </div>
+                    <div class="post-text">
+                        {{ .Content }}
+                        <div class="inner-padding  pb-60">
+                            <div class="post-share-icon clearfix">
+                                <div class="tag-list">
+                                    <!-- <p><span>Tags :</span></p>
+                                    <ul class="float-left">
+                                        <li><a href="categories.html">Fashion,</a></li>
+                                        <li><a href="categories.html">Travel,</a></li>
+                                        <li><a href="categories.html">Design</a></li>
+                                    </ul> -->
+                                    <ul class="link-right float-right d-none d-sm-block">
+                                        <li><a href="https://twitter.com/eminetto"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="https://github.com/eminetto"><i class="fa fa-github"></i></a></li>
+                                        <li><a href="https://linkedin.com/in/eminetto"><i class="fa fa-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
 {{ end }}

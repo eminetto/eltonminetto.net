@@ -8,7 +8,7 @@ url = "/sobre"
 
 * Desenvolvedor desde 1998
 * Professor desde 2004
-* Tech Manager na [Trybe](https://www.betrybe.com)
+* Principal Software Engineer no [PicPay](https://picpay.com)
 * Mantenho este blog desde Setembro/2003
 * Escritor dos livros: [Frameworks para Desenvolvimento em PHP](http://www.novateceditora.com.br/livros/frameworks/) , [Grid Computing in Research and Education](http://www.redbooks.ibm.com/abstracts/sg246649.html), [Zend Framework na prática](http://www.zfnapratica.com.br/), [Zend Framework 2 na prática](https://leanpub.com/zend-framework2-na-pratica), [Iniciando com o Zend Framework 2](https://leanpub.com/iniciando-zf2) e [Doctrine na prática](http://leanpub.com/doctrine-na-pratica)
 * [Palestrante](/palestras)

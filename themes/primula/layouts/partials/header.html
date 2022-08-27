@@ -1,15 +1,25 @@
+{{- $lang := .Lang}}
+{{$home := "/"}}
+{{ if eq $lang "en" }}
+{{ $home = "/en"}}
+{{ end }}
+
 <header class="head-main">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="navbar navbar-dark box-shadow">
                     <div class="main-nav d-flex justify-content-between">
-                        <a href="/" class="navbar-brand">
-                            <img src="assets/images/logo.png" alt="" />
+                        <a href="{{$home}}" class="navbar-brand">
+                            <img src="/assets/images/logo.png" alt="" />
                         </a>
-                        {{ range $.Site.Home.AllTranslations }}
-                        <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
-                        {{ end }}
+                        {{ if eq $lang "en" }}
+                        <a href="/">🇧🇷</a>
+                        {{end}}
+                        {{ if eq $lang "pt" }}
+                        <a href="/en">🇺🇸</a>
+                        {{end}}
+
                         <a class="nav-button ml-auto"><span
                                 id="nav-icon3"><span></span><span></span><span></span><span></span></span></a>
                     </div>
