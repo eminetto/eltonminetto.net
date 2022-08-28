@@ -12,6 +12,25 @@ url = "/talks"
 
 # 2022
 
+### Reflexões sobre Design de Software
+
+**Quando**: 22/08/2022
+
+**Onde**: TDC Businness
+
+[Slides](https://speakerdeck.com/eminetto/reflexoes-sobre-design-de-software)
+
+--- 
+
+### Reflexões sobre Design de Software
+
+**Quando**: 20/08/2022
+
+**Onde**: ConFLOSS - Conferência De Free/Libre E Open Source Software - 3ª Edição
+
+[Slides](https://speakerdeck.com/eminetto/reflexoes-sobre-design-de-software)
+
+--- 
 
 ### Latino TALKS Carreiras: Que competências preciso ter no mercado de trabalho
 
@@ -20,7 +39,6 @@ url = "/talks"
 **Onde**: Canal de YouTube do Latinoware
 
 [Video](https://www.youtube.com/watch?v=e74dwjW-2LU)
-
 
 ---
 
@@ -72,8 +90,6 @@ url = "/talks"
 **Onde**: Evento interno com estudantes da [Trybe](https://betrybe.com)
 
 [Slides](https://speakerdeck.com/eminetto/arquitetura-de-software-e-a-clean-architecture)
-
-
 
 ---
 
@@ -149,8 +165,6 @@ url = "/talks"
 **Quando**: 25/09/2021
 
 **Onde**: [Codecon](https://codecon.dev)
-
-
 
 ---
 
