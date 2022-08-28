@@ -25,7 +25,14 @@
                                 {{ if eq $lang "en" }} <a href="/about">Elton Minetto</a> {{end}} 
                                 {{ if eq $lang "pt" }} <a href="/sobre">Elton Minetto</a> {{end}}
                             </p>
-                            <p class=" ml-40"><i class="fa fa-clock-o"></i>{{ .PublishDate.Format "January 2, 2006" }}</p>
+                            <p class=" ml-40"><i class="fa fa-clock-o"></i>
+                                {{ if eq $lang "en" }}
+                                {{ .PublishDate.Format "January 2, 2006" }}
+                                {{end}}
+                                {{ if eq $lang "pt" }}
+                                {{ .PublishDate.Format "02/01/2006" }}
+                                {{end}}
+                            </p>
                         </div>
                     </div>
                     <div class="post-text">

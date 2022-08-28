@@ -45,7 +45,14 @@
                 <div class="blog-list">
                     {{ range $index, $element := (.Paginator).Pages }}
                     <div class="list-block block-{{add $index 1}} wow fadeIn" data-wow-duration="2s">
-                        <span>{{ .PublishDate.Format "January 2, 2006" }}</span>
+                        <span>
+                            {{ if eq $lang "en" }}
+                            {{ .PublishDate.Format "January 2, 2006" }}
+                            {{end}}
+                            {{ if eq $lang "pt" }}
+                            {{ .PublishDate.Format "02/01/2006" }}
+                            {{end}}
+                        </span>
                         <h2><a href="{{.Permalink}}">{{.Title}}</a></h2>
                         <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }} </p>
                         {{ if eq $lang "en" }}
