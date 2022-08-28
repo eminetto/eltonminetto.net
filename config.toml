@@ -1,0 +1,55 @@
+baseURL = "https://eltonminetto.dev/"  
+theme = "primula"
+author = "eminetto"
+googleAnalytics = "G-6205WZZT80"
+paginate = 10
+defaultContentLanguage = "pt"
+[languages]
+[languages.en]
+title = "My name is Elton \U0001F44B"
+content = "I'm a software developer, teacher, speaker and writer"
+languageName = 'English'
+weight = 2
+[languages.en.menu]
+[[languages.en.menu.main]]
+name = "Talks"
+url = "https://eltonminetto.dev/talks/" 
+weight = 1
+[[languages.en.menu.main]]
+"name" = "About"
+"url" = "https://eltonminetto.dev/about/" 
+"weight" = 5
+
+[languages.pt]
+title = "Meu nome é Elton \U0001F44B"
+content = "Sou desenvolvedor de software, professor, palestrante e escritor"
+languageName = 'Português'
+weight = 1
+[languages.pt.menu]
+[[languages.pt.menu.main]]
+name = "maisquesenior.dev"
+url = "https://maisquesenior.dev" 
+weight = 1
+[[languages.pt.menu.main]]
+"name" = "Livros"
+"url" = "https://leanpub.com/u/eminetto" 
+"weight" = 5
+[[languages.pt.menu.main]]
+"name" = "Palestras"
+"url" = "/talks/"
+"weight" = 10
+[[languages.pt.menu.main]]
+"name" = "Sobre"
+"url" = "sobre/"
+"weight" = 15
+
+[params]
+[params.navigation]
+help = "Help"
+
+# [params]  
+#     categories = ["Web Development","Blogging","Web Design"]  
+[taxonomies]  
+category = "categories"  
+tag = "tags"
+series = "series"

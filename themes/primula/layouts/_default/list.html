@@ -1,0 +1,25 @@
+{{ define "main" }}
+<div class="main-content-area clearfix">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-md-10 offset-md-2 offset-lg-2">
+                <div class="blog-list">
+                    {{ range .Pages }}
+                    <ul>
+                        <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                    </ul>
+                    <div class="list-block block-one wow fadeIn" data-wow-duration="2s">
+                        <span>17 december , 2018</span>
+                        <h2><a href="post-details.html">12 favorite instant pot soup recipes</a></h2>
+                        <p>Egestas erat imperdiet sed euismod nisi porta lorem mollis aliquam ut porttitor leo a diam
+                            sollicitudin tempor id eu nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet
+                            risus nullam eget felis eget nunc lobortis mattis aliquam faucibus </p>
+                        <div class="btn-read"><a href="post-details.html">Read More</a></div>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }}
