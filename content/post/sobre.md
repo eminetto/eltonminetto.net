@@ -19,5 +19,5 @@ Passei os últimos anos estudando e aplicando novas arquiteturas de software (cl
 * Professor desde 2004
 * Principal Software Engineer no [PicPay](https://picpay.com)
 * Mantenho este blog desde Setembro/2003
-* Escritor dos livros: [Frameworks para Desenvolvimento em PHP](http://www.novateceditora.com.br/livros/frameworks/) , [Grid Computing in Research and Education](http://www.redbooks.ibm.com/abstracts/sg246649.html), [Zend Framework na prática](http://www.zfnapratica.com.br/), [Zend Framework 2 na prática](https://leanpub.com/zend-framework2-na-pratica), [Iniciando com o Zend Framework 2](https://leanpub.com/iniciando-zf2) e [Doctrine na prática](http://leanpub.com/doctrine-na-pratica)
+* Escritor dos livros: [Dicas de carreira para devs](/post/2022-08-30-nova-versao-ebook/), [Frameworks para Desenvolvimento em PHP](https://novatec.com.br/livros/frameworks-para-desenvolvimento-em-php/) , [Grid Computing in Research and Education](https://www.oreilly.com/library/view/grid-computing-in/0738491756/), Zend Framework na prática, [Zend Framework 2 na prática](https://leanpub.com/zend-framework2-na-pratica), [Iniciando com o Zend Framework 2](https://leanpub.com/iniciando-zf2) e [Doctrine na prática](http://leanpub.com/doctrine-na-pratica)
 * [Palestrante](/palestras)
