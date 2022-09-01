@@ -1,5 +1,5 @@
 ---
-title: "Acelere seu ambiente de desenvolvimento local com o tilt.dev"
+title: "Acelere seu ambiente de desenvolvimento local com o Tilt"
 date: 2022-08-31T13:00:19-03:00
 draft: false
 ---
