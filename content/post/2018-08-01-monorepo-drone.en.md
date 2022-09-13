@@ -21,7 +21,7 @@ But one of the challenges that this choice brings to the project is the potentia
 Currently, this is our project’s directory structure:
 
 
-```
+```bash
 api = API and documentation 
 chatbots = telegram, facebook and slack chatbots 
 cli = codenation cli, used by developers to run the challenges 
@@ -51,7 +51,7 @@ And this is a sample of our .drone.yml config file:
 
 As you can see, the step golang-build-api executes the script **drone_go_build_api.sh**, that is:
 
-```
+```bash
 #!/bin/bash -e
 watch="api core"
 . scripts/shouldIBuild.sh
@@ -66,7 +66,7 @@ exit $BUILD_EXIT_STATUS
 
 In the variable watch we store the list of directories that need to be monitored to our pipeline decide if the build needs to be run. This decision is made by the script shouldIBuild.sh:
 
-```
+```bash
 #!/bin/bash -e
 SHOULD_BUILD=0
 shouldIBuild() {
@@ -92,7 +92,7 @@ shouldIBuild() {
 
 In this script, the first thing being tested is the variable DRONE_DEPLOY_TO, that defines if the current execution is a deploy or a build. If so, the step should run. Otherwise, the script will check if one of the directories listed in the “watch” variable has been altered by this commit. If so, the step should run. The code of detectChangedFolders.sh is:
 
-```
+```bash
 #!/bin/bash -e
 export IGNORE_FILES=$(ls -p | grep -v /)
 

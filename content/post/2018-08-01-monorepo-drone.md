@@ -20,7 +20,7 @@ Mas um dos desafios do _monorepo_ é o processo de _build_ e _deploy_ automatiza
 
 Atualmente esta é a estrutura de diretórios do nosso repositório:
 
-```
+```bash
 api = API and documentation
 chatbots - telegram, facebook and slack chatbots
 cli = codenation cli, used by developers to run the challenges
@@ -52,7 +52,7 @@ E um trecho do nosso arquivo de configuração do Drone pode ser visto abaixo:
 
 Como é possível ver no arquivo de configuração, o passo _golang-build-api_ executa o script *drone_go_build_api.sh*. Neste script temos o seguinte código:
 
-```
+```bash
 #!/bin/bash -e
 watch="api core"
 . scripts/shouldIBuild.sh
@@ -67,7 +67,7 @@ exit $BUILD_EXIT_STATUS
 
 A variável _watch_ contém a lista de diretórios que devem ser monitoradas para definir se este passo deve ou não ser executado. Esta decisão é tomada no script _shouldIBuild.sh_: 
 
-```
+```bash
 #!/bin/bash -e
 SHOULD_BUILD=0
 shouldIBuild() {
@@ -93,7 +93,7 @@ shouldIBuild() {
 
 O primeiro teste realizado verifica se está sendo executado um _deploy_, identificado pela variável de ambiente *DRONE_DEPLOY_TO*. Caso positivo a variável *SHOULD_BUILD* é definida como verdadeira (1) e o passo deve ser executado. Caso não seja um _deploy_ o script _detectChangedFolders.sh_ é usado para verificar se um dos diretórios definidos em _watch_ está sendo alterado neste _build_. Caso seja positivo o passo vai ser executado. O código do _detectChangedFolders.sh_ é:
 
-```
+```bash
 #!/bin/bash -e
 export IGNORE_FILES=$(ls -p | grep -v /)
 
