@@ -11,7 +11,9 @@ Nos últimos anos *JSON* tornou-se o "esperanto" da Internet, sendo o padrão pa
 
 O [jq](https://stedolan.github.io/jq/) é uma ferramenta de linha de comando e que pode ser instalada nos principais sistemas operacionais. Como estou usando MacOS instalei usando o comando:
 
-	brew install jq
+```bash
+brew install jq
+```
 
 No site oficial é possível ver a documentação para instalação em outros ambientes. Com o *jq* instalado podemos fazer nossos primeiros testes. Para isso vamos usar o seguinte arquivo *JSON*:
 
@@ -19,35 +21,51 @@ https://gist.github.com/eminetto/0960739bab52ed4d50d8c6262ec43893
 
 Podemos usar o *jq* para formatar o arquivo e mostrá-lo colorido em nosso terminal:
 
-	cat cr.json| jq
+```bash
+cat cr.json| jq
+```
 
 Mas o *jq* vai além disso. Podemos fazer consultas no arquivo, como por exemplo trazer apenas a informação que desejamos:
 
-	cat cr.json| jq .reports[].maintainability
+```bash
+cat cr.json| jq .reports[].maintainability
+```
 
 Ele fez uma pesquisa no conteúdo e trouxe apenas os valores encontrados:
 
-	124.63257712933509
-	128.03015432120054
+```bash
+124.63257712933509
+128.03015432120054
+```
 
 Podemos também fazer operações sobre estes conteúdos. Por exemplo, vamos somar os dois valores:
 
-	cat cr.json| jq '[.reports[].maintainability] | add'
+```bash
+cat cr.json| jq '[.reports[].maintainability] | add'
+```
 
 A primeira alteração foi incluir os caracteres **[** e **]** ao redor da nossa pesquisa, transformando o seu conteúdo em um *array*. Isso é necessário pois o comando **add**, nativo do *jq*, faz a soma de valores dentro de um *array*. O resultado foi:
 
-	252.66273145053563	
+```bash
+252.66273145053563
+```
 
 Podemos expandir um pouco mais nosso exemplo calculando a média dos valores:
 
-	cat cr.json| jq '[.reports[].maintainability] | add / length'
+```bash
+cat cr.json| jq '[.reports[].maintainability] | add / length'
+```
 
 Este é somente um exemplo simples mas que economizou várias linhas de programação de um [projeto que estou trabalhando](http://codenation.com.br). Outro exemplo um pouco mais complexo:
 
-	cat codeclimate.json | jq -c '[.[] | select(.check_name | contains("Complexity") | not)]' | jq 'map(.remediation_points) | add'
+```bash
+cat codeclimate.json | jq -c '[.[] | select(.check_name | contains("Complexity") | not)]' | jq 'map(.remediation_points) | add'
+```
 
 Não vou entrar em detalhes neste exemplo para não alongar demais o post, mas a própria documentação do *jq* ajuda bastante:
 
-	man jq
+```bash
+man jq
+```
 
 O *jq* rapidamente tornou-se uma das minhas ferramentas favoritas e espero que ajude mais desenvolvedores.
