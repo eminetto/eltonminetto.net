@@ -14,6 +14,16 @@ url = "/talks"
 
 ### Reflexões sobre Design de Software
 
+**Quando**: 22/09/2022
+
+**Onde**: Codecon
+
+[Slides](https://speakerdeck.com/eminetto/reflexoes-sobre-design-de-software)
+
+--- 
+
+### Reflexões sobre Design de Software
+
 **Quando**: 22/08/2022
 
 **Onde**: TDC Businness
