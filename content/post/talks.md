@@ -12,6 +12,14 @@ url = "/talks"
 
 # 2022
 
+### Organização da GopherCon Brasil
+
+**Quando**: 30/09/2022
+
+**Onde**: [GopherCon Brasil](https://gopherconbr.org/)
+
+--- 
+
 ### Reflexões sobre Design de Software
 
 **Quando**: 22/09/2022
