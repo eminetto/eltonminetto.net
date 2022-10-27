@@ -12,6 +12,14 @@ url = "/talks"
 
 # 2022
 
+### Live resumo do livro "A Philosophy of Software Design"
+
+**Quando**: 26/10/2022
+
+**Onde**: [YouTube](https://www.youtube.com/watch?v=o9jjtpYF3ww)
+
+---
+
 ### Organização da GopherCon Brasil
 
 **Quando**: 30/09/2022
