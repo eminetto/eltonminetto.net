@@ -12,6 +12,16 @@ url = "/talks"
 
 # 2022
 
+### Discussões sobre microsserviços
+
+**Quando**: 03/11/2022
+
+**Onde**: Encontro de desenvolvedores da ACATE. Florianópolis/SC
+
+[Slides](https://speakerdeck.com/eminetto/discussoes-sobre-microsservicos)
+
+---
+
 ### Live resumo do livro "A Philosophy of Software Design"
 
 **Quando**: 26/10/2022
