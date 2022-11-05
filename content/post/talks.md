@@ -12,6 +12,14 @@ url = "/talks"
 
 # 2022
 
+### Reflexões sobre Design de Software
+
+**Quando**: 05/11/2022
+
+**Onde**: [The Developer's Weekend](https://weekend.developerslife.tech)
+
+[Slides](https://speakerdeck.com/eminetto/reflexoes-sobre-design-de-software)
+
 ### Discussões sobre microsserviços
 
 **Quando**: 03/11/2022
