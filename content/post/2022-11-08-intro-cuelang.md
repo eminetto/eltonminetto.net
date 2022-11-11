@@ -9,7 +9,7 @@ Aposto que nesse momento uma frase paira na sua cabeça:
 
 Calma, calma, vem comigo que vai fazer sentido :)
 
-Diferente de outras linguagens como Go ou Rust, que são de "propósito geral", a [CUE](https://cuelang.org) pussui alguns propósitos bem específicos. O seu nome na verdade é uma sigla que significa "Configure Unify Execute" e segundo a documentação oficial: 
+Diferente de outras linguagens como Go ou Rust, que são de "propósito geral", a [CUE](https://cuelang.org) possui alguns propósitos bem específicos. O seu nome na verdade é uma sigla que significa "Configure Unify Execute" e segundo a documentação oficial: 
 
 > Embora a linguagem não seja uma linguagem de programação de uso geral, ela possui muitas aplicações, como validação e modelagem de dados, configuração, consulta, geração de código e até script.
 
