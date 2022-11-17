@@ -14,6 +14,15 @@ url = "/talks"
 
 ### Reflexões sobre Design de Software
 
+**Quando**: 17/11/2022
+
+**Onde**: [CASE 2022](https://case.abstartups.com.br/)
+
+[Slides](https://speakerdeck.com/eminetto/reflexoes-sobre-design-de-software)
+
+
+### Reflexões sobre Design de Software
+
 **Quando**: 05/11/2022
 
 **Onde**: [The Developer's Weekend](https://weekend.developerslife.tech)
