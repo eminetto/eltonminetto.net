@@ -16,18 +16,28 @@
                                     {{ .Site.Title }}
                                 </a></h2>
                         </div>
-                        <p class="wow fadeInUp animated" data-wow-delay="1s" data-wow-duration="1s"
+                        <p class="wow fadeInUp animated btn-read" data-wow-delay="1s" data-wow-duration="1s"
                             style=" animation-duration: 2s; animation-delay: 300ms;">
                             {{- $lang := .Lang}}
                             {{ if eq $lang "en" }} I'm a software developer, teacher, speaker and writer {{ end }}
-                            {{ if eq $lang "pt" }} Sou desenvolvedor de software, professor, palestrante e escritor {{
+                            {{ if eq $lang "pt" }} Sou desenvolvedor de software, professor, <a href="/talks"
+                                target="_blank">palestrante</a>
+                            e <a href="https://leanpub.com/u/eminetto" target="_blank">escritor</a> {{
                             end }}
                         </p>
                         {{ if eq $lang "en" }}
-                        <div class="btn-read"><a href="/about">Read More</a></div>
+                        <div class="wow fadeInUp animated btn-read" data-wow-duration="1s"
+                            style=" animation-duration: 2s; animation-delay: 300ms;"><a href="/about">Read More</a>
+                        </div>
                         {{end}}
                         {{ if eq $lang "pt" }}
-                        <div class="btn-read"><a href="/sobre">Leia mais</a></div>
+                        <div class="wow fadeInUp animated btn-read" data-wow-duration="1s"
+                            style=" animation-duration: 2s; animation-delay: 300ms;">
+                            Assine as minhas newsletters, <a href="http://asemanago.com.br" target="_blank">A Semana
+                                Go</a> e <a href="https://maisquesenior.dev" target="_blank">maisquesenior.dev</a> ou <a
+                                href="/sobre">leia mais
+                                sobre mim</a>
+                        </div>
                         {{end}}
                     </div>
                 </div>

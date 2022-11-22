@@ -31,6 +31,10 @@ name = "maisquesenior.dev"
 url = "https://maisquesenior.dev" 
 weight = 1
 [[languages.pt.menu.main]]
+name = "A Semana Go"
+url = "http://asemanago.com.br" 
+weight = 2
+[[languages.pt.menu.main]]
 "name" = "Livros"
 "url" = "https://leanpub.com/u/eminetto" 
 "weight" = 5
