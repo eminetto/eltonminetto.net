@@ -12,6 +12,15 @@ url = "/talks"
 
 # 2022
 
+### Painel Desenvolvimento de Software: o que funcionou, o que funciona e o que funcionará?
+
+**Quando**: 08/12/2022
+
+**Onde**: [TDC Future](https://thedevconf.com/tdc/2022/future/trilha-design-de-codigo-e-xp)
+
+---
+
+
 ### Reflexões sobre Design de Software
 
 **Quando**: 17/11/2022
@@ -20,6 +29,7 @@ url = "/talks"
 
 [Slides](https://speakerdeck.com/eminetto/reflexoes-sobre-design-de-software)
 
+---
 
 ### Reflexões sobre Design de Software
 
@@ -28,6 +38,8 @@ url = "/talks"
 **Onde**: [The Developer's Weekend](https://weekend.developerslife.tech)
 
 [Slides](https://speakerdeck.com/eminetto/reflexoes-sobre-design-de-software)
+
+---
 
 ### Discussões sobre microsserviços
 
