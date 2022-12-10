@@ -15,7 +15,7 @@ Ele usou esse conceito para cunhar o termo *‌Dark Matter Developers* (traduç�
 
 > Eles não leem muitos blogs, nunca escrevem blogs, não vão a grupos de usuários, não estão no Twitter ou Facebook e você não os vê com frequência em grandes conferências. Onde estão estes desenvolvedores? Provavelmente fazendo seu trabalho. Talvez usando ASP.NET 1.1 em um pequeno escritório. Talvez trabalhando em uma fábrica de engarrafamento no México em VB6. Talvez eles estejam escrevendo aplicativos de calendário PHP em um grande fabricante de chips.
 
-Essas ideias continuam ressoando em 2022, como podemos ver em outro post que teve boa repercussão ressentemente, da excelente Jean Yang: [Building for the 99% Developers](https://future.com/software-development-building-for-99-developers/).
+Essas ideias continuam ressoando em 2022, como podemos ver em outro post que teve boa repercussão recentemente, da excelente Jean Yang: [Building for the 99% Developers](https://future.com/software-development-building-for-99-developers/).
 
 Lembrei destes textos pois estou coletando material e estudando sobre um assunto que tem me interessado bastante: *"developer productivity"* (não sei se já temos um termo em português adotado pelo mercado) e é importante entender as diferenças entre as empresas, times e pessoas. Nem toda empresa é uma MANGA (sigla formada pelas iniciais das grande empresas de tecnologia Meta, Amazon, Netflix, Google e Apple e que ficou bem zoada em português hehe), nem todo mundo precisa e deve usar as ferramentas da moda, cada time tem seus fluxos de trabalho e especificidades. 
 
