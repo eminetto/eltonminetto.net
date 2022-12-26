@@ -3,6 +3,7 @@ theme = "primula"
 author = "eminetto"
 googleAnalytics = "G-6205WZZT80"
 paginate = 10
+staticDir = ['static', 'slides']
 defaultContentLanguage = "pt"
 [languages]
 [languages.en]
