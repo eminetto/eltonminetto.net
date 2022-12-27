@@ -27,7 +27,7 @@ url = "/talks"
 
 **Onde**: [CASE 2022](https://case.abstartups.com.br/)
 
-[Slides](https://speakerdeck.com/eminetto/reflexoes-sobre-design-de-software)
+[Slides](https://eltonminetto.dev/slides/reflexoes-software-design/)
 
 ---
 
@@ -37,7 +37,7 @@ url = "/talks"
 
 **Onde**: [The Developer's Weekend](https://weekend.developerslife.tech)
 
-[Slides](https://speakerdeck.com/eminetto/reflexoes-sobre-design-de-software)
+[Slides](https://eltonminetto.dev/slides/reflexoes-software-design/)
 
 ---
 
@@ -73,7 +73,7 @@ url = "/talks"
 
 **Onde**: Codecon
 
-[Slides](https://speakerdeck.com/eminetto/reflexoes-sobre-design-de-software)
+[Slides](https://eltonminetto.dev/slides/reflexoes-software-design/)
 
 --- 
 
@@ -83,7 +83,7 @@ url = "/talks"
 
 **Onde**: TDC Businness
 
-[Slides](https://speakerdeck.com/eminetto/reflexoes-sobre-design-de-software)
+[Slides](https://eltonminetto.dev/slides/reflexoes-software-design/)
 
 --- 
 
@@ -93,7 +93,7 @@ url = "/talks"
 
 **Onde**: ConFLOSS - Conferência De Free/Libre E Open Source Software - 3ª Edição
 
-[Slides](https://speakerdeck.com/eminetto/reflexoes-sobre-design-de-software)
+[Slides](https://eltonminetto.dev/slides/reflexoes-software-design/)
 
 --- 
 
@@ -113,7 +113,7 @@ url = "/talks"
 
 **Onde**: Evento interno do time da PicPay
 
-[Slides](https://speakerdeck.com/eminetto/reflexoes-sobre-design-de-software)
+[Slides](https://eltonminetto.dev/slides/reflexoes-software-design/)
 
 
 ---
