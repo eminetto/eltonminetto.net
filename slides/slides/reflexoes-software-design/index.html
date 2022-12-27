@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base href="@@base@@" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="engine/main.css" />
+    <link rel="stylesheet" href="theme/basel.css" />
+    <link rel="stylesheet" href="engine/katex/katex.min.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <style>
+    :root{
+--logo: ;
+--darkaccent1color: ;
+--lightaccent1color: ;
+--accent2: #43aa8b;
+--accent3: #f9c74f;
+--accent4: #90be6d;
+--accent5: #f8961e;
+--accent6: #577590;
+--lighttitletextcolor: #FFF;
+--darktitletextcolor: #000;
+--lightbodytextcolor: #FFF;
+--darkbodytextcolor: #000;
+--lightbackgroundcolor: #FFF;
+--darkbackgroundcolor: #000;
+--bodyfont: Noto Serif;
+--titlefont: Noto Serif;
+} 
+
+    </style>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="engine/print.css"
+      media="print"
+    />
+  </head>
+
+  <body class="responsive">
+    <div class="reveal">
+      <div class="slides"><section class="variable-size-headings cover-container dark present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="reflexõessobredesigndesoftware">Reflexões sobre Design de Software</h1></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light v-split-container present fit-warning has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 0.672rem;">
+        <div style=""><h2 id="eltonminetto">Elton Minetto</h2></div>
+        <div style=""><h3 id="escrevocódigossouprofessorpalestranteeescritor"><a href="https://github.com/eminetto">Escrevo códigos</a>, sou professor, <a href="https://eltonminetto.net/talks/">palestrante</a>, e <a href="https://leanpub.com/u/eminetto">escritor</a></h3>
+
+<h3 id="escrevonohttps:eltonminetto.devenotwitter">Escrevo no <a href="https://eltonminetto.dev">https://eltonminetto.dev</a> e no <a href="https://twitter.com/eminetto">twitter</a></h3>
+
+<h3 id="principalsoftwareengineerpicpay">Principal Software Engineer @ <a href="https://picpay.com">PicPay</a></h3></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings cover-container dark present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="inspirações">Inspirações</h1></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light v-split-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><h2 id="aphilosophyofsoftwaredesign"><a href="https://www.amazon.com.br/Philosophy-Software-Design-John-Ousterhout/dp/1732102201/">A Philosophy of Software Design</a></h2></div>
+        <img src="images/livro.jpg" class=" size-contain position-center-center" style="">
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light v-split-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split media-grid" style="width: 100%; font-size: 0.859rem;">
+        <div style=""><h2 id="aphilosophyofsoftwaredesignjohnousterhouttalksatgoogle"><a href="https://www.youtube.com/watch?v=bmSAYlu0NcY">A Philosophy of Software Design | John Ousterhout | Talks at Google</a>
+</h2></div>
+        <img src="images/palestra.png" class=" size-contain position-center-center" style="">
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings cover-container dark present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="complexidade">Complexidade</h1></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light section-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-section" style="width: 100%; font-size: 0.906rem;">
+        <div style="">
+          <h3 id="“complexidadeéqualquercoisarelacionadaàestruturadeumsistemadesoftwarequetornadifícilentendê-loemodificá-lo”.">“Complexidade é qualquer coisa relacionada à estrutura de um sistema de software que torna difícil entendê-lo e modificá-lo”.</h3>
+
+<h4 id="johnousterhouttraduçãominha">John Ousterhout, tradução minha ;)</h4>
+        </div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light section-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-section" style="width: 100%; font-size: 0.906rem;">
+        <div style="">
+          <h3 id="acomplexidadenormalmentesemanifestaemumprojetodesoftwaredetrêsmaneirasprincipaisordenadasemtermosdegravidadecrescente:">A complexidade normalmente se manifesta em um projeto de software de três maneiras principais ordenadas em termos de gravidade crescente:</h3>
+        </div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light section-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-section" style="width: 100%; font-size: 0.953rem;">
+        <div style="">
+          <h3 id="amplificaçãodemudançachangeamplification:quandoumasimplesmudançarequeramodificaçãodocódigoemmuitoslugares.">Amplificação de mudança (Change amplification): Quando uma simples mudança requer a modificação do código em muitos lugares.</h3>
+        </div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light section-container present fit-warning has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-section" style="width: 100%; font-size: 0.766rem;">
+        <div style="">
+          <h3 id="cargacognitivacognitiveload:quandodesenvolvedoresprecisamcarregarmuitasinformaçõesemsuascabeçasparaconcluirumatarefa.issoaumentaaschancesdequeelespossamperderalgumacoisalevandoabugs.">Carga cognitiva (Cognitive load): Quando desenvolvedores precisam carregar muitas informações em suas cabeças para concluir uma tarefa. Isso aumenta as chances de que eles possam perder alguma coisa, levando a bugs.</h3>
+        </div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light section-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-section" style="width: 100%; font-size: 0.906rem;">
+        <div style="">
+          <h3 id="desconhecidosdesconhecidosunknownunknowns:quandonãoéóbvioquaisinformaçõesoumudançassãonecessáriaspararealizarumatarefa.">Desconhecidos desconhecidos (Unknown unknowns): Quando não é óbvio quais informações ou mudanças são necessárias para realizar uma tarefa.</h3>
+        </div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings cover-container dark present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 0.859rem;">
+        <div style=""><h1 id="comoossistemasdesoftwaresetornamcomplexos">Como os sistemas de software se tornam complexos?</h1></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light v-split-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 0.859rem;">
+        <div style=""><h3 id="acomplexidadeéincremental.">A complexidade é incremental.</h3></div>
+        <div style=""><h3 id="geralmentenãoéumacoisaquetornaumsistemacomplicadomasumacúmulodemásdecisõesaolongodeumperíododetempo.">Geralmente não é uma coisa que torna um sistema complicado, mas um acúmulo de más decisões ao longo de um período de tempo.</h3></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light section-container present fit-warning has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-section" style="width: 100%; font-size: 0.672rem;">
+        <div style="">
+          <h3 id="dependências—umadependênciaentreduasoumaispartesdeumsistemasóédesejávelseadependênciaforclaraeóbvia.quandonãoestáclaroqualcódigodependedeoutromesmomudançassimplesnosistemalevarãomuitotempoeexisteumaltoriscodebugsaparecerememprodução.">Dependências — Uma dependência entre duas ou mais partes de um sistema só é desejável se a dependência for clara e óbvia. Quando não está claro qual código depende de outro, mesmo mudanças simples no sistema levarão muito tempo e existe um alto risco de bugs aparecerem em produção.</h3>
+        </div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light section-container present fit-warning has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-section" style="width: 100%; font-size: 0.625rem;">
+        <div style="">
+          <h3 id="obscuridade—issoocorrequandoalgumasinformaçõesimportantessobreosistemanãosãoóbvias.porexemploquandonãoestáclaroemqueordemexecutarumconjuntodemétodospararealizarumaoperação.seocódigonãoforóbviooleitordevegastarmuitotempoeenergiaparatentarentendê-loeaprobabilidadedemal-entendidoéalta.">Obscuridade — Isso ocorre quando algumas informações importantes sobre o sistema não são óbvias. Por exemplo, quando não está claro em que ordem executar um conjunto de métodos para realizar uma operação. Se o código não for óbvio, o leitor deve gastar muito tempo e energia para tentar entendê-lo, e a probabilidade de mal-entendido é alta.</h3>
+        </div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings cover-container dark present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 0.953rem;">
+        <div style=""><h1 id="comominimizaracomplexidade">Como minimizar a complexidade?</h1></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light section-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-section" style="width: 100%; font-size: 1rem;">
+        <div style="">
+          <h3 id="cultivandoumbommindset">Cultivando um bom "mindset"</h3>
+        </div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light v-split-container present fit-warning has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 0.672rem;">
+        <div style=""><h2 id="programaçãotática">Programação tática</h2></div>
+        <div style=""><h3 id="colocarafeatureoucorreçãoemproduçãoomaisrápidopossivel">Colocar a feature ou correção em produção o mais rápido possivel</h3>
+
+<h3 id="pegaratalhosnãoescrevertestesnãorefatorarcódigoparamelhorarodesignedificilmentepensaremdesign">Pegar atalhos, não escrever testes, não refatorar código para melhorar o design e dificilmente pensar em design</h3>
+
+<h3 id="resultados:aumentodacomplexidadepéssimodesign">Resultados: aumento da complexidade, péssimo design</h3></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light v-split-container present fit-warning has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 0.672rem;">
+        <div style=""><h2 id="programaçãoestratégica">Programação estratégica</h2></div>
+        <div style=""><h3 id="códigofuncionandonãoéosuficiente">Código funcionando não é o suficiente</h3>
+
+<h3 id="objetivo:produzirumbomdesigndesoftwareminimizaracomplexidadeevitardébitostécnicos.">Objetivo: produzir um bom design de software, minimizar a complexidade, evitar débitos técnicos.</h3>
+
+<h3 id="maislentonocurtoprazomasganha-sevelocidadecomotempoeevitagrandesrefatoraçõesfuturas.">Mais lento no curto prazo, mas ganha-se velocidade com o tempo, e evita grandes refatorações futuras.</h3></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light v-split-container present fit-warning has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 0.672rem;">
+        <div style=""><h2 id="quantoinvestir">Quanto investir?</h2></div>
+        <div style=""><h3 id="façacontinuamentepequenosinvestimentos">Faça continuamente pequenos investimentos</h3>
+
+<h3 id="quandoescrevendonovoscódigos:façaodesigncomcuidadoinvistaemdocumentação.">Quando escrevendo novos códigos: faça o design com cuidado, invista em documentação.</h3>
+
+<h3 id="quandoalterandocódigoexistente:tentesempreencontraralgoamelhorar.">Quando alterando código existente: tente sempre encontrar algo a melhorar.</h3></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings cover-container dark present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="escrevendobonsmódulos">Escrevendo bons módulos</h1></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light v-split-container present fit-warning has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 0.672rem;">
+        <div style=""><h2 id="módulo">Módulo?</h2></div>
+        <div style=""><h3 id="deacordocomolivroummóduloéumaunidadedecódigorelativamenteindependentecomumainterfaceeumaimplementação.podeassumirmuitasformascomoumafunçãoclassepacoteouserviço">De acordo com o livro, um módulo é "uma unidade de código relativamente independente com uma <em>interface</em> e uma <em>implementação</em>". Pode assumir muitas formas, como uma função, classe, pacote ou serviço</h3></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light v-split-container present fit-warning has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 0.625rem;">
+        <div style=""><h2 id="interface">Interface?</h2></div>
+        <div style=""><h3 id="interfaceétudoqueapessoaprecisaparainteragircomocódigo.nãosóaassinaturadosmétodosmastambémseusefeitoscolaterais.Éocustodecomplexidadequeestecódigoimpõeaorestodosistemaporissodeveriaseromenorpossível.">Interface é tudo que a pessoa precisa para interagir com o código. Não só a assinatura dos métodos, mas também seus efeitos colaterais. É o custo de complexidade que este código impõe ao resto do sistema, por isso deveria ser o menor possível.</h3></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light v-split-container present fit-warning has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 0.578rem;">
+        <div style=""><h2 id="comoescreverbonsmódulos">Como escrever bons módulos?</h2></div>
+        <div style=""><h3 id="-forneçabonsdefaults">- Forneça bons "defaults"</h3>
+
+<h3 id="-escondainformaçõesquenãosãoimportantes">- Esconda informações que não são importantes</h3>
+
+<h3 id="-elimineerrosdesnecessários">- Elimine erros desnecessários</h3>
+
+<h3 id="-escrevaboadocumentação">- Escreva boa documentação</h3>
+
+<h3 id="-escolhabonsnomes">- Escolha bons nomes</h3>
+
+<h3 id="-dêpreferênciaamódulosprofundosaoinvésderasos">- Dê preferência a módulos profundos ao invés de rasos</h3></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings cover-container dark present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="módulosprofundosvsmódulosrasos">Módulos profundos vs módulos rasos</h1></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light full-image-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><div class="single-image-wrapper"><img src="images/raso_profundo.png" class=" size-contain position-center-center"></div></div>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light v-split-container present fit-warning has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 0.672rem;">
+        <div style=""><h2 id="módulosprofundosvsmódulosrasos">Módulos profundos vs módulos rasos</h2></div>
+        <div style=""><h3 id="módulosprofundossãoaquelesqueforneceminterfacessimplesparafuncionalidadescomplexas">Módulos <strong>profundos</strong> são aqueles que <strong>fornecem interfaces simples para funcionalidades complexas</strong>,</h3>
+
+<h3 id="módulosrasossãoaquelesquepossuemumainterfacecomplicadasemescondermuitacomplexidade.">Módulos <strong>rasos</strong> são aqueles que possuem uma <strong>interface complicada sem esconder muita complexidade</strong>.</h3></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings cover-container dark present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="móduloraso">Módulo raso</h1></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light default-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 1rem;">
+        <div style=""><pre><code class="java hljs">FileInputStream fileStream = <span class="hljs-keyword">new</span> FileInputStream(fileName);
+BufferedInputStream bufferedStream = <span class="hljs-keyword">new</span> BufferedInputStream(fileStream);
+ObjectInputStream objectStream = <span class="hljs-keyword">new</span> ObjectInputStream(bufferedStream);
+</code></pre></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings cover-container dark present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="móduloprofundo">Módulo profundo</h1></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light default-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 1rem;">
+        <div style=""><pre><code class="c hljs c-like"><span class="hljs-comment">//Unix file I/O:</span>
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">open</span><span class="hljs-params">(<span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span>* path, <span class="hljs-keyword">int</span> flags, <span class="hljs-keyword">mode_t</span> permissions)</span></span>;
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">close</span><span class="hljs-params">(<span class="hljs-keyword">int</span> fd)</span></span>;
+<span class="hljs-function"><span class="hljs-keyword">ssize_t</span> <span class="hljs-title">read</span><span class="hljs-params">(<span class="hljs-keyword">int</span> fd, <span class="hljs-keyword">void</span>* buffer, <span class="hljs-keyword">size_t</span> count)</span></span>;
+<span class="hljs-function"><span class="hljs-keyword">ssize_t</span> <span class="hljs-title">write</span><span class="hljs-params">(<span class="hljs-keyword">int</span> fd, <span class="hljs-keyword">const</span> <span class="hljs-keyword">void</span>* buffer, <span class="hljs-keyword">size_t</span> count)</span></span>;
+<span class="hljs-function"><span class="hljs-keyword">off_t</span> <span class="hljs-title">lseek</span><span class="hljs-params">(<span class="hljs-keyword">int</span> fd, <span class="hljs-keyword">off_t</span> offset, <span class="hljs-keyword">int</span> referencePosition)</span></span>;
+</code></pre></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light v-split-container present fit-warning has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 0.531rem;">
+        <div style=""><h2 id="móduloprofundo">Módulo profundo</h2></div>
+        <div style=""><h3 id="-localizaçãonodiscoalocaçãodeblocos">- Localização no disco, alocação de blocos;</h3>
+
+<h3 id="-gerenciamentodediretóriosprocurapelopath">- Gerenciamento de diretórios, procura pelo path;</h3>
+
+<h3 id="-gerenciamentodepermissões">- Gerenciamento de permissões;</h3>
+
+<h3 id="-agendamentodedisco">- Agendamento de disco;</h3>
+
+<h3 id="-cachedeleituradeblocos">- Cache de leitura de blocos;</h3>
+
+<h3 id="-independênciadedispositivos">- Independência de dispositivos;</h3>
+
+<h3 id="-etc.">- etc.</h3></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings cover-container dark present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="bônus">Bônus</h1></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light section-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-section" style="width: 100%; font-size: 1rem;">
+        <div style="">
+          <h3 id="escrevacompartilheediscutacomseusparessobredesigndesoftware">Escreva, compartilhe e discuta com seus pares sobre design de software</h3>
+        </div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light v-split-container present fit-warning has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 0.531rem;">
+        <div style=""><h2 id="referências">Referências</h2></div>
+        <div style=""><h3 id="aphilosophyofsoftwaredesign"><a href="https://www.amazon.com.br/Philosophy-Software-Design-John-Ousterhout/dp/1732102201/">A Philosophy of Software Design</a></h3>
+
+<h3 id="aphilosophyofsoftwaredesignjohnousterhouttalksatgoogle"><a href="https://www.youtube.com/watch?v=bmSAYlu0NcY">A Philosophy of Software Design | John Ousterhout | Talks at Google</a></h3>
+
+<h3 id="booksummary:aphilosophyofsoftwaredesign"><a href="https://freshman.tech/philosophy-of-software-design-summary/">Book Summary: A Philosophy of Software Design</a></h3>
+
+<h3 id="aphilosophyofsoftwaredesign:mytakeandabookreview"><a href="https://blog.pragmaticengineer.com/a-philosophy-of-software-design-review/">A Philosophy of Software Design: My Take (and a Book Review)</a></h3>
+
+<h3 id="bookreview:“aphilosophyofsoftwaredesign”byjohnousterhout"><a href="https://embeddeduse.com/2020/10/10/book-review-a-philosophy-of-software-design-by-john-ousterhout/">Book Review: “A Philosophy of Software Design” by John Ousterhout</a></h3></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light v-split-container present fit-warning has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 0.578rem;">
+        <div style=""><h2 id="perguntas">Perguntas</h2></div>
+        <div style=""><h3 id="https:eltonminetto.dev"><a href="https://eltonminetto.dev">https://eltonminetto.dev</a></h3>
+
+<h3 id="http:asemanago.com.br"><a href="http://asemanago.com.br">http://asemanago.com.br</a></h3>
+
+<h3 id="https:twitter.comeminetto"><a href="https://twitter.com/eminetto">https://twitter.com/eminetto</a></h3>
+
+<h3 id="eltonminetto.dev">elton@minetto.dev</h3></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section></div>
+    </div>
+    <script src="engine/index.js"></script>
+    <script src="engine/d3v4.min.js" charset="utf-8"></script>
+    <script src="engine/charts.min.js" charset="utf-8"></script>
+    <script src="engine/billboard.min.js"></script>
+    <script>
+      Reveal.configure({
+        progress: true,
+        keyboard: true,
+        dependencies: [
+          {
+            src: "engine/highlight.js",
+            sync: true,
+            callback: function () {
+              hljs.initHighlightingOnLoad();
+            },
+          },
+        ],
+      });
+    </script>
+  </body>
+</html>

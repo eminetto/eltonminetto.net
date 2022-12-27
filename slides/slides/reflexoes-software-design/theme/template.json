@@ -1,0 +1,21 @@
+{
+  "Name": "Basel",
+  "Version": 0.1,
+  "Author": "iA",
+  "ShortDescription": "Alles was geil isch...",
+  "LongDescription": "... isch verbote.\n- Different sizes for headlines\n- Simple color background\n- Default white on black\n- Default font: Noto Serif",
+  "Css": "basel.css",
+  "TitleFont": "Noto Serif",
+  "BodyFont": "Noto Serif",
+  "CssClasses": "variable-size-headings",
+    "Layouts":[
+     {
+          "Name": "Cover",
+          "Classes": "invert",
+     },
+     {
+          "Name": "Title",
+          "Classes": "invert",
+     }
+  ]
+}
