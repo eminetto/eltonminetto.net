@@ -10,6 +10,16 @@ url = "/talks"
 
 +++
 
+# 2023
+
+### Painel Dia a dia da pessoa desenvolvedora júnior
+
+**Quando**: 09/02/2023
+
+**Onde**: Evento interno de uma das turmas da [Trybe](https://betrybe.com)
+
+--- 
+
 # 2022
 
 ### Painel Desenvolvimento de Software: o que funcionou, o que funciona e o que funcionará?
