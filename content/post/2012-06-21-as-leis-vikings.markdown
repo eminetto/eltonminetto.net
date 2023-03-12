@@ -67,9 +67,9 @@ Fiz uma tradução:
 Não precisa de um esforço muito grande para poder usar essas regras no dia a dia de uma equipe de desenvolvimento, projeto ou startup.
 Confesso que não encontrei nenhuma referência histórica que comprove que essas leis são reais, mas parece ser algo conhecido e usado a um bom tempo, a julgar pelo número de posts interessantes que encontrei sobre isso:
 
-[Viking Laws and the Art of Managing a Business](http://www.amanet.org/training/articles/Viking-Laws-and-the-Art-of-Managing-a-Business.aspx)
-[The Viking Laws and Business 1000 years later](http://www.hitreach.co.uk/blog/the-viking-laws-and-business-1000-years-later/)
-[The Viking Laws](http://www.corriganjc.net/weblog/archives/2007/04/the_viking_laws.html)
-[Estratégia viking para o sucesso corporativo](http://www.revistamelhor.com.br/textos/249/artigo223375-1.asp)
+- [Viking Laws and the Art of Managing a Business](http://www.amanet.org/training/articles/Viking-Laws-and-the-Art-of-Managing-a-Business.aspx)
+- [The Viking Laws and Business 1000 years later](http://www.hitreach.co.uk/blog/the-viking-laws-and-business-1000-years-later/)
+- [The Viking Laws](http://www.corriganjc.net/weblog/archives/2007/04/the_viking_laws.html)
+- [Estratégia viking para o sucesso corporativo](http://www.revistamelhor.com.br/textos/249/artigo223375-1.asp)
 
 Encontrei uma [imagem](/images/posts/vikinglaws.jpg) de tamanho legal, que vou imprimir e colocar em um quadro aqui na Coderockr, para sempre nos motivar.
