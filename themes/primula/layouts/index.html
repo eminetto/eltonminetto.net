@@ -12,13 +12,16 @@
                     <div class="banner-text-wrap">
                         <div class="title-text mb-4">
                             <h2 class="wow fadeInUp animated" data-wow-delay="300ms" data-wow-duration="1s"
-                                style=" animation-duration: 2s; animation-delay: 300ms;"><a href="post-details.html">
-                                    {{ .Site.Title }}
-                                </a></h2>
+                                style=" animation-duration: 2s; animation-delay: 300ms;">
+                                {{- $lang := .Lang}}
+                                {{ if eq $lang "en" }}<a href="/about"> {{ end }}
+                                    {{ if eq $lang "pt" }}<a href="/sobre/">{{ end }}
+                                        {{ .Site.Title }}
+                                    </a>
+                            </h2>
                         </div>
                         <p class="wow fadeInUp animated btn-read" data-wow-delay="1s" data-wow-duration="1s"
                             style=" animation-duration: 2s; animation-delay: 300ms;">
-                            {{- $lang := .Lang}}
                             {{ if eq $lang "en" }} I'm a software developer, teacher, speaker and writer {{ end }}
                             {{ if eq $lang "pt" }} Sou desenvolvedor de software, professor, <a href="/talks"
                                 target="_blank">palestrante</a>
