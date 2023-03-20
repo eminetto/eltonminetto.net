@@ -12,6 +12,15 @@ url = "/talks"
 
 # 2023
 
+### Developer productivity for fun and profit. Developer edition
+
+**Quando**: 20/03/2023
+
+**Onde**: Evento interno do [PicPay](https://picpay.com)
+
+--- 
+
+
 ### Painel Dia a dia da pessoa desenvolvedora júnior
 
 **Quando**: 09/02/2023
