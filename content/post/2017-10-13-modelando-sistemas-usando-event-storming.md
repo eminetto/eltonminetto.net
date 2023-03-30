@@ -132,6 +132,8 @@ interessante e que recomendo a tentativa.
 
 ### Links
 
-[https://blog.redelastic.com/corporate-arts-crafts-modelling-reactive-systems-with-event-storming-73c6236f5dd7](https://blog.redelastic.com/corporate-arts-crafts-modelling-reactive-systems-with-event-storming-73c6236f5dd7)<br>
-[https://techbeacon.com/introduction-event-storming-easy-way-achieve-domain-driven-design](https://techbeacon.com/introduction-event-storming-easy-way-achieve-domain-driven-design)<br>
+[https://blog.redelastic.com/corporate-arts-crafts-modelling-reactive-systems-with-event-storming-73c6236f5dd7](https://blog.redelastic.com/corporate-arts-crafts-modelling-reactive-systems-with-event-storming-73c6236f5dd7)
+
+[https://techbeacon.com/introduction-event-storming-easy-way-achieve-domain-driven-design](https://techbeacon.com/introduction-event-storming-easy-way-achieve-domain-driven-design)
+
 [http://ziobrando.blogspot.com.br/2013/11/introducing-event-storming.html](http://ziobrando.blogspot.com.br/2013/11/introducing-event-storming.html)
