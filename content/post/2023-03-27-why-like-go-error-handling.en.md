@@ -186,3 +186,5 @@ But in that case, anyone could, in the code review, make the observation:
 And as we saw in this example, conversion errors can happen :)
 
 Here is my account of why I like how Go handles errors. Of course, it could be better as other languages do it differently. It's verbose, but I'd prefer to write more lines and have an easier-to-maintain code.
+
+Originally published at https://eltonminetto.dev on January 25, 2023.
