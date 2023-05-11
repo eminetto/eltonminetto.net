@@ -12,6 +12,19 @@ url = "/talks"
 
 # 2023
 
+### Observabilidade de APIs
+
+**Quando**: 10/05/2023
+
+**Onde**: Meetup APIs
+
+[Slides](https://speakerdeck.com/eminetto/observabilidade-de-apis)
+
+[Video](https://www.youtube.com/live/moUVMdUzz8g?feature=share&t=238)
+
+--- 
+
+
 ### Developer productivity for fun and profit. Developer edition
 
 **Quando**: 20/03/2023
