@@ -1,6 +1,6 @@
 ---
 title: "Melhorando o terminal"
-date: 2023-05-08T08:30:43-03:00
+date: 2023-05-16T08:30:43-03:00
 draft: false
 ---
 
