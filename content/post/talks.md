@@ -12,6 +12,14 @@ url = "/talks"
 
 # 2023
 
+### A Evolução do DEV
+
+**Quando**: 17/05/2023
+
+**Onde**: Tech Talk da comunidade T-REX
+
+--- 
+
 ### Observabilidade de APIs
 
 **Quando**: 10/05/2023
