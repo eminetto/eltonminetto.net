@@ -5,6 +5,9 @@ date = "2020-07-06T10:54:24+02:00"
 bigimg = ""
 
 +++
+
+**UPDATE:** This post is old and no longer reflects what I believe to be an ideal structure for a project. In 2023, I am using and recommending what my colleagues and I have described in [this post](https://medium.com/inside-picpay/organizing-projects-and-defining-names-in-go-7f0eab45375d).
+
 In February 2018 I wrote what would become the most relevant text I have ever published: [Clean Architecture using Golang](https://eltonminetto.dev/en/post/2018-03-05-clean-architecture-using-go/). With more than 105k views, the post generated presentations at some Go and PHP events and allowed me to talk about software architecture with several people. 
 
 Using this architecture for the development of [Codenation](https://codenation.dev)'s products, we gained experience and solved problems. We wrote some posts reporting these experiences:
