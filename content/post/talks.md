@@ -79,6 +79,8 @@ url = "/talks"
 
 [Slides](https://speakerdeck.com/eminetto/reflexoes-sobre-design-de-software)
 
+[Video](https://www.youtube.com/watch?v=YEBG1acOqCg&feature=youtu.be)
+
 ---
 
 ### Discussões sobre microsserviços
