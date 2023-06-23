@@ -12,6 +12,34 @@ url = "/talks"
 
 # 2023
 
+### Painel: Todo mundo precisa virar Engineer Manager ou Tech Lead?
+
+**Quando**: 22/06/2023
+
+**Onde**: [Codecon Digital](https://www.codecon.dev/digital/programacao/todo-mundo-precisa-virar-engineer-manager-ou-tech-lead)
+
+--- 
+
+### Developer productivity for fun and profit - Developer edition
+
+**Quando**: 22/06/2023
+
+**Onde**: [DevStack Summit](https://www.devstacksummit.com/)
+
+[Slides](https://speakerdeck.com/eminetto/developer-productivity-for-fun-and-profit-developer-edition)
+
+--- 
+
+### Developer productivity for fun and profit - Developer edition
+
+**Quando**: 19/06/2023
+
+**Onde**: [DevTec 2023](https://www.devtec.com.br/)
+
+[Slides](https://speakerdeck.com/eminetto/developer-productivity-for-fun-and-profit-developer-edition)
+
+--- 
+
 ### A Evolução do DEV
 
 **Quando**: 17/05/2023
