@@ -7,4 +7,4 @@ Quem acompanha meu site ou as redes sociais onde eu publico textos sabe que eu m
 
 Mas depois de algumas mudanças na minha carreira, que comecei a definir na época [deste post](https://eltonminetto.dev/post/2021-06-02-carreira-y/) e culminou na minha ida para o [PicPay](https://picpay.com) como Principal Software Engineer, eu decidi voltar a publicar a newsletter. 
 
-Por isso, se você quer receber uma dose semanal de links, videos, vagas, etc, sobre a linguagem da marmota assine agora mesmo a [A semana Go](https://www.getrevue.co/profile/a-semana-go). E se quiser mandar sugestões de links é só me enviar [um e-mail](mailto:asemanago@gmail.com).
+Por isso, se você quer receber uma dose semanal de links, videos, vagas, etc, sobre a linguagem da marmota assine agora mesmo a [A semana Go](https://asemanago.substack.com). E se quiser mandar sugestões de links é só me enviar [um e-mail](mailto:asemanago@gmail.com).
