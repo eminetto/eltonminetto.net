@@ -6,6 +6,8 @@ draft: false
 
 Trabalhar com datas em qualquer linguagem de programação trás alguns desafios interessantes. Neste post vou mostrar uma forma de trabalhar com datas ao escrever testes unitários para uma aplicação em Go.
 
+<!--more-->
+
 Vamos ao exemplo:
 
 ```go
