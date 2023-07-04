@@ -13,7 +13,7 @@ Uma das cerimônias mais comuns das metodologias ágeis como Scrum e Kanban, tra
 
 O objetivo da reunião é ser um *"pulso"* diário do andamento do projeto, e quando bem aplicado é de crucial importância para o time. 
 
-Nos últimos anos venho usando um formato um pouco diferente e que tem trazido bons resultados. A principal diferença é que ao invés de cada ser focada nas pessoas, a reunião é focada no trabalho sendo realizado. Funciona mais ou menos da seguinte forma:
+Nos últimos anos venho usando um formato um pouco diferente e que tem trazido bons resultados. A principal diferença é que ao invés de ser focada nas pessoas, a reunião é focada no trabalho sendo realizado. Funciona mais ou menos da seguinte forma:
 
 - durante a reunião, via Zoom ou Google Meet, abrimos o board de tarefas em uma janela compartilhada;
 - a pessoa que está coordenando a reunião olha para o item que está mais próximo da coluna de *"Done"* (ou *Pronto*, ou *Em produção*, etc) e pergunta: ***"time, o que falta para movermos esta tarefa para o próximo estágio?"***;
