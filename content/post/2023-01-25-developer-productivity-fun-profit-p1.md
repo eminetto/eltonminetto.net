@@ -17,6 +17,8 @@ Vou começar com a parte 1, falando **o que a pessoa desenvolvedora pode fazer p
 
 A parte 2, sobre **o que o time e a empresa podem fazer** vai ser assunto de outro post.
 
+**ATUALIZAÇÃO**: publiquei a segunda parte da série: [Developer productivity for fun and profit - Parte 2](https://eltonminetto.dev/post/2023-08-01-developer-productivity-fun-profit-p2/)
+
 Antes de tudo, esse conteúdo é fruto de minhas experiências como desenvolvedor, líder técnico e tech manager, assim como resultado de leituras no decorrer dos anos.
 
 [![joao-kleber-para_905](/images/posts/joao-kleber-para_905.jpg)](/images/posts/joao-kleber-para_905.jpg)
