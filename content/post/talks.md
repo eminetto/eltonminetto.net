@@ -12,6 +12,14 @@ url = "/talks"
 
 # 2023
 
+### Podcast: Vale a pena participar de eventos?
+
+**Quando**: 13/08/2023
+
+**Onde**: [Tech Leadership Rocks](https://techleadership.rocks/2023/08/13/vale-a-pena-participar-de-eventos-com-gabriel-nunes-marcel-santos-e-elton-minetto/)
+
+---
+
 ### Painel: Todo mundo precisa virar Engineer Manager ou Tech Lead?
 
 **Quando**: 22/06/2023
