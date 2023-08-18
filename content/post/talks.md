@@ -12,6 +12,17 @@ url = "/talks"
 
 # 2023
 
+### Observabilidade de APIs
+
+**Quando**: 18/08/2023
+
+**Onde**: Confloss 2023
+
+[Slides](https://speakerdeck.com/eminetto/observabilidade-de-apis)
+
+--- 
+
+
 ### Podcast: Vale a pena participar de eventos?
 
 **Quando**: 13/08/2023
