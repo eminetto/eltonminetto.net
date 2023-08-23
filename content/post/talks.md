@@ -12,6 +12,16 @@ url = "/talks"
 
 # 2023
 
+### Performance extrema de aplicações em Golang com Elton Minetto
+
+**Quando**: 22/08/2023
+
+**Onde**: Ponto Dev Podcast
+
+[Podcast](https://pontodev.io/performance-extrema-de-aplicacoes-em-golang-com-elton-minetto/)
+
+--- 
+
 ### Observabilidade de APIs
 
 **Quando**: 18/08/2023
