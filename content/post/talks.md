@@ -12,6 +12,16 @@ url = "/talks"
 
 # 2023
 
+### Observabilidade de APIs na prática
+
+**Quando**: 23/08/2023
+
+**Onde**: Canal Full Cycle
+
+[Video](https://www.youtube.com/watch?v=bSU_O9JAibs)
+
+---
+
 ### Performance extrema de aplicações em Golang com Elton Minetto
 
 **Quando**: 22/08/2023
