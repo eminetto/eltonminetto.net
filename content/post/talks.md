@@ -12,6 +12,16 @@ url = "/talks"
 
 # 2023
 
+### Developer productivity for fun and profit - Developer edition
+
+**Quando**: 26/08/2023
+
+**Onde**: [Codecon Summit](https://codecon.dev/)
+
+[Slides](https://speakerdeck.com/eminetto/developer-productivity-for-fun-and-profit-developer-edition)
+
+--- 
+
 ### Observabilidade de APIs na prática
 
 **Quando**: 23/08/2023
