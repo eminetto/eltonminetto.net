@@ -1,4 +1,4 @@
-baseURL = "https://eltonminetto.dev/"  
+baseURL = "https://eltonminetto.dev/"
 theme = "primula"
 author = "eminetto"
 googleAnalytics = "G-6205WZZT80"
@@ -7,37 +7,37 @@ staticDir = ['static', 'slides']
 defaultContentLanguage = "pt"
 [languages]
 [languages.en]
-title = "My name is Elton \U0001F44B"
+title = "My name is Elton"
 content = "I'm a software developer, teacher, speaker and writer"
 languageName = 'English'
 weight = 2
 [languages.en.menu]
 [[languages.en.menu.main]]
 name = "Talks"
-url = "https://eltonminetto.dev/talks/" 
+url = "https://eltonminetto.dev/talks/"
 weight = 1
 [[languages.en.menu.main]]
 "name" = "About"
-"url" = "https://eltonminetto.dev/about/" 
+"url" = "https://eltonminetto.dev/about/"
 "weight" = 5
 
 [languages.pt]
-title = "Meu nome é Elton \U0001F44B"
+title = "Meu nome é Elton"
 content = "Sou desenvolvedor de software, professor, palestrante e escritor"
 languageName = 'Português'
 weight = 1
 [languages.pt.menu]
 [[languages.pt.menu.main]]
 name = "maisquesenior.dev"
-url = "https://maisquesenior.dev" 
+url = "https://maisquesenior.dev"
 weight = 1
 [[languages.pt.menu.main]]
 name = "A Semana Go"
-url = "http://asemanago.com.br" 
+url = "http://asemanago.com.br"
 weight = 2
 [[languages.pt.menu.main]]
 "name" = "Livros"
-"url" = "https://leanpub.com/u/eminetto" 
+"url" = "https://leanpub.com/u/eminetto"
 "weight" = 5
 [[languages.pt.menu.main]]
 "name" = "Palestras"
@@ -54,7 +54,7 @@ help = "Help"
 
 # [params]  
 #     categories = ["Web Development","Blogging","Web Design"]  
-[taxonomies]  
-category = "categories"  
+[taxonomies]
+category = "categories"
 tag = "tags"
 series = "series"
