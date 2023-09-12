@@ -307,7 +307,7 @@ make docker-build docker-push IMG=registry.hub.docker.com/eminetto/k8s-operator-
 make deploy IMG=registry.hub.docker.com/eminetto/k8s-operator-talk:latest
 ```
 
-O primeiro comando gera todos os rquivos necessários para a criação do *CRD*. O segundo faz a geração de um *container docker* e o *push* para o repositório indicado. E o último comando faz a instalação do *container* gerado no cluster. Dica: é possível automatizar a geração e instalação do *controller* em seu ambiente de desenvolvimento usando o *Tilt*. No [repositório](https://github.com/eminetto/k8s-operator-talk) onde estão estes códigos existe um *Tiltfile* que faz todo este trabalho. E para conhecer mais sobre o *Tilt* confira o [post](https://eltonminetto.dev/post/2022-08-31-improve-local-development-tilt/) que fiz sobre a ferramenta.  
+O primeiro comando gera todos os arquivos necessários para a criação do *CRD*. O segundo faz a geração de um *container docker* e o *push* para o repositório indicado. E o último comando faz a instalação do *container* gerado no cluster. Dica: é possível automatizar a geração e instalação do *controller* em seu ambiente de desenvolvimento usando o *Tilt*. No [repositório](https://github.com/eminetto/k8s-operator-talk) onde estão estes códigos existe um *Tiltfile* que faz todo este trabalho. E para conhecer mais sobre o *Tilt* confira o [post](https://eltonminetto.dev/post/2022-08-31-improve-local-development-tilt/) que fiz sobre a ferramenta.  
 
 Agora basta aplicar ao cluster o *yaml* com a definição do *Application* e o *controller* vai gerar o *Deployment* e o *Service* necessários para que a aplicação esteja em execução. Podemos conferir que os recursos foram criados com os comandos a seguir.
 
