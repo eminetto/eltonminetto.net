@@ -12,6 +12,16 @@ url = "/talks"
 
 # 2023
 
+### Introdução a Go
+
+**Quando**: 13/09/2023
+
+**Onde**: Evento interno Trybe
+
+[Slides](https://speakerdeck.com/eminetto/introducao-a-go)
+
+--- 
+
 ### Developer productivity for fun and profit - Developer edition
 
 **Quando**: 26/08/2023
