@@ -12,6 +12,16 @@ url = "/talks"
 
 # 2023
 
+### Organizador e host da GopherCon Brasil
+
+**Quando**: 22 e 23/09/2023
+
+**Onde**: Florianópolis/SC
+
+[GopherCon Brasil](https://gopherconbr.org/)
+
+--- 
+
 ### Introdução a Go
 
 **Quando**: 13/09/2023
