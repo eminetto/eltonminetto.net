@@ -212,7 +212,7 @@ Novamente, os comentários descrevem o que está sendo testado.
 Context("When deleting an Application", func() {
 		It("Should delete the Deployment and Service", func() {
 			appName := types.NamespacedName{Name: ApplicationName, Namespace: ApplicationNamespace}
-			//verifica se a exlusão aconteceu com sucesso
+			//verifica se a exclusão aconteceu com sucesso
 			Eventually(func() error {
 				a := &minettodevv1alpha1.Application{}
 				k8sClient.Get(context.Background(), appName, a)
