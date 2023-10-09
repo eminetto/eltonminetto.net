@@ -12,6 +12,14 @@ url = "/talks"
 
 # 2023
 
+### Developer productivity for fun and profit. Enterprise edition
+
+**Quando**: 09/10/2023
+
+**Onde**: Evento interno do [PicPay](https://picpay.com)
+
+--- 
+
 ### Organizador e host da GopherCon Brasil
 
 **Quando**: 22 e 23/09/2023
