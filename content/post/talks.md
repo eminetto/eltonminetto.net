@@ -12,6 +12,19 @@ url = "/talks"
 
 # 2023
 
+### Criando Kubernetes Operators com o operator-sdk
+
+**Quando**: 11/10/2023
+
+**Onde**: Primeiro Meetup Cloud Native Floripa
+
+[Slides](https://speakerdeck.com/eminetto/criando-kubernetes-operators-com-o-operator-sdk)
+
+[Video](https://www.youtube.com/live/dTD9Ysa3udk?si=B1g2cNg-o0664KaU&t=251)
+
+--- 
+
+
 ### Developer productivity for fun and profit. Enterprise edition
 
 **Quando**: 09/10/2023
