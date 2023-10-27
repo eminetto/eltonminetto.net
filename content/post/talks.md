@@ -12,6 +12,14 @@ url = "/talks"
 
 # 2023
 
+### Papel do Staff/Principal Engineer BB e PicPay
+
+**Quando**: 27/10/2023
+
+**Onde**: Encontro da Guilda de Especialistas de TI do Banco do Brasil
+
+--- 
+
 ### Criando Kubernetes Operators com o operator-sdk
 
 **Quando**: 11/10/2023
