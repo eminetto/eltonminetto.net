@@ -12,9 +12,33 @@ url = "/talks"
 
 # 2023
 
+### Platform Engineering: o futuro do DevOps?
+
+**Quando**: 28/10/2023
+
+**Onde**: Codecon Feature
+
+--- 
+
+### Architectural Kata - Monolito vs. Microsserviços
+
+**Quando**: 28/10/2023
+
+**Onde**: Codecon Feature
+
+--- 
+
+### Mentoria coletiva: principal engineer
+
+**Quando**: 28/10/2023
+
+**Onde**: Codecon Feature
+
+--- 
+
 ### Papel do Staff/Principal Engineer BB e PicPay
 
-**Quando**: 27/10/2023
+**Quando**: 26/10/2023
 
 **Onde**: Encontro da Guilda de Especialistas de TI do Banco do Brasil
 
