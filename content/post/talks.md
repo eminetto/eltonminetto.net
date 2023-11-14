@@ -12,6 +12,14 @@ url = "/talks"
 
 # 2023
 
+### Trunk Based Development
+
+**Quando**: 10/11/2023
+
+**Onde**: Evento interno do PicPay
+
+--- 
+
 ### Platform Engineering: o futuro do DevOps?
 
 **Quando**: 28/10/2023
