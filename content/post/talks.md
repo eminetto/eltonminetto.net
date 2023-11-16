@@ -12,6 +12,15 @@ url = "/talks"
 
 # 2023
 
+### Conversa sobre carreira dev
+
+**Quando**: 16/11/2023
+
+**Onde**: Evento interno da [Arquivei](https://arquivei.com.br/)
+
+--- 
+
+
 ### Trunk Based Development
 
 **Quando**: 10/11/2023
