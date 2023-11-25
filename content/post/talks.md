@@ -12,6 +12,24 @@ url = "/talks"
 
 # 2023
 
+### Painel: Além do Sênior: Staff+ VS Manager
+
+**Quando**: 25/11/2023
+
+**Onde**: [devfest Cerrado](https://devfestcerrado.com.br/)
+
+--- 
+
+### Criando Kubernetes Operators com o operator-sdk
+
+**Quando**: 25/11/2023
+
+**Onde**: [devfest Cerrado](https://devfestcerrado.com.br/)
+
+[Slides](https://speakerdeck.com/eminetto/criando-kubernetes-operators-com-o-operator-sdk-6216d93c-ed29-4f78-88c1-9a70c8a40bb9)
+
+--- 
+
 ### Conversa sobre carreira dev
 
 **Quando**: 16/11/2023
