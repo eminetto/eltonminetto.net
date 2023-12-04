@@ -12,6 +12,28 @@ url = "/talks"
 
 # 2023
 
+### Observabilidade de APIs
+
+**Quando**: 02/12/2023
+
+**Onde**: [devfest Catarinense](https://devfestcatarinense.web.app/home)
+
+[Slides](https://speakerdeck.com/eminetto/observabilidade-de-apis)
+
+--- 
+
+
+### Criando Kubernetes Operators com o operator-sdk
+
+**Quando**: 02/12/2023
+
+**Onde**: [devfest Catarinense](https://devfestcatarinense.web.app/home)
+
+[Slides](https://speakerdeck.com/eminetto/criando-kubernetes-operators-com-o-operator-sdk-6216d93c-ed29-4f78-88c1-9a70c8a40bb9)
+
+--- 
+
+
 ### Painel: Além do Sênior: Staff+ VS Manager
 
 **Quando**: 25/11/2023
