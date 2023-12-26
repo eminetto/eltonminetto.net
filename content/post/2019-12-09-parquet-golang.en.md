@@ -9,13 +9,13 @@ In this post, I will talk about a relatively new data file format, and how to us
 
 The format is called [Parquet](http://parquet.apache.org) and is currently a project supported by the Apache Foundation. It is a binary file format to store and facilitate data processing a [columnar storage format](http://en.wikipedia.org/wiki/Column-oriented_DBMS). It supports different types of compression and is widely used in data science and big data environment, with tools like Hadoop. 
 
-At [Codenation] (https://codenation.dev) we are using this format to store statistical data in S3 buckets. That way, we can do parallel processing using Lambda Functions without overloading our database servers. 
+At [Codenation](https://codenation.dev) we are using this format to store statistical data in S3 buckets. That way, we can do parallel processing using Lambda Functions without overloading our database servers. 
 
 In this post, I will show how to generate and process files in this format using the Go language.
 
 The first step is to create a ```struct``` that will represent the data we will process in this example:
 
-```
+```go
 type user struct {
   ID        string    `parquet:"name=id, type=UTF8, encoding=PLAIN_DICTIONARY"`
   FirstName string    `parquet:"name=firstname, type=UTF8, encoding=PLAIN_DICTIONARY"`
@@ -33,7 +33,7 @@ The important detail in this code is the ```tags```, which state how each field 
 
 Let's now generate our first file in ```parquet``` format:
 
-```
+```go
 package main
 
 import (
@@ -113,7 +113,7 @@ func generateParquet(data []*user) error {
 
 The next snippet shows how we read content in a parquet file:
 
-```
+```go
 func readParquet() ([]*user, error) {
   fr, err := local.NewLocalFileReader("output.parquet")
   if err != nil {
@@ -135,7 +135,7 @@ func readParquet() ([]*user, error) {
 
 The above example is just a didactic one. As I am reading the entire file and putting all 10,000 records into memory this can be a problem when talking about gigabytes of data. In real-life applications we will use  functions that the package provides to fetch only part of the file:
 
-```
+```go
 func readPartialParquet(pageSize, page int) ([]*user, error) {
   fr, err := local.NewLocalFileReader("output.parquet")
   if err != nil {
@@ -158,7 +158,7 @@ func readPartialParquet(pageSize, page int) ([]*user, error) {
 
 As the definition makes clear, we are using a columnar storage format. So, we can take just the ```Score``` column and calculate its average:
 
-```
+```go
 func calcScoreAVG() (float64, error) {
   fr, err := local.NewLocalFileReader("output.parquet")
   if err != nil {

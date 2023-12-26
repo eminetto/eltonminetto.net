@@ -15,7 +15,7 @@ Neste post vou mostrar como gerar e processar arquivos neste formato usando a li
 
 O primeiro passo é criar uma ```struct``` que vai representar os dados que vamos processar neste exemplo:
 
-```
+```go
 type user struct {
   ID        string    `parquet:"name=id, type=UTF8, encoding=PLAIN_DICTIONARY"`
   FirstName string    `parquet:"name=firstname, type=UTF8, encoding=PLAIN_DICTIONARY"`
@@ -33,7 +33,7 @@ O detalhe importante neste código são as ```tags``` que declaram como cada cam
 
 Vamos agora gerar o nosso primeiro arquivo no formato ```parquet```:
 
-```
+```go
 package main
 
 import (
@@ -113,7 +113,7 @@ func generateParquet(data []*user) error {
 
 Com o arquivo gerado podemos fazer o processo inverso, lendo como no exemplo abaixo:
 
-```
+```go
 func readParquet() ([]*user, error) {
   fr, err := local.NewLocalFileReader("output.parquet")
   if err != nil {
@@ -135,7 +135,7 @@ func readParquet() ([]*user, error) {
 
 O exemplo acima é apenas didático, pois estou lendo o arquivo todo e colocando todos os 10000 registros em memória, o que pode ser um problema quando estivermos falando de gigabytes de dados. Na prática o ideal é usarmos as funções que o pacote fornece, para buscar apenas parte do arquivo:
 
-```
+```go
 func readPartialParquet(pageSize, page int) ([]*user, error) {
   fr, err := local.NewLocalFileReader("output.parquet")
   if err != nil {
@@ -158,7 +158,7 @@ func readPartialParquet(pageSize, page int) ([]*user, error) {
 
 Outra vantagem deste formato, como a definição deixa bem claro, é o fato dela ser focada no tratamento das colunas do arquivo. Desta forma, podemos pegar apenas a coluna ```Score``` e calcular sua média:
 
-```
+```go
 func calcScoreAVG() (float64, error) {
   fr, err := local.NewLocalFileReader("output.parquet")
   if err != nil {
