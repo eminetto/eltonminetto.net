@@ -14,10 +14,8 @@
         {{ if eq $lang "pt" }}
         {{ .PublishDate.Format "02/01/2006" }}
         {{end}} - {{ printf (i18n "estimatedReadingTime") .ReadingTime }}
-      </time>
-
-      {{- if .IsTranslated -}}
-      <p class=" ml-40">
+        &nbsp; - &nbsp;
+        {{- if .IsTranslated -}}
         {{- i18n "translations" | default "Translations" }}:
         {{- range .Translations }}
         <a href="{{ .Permalink }}">
@@ -28,8 +26,10 @@
           {{- end -}}
         </a>
         {{- end }}
-      </p>
-      {{- end -}}
+        {{- end -}}
+      </time>
+
+
 
       {{/* Categories */}}
       {{ with (.GetTerms "categories") }} —
