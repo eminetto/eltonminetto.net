@@ -1,13 +1,20 @@
 baseURL = "https://eltonminetto.dev/"
-theme = "primula"
+copyright = "{year}"
+# languageCode = 'en-US'
+enableRobotsTXT = true
+summaryLength = 15
+# theme = "primula"
+theme = 'lowkey'
 author = "eminetto"
 googleAnalytics = "G-6205WZZT80"
 paginate = 10
 staticDir = ['static', 'slides']
-defaultContentLanguage = "pt"
+defaultContentLanguage = 'pt'
+
 [languages]
 [languages.en]
-title = "My name is Elton"
+title = "My name is Elton Minetto"
+[languages.en.params]
 content = "I'm a software developer, teacher, speaker and writer"
 languageName = 'English'
 weight = 2
@@ -21,8 +28,14 @@ weight = 1
 "url" = "https://eltonminetto.dev/about/"
 "weight" = 5
 
+[[languages.en.menu.main]]
+"name" = "Português"
+"url" = "/"
+"weight" = 15
+
 [languages.pt]
-title = "Meu nome é Elton"
+title = "Meu nome é Elton Minetto"
+[languages.pt.params]
 content = "Sou desenvolvedor de software, professor, palestrante e escritor"
 languageName = 'Português'
 weight = 1
@@ -47,6 +60,11 @@ weight = 2
 "name" = "Sobre"
 "url" = "sobre/"
 "weight" = 15
+[[languages.pt.menu.main]]
+"name" = "English"
+"url" = "/en/"
+"weight" = 25
+
 
 [params]
 [params.navigation]
@@ -58,3 +76,19 @@ help = "Help"
 category = "categories"
 tag = "tags"
 series = "series"
+
+[markup]
+[markup.highlight]
+anchorLineNos = false
+codeFences = true
+guessSyntax = false
+hl_Lines = ''
+hl_inline = false
+lineAnchors = ''
+lineNoStart = 1
+lineNos = false
+lineNumbersInTable = false
+noClasses = true
+noHl = false
+style = 'dracula'
+tabWidth = 4
