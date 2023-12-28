@@ -871,9 +871,6 @@ video {
 .mb-5 {
   margin-bottom: 1.25rem;
 }
-.ml-40 {
-  margin-left: 10rem;
-}
 .mt-2 {
   margin-top: 0.5rem;
 }
