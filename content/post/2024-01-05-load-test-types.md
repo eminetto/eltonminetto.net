@@ -3,7 +3,7 @@ title: "Tipos de teste de carga"
 date: 2024-01-05T19:00:43-03:00
 draft: false
 ---
-Quando falamos em “teste de carga” talvez a primeira coisa que venha na mente seja algo como “enviar tráfego para a aplicação até ela chorar” 🙂 Mas essa abordagem é apenas uma das formas de se testar a performance de uma aplicação (e descrita desta forma talvez seja a mais sádica). Neste post vou apresentar os principais tipos de teste de carga e em um próximo texto vou mostrar como implementá-los usando a ferramenta [k6](https://k6.io).
+Quando falamos em “teste de carga” talvez a primeira coisa que venha na mente seja algo como “enviar tráfego para a aplicação até ela chorar” 🙂 Mas essa abordagem é apenas uma das formas de se testar a performance de uma aplicação (e descrita desta forma talvez seja a mais sádica). Neste post vou apresentar os principais tipos de teste de carga e em um [próximo texto](https://eltonminetto.dev/post/2024-01-11-load-test-k6/) vou mostrar como implementá-los usando a ferramenta [k6](https://k6.io).
 
 Os principais tipos de testes de carga se diferenciam entre si em dois aspectos: seus objetivos e a forma como realizamos os testes. Vamos a eles.
 
