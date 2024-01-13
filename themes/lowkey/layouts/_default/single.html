@@ -14,8 +14,8 @@
         {{ if eq $lang "pt" }}
         {{ .PublishDate.Format "02/01/2006" }}
         {{end}} - {{ printf (i18n "estimatedReadingTime") .ReadingTime }}
-        &nbsp; - &nbsp;
         {{- if .IsTranslated -}}
+        &nbsp; - &nbsp;
         {{- i18n "translations" | default "Translations" }}:
         {{- range .Translations }}
         <a href="{{ .Permalink }}">
