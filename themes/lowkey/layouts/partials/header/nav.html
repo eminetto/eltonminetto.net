@@ -1,5 +1,5 @@
 <nav>
-  <ul>
+  <ul class="px-4 lg:px-0">
     {{ $currentPage := . }} 
     {{ range site.Menus.main }} 
     {{- $menu_item_url := (cond (strings.HasSuffix .URL "/") .URL (printf "%s/" .URL) ) | absLangURL }} 
@@ -10,5 +10,8 @@
       </a>
     </li>
     {{ end }}
+    <li class="-mt-2 block lg:hidden">
+      {{ partial "header/theme-button" . }}
+    </li>
   </ul>
 </nav>
