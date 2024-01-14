@@ -219,11 +219,11 @@
   }
   
   nav a, footer a {
-    @apply text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 font-semibold;
+    @apply text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 font-semibold ;
   }
 
   footer {
-    @apply text-xs;
+    @apply flex flex-col sm:flex-col-reverse md:flex-col-reverse items-center justify-between text-xs;
   }
 }
 
@@ -234,7 +234,7 @@
   
   /* Content overrides */
   #content {
-    @apply leading-normal p-6 md:p-0 lg:p-0;
+    @apply leading-normal p-6 md:p-6 lg:p-0;
   }
 
   #content a {
