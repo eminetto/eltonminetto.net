@@ -141,7 +141,7 @@
   p, hr, pre, dl {
     @apply mb-5 text-justify;
   }
-  
+
   article > h1 {
     @apply mb-1;
   }
@@ -234,7 +234,7 @@
   
   /* Content overrides */
   #content {
-    @apply leading-normal;
+    @apply leading-normal p-6 md:p-0 lg:p-0;
   }
 
   #content a {
