@@ -234,7 +234,7 @@
   
   /* Content overrides */
   #content {
-    @apply leading-normal p-6 md:p-6 lg:p-0;
+    @apply leading-normal px-4 lg:px-0;
   }
 
   #content a {
@@ -363,7 +363,7 @@
   }
 
   .title-large {
-    @apply text-4xl leading-snug font-bold text-gray-900 dark:text-gray-300;
+    @apply text-4xl leading-snug font-bold text-gray-900 dark:text-gray-300 text-balance text-left lg:text-justify;
   }
 
   .title-small {

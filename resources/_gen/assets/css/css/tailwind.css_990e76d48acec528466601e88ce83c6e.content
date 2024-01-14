@@ -868,6 +868,9 @@ video {
   margin-left: auto;
   margin-right: auto;
 }
+.-mt-2 {
+  margin-top: -0.5rem;
+}
 .mb-5 {
   margin-bottom: 1.25rem;
 }
@@ -882,6 +885,9 @@ video {
 }
 .grid {
   display: grid;
+}
+.hidden {
+  display: none;
 }
 .h-20 {
   height: 5rem;
@@ -946,6 +952,10 @@ video {
 .stroke-2 {
   stroke-width: 2;
 }
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
@@ -1001,7 +1011,16 @@ nav a.active {
 }
 /* Content overrides */
 #content {
+  padding-left: 1rem;
+  padding-right: 1rem;
   line-height: 1.5;
+}
+@media (min-width: 1024px) {
+
+  #content {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 #content a {
   font-weight: 700;
@@ -1325,12 +1344,20 @@ nav a.active {
   width: 1.5rem;
 }
 .title-large {
+  text-wrap: balance;
+  text-align: left;
   font-size: 2.25rem;
   line-height: 2.5rem;
   font-weight: 700;
   line-height: 1.375;
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+@media (min-width: 1024px) {
+
+  .title-large {
+    text-align: justify;
+  }
 }
 :is(:where(.dark) .title-large) {
   --tw-text-opacity: 1;
@@ -1372,4 +1399,25 @@ nav a.active {
   .sm\:gap-10 {
     gap: 2.5rem;
   }
+}
+@media (min-width: 1024px) {
+
+  .lg\:inline-block {
+    display: inline-block;
+  }
+
+  .lg\:hidden {
+    display: none;
+  }
+
+  .lg\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+:is(:where(.dark) .dark\:block) {
+  display: block;
+}
+:is(:where(.dark) .dark\:hidden) {
+  display: none;
 }
