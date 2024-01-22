@@ -58,7 +58,7 @@ weight = 2
 "weight" = 10
 [[languages.pt.menu.main]]
 "name" = "Sobre"
-"url" = "sobre/"
+"url" = "/sobre/"
 "weight" = 15
 [[languages.pt.menu.main]]
 "name" = "English"
