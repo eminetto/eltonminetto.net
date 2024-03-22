@@ -10,6 +10,49 @@ url = "/talks"
 
 +++
 
+# 2024
+
+### Live: Observabilidade e Go
+
+**Quando**: 21/03/2024
+
+**Onde**: Golang Conference by FullCycle ++ Google Cloud
+
+[Video](https://www.youtube.com/watch?v=uaYJpNkY46A&t=3485s)
+
+[Slides](https://docs.google.com/presentation/d/1Q9Q4nOKKlWc-Madl-9ikLXWhQHLUP5CAXGQLOJMas_g/edit?usp=sharing)
+
+--- 
+
+### Live: Contribuindo com o projeto do Go
+
+**Quando**: 13/03/2024
+
+**Onde**: Canal do YouTube da Gophercon Brasil
+
+[Video](https://www.youtube.com/watch?v=T8Rej5P3Bno)
+
+--- 
+
+
+### Papo sobre carreira e papel de Principal
+
+**Quando**: 06/02/2024
+
+**Onde**: Evento interno do PicPay
+
+--- 
+
+
+### Ask Me Anything com os Principals
+
+**Quando**: 02/02/2024
+
+**Onde**: Evento interno do PicPay
+
+--- 
+
+
 # 2023
 
 ### Observabilidade de APIs
