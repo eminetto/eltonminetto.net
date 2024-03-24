@@ -5,7 +5,7 @@ draft: false
 ---
 We spend hours and hours developing applications on our machines, with more and more requirements and complexity. In addition, any modern application has multiple containers, microservices, deployments in different environments, various stacks, etc. So any tool that can make our flow more agile is handy.
 
-In this post, I want to introduce a powerful tool that can save you a lot of time in your development process. This is [Tilt](https://tilt.dev), which was recently [acquired]((https://www.docker.com/blog/welcome-tilt-fixing-the-pains-of-microservice-development-for-kubernetes/)) by Docker.
+In this post, I want to introduce a powerful tool that can save you a lot of time in your development process. This is [Tilt](https://tilt.dev), which was recently [acquired](https://www.docker.com/blog/welcome-tilt-fixing-the-pains-of-microservice-development-for-kubernetes/) by Docker.
 
 To demonstrate a little bit of what you can do with Tilt, I will use this [repository](https://github.com/eminetto/talk-microservices-go) I used in a talk about [microservices](https://www.slideshare.net/eminetto/go-e-microservios-nascidos-um-para-o-outro) (in Portuguese). The examples will be made in Go, but in the official documentation, you can see how to use it with [other technologies](https://docs.tilt.dev/example_static_html.html) and scenarios.
 

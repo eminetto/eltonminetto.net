@@ -12,6 +12,14 @@ url = "/talks"
 
 # 2024
 
+### Mesa Redonda com Experts em Go
+
+**Quando**: 22/03/2024
+
+**Onde**: Golang Conference by FullCycle ++ Google Cloud
+
+[Video](https://www.youtube.com/live/XvCphiL8FP8?si=Pjf_SjbNq41Kf6Vf&t=1077)
+
 ### Live: Observabilidade e Go
 
 **Quando**: 21/03/2024
