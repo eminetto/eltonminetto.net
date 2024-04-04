@@ -12,6 +12,15 @@ url = "/talks"
 
 # 2024
 
+### Além do Sênior: Staff+ vs Manager
+
+**Quando**: 03/04/2024
+
+**Onde**: Evento interno da Impulso
+
+[Slides](https://docs.google.com/presentation/d/10m7dr7tuGICLGccZpiY81SPWdTPGTArh7S36bTb47h0/edit?usp=sharing)
+
+
 ### Mesa Redonda com Experts em Go
 
 **Quando**: 22/03/2024
