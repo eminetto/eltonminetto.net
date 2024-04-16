@@ -12,6 +12,22 @@ url = "/talks"
 
 # 2024
 
+### Da ideia ao Speaker Deck
+
+**Quando**: 19/04/2024
+
+**Onde**: Evento interno do PicPay
+
+---
+
+### Falhas e resiliência
+
+**Quando**: 12/04/2024
+
+**Onde**: Evento interno do PicPay
+
+---
+
 ### Além do Sênior: Staff+ vs Manager
 
 **Quando**: 03/04/2024
@@ -20,6 +36,7 @@ url = "/talks"
 
 [Slides](https://docs.google.com/presentation/d/10m7dr7tuGICLGccZpiY81SPWdTPGTArh7S36bTb47h0/edit?usp=sharing)
 
+---
 
 ### Mesa Redonda com Experts em Go
 
@@ -28,6 +45,8 @@ url = "/talks"
 **Onde**: Golang Conference by FullCycle ++ Google Cloud
 
 [Video](https://www.youtube.com/live/XvCphiL8FP8?si=Pjf_SjbNq41Kf6Vf&t=1077)
+
+---
 
 ### Live: Observabilidade e Go
 
@@ -39,7 +58,7 @@ url = "/talks"
 
 [Slides](https://docs.google.com/presentation/d/1Q9Q4nOKKlWc-Madl-9ikLXWhQHLUP5CAXGQLOJMas_g/edit?usp=sharing)
 
---- 
+---
 
 ### Live: Contribuindo com o projeto do Go
 
@@ -49,8 +68,7 @@ url = "/talks"
 
 [Video](https://www.youtube.com/watch?v=T8Rej5P3Bno)
 
---- 
-
+---
 
 ### Papo sobre carreira e papel de Principal
 
@@ -58,8 +76,7 @@ url = "/talks"
 
 **Onde**: Evento interno do PicPay
 
---- 
-
+---
 
 ### Ask Me Anything com os Principals
 
@@ -67,8 +84,7 @@ url = "/talks"
 
 **Onde**: Evento interno do PicPay
 
---- 
-
+---
 
 # 2023
 
@@ -80,8 +96,7 @@ url = "/talks"
 
 [Slides](https://speakerdeck.com/eminetto/observabilidade-de-apis)
 
---- 
-
+---
 
 ### Criando Kubernetes Operators com o operator-sdk
 
@@ -91,8 +106,7 @@ url = "/talks"
 
 [Slides](https://speakerdeck.com/eminetto/criando-kubernetes-operators-com-o-operator-sdk-6216d93c-ed29-4f78-88c1-9a70c8a40bb9)
 
---- 
-
+---
 
 ### Painel: Além do Sênior: Staff+ VS Manager
 
@@ -100,7 +114,7 @@ url = "/talks"
 
 **Onde**: [devfest Cerrado](https://devfestcerrado.com.br/)
 
---- 
+---
 
 ### Criando Kubernetes Operators com o operator-sdk
 
@@ -110,7 +124,7 @@ url = "/talks"
 
 [Slides](https://speakerdeck.com/eminetto/criando-kubernetes-operators-com-o-operator-sdk-6216d93c-ed29-4f78-88c1-9a70c8a40bb9)
 
---- 
+---
 
 ### Conversa sobre carreira dev
 
@@ -118,8 +132,7 @@ url = "/talks"
 
 **Onde**: Evento interno da [Arquivei](https://arquivei.com.br/)
 
---- 
-
+---
 
 ### Trunk Based Development
 
@@ -127,7 +140,7 @@ url = "/talks"
 
 **Onde**: Evento interno do PicPay
 
---- 
+---
 
 ### Platform Engineering: o futuro do DevOps?
 
@@ -135,7 +148,7 @@ url = "/talks"
 
 **Onde**: Codecon Feature
 
---- 
+---
 
 ### Architectural Kata - Monolito vs. Microsserviços
 
@@ -143,7 +156,7 @@ url = "/talks"
 
 **Onde**: Codecon Feature
 
---- 
+---
 
 ### Mentoria coletiva: principal engineer
 
@@ -151,7 +164,7 @@ url = "/talks"
 
 **Onde**: Codecon Feature
 
---- 
+---
 
 ### Papel do Staff/Principal Engineer BB e PicPay
 
@@ -159,7 +172,7 @@ url = "/talks"
 
 **Onde**: Encontro da Guilda de Especialistas de TI do Banco do Brasil
 
---- 
+---
 
 ### Criando Kubernetes Operators com o operator-sdk
 
@@ -171,8 +184,7 @@ url = "/talks"
 
 [Video](https://www.youtube.com/live/dTD9Ysa3udk?si=B1g2cNg-o0664KaU&t=251)
 
---- 
-
+---
 
 ### Developer productivity for fun and profit. Enterprise edition
 
@@ -180,7 +192,7 @@ url = "/talks"
 
 **Onde**: Evento interno do [PicPay](https://picpay.com)
 
---- 
+---
 
 ### Organizador e host da GopherCon Brasil
 
@@ -190,7 +202,7 @@ url = "/talks"
 
 [GopherCon Brasil](https://gopherconbr.org/)
 
---- 
+---
 
 ### Introdução a Go
 
@@ -200,7 +212,7 @@ url = "/talks"
 
 [Slides](https://speakerdeck.com/eminetto/introducao-a-go)
 
---- 
+---
 
 ### Developer productivity for fun and profit - Developer edition
 
@@ -210,7 +222,7 @@ url = "/talks"
 
 [Slides](https://speakerdeck.com/eminetto/developer-productivity-for-fun-and-profit-developer-edition)
 
---- 
+---
 
 ### Observabilidade de APIs na prática
 
@@ -230,7 +242,7 @@ url = "/talks"
 
 [Podcast](https://pontodev.io/performance-extrema-de-aplicacoes-em-golang-com-elton-minetto/)
 
---- 
+---
 
 ### Observabilidade de APIs
 
@@ -240,8 +252,7 @@ url = "/talks"
 
 [Slides](https://speakerdeck.com/eminetto/observabilidade-de-apis)
 
---- 
-
+---
 
 ### Podcast: Vale a pena participar de eventos?
 
@@ -257,7 +268,7 @@ url = "/talks"
 
 **Onde**: [Codecon Digital](https://www.codecon.dev/digital/programacao/todo-mundo-precisa-virar-engineer-manager-ou-tech-lead)
 
---- 
+---
 
 ### Developer productivity for fun and profit - Developer edition
 
@@ -267,7 +278,7 @@ url = "/talks"
 
 [Slides](https://speakerdeck.com/eminetto/developer-productivity-for-fun-and-profit-developer-edition)
 
---- 
+---
 
 ### Developer productivity for fun and profit - Developer edition
 
@@ -277,7 +288,7 @@ url = "/talks"
 
 [Slides](https://speakerdeck.com/eminetto/developer-productivity-for-fun-and-profit-developer-edition)
 
---- 
+---
 
 ### A Evolução do DEV
 
@@ -285,7 +296,7 @@ url = "/talks"
 
 **Onde**: Tech Talk da comunidade T-REX
 
---- 
+---
 
 ### Observabilidade de APIs
 
@@ -297,8 +308,7 @@ url = "/talks"
 
 [Video](https://www.youtube.com/live/moUVMdUzz8g?feature=share&t=238)
 
---- 
-
+---
 
 ### Developer productivity for fun and profit. Developer edition
 
@@ -306,8 +316,7 @@ url = "/talks"
 
 **Onde**: Evento interno do [PicPay](https://picpay.com)
 
---- 
-
+---
 
 ### Painel Dia a dia da pessoa desenvolvedora júnior
 
@@ -315,7 +324,7 @@ url = "/talks"
 
 **Onde**: Evento interno de uma das turmas da [Trybe](https://betrybe.com)
 
---- 
+---
 
 # 2022
 
@@ -326,7 +335,6 @@ url = "/talks"
 **Onde**: [TDC Future](https://thedevconf.com/tdc/2022/future/trilha-design-de-codigo-e-xp)
 
 ---
-
 
 ### Reflexões sobre Design de Software
 
@@ -374,7 +382,7 @@ url = "/talks"
 
 **Onde**: [GopherCon Brasil](https://gopherconbr.org/)
 
---- 
+---
 
 ### Reflexões sobre Design de Software
 
@@ -384,7 +392,7 @@ url = "/talks"
 
 [Slides](https://speakerdeck.com/eminetto/reflexoes-sobre-design-de-software)
 
---- 
+---
 
 ### Reflexões sobre Design de Software
 
@@ -394,7 +402,7 @@ url = "/talks"
 
 [Slides](https://speakerdeck.com/eminetto/reflexoes-sobre-design-de-software)
 
---- 
+---
 
 ### Reflexões sobre Design de Software
 
@@ -404,7 +412,7 @@ url = "/talks"
 
 [Slides](https://speakerdeck.com/eminetto/reflexoes-sobre-design-de-software)
 
---- 
+---
 
 ### Latino TALKS Carreiras: Que competências preciso ter no mercado de trabalho
 
@@ -424,7 +432,6 @@ url = "/talks"
 
 [Slides](https://speakerdeck.com/eminetto/reflexoes-sobre-design-de-software)
 
-
 ---
 
 ### Reflexões sobre Design de Software
@@ -432,7 +439,6 @@ url = "/talks"
 **Quando**: 19/05/2022
 
 **Onde**: [Canal do YouTube](https://www.youtube.com/playlist?list=PL0qudqr7_CuQ5lI5rFvLD8Bh_rMPlbuUt)
- 
 
 ---
 
@@ -454,7 +460,6 @@ url = "/talks"
 
 [Slides](https://speakerdeck.com/eminetto/arquitetura-de-software-e-a-clean-architecture)
 
-
 ---
 
 ### Masterclass de Arquitetura de Software e Clean Architecture
@@ -475,7 +480,6 @@ url = "/talks"
 
 [Video](https://www.youtube.com/watch?v=n0OC8GGm3n8)
 
-
 ---
 
 ### Arquitetura de Software e a Clean Architecture
@@ -486,7 +490,6 @@ url = "/talks"
 
 [Slides](https://speakerdeck.com/eminetto/arquitetura-de-software-e-a-clean-architecture)
 
-
 ---
 
 ### Go
@@ -494,7 +497,6 @@ url = "/talks"
 **Quando**: 24/02/2022
 
 **Onde**: [TallerCast](https://blog.taller.net.br/go-tallercast-12/)
-
 
 ---
 
@@ -506,11 +508,9 @@ url = "/talks"
 
 [Vídeo](https://youtu.be/p1T4vwjhkF0)
 
-
 ---
 
 # 2021
-
 
 ### A Importância das Comunidades Abertas e Projetos Open Source
 
@@ -519,7 +519,6 @@ url = "/talks"
 **Onde**: [HACKTOBERFEST Trybe](https://go.betrybe.com/hacktoberfesttrybe)
 
 [Vídeo](https://www.youtube.com/watch?v=xDQvufNBReM)
-
 
 ---
 
@@ -530,7 +529,6 @@ url = "/talks"
 **Onde**: [Seniortec](https://www.senior.com.br/seniortec/)
 
 [Slides](https://speakerdeck.com/eminetto/go-o-que-por-que-e-como)
-
 
 ---
 
@@ -550,7 +548,6 @@ url = "/talks"
 
 [Slides](https://speakerdeck.com/eminetto/dev-journey)
 
-
 ---
 
 ### Jornada Dev
@@ -560,7 +557,6 @@ url = "/talks"
 **Onde**: Trybe Summer Talks
 
 [Slides](https://speakerdeck.com/eminetto/dev-journey)
-
 
 ---
 
@@ -572,7 +568,6 @@ url = "/talks"
 
 [Slides](https://speakerdeck.com/eminetto/arquitetura-de-software-e-a-clean-architecture)
 
-
 ---
 
 ### Microsserviços usando Go kit
@@ -583,14 +578,13 @@ url = "/talks"
 
 [Slides](https://speakerdeck.com/eminetto/microsservicos-usando-go-kit)
 
-
 ---
 
 ### Carreira em tecnologia
 
 **Quando**: 01/08/2021
 
-**Onde**: 
+**Onde**:
 
 - [Podcast Tech Leadership Rocks](https://techleadership.rocks/2021/08/01/carreira-em-tecnologia-com-elton-minetto/)
 
@@ -600,11 +594,10 @@ url = "/talks"
 
 **Quando**: 18/07/2021
 
-**Onde**: 
+**Onde**:
 
 - [Canal do YouTube da Confloss](https://www.youtube.com/watch?v=cKDs52cVRXc)
 - [Podcast da Confloss](https://soundcloud.com/confloss/entrevista-com-elton-minetto-programacao-software-livre-e-carreira)
-
 
 ---
 
@@ -614,7 +607,6 @@ url = "/talks"
 
 **Onde**: [TrybeCast: na minha máquina roda](https://www.youtube.com/watch?v=MZ73QbAyKB4)
 
-
 ---
 
 ### Turbine sua carreira em TI com o AC/DC
@@ -623,7 +615,6 @@ url = "/talks"
 
 **Onde**: [DioCast – O seu podcast sobre Linux e tecnologia](https://open.spotify.com/show/1kcAbYFSTkfbwm01y4g7vR)
 
-
 ---
 
 ### Arquitetura de Software e a Clean Architecture
@@ -631,7 +622,6 @@ url = "/talks"
 **Quando**: 24/05/2021
 
 **Onde**: Evento interno do time da PicPay
-
 
 ---
 
@@ -663,7 +653,6 @@ url = "/talks"
 
 [Video](https://www.youtube.com/watch?v=nq4FiWQBYKQ)
 
-
 ---
 
 ### Microsserviços usando Go kit
@@ -679,7 +668,6 @@ url = "/talks"
 ---
 
 # 2020
-
 
 ### Painel: Virei Tech Leader, e agora?
 
@@ -711,7 +699,6 @@ url = "/talks"
 
 [Video](https://www.youtube.com/watch?v=uBPJup0zF-8)
 
-
 ---
 
 ### A jornada do desenvolvedor
@@ -732,7 +719,6 @@ url = "/talks"
 
 [Arquitetura de Software e Clean Architecture](https://speakerdeck.com/eminetto/arquitetura-de-software-e-a-clean-architecture)
 
-
 ---
 
 ### Arquitetura de Software e Clean Architecture
@@ -742,7 +728,6 @@ url = "/talks"
 **Onde**: [Meetup Golang Campinas](https://www.youtube.com/watch?v=VOYv8SwNPNA)
 
 [Arquitetura de Software e Clean Architecture](https://speakerdeck.com/eminetto/arquitetura-de-software-e-a-clean-architecture)
-
 
 ---
 
@@ -756,7 +741,6 @@ url = "/talks"
 
 [Video](https://youtu.be/BXfbpsf3juQ)
 
-
 ---
 
 ### Bate papo sobre a importância de conhecer mais de uma linguagem
@@ -767,7 +751,6 @@ url = "/talks"
 
 [Bate papo sobre a importância de conhecer mais de uma linguagem](https://www.youtube.com/watch?v=I3lJNXMpk20)
 
-
 ---
 
 ### Arquitetura de Software e Clean Architecture
@@ -777,7 +760,6 @@ url = "/talks"
 **Onde**: [LIVE] MeeTrybe #01 | Arquitetura de Software
 
 [Arquitetura de Software e Clean Architecture](https://www.youtube.com/watch?v=3fmUp3PICLo&feature=youtu.be)
-
 
 ---
 
@@ -795,12 +777,11 @@ url = "/talks"
 
 **Quando**: 23/06/2020
 
-**Onde**: Canal do Youtube 
+**Onde**: Canal do Youtube
 
 [Video](https://www.youtube.com/watch?v=X0iEiifDXmg)
 
 [Slides](https://speakerdeck.com/eminetto/da-ideia-ao-speaker-deck)
-
 
 ---
 
@@ -834,7 +815,6 @@ url = "/talks"
 
 [Os diferentes caminhos para carreira de um(a) dev](https://www.youtube.com/watch?v=afaag-FJDV8)
 
-
 ---
 
 ### Podcast Full Cycle: Go Lang: A Linguagem do Futuro
@@ -844,7 +824,6 @@ url = "/talks"
 **Onde**: Canal do Youtube Full Cycle
 
 [Podcast Full Cycle: Go Lang: A Linguagem do Futuro](https://www.youtube.com/watch?v=rzCtX_qN0Bw&t=5s)
-
 
 ---
 
@@ -870,7 +849,6 @@ url = "/talks"
 
 # 2019
 
-
 ### GopherCon Brasil
 
 **Quando**: 27 e 28/09/2019
@@ -878,7 +856,6 @@ url = "/talks"
 **Onde**: Florianópolis/SC
 
 [Coordenação do evento](http://2019.gopherconbr.org)
-
 
 ---
 
@@ -910,7 +887,6 @@ url = "/talks"
 
 [Golang e microserviços: nascidos um para o outro](https://www.slideshare.net/eminetto/go-e-microservios-nascidos-um-para-o-outro)
 
-
 ---
 
 ### Startup Summit: organizador do palco de tecnologia e produto
@@ -940,8 +916,6 @@ url = "/talks"
 **Onde**: Joinville/SC
 
 [Programar != desenvolver software](https://www.slideshare.net/eminetto/programar-desenvolver-software-v2-152192472)
-
-
 
 ---
 
@@ -997,7 +971,6 @@ Microserviços
 
 # 2018
 
-
 ### PHP Conference Brasil
 
 **Quando**: 07/12/2018
@@ -1038,7 +1011,6 @@ Microserviços
 
 [Serverless em Go](https://www.slideshare.net/eminetto/serverless-em-go)
 
-
 ---
 
 ### Evento Hoje
@@ -1048,7 +1020,6 @@ Microserviços
 **Onde**: Concórdia/SC
 
 Painel: As startups precisam morrer!
-
 
 ---
 
@@ -1070,7 +1041,6 @@ Painel: As startups precisam morrer!
 
 Desafios tecnológicos de uma fintech (mediador do painel)
 
-
 ---
 
 ### Webminar KingHost
@@ -1080,7 +1050,6 @@ Desafios tecnológicos de uma fintech (mediador do painel)
 **Onde**: Webminar
 
 PHP: Tendências da linguagem para os próximos anos
-
 
 ---
 
@@ -1122,7 +1091,6 @@ PHP: Tendências da linguagem para os próximos anos
 
 [Clean architecture em Golang](https://www.slideshare.net/eminetto/clean-architecture-in-golang)
 
-
 ---
 
 ### Aula inaugural da turma de Sistemas para Internet da IELUSC
@@ -1153,7 +1121,6 @@ PHP: Tendências da linguagem para os próximos anos
 
 [Code:Nation Tech Stack](https://www.slideshare.net/eminetto/codenation-tech-stack)
 
-
 ---
 
 # 2017
@@ -1178,14 +1145,13 @@ PHP: Tendências da linguagem para os próximos anos
 
 ---
 
-### Meetup Go 
+### Meetup Go
 
 **Quando**: 09/11/2017
 
 **Onde**: Joinville/SC
 
 [Building APIs using Go](https://www.slideshare.net/eminetto/building-apis-using-go)
-
 
 ---
 
@@ -1196,7 +1162,6 @@ PHP: Tendências da linguagem para os próximos anos
 **Onde**: Florianópolis/SC
 
 [Metodologias ágeis interativas](http://www.slideshare.net/eminetto/metodologias-geis-interativas)
-
 
 ---
 
@@ -1230,7 +1195,7 @@ Painel Startups: Networking
 
 ---
 
-### PHP Community Summit 
+### PHP Community Summit
 
 **Quando**: 01/09/2017
 
@@ -1320,7 +1285,6 @@ Case Compufácil e AWS [Slides](https://www.slideshare.net/eminetto/o-case-da-co
 
 [Como extrair métricas do Trello](https://www.slideshare.net/eminetto/como-extrair-mtricas-do-trello)
 
-
 ---
 
 ### PHP Experience 2017
@@ -1345,8 +1309,7 @@ Case Compufácil e AWS [Slides](https://www.slideshare.net/eminetto/o-case-da-co
 
 # 2016
 
-
-### PHP Conference Brasil 
+### PHP Conference Brasil
 
 **Quando**: 08/12/2016
 
@@ -1363,7 +1326,6 @@ Case Compufácil e AWS [Slides](https://www.slideshare.net/eminetto/o-case-da-co
 **Onde**: Concórdia/SC
 
 [6 questões que levam à inovação](http://www.slideshare.net/eminetto/6-questes-que-levam-inovao)
-
 
 ---
 
@@ -1395,8 +1357,6 @@ Case Compufácil e AWS [Slides](https://www.slideshare.net/eminetto/o-case-da-co
 
 [Do monolito ao micro serviço](http://www.slideshare.net/eminetto/do-monolito-ao-micro-servio)
 
-
-
 ---
 
 ### Palestra Umuarama
@@ -1417,10 +1377,9 @@ Case Compufácil e AWS [Slides](https://www.slideshare.net/eminetto/o-case-da-co
 
 [Do monolito ao micro serviço](http://www.slideshare.net/eminetto/do-monolito-ao-micro-servio)
 
-
 ---
 
-### SC Dev Summit 
+### SC Dev Summit
 
 **Quando**: 20/05/2016
 
@@ -1440,7 +1399,7 @@ Case Compufácil e AWS [Slides](https://www.slideshare.net/eminetto/o-case-da-co
 
 **PHPTalks: Container vs Virtual Machine**. Entrevista com Wellington Silva
 
---- 
+---
 
 # 2015
 
@@ -1492,7 +1451,6 @@ Case Compufácil e AWS [Slides](https://www.slideshare.net/eminetto/o-case-da-co
 
 PHPTalks - Apresentado "Talk show" entrevistando desenvolvedores PHP
 
-
 ---
 
 ### ConnectDev
@@ -1507,7 +1465,6 @@ PHPTalks - Apresentado "Talk show" entrevistando desenvolvedores PHP
 
 # 2014
 
-
 ### PHP Conference Brasil
 
 **Quando**: 06/12/2014
@@ -1515,7 +1472,6 @@ PHPTalks - Apresentado "Talk show" entrevistando desenvolvedores PHP
 **Onde**: Osasco
 
 [De Padawan a Jedi](http://www.slideshare.net/eminetto/de-padawana-jedi)
-
 
 ---
 
@@ -1530,529 +1486,474 @@ PHPTalks - Apresentado "Talk show" entrevistando desenvolvedores PHP
 ---
 
 ### Mobile Brazil Conference
-        
+
 **Quando**: 08/11/2014
 
 **Onde**: São Paulo/SP
 
 [Memórias das trincheiras](http://www.slideshare.net/eminetto/memorias-das-trincheiras)
-        
-    
-		
+
 ---
 
-### Congresso Online de Tecnologia da Informação 
-    
+### Congresso Online de Tecnologia da Informação
+
 **Quando**: 15/09/2014
 
 **Onde**: Online
 
 [De Padawan a Jedi](http://www.slideshare.net/eminetto/de-padawana-jedi)
-        
-    
 
-		
 ---
 
 ### VII Semana de Tecnologia da Informação da Univem
-        
+
 **Quando**: 12/09/2014
 
 **Onde**: Marilia/SP
-            
+
 [Desenvolvimento Mobile](http://www.slideshare.net/eminetto/desenvolvimento-mobile-39094706)
-        
-    
-		
+
 ---
 
 ### Semana Acadêmica dos cursos de Ciência da Computação e Sistemas de Informação da Unochapecó
-        
+
 **Quando**: 13/05/2014
 
 **Onde**: Chapecó/SC
-            
+
 [Desenvolvimento Mobile](http://www.slideshare.net/eminetto/desenvolvimento-mobile-39094706)
-        
-    
-		
+
 ---
 
 ### 5º Encontro de Tecnologia e Informação
-        
+
 **Quando**: 19/05/2014
 
 **Onde**: Camboriú/SC
 
 [De Padawan a Jedi](http://www.slideshare.net/eminetto/de-padawana-jedi)
-        
-    
-    
+
 ---
 
 ### Joinville Software Meetup
-        
+
 **Quando**: 23/01/2014
 
 **Onde**: Joinville/SC
 
 [Desenvolvimento de aplicativos para FirefoxOS](http://pt.slideshare.net/eminetto/firefox-os-30383274)
-        
---- 
+
+---
 
 # 2013
-    
+
 ### PHPConference Brasil
-        
+
 **Quando**: 28/11/2013 a 01/12/2013
 
 **Onde**: São Paulo/SP
 
 [DevOps e PHP](http://www.slideshare.net/eminetto/devops-e-php)
-        
-    
+
 ---
 
 ### PHPConference Brasil
-        
+
 **Quando**: 28/11/2013
 
 **Onde**: São Paulo/SP
 
 [Doctrine 2 na prática](http://phpconference.com.br/handson/doctrine)
-        
-    
-    
+
 ---
 
 ### IV Semana da Computação (SeComp) da Universidade Federal de São Carlos – UFSCar
-        
+
 **Quando**: 10/10/2013
 
 **Onde**: São Carlos/SP
 
 [Frameworks de Desenvolvimento em PHP](/2013/11/04/frameworks-php-e-analogias/)
-        
-    
+
 ---
 
 ### 4PHP
-        
+
 **Quando**: 04/10/2013
 
 **Onde**: São Luis/MA
 
 [ZF2 Viking Style](http://www.slideshare.net/eminetto/zf2-viking-style)
-        
-    
-    
+
 ---
 
 ### XII Jornada de Informática UNICESUMAR
-        
+
 **Quando**: 20/09/2013
 
 **Onde**: Maringá/PR
 
 [PHP like a Super Hero](http://www.slideshare.net/eminetto/php-like-a-super-hero-v3)
-        
-     
+
 ---
 
 ###Seminário PHP 2013, 10ª edição
-        
+
 **Quando**: 31/08/2013
 
 **Onde**: Salvador/BA
 
 [Criando aplicações RESTful com Zend Framework 2](http://www.slideshare.net/eminetto/rest-zf2-zendwebminar)
-        
-    
-    
+
 ---
 
 ### Seminário PHP 2013, 9ª edição
-        
+
 **Quando**: 10/08/2013
 
 **Onde**: São Paulo/SP
 
 [Criando aplicações RESTful com Zend Framework 2](http://www.slideshare.net/eminetto/rest-zf2-zendwebminar)
-        
-    
+
 ---
 
 ### FISL 2013
-        
+
 **Quando**: 05/07/2013
 
 **Onde**: Porto Alegre/RS
 
 [PHP like a Super Hero](http://www.slideshare.net/eminetto/php-like-a-super-hero-v3)
-        
-    
+
 ---
 
 ### Webminar Zend
-        
+
 **Quando**: 03/07/2013
 
 **Onde**: Online
 
 [Criando aplicações RESTful com Zend Framework 2](http://www.slideshare.net/eminetto/rest-zf2-zendwebminar)
-        
-    
-    
+
 ---
 
 ### Seminário PHP 2013, 8ª edição
-        
+
 **Quando**: 08/06/2013
 
 **Onde**: Porto Alegre/RS
 
 [Criando aplicações RESTful com Zend Framework 2](http://www.slideshare.net/eminetto/rest-zf2-zendwebminar)
-        
-    
+
 ---
 
 ### XIV DEVCON GESCLA
-        
+
 **Quando**: 01/06/2013
 
 **Onde**: Blumenau/SC
 
 [PHP like a super hero](http://www.slideshare.net/eminetto/php-like-a-super-hero-v3)
-        
-    
-    
+
 ---
 
 ### Universidade do Contestado
-        
+
 **Quando**: 24/05/2013
 
 **Onde**: Concórdia/SC
 
 [Inovação Tecnológica e Startups](http://www.slideshare.net/eminetto/inovacao-startups)
-        
-    
-    
+
 ---
 
 ### Semana Acadêmica Unochapecó
-        
+
 **Quando**: 09/05/2013
 
 **Onde**: Chapecó/SC
 
 [Desenvolvimento Mobile](https://speakerdeck.com/eminetto/desenvolvimento-mobile)
-        
+
 ---
 
 # 2012
-    
+
 ### PHPSC Conference
-        
+
 **Quando**: 27/10/2012
 
 **Onde**: São José/SC
 
 [Criando APIs usando o micro framework Silex](https://speakerdeck.com/eminetto/api-usando-silex)
-        
-    
+
 ---
 
 ### Semana de Informática da Univille
-        
+
 **Quando**: 24/10/2012
 
 **Onde**: Joinville/SC
 
 [Introdução ao Zend Framework 2](https://speakerdeck.com/eminetto/introducao-ao-zend-framework-2)
-        
-    
-    
+
 ---
 
 ### Uninfo
-        
+
 **Quando**: 11/10/2012
 
 **Onde**: Chapecó/SC
 
 [Inovação e Tecnologia](https://speakerdeck.com/eminetto/inovacao-e-tecnologia)
-        
-    
+
 ---
 
 ### Semana Acadêmica dos Cursos de Sistemas de Informação e Ciência da Computação Unochapecó
-        
+
 **Quando**: 05/10/2012
 
 **Onde**: Chapecó/SC
-            
+
 [PHP like a Super Hero](https://speakerdeck.com/eminetto/php-like-a-super-hero)
-        
-    
+
 ---
 
 ### The Developers Conference
-        
+
 **Quando**: 25/08/2012
 
 **Onde**: Florianópolis/SC
 
 [PHP like a Super Hero](https://speakerdeck.com/eminetto/php-like-a-super-hero)
-        
-    
+
 ---
 
 ### PHPMS Conference
-        
+
 **Quando**: 18/08/2012
 
 **Onde**: Campo Grande/MS
 
 [Frameworks de desenvolvimento em PHP](https://speakerdeck.com/eminetto/frameworks-de-desenvolvimento-em-php)
-        
-    
+
 ---
 
 ### PHPMS Conference
-        
+
 **Quando**: 17/08/2012
 
 **Onde**: Campo Grande/MS
 
 [PHP like a Super Hero](https://speakerdeck.com/eminetto/php-like-a-super-hero)
-        
-    
+
 ---
 
 ### The Developers Conference
-        
+
 **Quando**: 07/07/2012
 
 **Onde**: São Paulo/SP
 [PHP like a Super Hero](https://speakerdeck.com/eminetto/php-like-a-super-hero)
-        
-    
+
 ---
 
 ### Unoesc Chapecó
-        
+
 **Quando**: 05/05/2012
 
 **Onde**: Chapecó/SC
 
 [Segurança e crimes digitais](http://prezi.com/aupf1kqhzbik/securanca-da-informacao-e-crimes-digitais/)
-        
+
 ---
 
 # 2011
-    
+
 ### PHP Conference Brasil
-        
+
 **Quando**: 03/12/2011
 
 **Onde**: São Paulo/SP
 
 [Otimizando aplicações com Zend Framework](http://speakerdeck.com/u/eminetto/p/otimizando-aplicacoes-com-zend-framework)
-        
-    
-    
+
 PHPSC Conference
-        
+
 **Quando**: 19/11/2011
 
 **Onde**: Itajaí/SC
 
 [10 dicas de carreira](http://speakerdeck.com/u/eminetto)
-        
-    
+
 ---
 
 ### Fórum Maranhanse de Profissionais PHP
-        
+
 **Quando**: 15/10/2011
 
 **Onde**: São Luis/MA
-            
+
 [E-commerce e o novo consumidor](https://speakerdeck.com/eminetto/e-commerce-e-o-novo-consumidor)
-        
-    
+
 ---
 
 ### Tchelinux
-        
+
 **Quando**: 13/08/2011
 
 **Onde**: Bento Gonçalves/RS
 
 [Otimizando aplicações com Zend Framework](https://speakerdeck.com/eminetto/otimizando-aplicacoes-com-zend-framework)
-        
-    
+
 ---
 
 ### The Developers Conference
-        
+
 **Quando**: 09/07/2011
 
 **Onde**: São Paulo/SP
-            
+
 [Programadores, guitarras e negócios](https://speakerdeck.com/eminetto/programadores-guitarras-e-negocios)
-        
+
 ---
 
 # 2010
-    
+
 ### PHP Conference Brasil
-        
+
 **Quando**: 25/11/2010
 
 **Onde**: São Paulo/SP
-            
+
 [Ao infinito e além com PHP, Memcached e Gearman](http://www.slideshare.net/eminetto/ao-infinito-e-alm-com-php-memcached-e-gearman)
-        
-    
+
 ---
 
 ### Latinoware
-        
+
 **Quando**: 12/11/2010
 
 **Onde**: Foz do Iguaçu/PR
 
 [Ao infinito e além com PHP, Memcached e Gearman](http://www.slideshare.net/eminetto/ao-infinito-e-alm-com-php-memcached-e-gearman)
-        
-         
+
 ---
 
 ### Seminário de Sistemas de Informação Unoesc Chapecó
-        
+
 **Quando**: 29/10/2010
 
 **Onde**: Chapecó/SC
 
 Construindo uma rede social com PHP e Software Livre](http://www.slideshare.net/eminetto/drimiouniparpdf)
-        
-     
+
 ---
 
 ### Solisc
-        
+
 **Quando**: 23/10/2010
 
 **Onde**: Florianópolis/SC
-            
+
 [Entre na fila. Processamento distribuído usando Gearman](http://www.slideshare.net/eminetto/entre-na-fila-processamento-distribudo-usando-gearman-5544783)
-        
-     
+
 ---
 
 ### Unipar
-        
+
 **Quando**: 01/10/2010
 
 **Onde**: Cianorte/PR
 
 [Frameworks de Desenvolvimento Web com PHP](http://www.slideshare.net/eminetto/frameworksuniparpdf)
-        
+
 ---
 
 ### Unipar
-        
+
 **Quando**: 01/10/2010
 
 **Onde**: Cianorte/PR
-            
+
 [Construindo uma Rede Social com PHP e Software Livre](http://www.slideshare.net/eminetto/drimiouniparpdf)
-        
-     
+
 ---
 
 ### FISL
-        
+
 **Quando**: 23/07/2010
 
 **Onde**: Porto Alegure/RS
 
 [Entre na fila. Processamento distribuído usando Gearman](https://speakerdeck.com/eminetto/entre-na-fila-processamento-distribuido-usando-gearman)
-        
-     
+
 ---
 
 ### VI Escola Regional de Banco de Dados
-        
+
 **Quando**: 14/04/2010
 
 **Onde**: Joinville/SC
 
 [Mysql para aplicações Web escaláveis](http://slidesha.re/9KPhUB)
-        
-    
+
 ---
 
 # 2009
-    
+
 ### PHP Conference Brasil
-        
+
 **Quando**: 26/11/2009
 
 **Onde**: São Paulo/SP
 
 [Construindo uma rede social com PHP](https://www.slideshare.net/eminetto/construindo-uma-rede-social-com-php-case-drimio)
-        
-     
+
 ---
 
 ### Semana Acadêmica de Computação/Sistemas de Informação na Udesc/Joinville
-        
+
 **Quando**: 14/11/2009
 
 **Onde**: Maringá/PR
 
 [Frameworks de desenvolvimento em PHP](http://www.slideshare.net/eminetto/frameworks-de-desenvolvimento-em-php)
-        
-        
+
 ---
 
 ### Semana Acadêmica de Computação/Sistemas de Informação na Udesc/Joinville
-        
+
 **Quando**: 23/09/2009
 
 **Onde**: Joinville/SC
 
 [Desenvolvendo aplicações web escaláveis](http://www.slideshare.net/eminetto/desenvolvendo-aplicaes-web-escalveis-com-php)
-        
-    
+
 ---
 
 ### FISL
-        
+
 **Quando**: 10/06/2009
 
 **Onde**: Joinville/SC
 
 [Desenvolvendo aplicações web escaláveis](http://www.slideshare.net/eminetto/app-web-escalaveis-fisl)
-        
-    
+
 ---
 
 ### PHPSC Conf
-        
+
 **Quando**: 10/06/2009
 
 **Onde**: Joinville/SC
 
 [Melhorando a performance de aplicações com o uso do MemCache](http://www.slideshare.net/eminetto/melhorando-a-performance-de-aplicaes-com-o-uso-do-memcache)
-        
-    
+
 ---
 
 ### II Boot
-        
+
 **Quando**: 27/04/2009
 
 **Onde**: Xanxerê/SC
@@ -2060,48 +1961,45 @@ Construindo uma rede social com PHP e Software Livre](http://www.slideshare.net/
 [Zend Framework](/docs/zend_framework_xxe_II.pdf)
 
 [Desenvolvendo aplicações web escaláveis](/docs/app_web_escalaveis_xxe.pdf)
-        
-    
---- 
+
+---
 
 # 2008
-    
+
 ### PHPSC Conf
-        
+
 **Quando**: 23/06/2008
 
 **Onde**: Chapecó/SC
 
 [Oracle e PHP. Dicas de Performance](/docs/php_oracle.pdf)
-        
---- 
+
+---
 
 # 2007
-    
+
 ### I Boot
-        
+
 **Quando**: 21/09/2007
 
 **Onde**: Xanxerê/SC
 
 [CakePHP](/docs/xxe.pdf)
-        
-    
+
 ---
 
 ### VI Seminário de Sistemas de Informação - FIE
-        
+
 **Quando**: 29/08/2007
 
 **Onde**: Chapecó/SC
-            
+
 [Oportunidades do Software Livre](/docs/fie.pdf)
-        
-    
+
 ---
 
 ### Frameworks de Desenvolvimento Web com PHP
-        
+
 **Quando**: 06/08/2007
 
 **Onde**: São Paulo/SP
@@ -2109,84 +2007,79 @@ Construindo uma rede social com PHP e Software Livre](http://www.slideshare.net/
 [CakePHP](/docs/workshop_frameworks_cake.zip)
 
 [Comparação entre frameworks](/docs/resultados_comparacao_frameworks.pdf)
-        
-        
+
 ---
 
 ### SENAC
-        
+
 **Quando**: 18/05/2007
 
 **Onde**: Chapecó/SC
-            
+
 [Grid Computing](/docs/palestra_senac.pdf)
-        
-    
+
 ---
 
 ### FISL
-        
+
 **Quando**: 15/04/2007
 
 **Onde**: Porto Alegre/RS
-            
+
 [CakePHP](/docs/cake_fisl.pdf)
-        
----    
+
+---
 
 # 2006
-    
+
 ### PHP Conference Brasil
-        
+
 **Quando**: 01/12/2006
 
 **Onde**: São Paulo/SP
-            
+
 [CakePHP](/docs/cake.pdf)
-        
-    
+
 ---
 
 ### PHP Conference Brasil
-        
+
 **Quando**: 01/12/2006
 
 **Onde**: São Paulo/SP
-            
+
 [Symfony](/docs/symfony.pdf)
-        
-    
+
 ---
 
 # 2005
-    
+
 ### Dia da Computação
-        
+
 **Quando**: 27/09/2005
 
 **Onde**: Unochapecó
-        
+
 [Grid Computing](/docs/palestra_grids.pdf)
-        
+
 ---
 
 # 2003
-    
+
 ### Install Fest
-        
+
 **Quando**: 18/11/2003
 
 **Onde**: Unochapecó
-            
+
 [Software Livre e Linux](/docs/installFest.sxi)
-        
-    
+
 ---
 
 ### Semana Acadêmica de Computação
-        
+
 **Quando**: 10/10/2003
 
 **Onde**: Unochapecó
-            
+
 [O uso de software livre no desenvolvimento de aplicativos web](/docs/software_livre_web.ppt)
