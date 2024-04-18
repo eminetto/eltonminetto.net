@@ -438,7 +438,7 @@ func TestService_Get(t *testing.T) {
 	}
 	defer d.Close()
 	queries := db.New(d)
-	t.Run("usuário encontrado", func(t *testing.T) {
+	t.Run("user found", func(t *testing.T) {
 		// fase: Arrange
 		rows := sqlmock.NewRows([]string{"id", "name", "lastname", "created_at", "updated_at"}).
 			AddRow(1, "Ozzy", "Osbourne", time.Now(), time.Now())
@@ -458,7 +458,7 @@ func TestService_Get(t *testing.T) {
 		assert.Nil(t, err)
 		assert.Equal(t, p, found)
 	})
-	t.Run("usuário não encontrado", func(t *testing.T) {
+	t.Run("user not found", func(t *testing.T) {
 		mock.ExpectQuery("[A-Za-z]?select id, first_name, last_name, created_at, updated_at from person where id").WillReturnError(errors.New(""))
 		service := person.NewService(queries)
 		found, err := service.Get(context.TODO(), person.ID(1))
