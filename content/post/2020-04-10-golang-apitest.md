@@ -1,10 +1,12 @@
-+++
-title = "Testando APIs em Golang usando apitest"
-subtitle = ""
-date = "2020-04-10T08:33:24+02:00"
-bigimg = ""
+---
+title: "Testando APIs em Golang usando apitest"
+subtitle: ""
+date: "2020-04-10T08:33:24+02:00"
+bigimg: ""
+tags:
+  - go
+---
 
-+++
 Uma das grandes vantagens da linguagem Go é sua biblioteca padrão, que contém muitas das funcionalidades que são úteis no desenvolvimento de aplicações modernas, como servidor e cliente HTTP, parser de JSON, e testes. É exatamente sobre esse último ponto que vou falar neste post.
 
 Com a biblioteca padrão é possível escrever testes para sua API, como no exemplo a seguir.
@@ -115,16 +117,14 @@ func bookmarkFind() http.Handler {
 }
 ```
 
-
 ## Compilando
 
-Antes de compilar nossa API precisamos iniciar nosso projeto como um módulo, para que as dependências externas sejam instaladas, como o *negroni* e o *gorilla*. Para isso executamos o comando:
+Antes de compilar nossa API precisamos iniciar nosso projeto como um módulo, para que as dependências externas sejam instaladas, como o _negroni_ e o _gorilla_. Para isso executamos o comando:
 
 ```
 go mod init github.com/eminetto/post-apitest
 go: creating new go.mod: module github.com/eminetto/post-apitest
 ```
-
 
 Vai ser criado um arquivo chamado `go.mod` que contém a lista de dependências do nosso projeto. Ao executar a compilação, elas serão instaladas:
 
@@ -149,7 +149,7 @@ import (
    "net/http"
    "net/http/httptest"
    "testing"
-   
+
    "github.com/gorilla/mux"
 )
 
@@ -191,7 +191,7 @@ func Test_bookmarkFind(t *testing.T) {
       }
    })
 }
-``` 
+```
 
 Executando os testes vemos que todos estão passando com sucesso:
 
@@ -209,7 +209,7 @@ PASS
 ok  	github.com/eminetto/post-apitest	0.371s
 ```
 
-Desta forma testamos nossa API usando apenas a biblioteca padrão da linguagem, o que é algo bem interessante. Mas o código dos testes não são tão legíveis, principalmente quando estivermos testando uma API grande, com diversos *endpoints*. 
+Desta forma testamos nossa API usando apenas a biblioteca padrão da linguagem, o que é algo bem interessante. Mas o código dos testes não são tão legíveis, principalmente quando estivermos testando uma API grande, com diversos _endpoints_.
 
 ## Usando o apitest
 
@@ -284,12 +284,11 @@ func Test_bookmarkFind(t *testing.T) {
 
 Os testes ficaram bem mais legíveis e ganhamos a funcionalidade de testar o JSON resultante. Uma observação: também é possível testar o JSON resultante usando apenas a biblioteca padrão, mas são necessárias algumas linhas a mais no teste.
 
-Na [documentação](https://apitest.dev) é possível ver como a biblioteca é poderosa, permitindo configurações avançadas de *headers*, *cookies*, *debug* e *mocks*. Vale a pena dedicar um tempo estudando as opções e vendo os exemplos fornecidos.
+Na [documentação](https://apitest.dev) é possível ver como a biblioteca é poderosa, permitindo configurações avançadas de _headers_, _cookies_, _debug_ e _mocks_. Vale a pena dedicar um tempo estudando as opções e vendo os exemplos fornecidos.
 
+## Gerando relatórios
 
-## Gerando relatórios 
-
-Uma funcionalidade interessante que gostaria de mostrar neste post é a geração de relatórios. Basta uma pequena alteração no código, a inclusão da linha `Report(apitest.SequenceDiagram()).`  nos testes, como no exemplo:
+Uma funcionalidade interessante que gostaria de mostrar neste post é a geração de relatórios. Basta uma pequena alteração no código, a inclusão da linha `Report(apitest.SequenceDiagram()).` nos testes, como no exemplo:
 
 ```go
 apitest.New().
@@ -299,7 +298,7 @@ apitest.New().
    Expect(t).
    Status(http.StatusOK).
    End()
-```	
+```
 
 E ao executarmos novamente os testes temos o seguinte resultado:
 
@@ -322,14 +321,14 @@ ok  	github.com/eminetto/post-apitest	0.296s
 
 Abrindo alguns dos relatórios temos o seguinte resultado:
 
-[![apitest1](/images/posts/apitest1.png)](/images/posts/apitest1.png) 
+[![apitest1](/images/posts/apitest1.png)](/images/posts/apitest1.png)
 
-[![apitest2](/images/posts/apitest2.png)](/images/posts/apitest2.png) 
+[![apitest2](/images/posts/apitest2.png)](/images/posts/apitest2.png)
 
 ## Vale a pena usar?
 
-Essa é uma pergunta que não tem uma resposta única. Usando apenas a biblioteca padrão da linguagem o projeto ganha em velocidade de execução dos testes, além de não depender de bibliotecas de terceiros, o que pode ser um problema em algumas equipes. 
+Essa é uma pergunta que não tem uma resposta única. Usando apenas a biblioteca padrão da linguagem o projeto ganha em velocidade de execução dos testes, além de não depender de bibliotecas de terceiros, o que pode ser um problema em algumas equipes.
 
-Ao usar uma biblioteca como o apitest ganha-se em produtividade e facilidade de manutenção, mas perde-se em velocidade de execução. Uma observação quanto a velocidade: executei apenas alguns testes e benchmarks simples, então não posso afirmar com certeza o quanto mais lento ficam os testes em comparação com a biblioteca padrão, mas é visível uma pequena diferença. 
+Ao usar uma biblioteca como o apitest ganha-se em produtividade e facilidade de manutenção, mas perde-se em velocidade de execução. Uma observação quanto a velocidade: executei apenas alguns testes e benchmarks simples, então não posso afirmar com certeza o quanto mais lento ficam os testes em comparação com a biblioteca padrão, mas é visível uma pequena diferença.
 
 Cada time pode fazer seus benchmarks e tomar esta decisão, mas na maioria das vezes acredito que produtividade da equipe vai ganhar vários pontos nesta escolha.

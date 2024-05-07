@@ -2,30 +2,30 @@
 title: "Testing Generics in Go"
 date: 2022-03-11T08:27:10-03:00
 draft: false
+tags:
+  - go
 ---
-It's finally (almost) among us! 
+
+It's finally (almost) among us!
 
 Finally, after years of hearing that joke "what about Generics?" this long-awaited feature will be available in version 1.18 of the language, scheduled for release in March 2022.
 
 In this post, I'll do an example using Generics and a small benchmark to check if there are any performance differences between a "regular" function and another using this new functionality.
 
-To demonstrate this, I will use the library [lo](https://github.com/samber/lo), one of the first that uses Generics and that has recently gained prominence for implementing several valuable features for slices and maps. 
+To demonstrate this, I will use the library [lo](https://github.com/samber/lo), one of the first that uses Generics and that has recently gained prominence for implementing several valuable features for slices and maps.
 
 The first step was to install Go 1.18, which at the time of writing this post is in the Release Candidate 1 version. For that, I followed this [documentation](https://groups.google.com/g/golang-announce/c/QHL1fTc352o/m/5sE6moURBwAJ?pli=1) and used the commands:
-
 
 ```
 go install golang.org/dl/go1.18rc1@latest
 go1.18rc1 download
 ```
 
-
 These commands created the `sdk` directory in my user's home on macOS. We will use this directory to configure the IDE to recognize the new language version. I'm using Jetbrains' Goland, so my setup looks like this:
 
 [![generics_goland](/images/posts/generics_goland.png)](/images/posts/generics_goland.png)
 
 In addition to creating the `sdk` directory, the above commands created the `go1.18rc1` binary in the `go/bin` directory of my macOS user's home. It is this binary that we will use to run the tests:
-
 
 ```
 eminetto@MacBook-Pro-da-Trybe ~/D/post-generics [1]> go1.18rc1 version
@@ -42,7 +42,6 @@ touch main.go
 ```
 
 In `main.go` I wrote the following code:
-
 
 ```go
 package main
@@ -90,7 +89,7 @@ func Uniq(collection []string) []string {
 		seen[item] = struct{}{}
 		result = append(result, item)
 	}
-	
+
 	return result
 }
 
@@ -161,6 +160,6 @@ I ran the benchmark several times, and in most cases, the version made with Gene
 
 This post is not an advanced study with scientifically proven benchmarks. It is just a basic test, so I recommend you consult more sources before making a final decision. Still, the first impression is that we are gaining an essential feature without any noticeable performance loss.
 
-I believe I will wait for the final version of this feature to be more mature, probably after 1.18.x, to put it into production. Still, I see a significant evolution in Go applications in the coming months. 
+I believe I will wait for the final version of this feature to be more mature, probably after 1.18.x, to put it into production. Still, I see a significant evolution in Go applications in the coming months.
 
 The excitement is starting to increase :)

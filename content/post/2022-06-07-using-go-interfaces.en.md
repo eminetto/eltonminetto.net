@@ -2,14 +2,17 @@
 title: "Using Golang stdlib interfaces"
 date: 2022-06-07T20:03:34-03:00
 draft: false
+tags:
+  - go
 ---
+
 In this post, I'll show you how to use two of the most exciting features of the Go language: its standard library (the stdlib in the title) and its interfaces.
 
-Go is famous for providing a lot of functionality, thanks to its powerful standard library. Covering everything from text and JSON conversions to databases and HTTP servers, we can develop complex applications without importing third-party packages. 
+Go is famous for providing a lot of functionality, thanks to its powerful standard library. Covering everything from text and JSON conversions to databases and HTTP servers, we can develop complex applications without importing third-party packages.
 
 Another essential feature of the language is the power of its interfaces. Unlike object-oriented languages, Go does not have the `extends` keyword and allows us to implement an interface using a variable, struct, slice, etc. Just implement the identical function signatures defined in the interface, and that's it.
 
-Let's use these two features to improve our application code. 
+Let's use these two features to improve our application code.
 
 ## Implementing the error interface
 
@@ -56,7 +59,7 @@ func divide(x, y int) (float64, error) {
 
 ```
 
-I created the struct `MyError` in this example and implemented the `Error` function, as defined by the interface. The struct now can be returned as an error in the `divide` function. We can create custom errors for our applications with extra information, logs, and other features thanks to this feature. 
+I created the struct `MyError` in this example and implemented the `Error` function, as defined by the interface. The struct now can be returned as an error in the `divide` function. We can create custom errors for our applications with extra information, logs, and other features thanks to this feature.
 
 ## Implementing the fmt. Stringer and fmt.Formatter interfaces
 
@@ -133,7 +136,6 @@ func main() {
 
 The `String()` function is used by the `fmt.Println(l)` function and also by the `fmt.Printf` function. In this example, I implement the `Format` function to demonstrate how we can create special formatting, in this case, `%l,` which I defined as being responsible for transforming the value into lowercase.
 
-
 ## Implementing the json.Marshaler interface
 
 Let's now create a new struct, `Log,` which contains a `Level`:
@@ -159,7 +161,7 @@ fmt.Println(string(j))
 But the result is not exactly as expected, as the code generates `Level` as an integer:
 
 ```json
-{"message":"Message log","level":6}
+{ "message": "Message log", "level": 6 }
 ```
 
 To quickly solve this, we can implement the `json.Marshaler` interface:
@@ -184,7 +186,7 @@ func (l Level) MarshalJSON() ([]byte, error) {
 And now the print result is as we expected:
 
 ```json
-{"message":"Message log","level":"ERROR"}
+{ "message": "Message log", "level": "ERROR" }
 ```
 
 ## Implementing the sort.Interface interface

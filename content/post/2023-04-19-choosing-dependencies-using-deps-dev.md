@@ -2,13 +2,15 @@
 title: "Escolhendo dependências usando deps.dev"
 date: 2023-04-19T08:30:43-03:00
 draft: false
+tags:
+  - go
 ---
 
-Escolher as dependências de um projeto é algo que algumas vezes  menosprezamos, mas que pode ter um impacto muito relevante. A imagem a seguir ilustra bem a ideia:
+Escolher as dependências de um projeto é algo que algumas vezes menosprezamos, mas que pode ter um impacto muito relevante. A imagem a seguir ilustra bem a ideia:
 
 [![dependencies](/images/posts/dependecies.png)](/images/posts/dependecies.png)
 
-Para facilitar esse processo recentemente o Google lançou um novo projeto, o [deps.dev](https://deps.dev) e seu slogan resume bem o seu objetivo: *Understand your dependencies*. A ferramenta tem suporte a algumas linguagens de programação como JavaScript, Rust, Go, Python e Java. 
+Para facilitar esse processo recentemente o Google lançou um novo projeto, o [deps.dev](https://deps.dev) e seu slogan resume bem o seu objetivo: _Understand your dependencies_. A ferramenta tem suporte a algumas linguagens de programação como JavaScript, Rust, Go, Python e Java.
 
 Para mostrar as vantagens vamos imaginar um cenário: uma equipe está desenvolvendo uma API em Go e precisa escolher uma biblioteca para implementar o conceito de [Circuit Breaker](https://martinfowler.com/bliki/CircuitBreaker.html). Após algumas pesquisas na internet e no excelente site [Awesome Go](https://awesome-go.com/) a lista ficou reduzida as seguintes opções:
 
@@ -40,6 +42,6 @@ Também é possível visualizar se a lib possui algum aviso de segurança. A lib
 
 Com estas informações em mãos o time pode tomar uma decisão mais segura quanto a quais libs podem ser incluídas ao seu projeto.
 
-Outra funcionalidade bem útil é que o deps.dev possui uma [API](https://docs.deps.dev/api/v3alpha/index.html). Com essa API é possível criar uma verificação no serviço de `Continous Integration` do projeto para verificar se existe algum aviso de segurança relacionado as dependências, ou se existe uma versão nova de alguma biblioteca importante. 
+Outra funcionalidade bem útil é que o deps.dev possui uma [API](https://docs.deps.dev/api/v3alpha/index.html). Com essa API é possível criar uma verificação no serviço de `Continous Integration` do projeto para verificar se existe algum aviso de segurança relacionado as dependências, ou se existe uma versão nova de alguma biblioteca importante.
 
-O deps.dev é um projeto bem útil e que pode ajudar bastante os times na escolha e gerenciamento das dependências de seus projetos. 
+O deps.dev é um projeto bem útil e que pode ajudar bastante os times na escolha e gerenciamento das dependências de seus projetos.

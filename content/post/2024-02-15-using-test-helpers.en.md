@@ -2,15 +2,15 @@
 title: "Using test helpers in Go"
 date: 2024-02-15T20:00:43-03:00
 draft: false
+tags:
+  - go
 ---
 
 Recently, in a code review, the great [Cassio Botaro](https://www.linkedin.com/in/cassiobotaro/) gave me a handy tip: refactor some tests to use the `test helpers` feature from the `testing` package.
 
 The code became much more readable, so I refactored some examples I had written for a post about automated testing to demonstrate the before and after.
 
-
-Let's first look at the original version of the test, in this case, an end-to-end, using [testcontainers](https://golang.testcontainers.org/). 
-
+Let's first look at the original version of the test, in this case, an end-to-end, using [testcontainers](https://golang.testcontainers.org/).
 
 ```go
 package echo_test
@@ -45,7 +45,7 @@ func TestGetUserE2E(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	
+
 	repo := mysql.NewMySQL(db)
 	service := person.NewService(repo)
 	_, err = service.Create("Ronnie", "Dio")
@@ -77,7 +77,7 @@ if err != nil {
 defer container.Terminate(ctx)
 ```
 
-and 
+and
 
 ```go
 err = person.InitMySQL(ctx, db)
@@ -125,7 +125,7 @@ func SetupMysqL(ctx context.Context) (*MysqlDBContainer, error) {
 }
 ```
 
-and 
+and
 
 ```go
 func InitMySQL(ctx context.Context, db *sql.DB) error {
@@ -218,7 +218,6 @@ func SetupMysqL(t testing.TB) *MysqlDBContainer {
 	return &MysqlDBContainer{Container: container, URI: uri}
 }
 ```
-
 
 The main changes were:
 

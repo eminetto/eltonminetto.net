@@ -2,8 +2,11 @@
 title: "Testando o Generics do Go"
 date: 2022-03-11T08:27:10-03:00
 draft: false
+tags:
+  - go
 ---
-Finalmente está (quase) entre nós! Depois de anos ouvindo aquela piadinha "e o Generics?" esta aguardada funcionalidade vai estar disponível na versão 1.18 da linguagem, prevista para lançamento em Março de 2022. 
+
+Finalmente está (quase) entre nós! Depois de anos ouvindo aquela piadinha "e o Generics?" esta aguardada funcionalidade vai estar disponível na versão 1.18 da linguagem, prevista para lançamento em Março de 2022.
 
 [![e o Generics?](/images/posts/E_o_PT_hein_E_o_Lula.gif)](/images/posts/E_o_PT_hein_E_o_Lula.gif)
 
@@ -86,7 +89,7 @@ func Uniq(collection []string) []string {
 		seen[item] = struct{}{}
 		result = append(result, item)
 	}
-	
+
 	return result
 }
 
@@ -155,7 +158,7 @@ Eu executei várias vezes o benchmark e na maioria a versão feita com Generics 
 
 ## Observações
 
-Este post não é um estudo avançado, com benchmarks cientificamente comprovados, é apenas um teste básico. Então mais fontes devem ser consultadas antes de tomarmos uma decisão final, mas a primeira impressão é que estamos ganhando uma feature importante sem perda perceptível de performance. 
+Este post não é um estudo avançado, com benchmarks cientificamente comprovados, é apenas um teste básico. Então mais fontes devem ser consultadas antes de tomarmos uma decisão final, mas a primeira impressão é que estamos ganhando uma feature importante sem perda perceptível de performance.
 
 Eu acredito que vou esperar a versão final desta funcionalidade estar mais madura, provavelmente depois da 1.18.x, para colocá-la em produção, mas vejo uma grande evolução nas aplicações Go nos próximos meses. A empolgação está começando a aumentar :)
 

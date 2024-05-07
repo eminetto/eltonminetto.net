@@ -1,13 +1,15 @@
-+++
-title = "Microsserviços em Go usando Go kit"
-subtitle = ""
-date = "2021-02-06T08:33:24+02:00"
-bigimg = ""
+---
+title: "Microsserviços em Go usando Go kit"
+subtitle: ""
+date: "2021-02-06T08:33:24+02:00"
+bigimg: ""
+tags:
+  - go
+---
 
-+++
 Em um dos capítulos do livro [Microservice Patterns: With examples in Java](https://www.amazon.com.br/Microservice-Patterns-examples-Chris-Richardson/dp/1617294543/ref=sr_1_1?__mk_pt_BR=ÅMÅŽÕÑ&crid=5S2QOI44DDW4&dchild=1&keywords=microservices+patterns&qid=1612616717&sprefix=microservice+pa%2Caps%2C300&sr=8-1) o autor cita o padrão ["Microservice chassis"](https://microservices.io/patterns/microservice-chassis.html):
 
-> Crie serviços em um framework ou coleção de frameworks que tratem de questões transversais como exception tracking, logging, health checks, configuração externalizada e rastreamento distribuído. 
+> Crie serviços em um framework ou coleção de frameworks que tratem de questões transversais como exception tracking, logging, health checks, configuração externalizada e rastreamento distribuído.
 
 Ele vai além e cita alguns exemplos de frameworks que implementam estes conceitos em Java e em Go:
 
@@ -21,29 +23,27 @@ Depois de uma pesquisa escolhi o Go kit pois é um dos mais populares, está sen
 
 ### Service
 
-![service](/images/posts/gokit_service.png) 
+![service](/images/posts/gokit_service.png)
 
 Os serviços são onde toda a lógica de negócios é implementada.
-No Go kit, os serviços são normalmente modelados como interfaces e as implementações dessas interfaces contêm a lógica de negócios. 
-A lógica de negócios não deve ter conhecimento dos conceitos das outras camadas. Por exemplo, seu serviço não deve saber nada sobre cabeçalhos HTTP ou códigos de erro gRPC. 
+No Go kit, os serviços são normalmente modelados como interfaces e as implementações dessas interfaces contêm a lógica de negócios.
+A lógica de negócios não deve ter conhecimento dos conceitos das outras camadas. Por exemplo, seu serviço não deve saber nada sobre cabeçalhos HTTP ou códigos de erro gRPC.
 
-### Endpoint 
+### Endpoint
 
 ![endpoint](/images/posts/gokit_endpoint.png)
 
-Um endpoint é como uma action/handler em um controller. Um endpoint expõe um método de serviço para o mundo externo usando a camada de transporte. Um único endpoint pode ser exposto usando vários transportes. 
-
+Um endpoint é como uma action/handler em um controller. Um endpoint expõe um método de serviço para o mundo externo usando a camada de transporte. Um único endpoint pode ser exposto usando vários transportes.
 
 ### Transport
 
 ![transport](/images/posts/gokit_transport.png)
 
-O domínio de transporte está vinculado a transportes concretos como HTTP ou gRPC. Em um mundo onde os microsserviços podem oferecer suporte a um ou mais transportes, isso é muito poderoso; você pode oferecer suporte a uma API HTTP e um serviço gRPC mais recente, tudo em um único microsserviço. 
+O domínio de transporte está vinculado a transportes concretos como HTTP ou gRPC. Em um mundo onde os microsserviços podem oferecer suporte a um ou mais transportes, isso é muito poderoso; você pode oferecer suporte a uma API HTTP e um serviço gRPC mais recente, tudo em um único microsserviço.
 
 ## Exemplo
 
 Vamos criar um exemplo de microsserviço usando esta arquitetura. A estrutura de diretórios ficou desta forma:
-
 
 ![example](/images/posts/gokit_example.png)
 
@@ -101,7 +101,7 @@ func (s *service) ValidateToken(ctx context.Context, token string) (string, erro
 }
 ```
 
-Como a documentação do Go kit recomenda, o primeiro passo é criarmos uma `interface` para o nosso serviço, que será implementada com a nossa regra de negócio. Logo essa decisão, de criarmos uma interface, vai se mostrar útil quando formos incluir logging e monitoramento de métricas na aplicação. 
+Como a documentação do Go kit recomenda, o primeiro passo é criarmos uma `interface` para o nosso serviço, que será implementada com a nossa regra de negócio. Logo essa decisão, de criarmos uma interface, vai se mostrar útil quando formos incluir logging e monitoramento de métricas na aplicação.
 
 Por possuir apenas regra de negócio, o teste da camada de serviço também é bem simples:
 
@@ -131,7 +131,6 @@ func TestValidateUser(t *testing.T) {
 }
 
 ```
-
 
 ## Endpoint
 
@@ -371,7 +370,6 @@ func TestHTTP(t *testing.T) {
 
 Assim como o teste da camada de endpoint, poderíamos melhorar este teste usando um mock do serviço.
 
-
 ## Main
 
 No arquivo `main.go` vamos fazer a junção das camadas:
@@ -455,9 +453,8 @@ Ele implementa todas as funções da interface, incrementando com a funcionalida
 
 Caso nosso microsserviço precisar entregar a lógica em mais formatos, como gRPC ou NATS, bastaria implementarmos estes códigos na camada de transporte indicando quais endpoints serão usados. Isso dá muita flexibilidade para o crescimento das funcionalidades sem o aumento de complexidade e gerando reuso de código.
 
+Neste post eu foquei mais na arquitetura fornecida pelo Go kit, mas na [documentação oficial](https://pkg.go.dev/github.com/go-kit/kit) é possível ver as outras funcionalidades de `chassi` que ele fornece como: autenticação, circuit breaker, log, métricas, rate limit, service discovery, tracing, etc.
 
-Neste post eu foquei mais na arquitetura fornecida pelo Go kit, mas na [documentação oficial](https://pkg.go.dev/github.com/go-kit/kit) é possível ver as outras funcionalidades de  `chassi` que ele fornece como: autenticação, circuit breaker, log, métricas, rate limit, service discovery, tracing, etc.
-
-Gostei muito da arquitetura e funcionalidades que ele fornece e acredito que pode ser útil para criar serviços de maneira rápida, ordenada e eficiente. 
+Gostei muito da arquitetura e funcionalidades que ele fornece e acredito que pode ser útil para criar serviços de maneira rápida, ordenada e eficiente.
 
 Os códigos deste exemplo estão [neste repositório](https://github.com/eminetto/talk-microservices-gokit).

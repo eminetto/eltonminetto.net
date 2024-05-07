@@ -2,7 +2,10 @@
 title: "Executando código WebAssembly em Go"
 date: 2023-12-11T08:00:43-03:00
 draft: false
+tags:
+  - go
 ---
+
 Este é o segundo post de uma série que estou fazendo sobre WebAssembly e Go. No [primeiro post](https://eltonminetto.dev/post/2023-11-17-webassembly-using-go-code-in-the-browser/) vimos como executar código Go em um navegador web. Neste vamos importar uma função WebAssembly e executá-la em uma aplicação Go.
 
 Provavelmente este vai ser o texto mais curto da série, pois o processo é realmente bem simples :)
@@ -62,7 +65,7 @@ Agora é só executar o código:
 42
 ```
 
-Simples assim :) Temos um código escrito em Rust, compilado para WebAssembly sendo executado como se fosse uma função nativa em Go. 
+Simples assim :) Temos um código escrito em Rust, compilado para WebAssembly sendo executado como se fosse uma função nativa em Go.
 
 **E a performance?**
 
@@ -152,7 +155,7 @@ func BenchmarkNativeAdd(b *testing.B) {
 
 ```
 
-Ao executar com o comando: 
+Ao executar com o comando:
 
 ```bash
 ❯ go test -bench=. -cpu=8 -benchmem -benchtime=5s -count 5
@@ -162,6 +165,6 @@ Foi possível ver a diferença das execuções, sendo que a versão nativa foi m
 
 [![webassembly_benchmark](/images/posts/webassembly_benchmark.png)](/images/posts/webassembly_benchmark.png)
 
-Apesar da diferença gritante de performance (talvez seja injusta a comparação) foi possível ver como é fácil reaproveitar código escrito em outras linguagens graças ao WebAssembly. Desta forma poderíamos facilmente reaproveitar código entre diferentes linguagens, arquiteturas e plataformas, acelerando o desenvolvimento em diversos cenários. 
+Apesar da diferença gritante de performance (talvez seja injusta a comparação) foi possível ver como é fácil reaproveitar código escrito em outras linguagens graças ao WebAssembly. Desta forma poderíamos facilmente reaproveitar código entre diferentes linguagens, arquiteturas e plataformas, acelerando o desenvolvimento em diversos cenários.
 
-Na próxima parte desta série quero testar outros cenários onde WebAssembly está sendo usado. 
+Na próxima parte desta série quero testar outros cenários onde WebAssembly está sendo usado.

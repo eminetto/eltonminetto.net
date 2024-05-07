@@ -2,14 +2,17 @@
 title: "Introdução a Cuelang"
 date: 2022-11-08T13:00:19-03:00
 draft: false
+tags:
+  - go
 ---
+
 Aposto que nesse momento uma frase paira na sua cabeça:
 
 > "Mais uma linguagem de programação"?
 
 Calma, calma, vem comigo que vai fazer sentido :)
 
-Diferente de outras linguagens como Go ou Rust, que são de "propósito geral", a [CUE](https://cuelang.org) possui alguns propósitos bem específicos. O seu nome na verdade é uma sigla que significa "Configure Unify Execute" e segundo a documentação oficial: 
+Diferente de outras linguagens como Go ou Rust, que são de "propósito geral", a [CUE](https://cuelang.org) possui alguns propósitos bem específicos. O seu nome na verdade é uma sigla que significa "Configure Unify Execute" e segundo a documentação oficial:
 
 > Embora a linguagem não seja uma linguagem de programação de uso geral, ela possui muitas aplicações, como validação e modelagem de dados, configuração, consulta, geração de código e até script.
 
@@ -44,7 +47,7 @@ spec:
           port: 80
 ```
 
-Com essa informação é possível definirmos uma nova rota no API Gateway, mas se algo estiver errado podemos causar alguns problemas. Por isso é importante termos uma forma fácil de detectarmos problemas em arquivos de configuração como esse. E é aí que a CUE mostra sua força. 
+Com essa informação é possível definirmos uma nova rota no API Gateway, mas se algo estiver errado podemos causar alguns problemas. Por isso é importante termos uma forma fácil de detectarmos problemas em arquivos de configuração como esse. E é aí que a CUE mostra sua força.
 
 O primeiro passo é termos a linguagem instalada na máquina. Como estou usando macOS bastou executar o comando:
 
@@ -60,7 +63,7 @@ Agora podemos usar o comando `cue` para transformar esse YAML em um `schema` da 
 cue import traefik-simple.yaml
 ```
 
-É criado um arquivo chamado `traefik-simple.cue` com o conteúdo: 
+É criado um arquivo chamado `traefik-simple.cue` com o conteúdo:
 
 ```go
 apiVersion: "traefik.containo.us/v1alpha1"
@@ -82,7 +85,7 @@ spec: {
 		}]
 	}]
 }
-``` 
+```
 
 Ele é uma tradução literal do YAML para CUE, mas vamos editá-lo para criarmos algumas regras de validação. O conteúdo final do `traefik-simple.cue` ficou desta forma:
 
@@ -143,9 +146,9 @@ kind: conflicting values "IngressRoute" and "Ingressroute":
     ./traefik-simple.yaml:2:8
 ```
 
-Desta forma é muito fácil encontrar algum erro em uma configuração de rotas do Traefik. O mesmo pode ser aplicado para outros formatos como JSON, Protobuf, arquivos do Kubernetes, etc. 
+Desta forma é muito fácil encontrar algum erro em uma configuração de rotas do Traefik. O mesmo pode ser aplicado para outros formatos como JSON, Protobuf, arquivos do Kubernetes, etc.
 
-Vejo um cenário muito claro de uso desse poder de validação de dados: adicionar um passo em CI/CDs para usar CUE e validar configurações em tempo de `build`, evitando problemas em `deploy` e execução de aplicações. Outro cenário é adicionar os comandos em um `hook` de Git, para validar as configurações ainda em ambiente de desenvolvimento.  
+Vejo um cenário muito claro de uso desse poder de validação de dados: adicionar um passo em CI/CDs para usar CUE e validar configurações em tempo de `build`, evitando problemas em `deploy` e execução de aplicações. Outro cenário é adicionar os comandos em um `hook` de Git, para validar as configurações ainda em ambiente de desenvolvimento.
 
 Outra característica interessante da CUE é a possibilidade de criarmos `packages`, que contém uma série de `schemas` e que podem ser compartilhados entre projetos, da mesma forma que um `package` de Go. Na [documentação oficial](https://cuelang.org/docs/concepts/packages/#packages) é possível ver como user esse recurso, bem como usar alguns `packages` [nativos](https://cuelang.org/docs/concepts/packages/#builtin-packages) da linguagem, como `strigs`, `lists`, `regex` etc. Vamos usar um `package` no próximo exemplo.
 
@@ -155,12 +158,12 @@ Outro cenário de uso da CUE é como linguagem de configuração de aplicações
 
 - por ser baseado em JSON torna a leitura e escrita muito mais simples (opinião minha)
 - resolve alguns problemas de JSON como a falta de comentários, o que é uma vantagem para YAML
-- por ser uma linguagem completa, é possível usar `if`, `loop`, pacotes embutidos na linguagem, herança de tipos, etc. 
+- por ser uma linguagem completa, é possível usar `if`, `loop`, pacotes embutidos na linguagem, herança de tipos, etc.
 
 Para este exemplo o primeiro passo foi criar um pacote para armazenar nossa configuração. Para isso criei um diretório chamado `config` e dentro dele um arquivo chamado `config.cue` com o conteúdo:
 
 ```go
-package config 
+package config
 
 db: {
 	user:     "db_user"
@@ -217,7 +220,7 @@ func LoadConfig(dirname string) (*Config, error) {
 	buildInstances := load.Instances([]string{}, cueConfig)
 	runtimeInstances := cue.Build(buildInstances)
 	instance := runtimeInstances[0]
-	
+
 	var config Config
 	err := instance.Value().Decode(&config)
 	if err != nil {
@@ -239,10 +242,10 @@ func main() {
 
 Uma vantagem do conceito de `package` da CUE é que podemos quebrar a nossa configuração em arquivos menores, cada um com sua funcionalidade. Por exemplo, dentro do diretório `config` eu dividi o `config.cue` em arquivos distintos:
 
-*config/db.cue*
+_config/db.cue_
 
 ```go
-package config 
+package config
 
 db: {
 	user:     "db_user"
@@ -252,10 +255,10 @@ db: {
 }
 ```
 
-*config/metric.cue*
+_config/metric.cue_
 
 ```go
-package config 
+package config
 
 metric: {
 	host: "http://localhost"
@@ -263,10 +266,10 @@ metric: {
 }
 ```
 
-*config/lang.cue*
+_config/lang.cue_
 
 ```go
-package config 
+package config
 
 langs: [
 	"pt_br",
@@ -279,4 +282,4 @@ E não foi necessário alterar nada no arquivo `main.go` para que as configuraç
 
 ## Conclusão
 
-Neste post eu apenas "arranhei a superfície" do que é possível fazer com a CUE. Ela vem [chamando atenção](https://twitter.com/kelseyhightower/status/1329620139382243328?s=61&t=mVll7YR0fRVtNeZLEVwKnA) e sendo adotada em projetos importantes como o [Istio](https://istio.io/), que usa para gerar `schemes` OpenAPI e CRDs para Kubernetes, e o [Dagger](https://docs.dagger.io/1215/what-is-cue/). Me parece uma ferramenta que pode ser muito útil para uma série de projetos, em especial devido ao seu poder de validação de dados. E como um substituto para YAML, para minha alegria pessoal :D 
+Neste post eu apenas "arranhei a superfície" do que é possível fazer com a CUE. Ela vem [chamando atenção](https://twitter.com/kelseyhightower/status/1329620139382243328?s=61&t=mVll7YR0fRVtNeZLEVwKnA) e sendo adotada em projetos importantes como o [Istio](https://istio.io/), que usa para gerar `schemes` OpenAPI e CRDs para Kubernetes, e o [Dagger](https://docs.dagger.io/1215/what-is-cue/). Me parece uma ferramenta que pode ser muito útil para uma série de projetos, em especial devido ao seu poder de validação de dados. E como um substituto para YAML, para minha alegria pessoal :D

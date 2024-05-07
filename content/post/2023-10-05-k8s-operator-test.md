@@ -2,16 +2,19 @@
 title: "Escrevendo testes para um Kubernetes Operator"
 date: 2023-10-05T07:30:43-03:00
 draft: false
+tags:
+  - go
 ---
-No [último post](https://eltonminetto.dev/post/2023-09-08-k8s-operator-sdk/) vimos como criar um Kubernetes *operator* usando o *operator-sdk*. Como aquele texto ficou bem grande resolvi escrever este segundo post, para poder focar na parte dos testes da aplicação.
 
-Quando usamos o *CLI* do *operator-sdk* para criar o esqueleto do *operator* é criado também uma estrutura básica para escrevermos os seus testes. Para este fim vamos usar alguns componentes importantes:
+No [último post](https://eltonminetto.dev/post/2023-09-08-k8s-operator-sdk/) vimos como criar um Kubernetes _operator_ usando o _operator-sdk_. Como aquele texto ficou bem grande resolvi escrever este segundo post, para poder focar na parte dos testes da aplicação.
 
-- [envtest](https://pkg.go.dev/sigs.k8s.io/controller-runtime/pkg/envtest): uma biblioteca Go que configura uma instância do *etcd* e da API do Kubernetes, simulando as principais funcionalidades de um cluster Kubernetes para fins de teste
-- [Ginkgo](https://onsi.github.io/ginkgo/): um framework de testes baseado no conceito de *‌"Behavior Driven Development" (BDD)*
-- [Gomega](https://onsi.github.io/gomega/): uma biblioteca de asserções de testes, que é uma dependência importante ao *Ginkgo*.
+Quando usamos o _CLI_ do _operator-sdk_ para criar o esqueleto do _operator_ é criado também uma estrutura básica para escrevermos os seus testes. Para este fim vamos usar alguns componentes importantes:
 
-O *scaffolding* do *CLI* criou o arquivo *‌controllers/suite_test.go*, que contém a estrutura básica da suite de testes do *Ginkgo* e a inicialização do *envtest*. O que precisamos fazer é adicionar o código que vai inicializar o nosso *controller*, para que possamos escrever os testes. No *diff* a seguir é possível ver a alteração feita.
+- [envtest](https://pkg.go.dev/sigs.k8s.io/controller-runtime/pkg/envtest): uma biblioteca Go que configura uma instância do _etcd_ e da API do Kubernetes, simulando as principais funcionalidades de um cluster Kubernetes para fins de teste
+- [Ginkgo](https://onsi.github.io/ginkgo/): um framework de testes baseado no conceito de _‌"Behavior Driven Development" (BDD)_
+- [Gomega](https://onsi.github.io/gomega/): uma biblioteca de asserções de testes, que é uma dependência importante ao _Ginkgo_.
+
+O _scaffolding_ do _CLI_ criou o arquivo _‌controllers/suite_test.go_, que contém a estrutura básica da suite de testes do _Ginkgo_ e a inicialização do _envtest_. O que precisamos fazer é adicionar o código que vai inicializar o nosso _controller_, para que possamos escrever os testes. No _diff_ a seguir é possível ver a alteração feita.
 
 [![diff1](/images/posts/diff_suite_test_1.png)](/images/posts/diff_suite_test_1.png)
 
@@ -25,9 +28,9 @@ make envtest
 export PATH=$PATH:bin/k8s/1.28.0-darwin-arm64/
 ```
 
-O primeiro comando vai instalar o binário do `setup-envtest`, o segundo faz o download dos executáveis para o diretório do nosso projeto, e o terceiro comando adiciona os novos arquivos no *PATH* do sistema operacional.
+O primeiro comando vai instalar o binário do `setup-envtest`, o segundo faz o download dos executáveis para o diretório do nosso projeto, e o terceiro comando adiciona os novos arquivos no _PATH_ do sistema operacional.
 
-O próximo passo é escrevermos o teste. Para isso o recomendado é criarmos um arquivo ***kind**_controller_test.go* dentro do diretório *controllers*. No nosso caso, o *application_controller_test.go*. A estrutura básica do arquivo é mostrada abaixo. Nos próximos tópicos vamos criar cada um dos testes.
+O próximo passo é escrevermos o teste. Para isso o recomendado é criarmos um arquivo **\*kind**\_controller_test.go* dentro do diretório *controllers*. No nosso caso, o *application_controller_test.go\*. A estrutura básica do arquivo é mostrada abaixo. Nos próximos tópicos vamos criar cada um dos testes.
 
 ```go
 package controllers
@@ -78,7 +81,7 @@ var _ = Describe("Application controller", func() {
 
 ## Teste da criação da Application
 
-O primeiro teste que vamos preencher é que verifica se, ao criar um *Application* é criado também um *Deployment* e um *Service*, conforme o código do nosso *controller*. Para isso adicionamos o seguinte código:
+O primeiro teste que vamos preencher é que verifica se, ao criar um _Application_ é criado também um _Deployment_ e um _Service_, conforme o código do nosso _controller_. Para isso adicionamos o seguinte código:
 
 ```go
 Context("When creating an Application", func() {
@@ -154,7 +157,7 @@ Adicionei comentários no código para descrever o que está sendo testado.
 
 ## Teste da atualização da Application
 
-O próximo teste verifica se ao alterar uma *Application* a modificação é refletida nos demais objetos:
+O próximo teste verifica se ao alterar uma _Application_ a modificação é refletida nos demais objetos:
 
 ```go
 Context("When updating an Application", func() {
@@ -236,8 +239,8 @@ Context("When deleting an Application", func() {
 
 ## Conclusões
 
-Novamente é possível ver como o *operator-sdk* facilita o processo de desenvolvimento de *operators* pois ele cria uma estrutura para que os testes sejam facilmente escritos. O uso do *envtest* também é muito útil pois nos permite testar a funcionalidade de um cluster Kubernetes sem a necessidade de instalarmos um, o que é bem importante em ambientes de CI/CD. Outro ponto interessante é o uso do *Ginkgo* que torna os testes bem legíveis e de fácil entendimento. É a primeira vez que uso o *Ginkgo* e gostei bastante do resultado, devo adicionar ele na minha caixa de ferramentas para próximos projetos.
+Novamente é possível ver como o _operator-sdk_ facilita o processo de desenvolvimento de _operators_ pois ele cria uma estrutura para que os testes sejam facilmente escritos. O uso do _envtest_ também é muito útil pois nos permite testar a funcionalidade de um cluster Kubernetes sem a necessidade de instalarmos um, o que é bem importante em ambientes de CI/CD. Outro ponto interessante é o uso do _Ginkgo_ que torna os testes bem legíveis e de fácil entendimento. É a primeira vez que uso o _Ginkgo_ e gostei bastante do resultado, devo adicionar ele na minha caixa de ferramentas para próximos projetos.
 
-Espero que este post sirva de introdução aos testes de *operators*. Na [documentação oficial](https://sdk.operatorframework.io/docs/building-operators/golang/testing/) é possível encontrar links com tópicos e exemplos mais avançados e recomendo a leitura como próximos passos.
+Espero que este post sirva de introdução aos testes de _operators_. Na [documentação oficial](https://sdk.operatorframework.io/docs/building-operators/golang/testing/) é possível encontrar links com tópicos e exemplos mais avançados e recomendo a leitura como próximos passos.
 
 O código pode ser encontrado [neste repositório](https://github.com/eminetto/k8s-operator-talk).

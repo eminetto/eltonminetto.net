@@ -2,13 +2,15 @@
 title: "Usando test helpers em Go"
 date: 2024-02-15T20:00:43-03:00
 draft: false
+tags:
+  - go
 ---
 
 Recentemente, em um code review, o grande [Cassio Botaro](https://www.linkedin.com/in/cassiobotaro/) me deu uma dica bem útil: refatorar alguns testes que eu estava fazendo para usar o recurso de `test helpers` do pacote `testing`.
 
 O código ficou bem mais legível, por isso resolvi refatorar alguns exemplos que havia escrito para um [post](https://eminetto.medium.com/testes-automatizados-em-go-aa5cf9ed672e) sobre testes automatizados para demonstrar o antes e depois.
 
-Vamos primeiro observar a versão original do teste, neste caso um `end to end`, usando [testcontainers](https://golang.testcontainers.org/). 
+Vamos primeiro observar a versão original do teste, neste caso um `end to end`, usando [testcontainers](https://golang.testcontainers.org/).
 
 ```go
 package echo_test
@@ -44,7 +46,7 @@ func TestGetUserE2E(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	
+
 	repo := mysql.NewMySQL(db)
 	service := person.NewService(repo)
 	_, err = service.Create("Ronnie", "Dio")
@@ -78,7 +80,7 @@ if err != nil {
 defer container.Terminate(ctx)
 ```
 
-e 
+e
 
 ```go
 err = person.InitMySQL(ctx, db)
@@ -126,7 +128,7 @@ func SetupMysqL(ctx context.Context) (*MysqlDBContainer, error) {
 }
 ```
 
-e 
+e
 
 ```go
 func InitMySQL(ctx context.Context, db *sql.DB) error {
@@ -225,7 +227,7 @@ As mudanças principais foram:
 - a função agora recebe apenas uma variável que implementa `testing.TB`;
 - a função deixa de retornar um `error` pois agora ela falha o teste caso algo errado aconteça;
 - adicionamos a chamada a `t.Helper()`, que vou explicar com mais detalhes nos próximos parágrafos;
-- adicionamos a chamada a `t.Cleanup` que é executada ao final do teste, seja ele sucesso ou falha. Neste caso estamos fazendo o término da execução do `container`. 
+- adicionamos a chamada a `t.Cleanup` que é executada ao final do teste, seja ele sucesso ou falha. Neste caso estamos fazendo o término da execução do `container`.
 
 A função `t.Helper()` tem um efeito no resultado dos testes. Caso o teste falhe, digamos neste trecho:
 
@@ -323,6 +325,6 @@ func TestGetUserE2E(t *testing.T) {
 
 ```
 
-Esta refatoração tornou os testes mais legíveis e de fácil manutenção, bem como facilita o reuso dos `helpers` em diferentes cenários. 
+Esta refatoração tornou os testes mais legíveis e de fácil manutenção, bem como facilita o reuso dos `helpers` em diferentes cenários.
 
 O que achou? Já conhecia o recurso? Deixe suas experiências e dicas nos comentários.

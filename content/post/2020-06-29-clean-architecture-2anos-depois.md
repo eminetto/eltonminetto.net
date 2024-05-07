@@ -1,14 +1,15 @@
-+++
-title = "Clean Architecture, 2 anos depois"
-subtitle = ""
-date = "2020-06-29T10:54:24+02:00"
-bigimg = ""
+---
+title: "Clean Architecture, 2 anos depois"
+subtitle: ""
+date: "2020-06-29T10:54:24+02:00"
+bigimg: ""
+tags:
+  - go
+---
 
-+++
+**UPDATE:** Este post é antigo e não reflete mais o que eu acredito ser uma estrutura ideial. Em 2023, o que estou usando e recomendando é o que meus colegas e eu descrevemos [neste post](https://medium.com/inside-picpay/organizando-um-projeto-e-convencionando-nomes-em-go-c18b3fa88ba0).
 
-**UPDATE:** Este post é antigo e não reflete mais o que eu acredito ser uma estrutura ideial. Em 2023, o que estou usando e recomendando é o que meus colegas e eu descrevemos [neste post](https://medium.com/inside-picpay/organizando-um-projeto-e-convencionando-nomes-em-go-c18b3fa88ba0). 
-
-Em Fevereiro de 2018 escrevi aquele que viria a ser o mais relevante texto que já publiquei: [Clean Architecture using Golang](https://eltonminetto.dev/en/post/2018-03-05-clean-architecture-using-go/). Com mais de 105 mil views o assunto gerou apresentações em alguns eventos de Go e PHP, além de me proporcionar a oportunidade de conversar sobre o assunto com várias pessoas. 
+Em Fevereiro de 2018 escrevi aquele que viria a ser o mais relevante texto que já publiquei: [Clean Architecture using Golang](https://eltonminetto.dev/en/post/2018-03-05-clean-architecture-using-go/). Com mais de 105 mil views o assunto gerou apresentações em alguns eventos de Go e PHP, além de me proporcionar a oportunidade de conversar sobre o assunto com várias pessoas.
 
 Conforme fomos usando esta arquitetura para o desenvolvimento dos produtos da [Codenation](https://codenation.dev) fomos ganhando experiência, resolvendo problemas e também gerando novos posts:
 
@@ -24,7 +25,7 @@ Conforme fomos usando esta arquitetura para o desenvolvimento dos produtos da [C
 
 Depois dessa experiência toda posso afirmar com certeza:
 
-> Escolher a Clean Architecture foi a melhor decisão técnica que tomamos! 
+> Escolher a Clean Architecture foi a melhor decisão técnica que tomamos!
 
 A segunda melhor foi a escolha da linguagem Go. Fiz uma palestra sobre essa escolha. Os [slides](https://speakerdeck.com/eminetto/por-que-e-como-usamos-go-na-codenation) e o [video](https://www.youtube.com/watch?v=Z-JQOCSdxdU) estão disponíveis caso queira ver mais detalhes.
 
@@ -144,9 +145,7 @@ func generatePassword(raw string) (string, error) {
 	}
 	return string(hash), nil
 }
-``` 
-
- 
+```
 
 ## Camada UseCase
 
@@ -158,7 +157,7 @@ A estrutura ficou desta forma:
 
 [![domain](/images/posts/2-domain_loan.png)](/images/posts/2-domain_loan.png)
 
-Nos pacotes dentro de `usecase` implementamos as demais regras de negócio do nosso produto. 
+Nos pacotes dentro de `usecase` implementamos as demais regras de negócio do nosso produto.
 
 Por exemplo, o arquivo `usecase\loan\service.go`:
 
@@ -275,13 +274,11 @@ De acordo com o Uncle Bob:
 
 Por exemplo, no arquivo `infrastructure/repository/user_mysql.go` temos a implementação da interface `Repository` em MySQL. Se precisarmos alterar para outro banco, este é o local onde iríamos criar as novas implementações.
 
-
-
 ## Camada Interface Adapters
 
 Os códigos nesta camada adaptam e convertem os dados do formato usado pelas entidades e use cases para agentes externos como bancos de dados , web, etc.
 
-Nesta aplicação de exemplo existem duas formas de acesso aos `UseCases`. A primeira é através de uma `API` e a segunda é usando um aplicativo de linha de comando (`CLI`). 
+Nesta aplicação de exemplo existem duas formas de acesso aos `UseCases`. A primeira é através de uma `API` e a segunda é usando um aplicativo de linha de comando (`CLI`).
 
 A estrutura do `CLI` é bem simples:
 
@@ -305,23 +302,21 @@ if err != nil {
 for _, j := range all {
 	fmt.Printf("%s %s \n", j.Title, j.Author)
 }
-```	
+```
 
-No exemplo acima é possível ver o uso do pacote `config`. Sua estrutura pode ser vista abaixo e mais detalhes encontrados neste [post](https://eltonminetto.dev/post/2018-06-25-golang-usando-build-tags/). 
+No exemplo acima é possível ver o uso do pacote `config`. Sua estrutura pode ser vista abaixo e mais detalhes encontrados neste [post](https://eltonminetto.dev/post/2018-06-25-golang-usando-build-tags/).
 
 [![config](/images/posts/3-config.png)](/images/posts/3-config.png)
 
 A estrutura da `API` é um pouco mais complexa e composta por três pacotes: `handler`, `presenter` e `middleware`.
 
-O pacote `handler` é responsável pelo tratamento das `requests` e `responses` `HTTP`, bem como usar as regras de negócio existentes nos `usecases`. 
+O pacote `handler` é responsável pelo tratamento das `requests` e `responses` `HTTP`, bem como usar as regras de negócio existentes nos `usecases`.
 
 [![handler](/images/posts/5-handler.png)](/images/posts/5-handler.png)
 
-Os `presenters` são responsáveis pela representação dos dados que serão gerados como `response` pelos `handlers`. 
-
+Os `presenters` são responsáveis pela representação dos dados que serão gerados como `response` pelos `handlers`.
 
 [![presenter](/images/posts/6-presenter.png)](/images/posts/6-presenter.png)
-
 
 Desta forma, a entidade `User`:
 
@@ -338,7 +333,7 @@ type User struct {
 }
 ```
 
-Vai ser transformada em: 
+Vai ser transformada em:
 
 ```go
 type User struct {
@@ -365,5 +360,4 @@ No [README.md do repositório](https://github.com/eminetto/clean-architecture-go
 
 Espero com este post fortalecer minha recomendação quanto a esta arquitetura e também receber feedbacks quanto aos códigos. Se você quer aprender a usar esta arquitetura em sua linguagem favorita, fica a sugestão para usar este repositório como exemplo para este aprendizado. Assim podemos ter diferentes implementações, em diferentes linguagens, para facilitar a comparação.
 
-Agradecimentos especiais ao amigo [Gustavo Schirmer](https://twitter.com/hurrycaner) que deu ótimos feedbacks sobre o texto e os códigos. 
-
+Agradecimentos especiais ao amigo [Gustavo Schirmer](https://twitter.com/hurrycaner) que deu ótimos feedbacks sobre o texto e os códigos.

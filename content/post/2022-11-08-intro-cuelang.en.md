@@ -2,7 +2,10 @@
 title: "Introduction to Cuelang"
 date: 2022-11-08T13:00:19-03:00
 draft: false
+tags:
+  - go
 ---
+
 I bet that at that moment, you are thinking:
 
 > "Another programming language"?
@@ -82,10 +85,9 @@ spec: {
 		}]
 	}]
 }
-``` 
+```
 
 It's a literal translation from YAML to CUE, but let's edit it to create some validation rules. The final content of `traefik-simple.cue` looks like this:
-
 
 ```go
 apiVersion: "traefik.containo.us/v1alpha1"
@@ -118,7 +120,7 @@ metadata: {
 }
 ```
 
-In this snippet, we define that the content of `name,` for example, can be any valid `string.` In the excerpt `port: >0 & <= 65535`, we define that this field can only accept a number between  0 and 65535.
+In this snippet, we define that the content of `name,` for example, can be any valid `string.` In the excerpt `port: >0 & <= 65535`, we define that this field can only accept a number between 0 and 65535.
 
 It is now possible to validate that the YAML content conforms to the `schema` using the command:
 
@@ -136,7 +138,6 @@ spec.routes.0.services.0.port: invalid value 0 (out of bound >0):
 ```
 
 If we change any of the expected values, such as `kind: IngressRoute` to something different, such as `kind: Ingressroute,` the result is a validation error:
-
 
 ```go
 cue vet traefik-simple.cue traefik-simple.yaml
@@ -162,7 +163,7 @@ Another usage scenario for CUE is as an application configuration language. Anyo
 The first step for this example was creating a package to store our configuration. For that, I made a directory called `config,` and inside it, a file called `config.cue` with the content:
 
 ```go
-package config 
+package config
 
 db: {
 	user:     "db_user"
@@ -219,7 +220,7 @@ func LoadConfig(dirname string) (*Config, error) {
 	buildInstances := load.Instances([]string{}, cueConfig)
 	runtimeInstances := cue.Build(buildInstances)
 	instance := runtimeInstances[0]
-	
+
 	var config Config
 	err := instance.Value().Decode(&config)
 	if err != nil {
@@ -241,10 +242,10 @@ func main() {
 
 One advantage of CUE's `package` concept is that we can break our configuration into smaller files, each with its own functionality. For example, inside the `config` directory, I split `config. Cue` into separate files:
 
-*config/db.cue*
+_config/db.cue_
 
 ```go
-package config 
+package config
 
 db: {
 	user:     "db_user"
@@ -254,10 +255,10 @@ db: {
 }
 ```
 
-*config/metric.cue*
+_config/metric.cue_
 
 ```go
-package config 
+package config
 
 metric: {
 	host: "http://localhost"
@@ -265,10 +266,10 @@ metric: {
 }
 ```
 
-*config/lang.cue*
+_config/lang.cue_
 
 ```go
-package config 
+package config
 
 langs: [
 	"pt_br",

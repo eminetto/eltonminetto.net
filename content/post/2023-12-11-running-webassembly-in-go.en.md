@@ -2,13 +2,15 @@
 title: "Running WebAssembly code in Go"
 date: 2023-12-11T08:00:43-03:00
 draft: false
+tags:
+  - go
 ---
 
 This post is the second part of a series about WebAssembly and Go. In the [first post](https://eltonminetto.dev/en/post/2023-11-17-webassembly-using-go-code-in-the-browser/), we saw how to run Go code in a web browser. In this one, we will import a WebAssembly function and run it in a Go application.
 
 The first step was to create a function in WebAssembly, and in this case, I took the opportunity to test something in Rust, a language I plan to learn in 2024. To do this, I followed the step-by-step instructions on [Wasm By Example](https://wasmbyexample.dev/examples/hello-world/hello-world.rust.en-us.html). You will have a file to import into your Go project at the end of the steps. The file I generated was `wasmpoc_wasm_in_go_bg.wasm`.
 
-The next step is to create a Go project and run our `wasm` file with some `runtime`. For this, I chose [wasmer-go](https://github.com/wasmerio/wasmer-go). 
+The next step is to create a Go project and run our `wasm` file with some `runtime`. For this, I chose [wasmer-go](https://github.com/wasmerio/wasmer-go).
 
 What I did was:
 
@@ -164,5 +166,5 @@ It was possible to see the difference in executions, with the native version bei
 [![webassembly_benchmark](/images/posts/webassembly_benchmark.png)](/images/posts/webassembly_benchmark.png)
 
 Despite the stark difference in performance (perhaps the comparison is unfair), it was possible to see how easy it is to reuse code written in other languages ​​thanks to WebAssembly. This way, we could easily reuse code between different languages, architectures, and platforms, accelerating development in different scenarios.
- 
+
 In the next part of this series, I want to write about other applications and scenarios using WebAssembly.

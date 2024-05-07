@@ -2,7 +2,10 @@
 title: "Primeiras impressões sobre o Service Weaver"
 date: 2023-03-04T08:30:43-03:00
 draft: false
+tags:
+  - go
 ---
+
 Embarquem no trem do hype comigo!
 
 No dia 01/03 o Google [publicou no seu blog](https://opensource.googleblog.com/2023/03/introducing-service-weaver-framework-for-writing-distributed-applications.html) o lançamento de um novo framework, o [Service Weaver](https://serviceweaver.dev/).

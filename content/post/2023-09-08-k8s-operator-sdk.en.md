@@ -2,10 +2,13 @@
 title: "Creating Kubernetes Operators with operator-sdk"
 date: 2023-09-08T08:30:43-03:00
 draft: false
+tags:
+  - go
 ---
+
 If you develop APIs or microservices, especially in medium to large environments, you probably use Kubernetes.
 
-[Kubernetes](https://kubernetes.io/) is a project created by Google in mid-2015 that quickly became the standard for managing container execution. You can host it on your machines or use a solution delivered by one of the big cloud players like [AWS](https://aws.amazon.com/pt/eks/), [Google](https://cloud.google.com/kubernetes-engine), and [DigitalOcean](https://docs.digitalocean.com/products/kubernetes/). 
+[Kubernetes](https://kubernetes.io/) is a project created by Google in mid-2015 that quickly became the standard for managing container execution. You can host it on your machines or use a solution delivered by one of the big cloud players like [AWS](https://aws.amazon.com/pt/eks/), [Google](https://cloud.google.com/kubernetes-engine), and [DigitalOcean](https://docs.digitalocean.com/products/kubernetes/).
 
 In this post, I want to talk about another functionality: the possibility of extending it to create new capabilities. Let's start with the essential concepts for understanding this article.
 
@@ -33,25 +36,23 @@ spec:
         app: nginx
     spec:
       containers:
-      - name: nginx
-        image: nginx:1.14.2
-        ports:
-        - containerPort: 80
-``` 
+        - name: nginx
+          image: nginx:1.14.2
+          ports:
+            - containerPort: 80
+```
 
-The information inside the *spec* key corresponds to the desired state of the resource.
+The information inside the _spec_ key corresponds to the desired state of the resource.
 
-What k8s does is ensure that the current state of the object contained in the cluster is equal to the desired one that was declared. In this case, two Nginx containers, version 1.14.2, are running on port 80. It does this using what is called a *control loop*:
-
+What k8s does is ensure that the current state of the object contained in the cluster is equal to the desired one that was declared. In this case, two Nginx containers, version 1.14.2, are running on port 80. It does this using what is called a _control loop_:
 
 [![operator-reconciliation-kube-only](/images/posts/operator-reconciliation-kube-only.png)](/images/posts/operator-reconciliation-kube-only.png)
 
-It checks whether the current state of the resource differs from the desired state, and if so, it executes the *Reconcile* function of the controller linked to the object. This way, we can define a controller like this:
-
+It checks whether the current state of the resource differs from the desired state, and if so, it executes the _Reconcile_ function of the controller linked to the object. This way, we can define a controller like this:
 
 > A controller tracks at least one type of Kubernetes resource. These objects have a spec field that represents the desired state. This resource's controller(s) are responsible for bringing the current state closer to that desired state.
 
-K8s has a series of built-in resources such as *Pod*, *Deployment*, *Service*, and controllers that track the lifecycle of each of them. But in addition to them, we can create our resources through *Custom Resource Definitions (CRD)*. The combination of a CRD and a controller is what we call an [*operator*](https://kubernetes.io/docs/concepts/extend-kubernetes/operator/), and it is what we will explore in this text.
+K8s has a series of built-in resources such as _Pod_, _Deployment_, _Service_, and controllers that track the lifecycle of each of them. But in addition to them, we can create our resources through _Custom Resource Definitions (CRD)_. The combination of a CRD and a controller is what we call an [_operator_](https://kubernetes.io/docs/concepts/extend-kubernetes/operator/), and it is what we will explore in this text.
 
 ## operator-sdk
 
@@ -62,7 +63,6 @@ To illustrate what we can do with an operator, I will create a proof of concept 
 Creating an operator using [Go](https://sdk.operatorframework.io/docs/building-operators/golang/quickstart/), [Ansible](https://sdk.operatorframework.io/docs/building-operators/ansible/quickstart/) or [Helm](https://sdk.operatorframework.io/docs/building-operators/helm/quickstart/) is possible. In this article, I will use Go.
 
 The first step is to install the SDK CLI on the machine. I used brew, but the other options are in the [documentation](https://sdk.operatorframework.io/docs/installation/).
-
 
 ```bash
 brew install operator-sdk
@@ -75,9 +75,9 @@ operator-sdk init --domain minetto.dev --repo github.com/eminetto/k8s-operator-t
 operator-sdk create api --version v1alpha1 --kind Application --resource --controller
 ```
 
-The first command initializes the project by indicating the domain, information that k8s will use to identify the resource and the repository name used for the Go package name. The second command creates a new *Application* resource in the *alpha1* version and a controller skeleton.
+The first command initializes the project by indicating the domain, information that k8s will use to identify the resource and the repository name used for the Go package name. The second command creates a new _Application_ resource in the _alpha1_ version and a controller skeleton.
 
-Before we get into the code, it's essential to understand the purpose of the proof of concept. In its native form, getting an application running on K8s requires the developer to understand concepts such as Deployment, Pod, Service, etc. My goal is to reduce this cognitive load to just two resources: a [*namespace*](https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/), where the Application will reside within the cluster, and an *Application*, which will define the desired state of an application. For example, the team only needs to create the following *yaml* :
+Before we get into the code, it's essential to understand the purpose of the proof of concept. In its native form, getting an application running on K8s requires the developer to understand concepts such as Deployment, Pod, Service, etc. My goal is to reduce this cognitive load to just two resources: a [_namespace_](https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/), where the Application will reside within the cluster, and an _Application_, which will define the desired state of an application. For example, the team only needs to create the following _yaml_ :
 
 ```yaml
 apiVersion: v1
@@ -104,7 +104,7 @@ kubectl apply -f application.yaml
 
 And the rest will be created by our controller.
 
-The first step is configuring our resource to have fields related to *spec*. To do this, you must change the *api/v1alpha/application_types.go* file and add the fields to the struct:
+The first step is configuring our resource to have fields related to _spec_. To do this, you must change the _api/v1alpha/application_types.go_ file and add the fields to the struct:
 
 ```go
 type ApplicationSpec struct {
@@ -116,9 +116,9 @@ type ApplicationSpec struct {
 
 Later, we will use this information to generate the files necessary to install the CRD on our cluster. We will also use this structure to create the required resources.
 
-The next step is to create the logic for our controller. *operator-sdk* made the controllers/application_controller.go file and the ‌Reconcile function signature. This function is called by the control loop each time k8s detects a difference between the current state of the object and the desired state. In the *main.go* file that the SDK generated,  we have the link between the Application resource and our controller, and we don't need to worry about it now. One of the advantages of operator-sdk is that it allows us to focus on the controller logic and abstracts all the massive details necessary for it to work.
+The next step is to create the logic for our controller. _operator-sdk_ made the controllers/application_controller.go file and the ‌Reconcile function signature. This function is called by the control loop each time k8s detects a difference between the current state of the object and the desired state. In the _main.go_ file that the SDK generated, we have the link between the Application resource and our controller, and we don't need to worry about it now. One of the advantages of operator-sdk is that it allows us to focus on the controller logic and abstracts all the massive details necessary for it to work.
 
-The *Reconcile* function code and auxiliaries are below. I tried to document the most important excerpts:
+The _Reconcile_ function code and auxiliaries are below. I tried to document the most important excerpts:
 
 ```go
 func (r *ApplicationReconciler) Reconcile(ctx context.Context, req ctrl.Request) (ctrl.Result, error) {
@@ -133,9 +133,9 @@ func (r *ApplicationReconciler) Reconcile(ctx context.Context, req ctrl.Request)
 		return ctrl.Result{}, err
 	}
 	/*
-	The finalizer is essential because it tells K8s we need control over object deletion. 
+	The finalizer is essential because it tells K8s we need control over object deletion.
 	After all, how we will create other resources must be excluded together.
-	Without the finalizer, there is no time for the K8s garbage collector to delete, 
+	Without the finalizer, there is no time for the K8s garbage collector to delete,
 	and we risk having useless resources in the cluster.
 	*/
 	if !controllerutil.ContainsFinalizer(&app, finalizer) {
@@ -175,11 +175,11 @@ func (r *ApplicationReconciler) createOrUpdateDeployment(ctx context.Context, ap
 			return fmt.Errorf("unable to fetch Deployment: %v", err)
 		}
 		/*If there is no Deployment, we will create it.
-		An essential section in the definition is OwnerReferences, as it indicates to k8s that 
-		an Application is creating this resource. 
-		This is how k8s knows that when we remove an Application, it must also remove 
+		An essential section in the definition is OwnerReferences, as it indicates to k8s that
+		an Application is creating this resource.
+		This is how k8s knows that when we remove an Application, it must also remove
 		all the resources it created.
-		Another important detail is that we use data from our Application to create the Deployment, 
+		Another important detail is that we use data from our Application to create the Deployment,
 		such as image information, port, and replicas.
 		*/
 		if apierrors.IsNotFound(err) {
@@ -230,7 +230,7 @@ func (r *ApplicationReconciler) createOrUpdateDeployment(ctx context.Context, ap
 			return nil
 		}
 	}
-	/*The controller also needs to manage the update because if the dev changes any information 
+	/*The controller also needs to manage the update because if the dev changes any information
 	in an existing Application, this must impact other resources.*/
 	depl.Spec.Replicas = &app.Spec.Replicas
 	depl.Spec.Template.Spec.Containers[0].Image = app.Spec.Image
@@ -295,7 +295,7 @@ func (r *ApplicationReconciler) reconcileDelete(ctx context.Context, app *minett
 }
 ```
 
-To deploy our customized resource and its controller, the SDK provides commands in its *Makefile* :
+To deploy our customized resource and its controller, the SDK provides commands in its _Makefile_ :
 
 ```bash
 make manifests
@@ -304,11 +304,10 @@ make deploy IMG=registry.hub.docker.com/eminetto/k8s-operator-talk:latest
 ```
 
 The first command generates all the files necessary to create the CRD. The second generates a docker container and pushes it to the indicated repository. The last command installs the generated container on the cluster. Tip: You can automate controller generation and installation in your development environment using Tilt. This project's [repository](https://github.com/eminetto/k8s-operator-talk) has a Tiltfile that does all this work. To learn more about Tilt, check out [my post](https://eltonminetto.dev/en/post/2022-08-31-improve-local-development-tilt/) about the tool.
-  
-Now, apply the *yaml* with the *Application* definition to the cluster, and the controller will generate the *Deployment* and *Service* necessary for the Application to run. 
+
+Now, apply the _yaml_ with the _Application_ definition to the cluster, and the controller will generate the _Deployment_ and _Service_ necessary for the Application to run.
 
 We can check that the controller created the resources with the following commands.
-
 
 ```bash
 kubectl -n application-sample get applications

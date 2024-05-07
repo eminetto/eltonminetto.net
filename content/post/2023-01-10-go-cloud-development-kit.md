@@ -2,10 +2,13 @@
 title: "Go Cloud Development Kit"
 date: 2023-01-10T09:00:19-03:00
 draft: false
+tags:
+  - go
 ---
-Neste post vou falar sobre um projeto bem interessante que é mantido pelo time que desenvolve a linguagem Go. Trata-se do [Go Cloud Development Kit](https://gocloud.dev/), também conhecido como **‌Go CDK**. 
 
-O Go CDK fornece uma série de abstrações para um bom número de features bastante usadas em aplicações que rodam na nuvem, como banco de dados, armazenamento, mensageria, segredos, etc. O objetivo principal do projeto em criar estas abstrações é tornar o código independente de fornecedor de nuvem. Ao invés de tornar seu código dependente de uma solução, digamos o *AWS S3*, ao usar o Go CDK seria facilmente possível alterar para outro fornecedor, como o *Google Cloud Storage*.
+Neste post vou falar sobre um projeto bem interessante que é mantido pelo time que desenvolve a linguagem Go. Trata-se do [Go Cloud Development Kit](https://gocloud.dev/), também conhecido como **‌Go CDK**.
+
+O Go CDK fornece uma série de abstrações para um bom número de features bastante usadas em aplicações que rodam na nuvem, como banco de dados, armazenamento, mensageria, segredos, etc. O objetivo principal do projeto em criar estas abstrações é tornar o código independente de fornecedor de nuvem. Ao invés de tornar seu código dependente de uma solução, digamos o _AWS S3_, ao usar o Go CDK seria facilmente possível alterar para outro fornecedor, como o _Google Cloud Storage_.
 
 Mas você pode estar se perguntando algo como:
 
@@ -15,7 +18,7 @@ Além desta opção, eu consigo ver outras vantagens em se usar o Go CDK:
 
 - **Escrita de testes.** Usando as abstrações é bem simples podermos usar um armazenamento [em memória](https://gocloud.dev/howto/blob/#local) nos testes, enquanto que no ambiente de produção usamos o provedor de nuvem;
 - **Diferentes ambientes.** Podemos usar um fornecedor mais barato em um ambiente de testes/homologação e outro mais robusto e caro no ambiente de produção
-- **Evolução.** É possível que a sua aplicação comece com uma solução mais simples, digamos o [SQS](https://gocloud.dev/howto/pubsub/publish/#sqs) para *pub/sub*, e conforme a carga e a complexidade aumentar pode-se mudar a decisão e começar a usar o [Kafka](https://gocloud.dev/howto/pubsub/publish/#kafka). 
+- **Evolução.** É possível que a sua aplicação comece com uma solução mais simples, digamos o [SQS](https://gocloud.dev/howto/pubsub/publish/#sqs) para _pub/sub_, e conforme a carga e a complexidade aumentar pode-se mudar a decisão e começar a usar o [Kafka](https://gocloud.dev/howto/pubsub/publish/#kafka).
 
 Para exemplificar, vejamos o código a seguir:
 
@@ -85,14 +88,14 @@ if err != nil {
 defer bucket.Close()
 ```
 
-Estamos apenas configurando a conexão com o `S3` e criando um `bucket` neste fornecedor. O restante do código não muda, continuamos usando as funções `read` e `write`. 
+Estamos apenas configurando a conexão com o `S3` e criando um `bucket` neste fornecedor. O restante do código não muda, continuamos usando as funções `read` e `write`.
 
 Atualmente o projeto possui abstrações para:
 
-- [Blob](https://gocloud.dev/howto/blob/), ou seja, armazenamento de arquivos. Possui suporte para *Google Cloud Storage*, *S3*, *Azure Blob Storage* e armazenamento local.
-- [Docstore](https://gocloud.dev/howto/docstore/), ou seja, bancos de dados de documentos, com suporte para *Google Cloud Firestore*, *Amazon DynamoDB*, *Azure Cosmos DB*, *MongoDB* e armazenamento em memória.
-- [MySQL/PostgreSQL](https://gocloud.dev/howto/sql/), com suporte a bancos locais, *GCP Cloud SQL*, *AWS RDS* e *Azure Database*.
-- [Pub/Sub](https://gocloud.dev/howto/pubsub/). Talvez a mais completa, com suporte a *Google Cloud Pub/Sub*, *Amazon Simple Notification Service (SNS)*, *Amazon Simple Queue Service (SQS)*, *Azure Service Bus*, *RabbitMQ*, *NATS*, *Kafka* e armazenamento em memória.
+- [Blob](https://gocloud.dev/howto/blob/), ou seja, armazenamento de arquivos. Possui suporte para _Google Cloud Storage_, _S3_, _Azure Blob Storage_ e armazenamento local.
+- [Docstore](https://gocloud.dev/howto/docstore/), ou seja, bancos de dados de documentos, com suporte para _Google Cloud Firestore_, _Amazon DynamoDB_, _Azure Cosmos DB_, _MongoDB_ e armazenamento em memória.
+- [MySQL/PostgreSQL](https://gocloud.dev/howto/sql/), com suporte a bancos locais, _GCP Cloud SQL_, _AWS RDS_ e _Azure Database_.
+- [Pub/Sub](https://gocloud.dev/howto/pubsub/). Talvez a mais completa, com suporte a _Google Cloud Pub/Sub_, _Amazon Simple Notification Service (SNS)_, _Amazon Simple Queue Service (SQS)_, _Azure Service Bus_, _RabbitMQ_, _NATS_, _Kafka_ e armazenamento em memória.
 - Entre outros.
 
 E além de código o site oficial tem uma área com alguns [conceitos importantes](https://gocloud.dev/concepts/).

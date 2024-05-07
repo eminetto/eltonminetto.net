@@ -2,7 +2,10 @@
 title: "Writing tests for a Kubernetes Operator"
 date: 2023-10-05T07:30:43-03:00
 draft: false
+tags:
+  - go
 ---
+
 In the [last post](https://eltonminetto.dev/en/post/2023-09-08-k8s-operator-sdk/), we saw how to create a Kubernetes operator using operator-sdk. As that text was quite long, I decided to write this second post to focus on the application's testing part.
 
 Using the operator-sdk CLI to create the operator skeleton makes an initial structure for us to write your tests. For this purpose, we will use some components:
@@ -27,8 +30,7 @@ export PATH=$PATH:bin/k8s/1.28.0-darwin-arm64/
 
 The first command will install the binary setup-envtest, the second downloads the executables to our project directory, and the third adds the new files to the operating system's PATH.
 
-The next step is to write the test. The operator-sdk documentation recommends creating a **kind**_controller_test.go file within the "controllers" directory. In our case, application_controller_test.go. Below, you can see the file's basic structure. In the following topics, we will create each of the tests.
-
+The next step is to write the test. The operator-sdk documentation recommends creating a **kind**\_controller_test.go file within the "controllers" directory. In our case, application_controller_test.go. Below, you can see the file's basic structure. In the following topics, we will create each of the tests.
 
 ```go
 package controllers
@@ -120,8 +122,8 @@ Context("When creating an Application", func() {
 			createdDepl := &appsv1.Deployment{}
 
 			// due to the asynchronous nature of Kubernetes, we will
-			// make use of Ginkgo's Eventually function. It will 
-			// execute the function according to the interval value, 
+			// make use of Ginkgo's Eventually function. It will
+			// execute the function according to the interval value,
 			// until the timeout has ended, or the result is true
 			Eventually(func() bool {
 				err := k8sClient.Get(ctx, deplName, createdDepl)
@@ -158,7 +160,6 @@ I added comments to the code to describe the details.
 ## Application update test
 
 The subsequent test checks whether, when changing an Application, the controller reflects the modification in the other objects:
-
 
 ```go
 Context("When updating an Application", func() {
@@ -208,7 +209,6 @@ Context("When updating an Application", func() {
 	})
 ```
 
-
 ## Testing the deletion of an Application
 
 ```go
@@ -231,7 +231,7 @@ Context("When deleting an Application", func() {
 			}, timeout, interval).ShouldNot(Succeed())
 
 			// according to this documentation: https://book.kubebuilder.io/reference/envtest.html#testing-considerations
-			// we cannot test the cluster's garbage collection to ensure that the Deployment and Service created were removed, 
+			// we cannot test the cluster's garbage collection to ensure that the Deployment and Service created were removed,
 			// but in the first test we check the ownership, so they will be removed as expected in a real cluster
 		})
 	})
@@ -239,10 +239,9 @@ Context("When deleting an Application", func() {
 
 ## Conclusions
 
+Once again, it is possible to see how operator-sdk facilitates the operator development process by creating a structure to make it easy to test our controller.
 
-Once again, it is possible to see how operator-sdk facilitates the operator development process by creating a structure to make it easy to test our controller. 
-
-Using envtest is also very useful as it allows us to test the functionality of a Kubernetes cluster without the need to install one, which is very important in CI/CD environments. 
+Using envtest is also very useful as it allows us to test the functionality of a Kubernetes cluster without the need to install one, which is very important in CI/CD environments.
 
 Another interesting point is the use of Ginkgo, which makes the tests readable and easy to understand. This project was my first time using Ginkgo, and I liked the results. I should add it to my toolbox for future projects.
 
