@@ -2,12 +2,15 @@
 title: "Infraestrutura como Código na AWS usando Go e Pulumi"
 date: 2021-11-08T20:14:25-03:00
 draft: false
+tags:
+  - go
 ---
+
 Quando falamos de Infraestrutura como Código (Infrastructure as Code, ou IaC), a principal ferramenta que nos vem a mente é o [Terraform](https://terraform.io). A ferramenta criada pela HashiCorp tornou-se o padrão para a documentação e gerenciamento de infraestrutura, mas sua linguagem declarativa, a HCL (HashiCorp Configuration Language) tem algumas limitações. A principal delas é exatamente não ser uma linguagem de programação, e sim de configuração.
 
 Para suprir essa necessidade, algumas alternativas vem surgindo, como:
 
-- [AWS Cloud Development Kit](https://aws.amazon.com/pt/cdk/), solução da Amazon que permite usarmos TypeScript, Python e Java para programar a infraestrutura usando as soluções do provedor de cloud; 
+- [AWS Cloud Development Kit](https://aws.amazon.com/pt/cdk/), solução da Amazon que permite usarmos TypeScript, Python e Java para programar a infraestrutura usando as soluções do provedor de cloud;
 - [Pulumi](https://www.pulumi.com), que permite usarmos TypeScript, JavaScript, Python, Go e C# para programarmos infraestruturas usando as soluções da AWS, Microsoft Azure, Google Cloud e instalações de Kubernetes.
 
 Neste post vou fazer uma introdução ao Pulumi, usando a linguagem Go para criar alguns exemplos de infraestrutura na AWS.
@@ -17,11 +20,10 @@ Neste post vou fazer uma introdução ao Pulumi, usando a linguagem Go para cria
 Para fazer uso do Pulumi precisamos primeiramente instalar seu aplicativo de linha de comando. Seguindo a [documentação](https://www.pulumi.com/docs/get-started/aws/begin/) eu instalei no meu macOS usando o comando:
 
     brew install pulumi
-    
+
 No site é possível ver as opções de instalação no Windows e Linux.
 
 ## Configurar acesso a conta AWS
-
 
 Como vou usar neste exemplo a AWS, o próximo passo necessário é configurar as credenciais de acesso. Para isso peguei minha chave de acesso e segredo no painel da AWS e configurei as variáveis de ambiente necessárias:
 
@@ -44,23 +46,22 @@ O resultado da execução do comando pode ser visto [neste link](https://app.war
 
 Analisando o conteúdo do diretório podemos ver que alguns arquivos de configuração e um `main.go` foram criados.
 
-*Pulumi.yaml*
+_Pulumi.yaml_
 
 ```yaml
 name: post-pulumi
 runtime: go
 description: A minimal AWS Go Pulumi program
-
 ```
 
-*Pulumi.dev.yaml*
+_Pulumi.dev.yaml_
 
 ```yaml
 config:
   aws:region: us-east-1
 ```
 
-*main.go*
+_main.go_
 
 ```go
 package main
@@ -89,13 +90,13 @@ Ao executar
 
     pulumi up
 
-foi criado o *bucket* no S3, conforme o código indica.
+foi criado o _bucket_ no S3, conforme o código indica.
 
 E ao executar:
 
     pulumi destroy
 
-a estrutura é removida, ou seja, o *bucket* é destruído. 
+a estrutura é removida, ou seja, o _bucket_ é destruído.
 
 ## Primeiro exemplo - criando uma página estática no S3
 
@@ -107,16 +108,17 @@ O primeiro passo é criar uma página estática, que vamos fazer deploy:
 
 Dentro deste diretório criei o arquivo:
 
-*static/index.html*
+_static/index.html_
+
 ```html
 <html>
-    <body>
-        <h1>Hello, Pulumi!</h1>
-    </body>
+  <body>
+    <h1>Hello, Pulumi!</h1>
+  </body>
 </html>
 ```
 
-Alterei o *main.go* para refletir a nova estrutura:
+Alterei o _main.go_ para refletir a nova estrutura:
 
 ```go
 package main
@@ -161,14 +163,13 @@ Para atualizar basta executar
 
     pulumi up
 
-E confirmar a alteração. 
+E confirmar a alteração.
 
 O trecho de código:
 
 ```go
 ctx.Export("bucketEndpoint", pulumi.Sprintf("http://%s", bucket.WebsiteEndpoint))
 ```
-
 
 Faz com que seja gerado como saída endereço para acesso ao `index.html`, por exemplo:
 
@@ -177,13 +178,13 @@ Outputs:
   + bucketEndpoint: "http://my-bucket-357877e.s3-website-us-east-1.amazonaws.com"
 ```
 
-Este é um exemplo bem simples mas que já demonstra o poder da  ferramenta. Vamos tornar as coisas um pouco mais complexas e divertidas agora.
+Este é um exemplo bem simples mas que já demonstra o poder da ferramenta. Vamos tornar as coisas um pouco mais complexas e divertidas agora.
 
 ## Segundo exemplo - site dentro de um container
 
-Vamos criar um *Dockerfile* com um servidor web para hospedar nosso conteúdo estático:
+Vamos criar um _Dockerfile_ com um servidor web para hospedar nosso conteúdo estático:
 
-*static/Dockerfile*
+_static/Dockerfile_
 
 ```Dockerfile
 FROM golang
@@ -198,7 +199,7 @@ ENTRYPOINT /go/bin/main
 EXPOSE 80
 ```
 
-Vamos agora criar o arquivo *static/main.go*, que vai ser nosso servidor Web:
+Vamos agora criar o arquivo _static/main.go_, que vai ser nosso servidor Web:
 
 ```go
 package main
@@ -218,9 +219,9 @@ func main() {
 	}
 	log.Fatal(s.ListenAndServe())
 }
-````
+```
 
-Vamos alterar o *main.go* para incluir a infraestrutura de um cluster ECS e tudo mais necessário para executar nosso container:
+Vamos alterar o _main.go_ para incluir a infraestrutura de um cluster ECS e tudo mais necessário para executar nosso container:
 
 ```go
 package main
@@ -452,15 +453,14 @@ Agora basta executar o comando:
 
     pulumi up
 
-No output da execução será gerada a url do *load balancer*, que faremos uso para acessar o conteúdo do nosso container em execução.
-
+No output da execução será gerada a url do _load balancer_, que faremos uso para acessar o conteúdo do nosso container em execução.
 
 ## Reorganizando o código
 
 Agora podemos começar a fazer uso das vantagens de estarmos usando uma linguagem de programação completa, como o Go. Poderíamos usar recursos da linguagem como funções, concorrência, condicionais, etc. Neste exemplo vamos organizar melhor nosso código. Para isso os passos abaixo foram realizados:
 
-- Criado o diretório *iac*
-- Criado o arquivo *iac/fargate.go*
+- Criado o diretório _iac_
+- Criado o arquivo _iac/fargate.go_
 - Movemos boa parte da lógica do `main.go`para o novo arquivo:
 
 ```go
@@ -681,12 +681,11 @@ func toPulumiStringArray(a []string) pulumi.StringArrayInput {
 
 O próximo passo foi configurar o diretório `iac` para ser um módulo da linguagem Go:
 
-
-	cd iac
-	go mod init github.com/eminetto/post-pulumi/iac
-	cd ..
-	go mod edit -replace github.com/eminetto/post-pulumi/iac=./iac
-	go mod tidy
+    cd iac
+    go mod init github.com/eminetto/post-pulumi/iac
+    cd ..
+    go mod edit -replace github.com/eminetto/post-pulumi/iac=./iac
+    go mod tidy
 
 O nosso `main.go` agora pode ser simplificado:
 

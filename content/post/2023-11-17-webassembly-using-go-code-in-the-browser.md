@@ -2,15 +2,19 @@
 title: "WebAssembly: usando código Go no navegador"
 date: 2023-11-17T08:00:43-03:00
 draft: false
+tags:
+  - go
 ---
+
 De tempos em tempos surge uma tecnologia que causa um grande impacto no dia a dia das pessoas desenvolvedoras. Linux, Git, Docker, Kubernetes, entre outras. Na minha opinião o WebAssembly é uma tecnologia que tem potencial para figurar nessa seleta lista.
 
 > WebAssembly (também conhecido como WASM) foi lançado em 2017 como um formato de instrução binária para uma máquina virtual baseada em pilha, desenvolvida para ser executada em navegadores da web modernos para fornecer “execução eficiente e representação compacta de código em processadores modernos, inclusive em um navegador da web. ”
->> [Fonte](https://thenewstack.io/webassembly/what-is-webassembly-and-why-do-you-need-it/)
+>
+> > [Fonte](https://thenewstack.io/webassembly/what-is-webassembly-and-why-do-you-need-it/)
 
 Como fala a definição, por ser um "formato de instrução binária" podemos executar código gerado por qualquer linguagem de programação que seja capaz de gerar este formato. Neste post vamos fazer isso com Go.
 
-Para este teste eu procurei um código que fizesse uso de algum recurso importante da linguagem, como *goroutines* e *channels*. Lembrei do motivo pelo qual eu comecei a usar Go, lá em 2015. Eu queria executar algumas simulações baseadas no conceito do [Método de Monte Carlo](https://en.wikipedia.org/wiki/Monte_Carlo_method) e a facilidade de concorrência de Go foi perfeita para resolver esse problema. Pesquisei um pouco e encontrei um [exemplo perfeito](https://www.soroushjp.com/2015/02/07/go-concurrency-is-not-parallelism-real-world-lessons-with-monte-carlo-simulations/) para o que eu gostaria de testar. Fiz algumas pequenas mudanças e o código ficou desta forma:
+Para este teste eu procurei um código que fizesse uso de algum recurso importante da linguagem, como _goroutines_ e _channels_. Lembrei do motivo pelo qual eu comecei a usar Go, lá em 2015. Eu queria executar algumas simulações baseadas no conceito do [Método de Monte Carlo](https://en.wikipedia.org/wiki/Monte_Carlo_method) e a facilidade de concorrência de Go foi perfeita para resolver esse problema. Pesquisei um pouco e encontrei um [exemplo perfeito](https://www.soroushjp.com/2015/02/07/go-concurrency-is-not-parallelism-real-world-lessons-with-monte-carlo-simulations/) para o que eu gostaria de testar. Fiz algumas pequenas mudanças e o código ficou desta forma:
 
 ```go
 package main
@@ -57,7 +61,7 @@ func pi(samples int) float64 {
 
 ```
 
-Com o Método de Monte Carlo, quanto mais simulações são executadas mais preciso é o resultado, então performance e concorrência são cruciais para a eficiência do algoritmo. 
+Com o Método de Monte Carlo, quanto mais simulações são executadas mais preciso é o resultado, então performance e concorrência são cruciais para a eficiência do algoritmo.
 
 Vamos agora fazer algumas alterações no código para que seja possível executá-lo no navegador.
 
@@ -139,36 +143,31 @@ cp "$(go env GOROOT)/misc/wasm/wasm_exec.js" .
 O código do nosso `index.html` ficou desta forma:
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>Go + WebAssembly Example</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <script src="/wasm_exec.js"></script>
     <script>
-        function pi() {
-            const go = new Go();
-            WebAssembly.instantiateStreaming(fetch("pi.wasm"), go.importObject).then((result) => {
-                go.run(result.instance);
-                v = jsPI(parseInt(document.getElementById("simulations").value))
-                document.getElementById("result").textContent = v
-            });
-
-
-        }
+      function pi() {
+        const go = new Go();
+        WebAssembly.instantiateStreaming(fetch("pi.wasm"), go.importObject).then((result) => {
+          go.run(result.instance);
+          v = jsPI(parseInt(document.getElementById("simulations").value));
+          document.getElementById("result").textContent = v;
+        });
+      }
     </script>
-</body>
-<form>
-    Simulations: <input type="text" id="simulations">
-    <input type="button" value="Calculate" onclick="pi()">
+  </body>
+  <form>
+    Simulations: <input type="text" id="simulations" />
+    <input type="button" value="Calculate" onclick="pi()" />
     <div id="result"></div>
-</form>
-
+  </form>
 </html>
 ```
 

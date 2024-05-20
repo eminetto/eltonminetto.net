@@ -2,13 +2,15 @@
 title: "Choosing dependencies using deps.dev"
 date: 2023-04-19T08:30:43-03:00
 draft: false
+tags:
+  - go
 ---
 
 Choosing a project's dependencies is something we sometimes overlook, but it can have a very relevant impact. The following image illustrates the idea:
 
 [![dependencies](/images/posts/dependecies.png)](/images/posts/dependecies.png)
 
-To facilitate this process, Google recently launched a new project, [deps.dev](https://deps.dev). Its slogan summarizes its objective: *Understand your dependencies*. The tool supports programming languages such as JavaScript, Rust, Go, Python, and Java.
+To facilitate this process, Google recently launched a new project, [deps.dev](https://deps.dev). Its slogan summarizes its objective: _Understand your dependencies_. The tool supports programming languages such as JavaScript, Rust, Go, Python, and Java.
 
 To show the advantages, imagine a scenario: a team is developing an API in Go and needs to choose a library to implement the [Circuit Breaker](https://martinfowler.com/bliki/CircuitBreaker.html) pattern. After some research on the internet and the excellent website [Awesome Go](https://awesome-go.com/), they reduced the list to the following options:
 

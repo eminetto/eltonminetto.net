@@ -1,9 +1,11 @@
-+++
-title = "Object Calisthenics in Golang"
-subtitle = ""
-date = "2019-06-01T10:54:24+02:00"
-bigimg = ""
-+++
+---
+title: "Object Calisthenics in Golang"
+subtitle: ""
+date: "2019-06-01T10:54:24+02:00"
+bigimg: ""
+tags:
+  - go
+---
 
 [Jeff Bay](http://www.xpteam.com/jeff/) introduced the term **Object Calisthenics** in his book [Thought Works Anthology] (https://pragprog.com/book/twa/thoughtworks-anthology). It is a set of good practices and programming rules that can improve the quality of our code.
 
@@ -29,7 +31,7 @@ But what are these rules, anyway? They are, in the original version:
 
 As I mentioned earlier, Jeff created these rules based on the Java language and they need adaptations for other environments. Just as Rafael and Guilherme did for PHP, we need to look at each item and analyze it to see if it makes sense in Go.
 
-The first point to consider is the name itself. *Calisthenics* comes from the Greek and means a series of exercises to reach an end, such as improving your physical fitness. In this context, the exercises improve the conditioning of our code. The problem is the *Object* term, because this concept does not exist in Go. Therefore, I propose a first change: from *Object Calisthenics* to *Code Calisthenics*. I leave the comment area below to discuss if this is a good suggestion. 
+The first point to consider is the name itself. _Calisthenics_ comes from the Greek and means a series of exercises to reach an end, such as improving your physical fitness. In this context, the exercises improve the conditioning of our code. The problem is the _Object_ term, because this concept does not exist in Go. Therefore, I propose a first change: from _Object Calisthenics_ to _Code Calisthenics_. I leave the comment area below to discuss if this is a good suggestion.
 
 Let’s analyze the other items.
 
@@ -107,10 +109,9 @@ func (b *board) collectRow(buffer *bytes.Buffer, row int) {
 }
 ```
 
-
 ## Don't use the ELSE keyword
 
-The goal of this item is to avoid using the *else* keyword, generating a cleaner and faster code because it has fewer execution flows.
+The goal of this item is to avoid using the _else_ keyword, generating a cleaner and faster code because it has fewer execution flows.
 
 Let's look at the code:
 
@@ -150,7 +151,7 @@ func addFlash(msgType, msg string) {
 }
 ```
 
-We can apply the *Early Return* concept and remove the *else* from the function *Login*:
+We can apply the _Early Return_ concept and remove the _else_ from the function _Login_:
 
 ```go
 
@@ -166,7 +167,7 @@ func (l *loginService) Login(userName, password string) {
 
 ## Wrap all primitives and Strings in classes
 
-This rule suggests that primitive types **that have behavior** must be encapsulated, in our case, in *structs* or *types* and not in *classes*. That way, we encapsulate the behavior logic and make the code easy to maintain. Let’s see the example:
+This rule suggests that primitive types **that have behavior** must be encapsulated, in our case, in _structs_ or _types_ and not in _classes_. That way, we encapsulate the behavior logic and make the code easy to maintain. Let’s see the example:
 
 ```go
 package ecommerce
@@ -189,7 +190,7 @@ func (o order) Submit() (int64, error) {
 }
 ```
 
-Applying the rule, using *structs*:
+Applying the rule, using _structs_:
 
 ```go
 package ecommerce
@@ -238,7 +239,7 @@ func (o order) Submit() (orderID, error) {
 }
 ```
 
-Another possible and more idiomatic refactoring, using *types* could be::
+Another possible and more idiomatic refactoring, using _types_ could be::
 
 ```go
 package ecommerce
@@ -519,19 +520,17 @@ func (b *board) BoardRepresentation() string {
 
 ```
 
-This rule reinforces the use of [*"Law Of Demeter"*](http://wiki.c2.com/?LawOfDemeter):
+This rule reinforces the use of [_"Law Of Demeter"_](http://wiki.c2.com/?LawOfDemeter):
 
 > Only talk to your immediate friends
 
-
 ## Don't abbreviate
 
-This rule does not apply directly to Go. The community has its own rules for creating variable names, including reasons for using smaller ones. I recommend reading this chapter of: [*‌Practical Go: Real world advice for writing maintainable Go programs*](https://dave.cheney.net/practical-go/presentations/qcon-china.html?utm_campaign=Golang%20Ninjas%20Newsletter&utm_medium=email&utm_source=Revue%20newsletter#_identifiers)
-
+This rule does not apply directly to Go. The community has its own rules for creating variable names, including reasons for using smaller ones. I recommend reading this chapter of: [_‌Practical Go: Real world advice for writing maintainable Go programs_](https://dave.cheney.net/practical-go/presentations/qcon-china.html?utm_campaign=Golang%20Ninjas%20Newsletter&utm_medium=email&utm_source=Revue%20newsletter#_identifiers)
 
 ## Keep all classes less than 50 lines
 
-Although there is no concept of *classes* in Go, this rule states that entities should be small. We can adapt the idea to create small *structs* and *interfaces* that we can use, via composition, to form larger components. For instance, the *interface*:
+Although there is no concept of _classes_ in Go, this rule states that entities should be small. We can adapt the idea to create small _structs_ and _interfaces_ that we can use, via composition, to form larger components. For instance, the _interface_:
 
 ```go
 type Repository interface {
@@ -572,32 +571,29 @@ type Repository interface {
 	Writer
 }
 ```
- 
-Thus, other interfaces and scenarios can reuse the *Reader* and *Writer*.
- 
+
+Thus, other interfaces and scenarios can reuse the _Reader_ and _Writer_.
+
 ## No classes with more than two instance variables
- 
+
 This rule does not seem to make sense in Go, but if you have any suggestions, please share.
- 
+
 ## No Getters/Setters
- 
- Like the previous rule, this also does not seem to be adaptable to Go, because it is not a pattern used by the community, as seen in this [topic](https://golang.org/doc/effective_go.html#Getters) of Effective Go. But suggestions are welcome.
-  
- Applying these rules, among other good practices, it is possible to have a cleaner, simple and easy to maintain code. I would love to hear your opinions on the rules and these suggestions of adaptation to Go.
- 
+
+Like the previous rule, this also does not seem to be adaptable to Go, because it is not a pattern used by the community, as seen in this [topic](https://golang.org/doc/effective_go.html#Getters) of Effective Go. But suggestions are welcome.
+
+Applying these rules, among other good practices, it is possible to have a cleaner, simple and easy to maintain code. I would love to hear your opinions on the rules and these suggestions of adaptation to Go.
+
 ## References
- 
- [https://javflores.github.io/object-calisthenics/](https://javflores.github.io/object-calisthenics/)
- 
- [https://williamdurand.fr/2013/06/03/object-calisthenics/](https://williamdurand.fr/2013/06/03/object-calisthenics/)
- 
- [https://medium.com/web-engineering-vox/improving-code-quality-with-object-calisthenics-aa4ad67a61f1](https://medium.com/web-engineering-vox/improving-code-quality-with-object-calisthenics-aa4ad67a61f1)
- 
+
+[https://javflores.github.io/object-calisthenics/](https://javflores.github.io/object-calisthenics/)
+
+[https://williamdurand.fr/2013/06/03/object-calisthenics/](https://williamdurand.fr/2013/06/03/object-calisthenics/)
+
+[https://medium.com/web-engineering-vox/improving-code-quality-with-object-calisthenics-aa4ad67a61f1](https://medium.com/web-engineering-vox/improving-code-quality-with-object-calisthenics-aa4ad67a61f1)
+
 I have adapted some examples used in this post from the repository: [https://github.com/rafos/object-calisthenics-in-go](https://github.com/rafos/object-calisthenics-in-go)
- 
+
 ## Acknowledgment
- 
- Thank you Wagner Riffel and Francisco Oliveira for suggestions on how to improve the examples. 
- 
- 
- 
+
+Thank you Wagner Riffel and Francisco Oliveira for suggestions on how to improve the examples.

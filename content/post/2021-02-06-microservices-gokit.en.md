@@ -1,10 +1,12 @@
-+++
-title = "Microservices in Go using the Go kit "
-subtitle = ""
-date = "2021-02-16T08:33:24+02:00"
-bigimg = ""
+---
+title: "Microservices in Go using the Go kit "
+subtitle: ""
+date: "2021-02-16T08:33:24+02:00"
+bigimg: ""
+tags:
+  - go
+---
 
-+++
 In one of the chapters of the book [Microservice Patterns: With examples in Java](https://www.amazon.com.br/Microservice-Patterns-examples-Chris-Richardson/dp/1617294543/ref=sr_1_1?__mk_pt_BR=ÅMÅŽÕÑ&crid=5S2QOI44DDW4&dchild=1&keywords=microservices+patterns&qid=1612616717&sprefix=microservice+pa%2Caps%2C300&sr=8-1) the author mentions the ["Microservice chassis"](https://microservices.io/patterns/microservice-chassis.html) pattern:
 
 > Build your microservices using a microservice chassis framework, which handles cross-cutting concerns, such as exception tracking, logging, health checks, externalized configuration, and distributed tracing.
@@ -17,21 +19,19 @@ He goes further and gives some examples of frameworks that implement these conce
 
 After some research I chose the Go kit as it is one of the most popular, it is being updated at a constant speed and I liked the architecture that it proposes.
 
-## Architecture 
+## Architecture
 
 ### Service
 
-![service](/images/posts/gokit_service.png) 
+![service](/images/posts/gokit_service.png)
 
-Services are where all of the business logic is implemented.  In Go kit, services are typically modeled as interfaces, and implementations of those interfaces contain the business logic. Go kit services should strive to abide the Clean Architecture or the Hexagonal Architecture. That is, the business logic should not know of transport-domain concepts: your service shouldn’t know anything about HTTP headers, or gRPC error codes.
+Services are where all of the business logic is implemented. In Go kit, services are typically modeled as interfaces, and implementations of those interfaces contain the business logic. Go kit services should strive to abide the Clean Architecture or the Hexagonal Architecture. That is, the business logic should not know of transport-domain concepts: your service shouldn’t know anything about HTTP headers, or gRPC error codes.
 
-
-### Endpoint 
+### Endpoint
 
 ![endpoint](/images/posts/gokit_endpoint.png)
 
 An endpoint is like an action/handler on a controller; it’s where safety and antifragile logic lives. If you implement two transports (HTTP and gRPC), you might have two methods of sending requests to the same endpoint.
-
 
 ### Transport
 
@@ -39,11 +39,9 @@ An endpoint is like an action/handler on a controller; it’s where safety and a
 
 The transport domain is bound to concrete transports like HTTP or gRPC. In a world where microservices may support one or more transports, this is very powerful; you can support a legacy HTTP API and a newer RPC service, all in a single microservice.
 
+## Example
 
-## Example 
-
-Let's create an example of a microservice using this architecture. The directory structure looks like this: 
-
+Let's create an example of a microservice using this architecture. The directory structure looks like this:
 
 ![example](/images/posts/gokit_example.png)
 
@@ -101,7 +99,7 @@ func (s *service) ValidateToken(ctx context.Context, token string) (string, erro
 }
 ```
 
-As the Go kit documentation recommends, the first step is to create an `interface` for our service, which will be implemented with our business logic. Soon, this decision to create an interface will prove useful when we include logging and monitoring metrics in the application. 
+As the Go kit documentation recommends, the first step is to create an `interface` for our service, which will be implemented with our business logic. Soon, this decision to create an interface will prove useful when we include logging and monitoring metrics in the application.
 
 Because it only has business rules, the service layer test is also very simple:
 
@@ -132,11 +130,9 @@ func TestValidateUser(t *testing.T) {
 
 ```
 
-
 ## Endpoint
 
-We will now expose our functions to the outside world. In this example the two functions will be able to be accessed externally, so we will create two endpoints. But this is not always true. Depending on the scenario you can expose only a few functions and keep the others accessible only within the service layer. 
-
+We will now expose our functions to the outside world. In this example the two functions will be able to be accessed externally, so we will create two endpoints. But this is not always true. Depending on the scenario you can expose only a few functions and keep the others accessible only within the service layer.
 
 ```go
 package user
@@ -147,7 +143,7 @@ import (
 	"github.com/go-kit/kit/endpoint"
 )
 
-//definition of endpoint input and output structures 
+//definition of endpoint input and output structures
 type validateUserRequest struct {
 	Email    string `json:"email"`
 	Password string `json:"password"`
@@ -159,7 +155,7 @@ type validateUserResponse struct {
 }
 
 //the endpoint will receive a request, convert to the desired
-//format, invoke the service and return the response structure 
+//format, invoke the service and return the response structure
 func makeValidateUserEndpoint(svc Service) endpoint.Endpoint {
 	return func(ctx context.Context, request interface{}) (interface{}, error) {
 		req := request.(validateUserRequest)
@@ -171,7 +167,7 @@ func makeValidateUserEndpoint(svc Service) endpoint.Endpoint {
 	}
 }
 
-//definition of endpoint input and output structures 
+//definition of endpoint input and output structures
 type validateTokenRequest struct {
 	Token string `json:"token"`
 }
@@ -182,7 +178,7 @@ type validateTokenResponse struct {
 }
 
 //the endpoint will receive a request, convert to the desired
-//format, invoke the service and return the response structure 
+//format, invoke the service and return the response structure
 func makeValidateTokenEndpoint(svc Service) endpoint.Endpoint {
 	return func(ctx context.Context, request interface{}) (interface{}, error) {
 		req := request.(validateTokenRequest)
@@ -198,7 +194,7 @@ func makeValidateTokenEndpoint(svc Service) endpoint.Endpoint {
 
 The role of the endpoint is to receive a request, convert it to the expected struct, invoke the service layer, and return another struct. The endpoint layer does not know anything about the upper layer, because it makes no difference whether the endpoint is being invoked via HTTP, gRPC, or another form of transport.
 
-Because of its simplicity, testing this layer is equally easy to implement: 
+Because of its simplicity, testing this layer is equally easy to implement:
 
 ```go
 package user
@@ -235,11 +231,11 @@ func TestMakeValidateUserEndpoint(t *testing.T) {
 
 ```
 
-This test could be improved by replacing the use of the service with a mock that implements the same `Service` interface, making the tests more efficient. 
+This test could be improved by replacing the use of the service with a mock that implements the same `Service` interface, making the tests more efficient.
 
 ## Transport
 
-In this layer, we can have several implementations like HTTP, gRPC, AMPQ, NATS, etc. In this example, we are going to expose our endpoints in the form of an HTTP API. So, we will create the file `transpor_http.go`: 
+In this layer, we can have several implementations like HTTP, gRPC, AMPQ, NATS, etc. In this example, we are going to expose our endpoints in the form of an HTTP API. So, we will create the file `transpor_http.go`:
 
 ```go
 package user
@@ -255,16 +251,16 @@ import (
 )
 
 func NewHttpServer(svc Service, logger log.Logger) *mux.Router {
-	//options provided by the Go kit to facilitate error control 
+	//options provided by the Go kit to facilitate error control
 	options := []httptransport.ServerOption{
 		httptransport.ServerErrorLogger(logger),
 		httptransport.ServerErrorEncoder(encodeErrorResponse),
 	}
-	//definition of a handler 
+	//definition of a handler
 	validateUserHandler := httptransport.NewServer(
 		makeValidateUserEndpoint(svc), //use the endpoint
-		decodeValidateUserRequest, //converts the parameters received via the request body into the struct expected by the endpoint 
-		encodeResponse, //converts the struct returned by the endpoint to a json response 
+		decodeValidateUserRequest, //converts the parameters received via the request body into the struct expected by the endpoint
+		encodeResponse, //converts the struct returned by the endpoint to a json response
 		options...,
 	)
 
@@ -274,7 +270,7 @@ func NewHttpServer(svc Service, logger log.Logger) *mux.Router {
 		encodeResponse,
 		options...,
 	)
-	r := mux.NewRouter() //I'm using Gorilla Mux, but it could be any other library, or even the stdlib 
+	r := mux.NewRouter() //I'm using Gorilla Mux, but it could be any other library, or even the stdlib
 	r.Methods("POST").Path("/v1/auth").Handler(validateUserHandler)
 	r.Methods("POST").Path("/v1/validate-token").Handler(validateTokenHandler)
 	return r
@@ -302,7 +298,7 @@ func codeFrom(err error) int {
 	}
 }
 
-//converts the parameters received via the request body into the struct expected by the endpoint 
+//converts the parameters received via the request body into the struct expected by the endpoint
 func decodeValidateUserRequest(ctx context.Context, r *http.Request) (interface{}, error) {
 	var request validateUserRequest
 	if err := json.NewDecoder(r.Body).Decode(&request); err != nil {
@@ -311,7 +307,7 @@ func decodeValidateUserRequest(ctx context.Context, r *http.Request) (interface{
 	return request, nil
 }
 
-//converts the parameters received via the request body into the struct expected by the endpoint 
+//converts the parameters received via the request body into the struct expected by the endpoint
 func decodeValidateTokenRequest(ctx context.Context, r *http.Request) (interface{}, error) {
 	var request validateTokenRequest
 	if err := json.NewDecoder(r.Body).Decode(&request); err != nil {
@@ -327,7 +323,7 @@ func encodeResponse(ctx context.Context, w http.ResponseWriter, response interfa
 
 ```
 
-The code looks like a series of settings, indicating which endpoint will be used at each API address. I tried to describe the behavior in the code comments. And the test of this layer looked like this: 
+The code looks like a series of settings, indicating which endpoint will be used at each API address. I tried to describe the behavior in the code comments. And the test of this layer looked like this:
 
 ```go
 package user
@@ -370,12 +366,11 @@ func TestHTTP(t *testing.T) {
 
 ```
 
-Just like testing the endpoint layer, we could improve this test using a mock of the service. 
-
+Just like testing the endpoint layer, we could improve this test using a mock of the service.
 
 ## Main
 
-In the `main.go` file we are going to use all the layers: 
+In the `main.go` file we are going to use all the layers:
 
 ```go
 package main
@@ -401,8 +396,7 @@ func main() {
 }
 ```
 
-Here we can see another advantage in having created an interface for our service. The `user.NewHttpServer` function expects as a first parameter something that implements the `Service` interface. The `user.NewLoggingMiddleware` function creates a struct that implements this interface and has our original service inside it. The code for the `logging.go` file looks like this: 
-
+Here we can see another advantage in having created an interface for our service. The `user.NewHttpServer` function expects as a first parameter something that implements the `Service` interface. The `user.NewLoggingMiddleware` function creates a struct that implements this interface and has our original service inside it. The code for the `logging.go` file looks like this:
 
 ```go
 package user
@@ -453,13 +447,12 @@ func (mw logmw) ValidateToken(ctx context.Context, token string) (email string, 
 
 ```
 
-It implements all the functions of the interface, adding the functionality of logging each function call, before invoking the code of the real service. The same can be used to implement metrics, limit access to API, etc. In the official tutorial, we have [some examples](https://gokit.io/examples/stringsvc.html#application-instrumentation) of this. 
+It implements all the functions of the interface, adding the functionality of logging each function call, before invoking the code of the real service. The same can be used to implement metrics, limit access to API, etc. In the official tutorial, we have [some examples](https://gokit.io/examples/stringsvc.html#application-instrumentation) of this.
 
 If our microservice needs to deliver the logic in more formats, such as gRPC or NATS, we would only need to implement these codes in the transport layer indicating which endpoints will be used. This gives a lot of flexibility for the growth of functionalities without increasing complexity.
 
+In this post, I focused more on the architecture provided by the Go kit, but in the [official documentation](https://pkg.go.dev/github.com/go-kit/kit), you can see the other `chassis` features that it provides as authentication, circuit breaker, log, metrics, rate limit, service discovery, tracing, etc.
 
-In this post, I focused more on the architecture provided by the Go kit, but in the [official documentation](https://pkg.go.dev/github.com/go-kit/kit), you can see the other `chassis` features that it provides as authentication, circuit breaker, log, metrics, rate limit, service discovery, tracing, etc. 
+I liked the architecture and features it provides and I believe it can be useful to create services in a fast, clean and efficient way.
 
-I liked the architecture and features it provides and I believe it can be useful to create services in a fast, clean and efficient way. 
-
-The codes for this example are [in this repository](https://github.com/eminetto/talk-microservices-gokit). 
+The codes for this example are [in this repository](https://github.com/eminetto/talk-microservices-gokit).

@@ -2,6 +2,8 @@
 title: "[Go] Como trabalhar com datas em testes"
 date: 2023-06-30T08:30:43-03:00
 draft: false
+tags:
+  - go
 ---
 
 Trabalhar com datas em qualquer linguagem de programação trás alguns desafios interessantes. Neste post vou mostrar uma forma de trabalhar com datas ao escrever testes unitários para uma aplicação em Go.
@@ -104,7 +106,6 @@ func canIEat(c clock.Clock, f Food) bool {
 }
 ```
 
-
 Como a função `canIEat` recebe a interface `clock.Clock` podemos, no nosso teste, enviar uma nova implementação desta interface:
 
 ```go
@@ -156,4 +157,4 @@ func TestCanIEat(t *testing.T) {
 
 Desta forma temos um controle melhor do que será usado no teste, além de ganharmos performance pois não é mais preciso fazer cálculos de data como o `time.Now().AddDate(0, 0, 1)` do primeiro exemplo.
 
-Essa é uma dica simples mas que mostra como é poderoso e fácil de usar o conceito de [interfaces em Go](https://eltonminetto.dev/post/2022-06-07-using-go-interfaces/). 
+Essa é uma dica simples mas que mostra como é poderoso e fácil de usar o conceito de [interfaces em Go](https://eltonminetto.dev/post/2022-06-07-using-go-interfaces/).

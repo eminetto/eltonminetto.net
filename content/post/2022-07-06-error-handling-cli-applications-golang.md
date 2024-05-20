@@ -2,11 +2,13 @@
 title: "Tratamento de erros de aplicações CLI em Golang"
 date: 2022-07-06T17:56:34-03:00
 draft: false
+tags:
+  - go
 ---
 
-Quando estou desenvolvendo alguma aplicação CLI em Go eu sempre gosto de considerar o arquivo `main.go` como 
+Quando estou desenvolvendo alguma aplicação CLI em Go eu sempre gosto de considerar o arquivo `main.go` como
 
-> "a porta de entrada e saída da minha aplicação” 
+> "a porta de entrada e saída da minha aplicação”
 
 Porque a porta de entrada? É no arquivo `main.go`, que vai ser compilado para gerar o executável da aplicação, onde é feita toda a "amarração" dos demais pacotes. É nele onde iniciamos as dependências, fazemos as configurações e a invocação dos pacotes que desempenham a lógica de negócio.
 
@@ -127,8 +129,8 @@ func (r *BookMySQL) Search(query string) ([]*entity.Book, error) {
 }
 ```
 
-O que estas duas funções tem em comum é que ambas, ao receberem um erro, interrompem o fluxo e retornam o mais rápido possível. Elas não fazem log e nem tentam interromper a execução usando alguma função como `panic` ou `os.Exit`. Essa função é responsabilidade do main. Neste exemplo ele apenas executa o `log.Fatal(err)` mas poderíamos ter uma lógica mais avançada, como enviar o log para algum serviço externo, ou gerar algum tipo de alerta para monitoramento.  Desta forma fica muito mais fácil coletar os logs, métricas, fazer tratamento avançado de erro, etc, pois o tratamento disso fica centralizado no main.
+O que estas duas funções tem em comum é que ambas, ao receberem um erro, interrompem o fluxo e retornam o mais rápido possível. Elas não fazem log e nem tentam interromper a execução usando alguma função como `panic` ou `os.Exit`. Essa função é responsabilidade do main. Neste exemplo ele apenas executa o `log.Fatal(err)` mas poderíamos ter uma lógica mais avançada, como enviar o log para algum serviço externo, ou gerar algum tipo de alerta para monitoramento. Desta forma fica muito mais fácil coletar os logs, métricas, fazer tratamento avançado de erro, etc, pois o tratamento disso fica centralizado no main.
 
-Tome cuidado em especial ao executar o `os.Exit` em uma função interna pois ao fazer isso a aplicação é interrompida imediatamente, ignorando os `defer` que você possa ter usado na main. Neste exemplo, se a função `SearchBooks` executar um `os.Exit` o  `defer db.Close()` que consta no main vai ser ignorado, podendo causar problemas no banco de dados.
+Tome cuidado em especial ao executar o `os.Exit` em uma função interna pois ao fazer isso a aplicação é interrompida imediatamente, ignorando os `defer` que você possa ter usado na main. Neste exemplo, se a função `SearchBooks` executar um `os.Exit` o `defer db.Close()` que consta no main vai ser ignorado, podendo causar problemas no banco de dados.
 
 Não recordo de ter lido em alguma documentação sobre isso ser um padrão recomendado da comunidade, mas é uma prática que tenho usado com sucesso. Concorda com essa lógica? Outras opiniões são muito bem vindas.

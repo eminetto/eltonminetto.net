@@ -1,19 +1,21 @@
-+++
-title = "Processando arquivos parquet em Go"
-subtitle = ""
-date = "2019-12-09T10:54:24+02:00"
-bigimg = ""
+---
+title: "Processando arquivos parquet em Go"
+subtitle: ""
+date: "2019-12-09T10:54:24+02:00"
+bigimg: ""
+tags:
+  - go
+---
 
-+++
-Neste post vou falar sobre um formato relativamente novo de arquivo de dados, e como usá-lo em Go. 
+Neste post vou falar sobre um formato relativamente novo de arquivo de dados, e como usá-lo em Go.
 
-O formato chama-se [Parquet](http://parquet.apache.org), e atualmente é um projeto apoiado pela Apache Foundation. Trata-se de um formato binário de arquivos, com a finalidade de armazenar e facilitar o processamento de dados na [forma de colunas](http://en.wikipedia.org/wiki/Column-oriented_DBMS). Ele suporta diferentes tipos de compressão e é bastante usado no ambiente de data science e big data, com ferramentas como o Hadoop. 
+O formato chama-se [Parquet](http://parquet.apache.org), e atualmente é um projeto apoiado pela Apache Foundation. Trata-se de um formato binário de arquivos, com a finalidade de armazenar e facilitar o processamento de dados na [forma de colunas](http://en.wikipedia.org/wiki/Column-oriented_DBMS). Ele suporta diferentes tipos de compressão e é bastante usado no ambiente de data science e big data, com ferramentas como o Hadoop.
 
-Na [Codenation](https://codenation.dev) estamos usando este formato para armazenar dados estatísticos em buckets do S3 facilitando o processamento paralelo, usando Lambda Functions, sem sobrecarregar nossos servidores de bancos de dados. 
+Na [Codenation](https://codenation.dev) estamos usando este formato para armazenar dados estatísticos em buckets do S3 facilitando o processamento paralelo, usando Lambda Functions, sem sobrecarregar nossos servidores de bancos de dados.
 
 Neste post vou mostrar como gerar e processar arquivos neste formato usando a linguagem Go.
 
-O primeiro passo é criar uma ```struct``` que vai representar os dados que vamos processar neste exemplo:
+O primeiro passo é criar uma `struct` que vai representar os dados que vamos processar neste exemplo:
 
 ```go
 type user struct {
@@ -29,9 +31,9 @@ type user struct {
 }
 ```
 
-O detalhe importante neste código são as ```tags``` que declaram como cada campo da ```struct``` vai ser tratada no momento da geração do arquivo ```parquet```. Para fazer o processamento dos dados estou usando o pacote [github.com/xitongsys/parquet-go](https://github.com/xitongsys/parquet-go) e no repositório é possível ver mais exemplos das [tags disponíveis](https://github.com/xitongsys/parquet-go#type). 
+O detalhe importante neste código são as `tags` que declaram como cada campo da `struct` vai ser tratada no momento da geração do arquivo `parquet`. Para fazer o processamento dos dados estou usando o pacote [github.com/xitongsys/parquet-go](https://github.com/xitongsys/parquet-go) e no repositório é possível ver mais exemplos das [tags disponíveis](https://github.com/xitongsys/parquet-go#type).
 
-Vamos agora gerar o nosso primeiro arquivo no formato ```parquet```:
+Vamos agora gerar o nosso primeiro arquivo no formato `parquet`:
 
 ```go
 package main
@@ -156,7 +158,7 @@ func readPartialParquet(pageSize, page int) ([]*user, error) {
 }
 ```
 
-Outra vantagem deste formato, como a definição deixa bem claro, é o fato dela ser focada no tratamento das colunas do arquivo. Desta forma, podemos pegar apenas a coluna ```Score``` e calcular sua média:
+Outra vantagem deste formato, como a definição deixa bem claro, é o fato dela ser focada no tratamento das colunas do arquivo. Desta forma, podemos pegar apenas a coluna `Score` e calcular sua média:
 
 ```go
 func calcScoreAVG() (float64, error) {
@@ -182,7 +184,6 @@ func calcScoreAVG() (float64, error) {
 }
 ```
 
+O objetivo deste post era apresentar este formato relativamente novo e que pode ser muito útil para a transferência de dados, substituindo arquivos `csv` ou `json` em projetos de diferentes escalas. É possível aprofundar-se na documentação do formato e também do pacote para encontrar exemplos mais complexos e detalhados, mas espero ter trazido uma novidade útil para alguns projetos em Go.
 
-O objetivo deste post era apresentar este formato relativamente novo e que pode ser muito útil para a transferência de dados, substituindo arquivos  ```csv``` ou ```json``` em projetos de diferentes escalas. É possível aprofundar-se na documentação do formato e também do pacote para encontrar exemplos mais complexos e detalhados, mas espero ter trazido uma novidade útil para alguns projetos em Go.
-
-O código completo do exemplo apresentado neste post pode ser encontrado [neste repositório](https://github.com/eminetto/parquet-golang). 
+O código completo do exemplo apresentado neste post pode ser encontrado [neste repositório](https://github.com/eminetto/parquet-golang).

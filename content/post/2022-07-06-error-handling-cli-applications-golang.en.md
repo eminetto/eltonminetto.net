@@ -2,6 +2,8 @@
 title: "Error handling of CLI applications in Golang"
 date: 2022-07-06T17:56:34-03:00
 draft: false
+tags:
+  - go
 ---
 
 When developing some CLI applications in Go, I always consider the `main.go` file as "the input and output port of my application."

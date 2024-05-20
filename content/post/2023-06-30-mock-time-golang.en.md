@@ -2,6 +2,8 @@
 title: "[Go] How to work with dates in tests"
 date: 2023-06-30T08:30:43-03:00
 draft: false
+tags:
+  - go
 ---
 
 Working with dates in any programming language presents some challenges. In this post, I will show how to work with dates when writing unit tests for a Go application.
@@ -56,7 +58,6 @@ func TestCanIEat(t *testing.T) {
 
 Another way to solve this is to create an abstraction for the `time` package. For this, we will create a new package called `clock`, inside it, we will add the `clock.go` file:
 
-
 ```go
 package clock
 
@@ -104,7 +105,6 @@ func canIEat(c clock.Clock, f Food) bool {
 	return false
 }
 ```
-
 
 As the `canIEat` function receives the `clock.Clock` interface, we can, in our test, use a new implementation of this interface:
 

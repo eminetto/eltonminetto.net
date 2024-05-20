@@ -2,7 +2,10 @@
 title: "Creating an API using Go and sqlc"
 date: 2022-10-22T13:00:19-03:00
 draft: false
+tags:
+  - go
 ---
+
 When writing a Go application that handles data in a database (in this post, I will focus on relational databases), we have a few options:
 
 - write SQL queries using some lib that implements the [stdlib interfaces](https://pkg.go.dev/database/sql)
@@ -10,7 +13,7 @@ When writing a Go application that handles data in a database (in this post, I w
 - although not as widespread as in other languages, we can use some ORMs, like the ones listed [here](https://github.com/avelino/awesome-go#orm)
 - use a tool to generate code from SQL queries
 
-I will present in this post a project that fits in the last category: [sqlc](https://sqlc.dev). 
+I will present in this post a project that fits in the last category: [sqlc](https://sqlc.dev).
 
 According to the official website, to use the tool, we will follow the steps:
 
@@ -18,7 +21,7 @@ According to the official website, to use the tool, we will follow the steps:
 2. Run the `sqlc` command to generate code that implements type-safe interfaces for these queries
 3. Write application code that calls the methods created by `sqlc`.
 
-So let's follow these steps to create an example, including tests. 
+So let's follow these steps to create an example, including tests.
 
 ## Installing sqlc
 
@@ -95,8 +98,7 @@ services:
 
 ### sqlc.yaml
 
-This file contains the configuration  that one must create so that `sqlc` knows the details of our application:
-
+This file contains the configuration that one must create so that `sqlc` knows the details of our application:
 
 ```yaml
 version: "2"
@@ -112,7 +114,6 @@ sql:
 
 In it, we indicate which database engine we will use, the location of the files used to create the tables (`schema.sql`), and where the SQL queries (`query.sql`) live. Another important definition is the name of the package that will be created (`db`) and in which directory the codes will be generated (`person/db`). In this example, we will only have a set of files, but it is possible to have the configuration of several schema files and queries, as you can see in the [documentation](https://docs.sqlc.dev/en/latest/reference/config.html).
 
-
 ### person/schema.sql
 
 Contains the definition of the database tables:
@@ -121,44 +122,42 @@ Contains the definition of the database tables:
 create table if not exists person (id int AUTO_INCREMENT,first_name varchar(100), last_name varchar(100), created_at datetime, updated_at datetime, PRIMARY KEY (`id`)) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 ```
 
-
 ### person/query.sql
 
 This file contains crucial information for `sqlc`. It is where we will describe the SQL queries, the names of the functions that `sqlc` will generate, and the behavior they must have. For our example, the code looks like this:
-
 
 ```sql
 -- name: Get :one
 select * from person where id = ?;
 
 -- name: List :many
-select id, first_name, last_name 
+select id, first_name, last_name
 from person
 order by first_name;
 
 -- name: Create :execresult
 insert into person (
     first_name, last_name, created_at
-) 
+)
 values(
     ?, ?, now()
 );
 
 -- name: Delete :exec
-delete from person 
+delete from person
 where id = ?;
 
 -- name: Update :exec
-update person 
-set first_name = ?, last_name = ?, updated_at = now() 
+update person
+set first_name = ?, last_name = ?, updated_at = now()
 where id = ?;
 
 -- name: Search :many
-select id, first_name, last_name from person 
+select id, first_name, last_name from person
 where first_name like ? or last_name like ?;
 ```
 
-`sqlc` uses comments at the beginning of each query as input for generating Go code. For example, the statement `-- name: List :many`  indicates that the `List` function will return a slice of results, whereas the ` -- name: Get :one`  should return only one occurrence. In the [documentation](https://docs.sqlc.dev/en/latest/reference/query-annotations.html), we can find all the available options.
+`sqlc` uses comments at the beginning of each query as input for generating Go code. For example, the statement `-- name: List :many` indicates that the `List` function will return a slice of results, whereas the ` -- name: Get :one` should return only one occurrence. In the [documentation](https://docs.sqlc.dev/en/latest/reference/query-annotations.html), we can find all the available options.
 
 ### person/db
 
@@ -352,14 +351,13 @@ func GetUser(s person.UseCase) echo.HandlerFunc {
 	}
 }
 
-```  
+```
 
 It uses the service layer, which provides access to the database.
 
 ### cmd/api/main.go
 
 In the `main.go` file, we initialize the resources needed to run the application:
-
 
 ```go
 package main
@@ -412,7 +410,6 @@ We can use a few different approaches to implement the tests of this layer. For 
 ### Mocking the database
 
 For that, I used the lib [go-sqlmock](https://github.com/DATA-DOG/go-sqlmock). So, for example, the following snippet is part of the `person/service_test.go` file:
-
 
 ```go
 package person_test
@@ -514,7 +511,6 @@ This way, when executing the test, we simulate the expected behavior without nee
 - the code becomes more verbose
 - As we are simulating the behavior of a database, possible errors in the SQL queries can go unnoticed.
 
-
 ### Using containers
 
 The second way I want to demonstrate here is by using Docker containers. The idea is that the test configures a container at the beginning and removes the environment at the end. For that, I added the following snippet in the `person/service_test.go` file:
@@ -556,7 +552,6 @@ func TestGetWithContainer(t *testing.T) {
 ```
 
 I created a file called `person/test_helper.go` with the necessary functions for creating and managing the environment:
-
 
 ```go
 package person
@@ -666,7 +661,6 @@ When running the test, it is possible to visualize the container starting and ex
 
 - The test execution speed slows as we initialize a database at each execution. We can improve the speed by reusing the environment and cleaning the database for each tested scenario.
 - It's possible that creating environments conflicts with your project's CI/CD service, so it's important to check this out before adopting this solution.
-
 
 ## Conclusions
 

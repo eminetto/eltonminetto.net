@@ -2,7 +2,10 @@
 title: "Accelerate your local development environment with Tilt"
 date: 2022-08-31T13:00:19-03:00
 draft: false
+tags:
+  - go
 ---
+
 We spend hours and hours developing applications on our machines, with more and more requirements and complexity. In addition, any modern application has multiple containers, microservices, deployments in different environments, various stacks, etc. So any tool that can make our flow more agile is handy.
 
 In this post, I want to introduce a powerful tool that can save you a lot of time in your development process. This is [Tilt](https://tilt.dev), which was recently [acquired](https://www.docker.com/blog/welcome-tilt-fixing-the-pains-of-microservice-development-for-kubernetes/) by Docker.
@@ -23,7 +26,6 @@ The [documentation](https://docs.tilt.dev/install.html) shows how to install it 
 
 Tilt works by reading a file called `Tiltfile` at the root of your project. It has a syntax resembling `Python`, and the [documentation](https://docs.tilt.dev/api.html) is very detailed, showing all the options we can use.
 
-
 The contents of the `Tiltfile` file looked like this:
 
 ```python
@@ -39,7 +41,7 @@ local_resource('votes', cmd='cd votes; go build -o bin/votes main.go',
 
 ```
 
-The `local_resource` function configures actions that will be executed on your local machine, and the first parameter is the name we are giving the resource, which must be unique within the `Tiltfile`. 
+The `local_resource` function configures actions that will be executed on your local machine, and the first parameter is the name we are giving the resource, which must be unique within the `Tiltfile`.
 
 The `cmd` parameter contains the command to be executed. The information contained within the `serve_cmd` parameter will be performed by Tilt and is expected not to terminate. That is, it is the command that will run our service.
 
@@ -116,7 +118,6 @@ docker_build(
 
 docker_compose('./docker-compose.yml')
 ```
-
 
 I added the `docker_build` function. As the name suggests, it generates the container image. For that, creating a `Dockerfile` was necessary for each microservice. For example, the one for the `auth` service looks like this:
 
@@ -298,7 +299,7 @@ ms-votes-76565ddc9c-nkkt7     1/1     Running   0          81s
 
 ## Conclusions
 
-I don't know if I managed to demonstrate how excited I am about this tool! 
+I don't know if I managed to demonstrate how excited I am about this tool!
 
 I've used Tilt for a few weeks on a complex project, creating a Kubernetes [Controller](https://kubernetes.io/docs/concepts/architecture/controller/). Thanks to all this automation, I can focus on the application logic while the rest is done automatically. And that saves a lot of time.
 

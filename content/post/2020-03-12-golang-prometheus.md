@@ -1,10 +1,12 @@
-+++
-title = "Usando Prometheus para coletar métricas de aplicações Golang"
-subtitle = ""
-date = "2020-03-12T08:33:24+02:00"
-bigimg = ""
+---
+title: "Usando Prometheus para coletar métricas de aplicações Golang"
+subtitle: ""
+date: "2020-03-12T08:33:24+02:00"
+bigimg: ""
+tags:
+  - go
+---
 
-+++
 Este texto faz parte de uma série de posts que estou fazendo com exemplos de aplicações usando a Clean Architecture. Os outros posts que fazem parte desta série são:
 
 - [Clean Architecture using Golang](https://eltonminetto.net/en/post/2018-03-05-clean-architecture-using-go/)
@@ -16,7 +18,7 @@ Este texto faz parte de uma série de posts que estou fazendo com exemplos de ap
 
 Neste post vou falar sobre uma funcionalidade muito importante nos projetos cada vez mais complexos com os quais trabalhamos no dia a dia: a coleta de métricas. Dentre as várias soluções existentes no mercado para este fim, uma das que tem ganhado mais destaque é a dupla [Prometheus](https://prometheus.io) + [Grafana](https://grafana.com).
 
-Segundo a descrição encontrada na Wikipedia: 
+Segundo a descrição encontrada na Wikipedia:
 
 > Prometheus is a free software application used for event monitoring and alerting. It records real-time metrics in a time series database built using a HTTP pull model, with flexible queries and real-time alerting.
 
@@ -24,7 +26,7 @@ Já o Grafana é descrito como:
 
 > Grafana is a multi-platform open source analytics and interactive visualization software available since 2014. It provides charts, graphs, and alerts for the web when connected to supported data sources.
 
-Resumindo, o Prometheus faz a coleta dos dados e graças ao Grafana podemos criar belos gráficos e dashboards para facilitar a visualização das informações. 
+Resumindo, o Prometheus faz a coleta dos dados e graças ao Grafana podemos criar belos gráficos e dashboards para facilitar a visualização das informações.
 
 ## Criando a camada de UseCases
 
@@ -97,7 +99,7 @@ type UseCase interface {
 }
 ```
 
-Neste arquivo fazemos a definição de duas estruturas importantes, a `CLI` e a `HTTP`, que são respectivamente os dados que queremos coletar das nossas aplicações em linha de comando e da nossa API. Também definimos a interface `UseCase`, que vamos implementar na sequência, e funções que inicializam as estruturas: `NewCLI` e `NewHTTP`. Como comentei nos posts anteriores, essa tática da Clean Architecture nos permite abstrair para as outras camadas da aplicação os detalhes da implementação da coleta de métricas. Se em algum momento resolvermos mudar a solução de coleta de métricas do Prometheus para qualquer outra, não teremos problemas, pois as demais camadas esperam receber algo que implemente a interface `UseCase`. 
+Neste arquivo fazemos a definição de duas estruturas importantes, a `CLI` e a `HTTP`, que são respectivamente os dados que queremos coletar das nossas aplicações em linha de comando e da nossa API. Também definimos a interface `UseCase`, que vamos implementar na sequência, e funções que inicializam as estruturas: `NewCLI` e `NewHTTP`. Como comentei nos posts anteriores, essa tática da Clean Architecture nos permite abstrair para as outras camadas da aplicação os detalhes da implementação da coleta de métricas. Se em algum momento resolvermos mudar a solução de coleta de métricas do Prometheus para qualquer outra, não teremos problemas, pois as demais camadas esperam receber algo que implemente a interface `UseCase`.
 
 Vamos agora implementar a interface, criando o arquivo `pkg/metric/prometheus.go`:
 
@@ -159,9 +161,9 @@ func (s *Service) SaveHTTP(h *HTTP) {
 }
 ```
 
-Neste arquivo, usando a função `NewPrometheusService` temos uma implementação da interface `UseCase`, que será usada nos próximos passos. Os detalhes de cada função usada pode ser encontrada na [documentação](https://github.com/prometheus/client_golang) do cliente oficial para Go. 
+Neste arquivo, usando a função `NewPrometheusService` temos uma implementação da interface `UseCase`, que será usada nos próximos passos. Os detalhes de cada função usada pode ser encontrada na [documentação](https://github.com/prometheus/client_golang) do cliente oficial para Go.
 
-Outro ponto importante deste arquivo é a linha `gatewayURL := config.PROMETHEUS_PUSHGATEWAY` que encontra-se dentro da função `SaveCLI`. O Prometheus funciona como um coletor de métricas, então precisamos ter uma forma de armazenar os dados em memória, até que ele faça a coleta. Quando estamos falando de um aplicativo que permanece em execução, como o binário de uma API, estes dados ficam em memória até serem coletados. Mas no caso de uma aplicação CLI, que é finalizada após a execução, temos que armazenar estes dados em algum local. O projeto Prometheus tem uma solução para isso, que chama-se PushGateway. Trata-se de um pequeno aplicativo que devemos manter executando em algum servidor e que vai ser usado para armazenar os dados até serem coletados. Vou falar novamente sobre o PushGateway quando configurarmos o `docker-compose.yml` da aplicação. Nesta configuração, estamos indicando qual é o endereço do PushGateway. Esta variável foi incluída nos arquivos: `config/config_testing.go`, `config/config_staging.go`, `config/config_prod.go` e  `config/config_dev.go`. Confira este [post para entender](https://eltonminetto.dev/post/2018-06-25-golang-usando-build-tags/) o motivo da existência destes arquivos. Por exemplo, o arquivo `config/config_dev.go` contém:
+Outro ponto importante deste arquivo é a linha `gatewayURL := config.PROMETHEUS_PUSHGATEWAY` que encontra-se dentro da função `SaveCLI`. O Prometheus funciona como um coletor de métricas, então precisamos ter uma forma de armazenar os dados em memória, até que ele faça a coleta. Quando estamos falando de um aplicativo que permanece em execução, como o binário de uma API, estes dados ficam em memória até serem coletados. Mas no caso de uma aplicação CLI, que é finalizada após a execução, temos que armazenar estes dados em algum local. O projeto Prometheus tem uma solução para isso, que chama-se PushGateway. Trata-se de um pequeno aplicativo que devemos manter executando em algum servidor e que vai ser usado para armazenar os dados até serem coletados. Vou falar novamente sobre o PushGateway quando configurarmos o `docker-compose.yml` da aplicação. Nesta configuração, estamos indicando qual é o endereço do PushGateway. Esta variável foi incluída nos arquivos: `config/config_testing.go`, `config/config_staging.go`, `config/config_prod.go` e `config/config_dev.go`. Confira este [post para entender](https://eltonminetto.dev/post/2018-06-25-golang-usando-build-tags/) o motivo da existência destes arquivos. Por exemplo, o arquivo `config/config_dev.go` contém:
 
 ```go
 // +build dev
@@ -179,7 +181,7 @@ const (
 
 ## Coletando métricas de aplicativos CLI
 
-Vamos agora começar a usar o serviço para coletar as métricas do nosso aplicativo CLI. O novo código do arquivo `cmd/main.go` ficou desta forma: 
+Vamos agora começar a usar o serviço para coletar as métricas do nosso aplicativo CLI. O novo código do arquivo `cmd/main.go` ficou desta forma:
 
 ```go
 package main
@@ -273,7 +275,6 @@ if err != nil {
 }
 ```
 
-
 # Coletando métricas da API
 
 Agora vamos coletar as métricas da nossa API. Como queremos coletar métricas de todos os `endpoints`, podemos fazer uso do conceito de [middlewares](https://www.slideshare.net/eminetto/desenvolvendo-apis-em-go-usando-middlewares). Para isso vamos criar o arquivo `pkg/middleware/metrics.go`:
@@ -304,7 +305,7 @@ func Metrics(mService metric.UseCase) negroni.HandlerFunc {
 }
 ```
 
-Este middleware vai receber uma implementação da interface `metric.UseCase`, inicializar a coleta dos dados da requisição (tempo de execução e status code) e salvar os dados para futura coleta. Como estamos falando de uma API, uma aplicação que vai permanecer em execução, este armazenamento é feito em memória, até que o Prometheus faça a coleta e o processamento. 
+Este middleware vai receber uma implementação da interface `metric.UseCase`, inicializar a coleta dos dados da requisição (tempo de execução e status code) e salvar os dados para futura coleta. Como estamos falando de uma API, uma aplicação que vai permanecer em execução, este armazenamento é feito em memória, até que o Prometheus faça a coleta e o processamento.
 
 Precisamos agora alterar o `main.go` da nossa API, para fazermos uso do novo middleware e para criarmos o endpoint que o Prometheus vai usar para coletar as métricas. O arquivo `api/main.go` ficou desta forma:
 
@@ -397,11 +398,11 @@ E a segunda alteração foi a criação de um endpoint que será usado pelo Prom
 http.Handle("/metrics", promhttp.Handler())
 ```
 
-Esta é toda a alteração necessária na nossa aplicação para que os dados sejam coletados pelo Prometheus. Vamos agora configurar um ambiente local para facilitar os testes. 
+Esta é toda a alteração necessária na nossa aplicação para que os dados sejam coletados pelo Prometheus. Vamos agora configurar um ambiente local para facilitar os testes.
 
 ## Adicionando o Prometheus e o Grafana no ambiente de desenvolvimento
 
-Como estamos usando Docker para gerenciar nosso ambiente de desenvolvimento, vamos alterar o arquivo `docker-compose.yml` para adicionar as novas dependências. O arquivo alterado ficou desta forma: 
+Como estamos usando Docker para gerenciar nosso ambiente de desenvolvimento, vamos alterar o arquivo `docker-compose.yml` para adicionar as novas dependências. O arquivo alterado ficou desta forma:
 
 ```yml
 version: "3"
@@ -409,15 +410,15 @@ services:
   mongodb:
     image: mongo
     ports:
-        - "27017:27017"
+      - "27017:27017"
     container_name: bookmark-mongodb
     network_mode: "bridge"
   node:
     image: node:8-alpine
     network_mode: "bridge"
     volumes:
-        - ./web:/web
-        - /tmp:/tmp
+      - ./web:/web
+      - /tmp:/tmp
   grafana:
     image: grafana/grafana
     ports:
@@ -446,20 +447,20 @@ services:
       - "9091:9091"
 ```
 
-Adicionamos as configurações referentes aos serviços `grafana`, `prometheus` e o `prometheus-pushgateway`. Como é possível ver na configuração do `prometheus`, precisamos também criar um arquivo com suas configurações. O arquivo `infra/prometheus/prometheus.yml` criado foi: 
+Adicionamos as configurações referentes aos serviços `grafana`, `prometheus` e o `prometheus-pushgateway`. Como é possível ver na configuração do `prometheus`, precisamos também criar um arquivo com suas configurações. O arquivo `infra/prometheus/prometheus.yml` criado foi:
 
 ```yml
 # my global config
 global:
-  scrape_interval:     15s # Set the scrape interval to every 15 seconds. Default is every 1 minute.
+  scrape_interval: 15s # Set the scrape interval to every 15 seconds. Default is every 1 minute.
   evaluation_interval: 15s # Evaluate rules every 15 seconds. The default is every 1 minute.
 
 # Alertmanager configuration
 alerting:
   alertmanagers:
-  - static_configs:
-    - targets:
-      # - alertmanager:9093
+    - static_configs:
+        - targets:
+          # - alertmanager:9093
 
 # Load rules once and periodically evaluate them according to the global 'evaluation_interval'.
 rule_files:
@@ -470,14 +471,14 @@ scrape_configs:
   - job_name: bookmark
     scrape_interval: 10s
     static_configs:
-    - targets: ['host.docker.internal:8080']
+      - targets: ["host.docker.internal:8080"]
   - job_name: pushgateway
     scrape_interval: 10s
     static_configs:
-    - targets: ['host.docker.internal:9091']
+      - targets: ["host.docker.internal:9091"]
 ```
 
-Mais detalhes sobre as configurações do Prometheus podem ser vistas na [documentação oficial](https://prometheus.io/docs/introduction/overview/). 
+Mais detalhes sobre as configurações do Prometheus podem ser vistas na [documentação oficial](https://prometheus.io/docs/introduction/overview/).
 
 Ao executarmos o comando `docker-compose up -d` podemos ver os serviços sendo executados:
 
@@ -492,9 +493,9 @@ Starting bookmark-grafana             ... done
 
 ### Configurando o Grafana
 
-Vamos agora usar o Grafana para criarmos as visualizações dos dados coletados pelo Prometheus. 
+Vamos agora usar o Grafana para criarmos as visualizações dos dados coletados pelo Prometheus.
 
-Ao acessar o link `http://localhost:3000/login` é preciso fazer o login inicial com o usuário `admin` e a senha `admin` (e gerar uma nova senha, conforme solicitado pela interface). 
+Ao acessar o link `http://localhost:3000/login` é preciso fazer o login inicial com o usuário `admin` e a senha `admin` (e gerar uma nova senha, conforme solicitado pela interface).
 
 Após o login é preciso criar um novo `data source`, usando a opção na interface. Ao selecionar a opção `Prometheus` é necessário preencher com as informações:
 
@@ -504,7 +505,7 @@ Na opção `Dashboards` precisamos importar os dashboards padrão:
 
 [![datasource_dashboard](/images/posts/datasource_dashboard.png)](/images/posts/datasource_dashboard.png)
 
-Vamos agora criar nosso primeiro dashboard: 
+Vamos agora criar nosso primeiro dashboard:
 
 [![dashboard](/images/posts/dashboard.png)](/images/posts/dashboard.png)
 
@@ -512,21 +513,21 @@ Selecionando a opção `Add query` vamos preencher com os dados:
 
 [![dashboard_dados](/images/posts/dashboard_dados.png)](/images/posts/dashboard_dados.png)
 
-No campo da query adicionamos: 
+No campo da query adicionamos:
 
-	http_request_duration_seconds_count{job="bookmark"} > 0
-	
+    http_request_duration_seconds_count{job="bookmark"} > 0
+
 E no campo `Legend` colocamos as informações que queremos mostrar:
 
-	{{handler}} - {{method}} - {{code}}
+    {{handler}} - {{method}} - {{code}}
 
-Desta forma vamos visualizar também qual é o método e o status code, além da URL acessada. 
+Desta forma vamos visualizar também qual é o método e o status code, além da URL acessada.
 
 Na opção General vamos dar um nome para nossa visualização:
 
 [![dashboard_title](/images/posts/dashboard_title.png)](/images/posts/dashboard_title.png)
 
-Como não vamos criar alertas neste momento, podemos clicar na opção de voltar, no topo da página, para visualizarmos nosso dashboard atualizado. 
+Como não vamos criar alertas neste momento, podemos clicar na opção de voltar, no topo da página, para visualizarmos nosso dashboard atualizado.
 
 Vamos agora adicionar um novo painel, com as informações do nosso CLI:
 
@@ -538,22 +539,20 @@ E vamos criar uma nova query:
 
 Na query colocamos o valor:
 
-	pushgateway_cmd_duration_seconds_sum
-	
+    pushgateway_cmd_duration_seconds_sum
+
 E como legenda usamos:
 
-	{{name}}
-	
+    {{name}}
+
 Podemos dar um nome para o nosso novo painel, na opção General e voltarmos ao dashboard, que agora ficou desta forma:
 
 [![dashboard_final](/images/posts/dashboard_final.png)](/images/posts/dashboard_final.png)
 
-Conforme as métricas vão sendo coletadas os dados vão ser atualizados no dashboard. É possível adicionar outros painéis, com queries mais avançadas e outras coletas. Na documentação do Prometheus e do Grafana existem exemplos mais avançados. 
+Conforme as métricas vão sendo coletadas os dados vão ser atualizados no dashboard. É possível adicionar outros painéis, com queries mais avançadas e outras coletas. Na documentação do Prometheus e do Grafana existem exemplos mais avançados.
 
 ## Conclusão
 
-Neste post meu objetivo foi demonstrar como é relativamente simples adicionar a feature de métricas a aplicações Go. Um ponto extra é o fato de estarmos usando a Clean Architecture, o que nos permite mudarmos do Prometheus para outra solução bastando criar uma nova implementação da interface `metric.UseCase` e alterar poucas linhas de configuração. Estas métricas tem nos ajudado a entender melhor o comportamento da nossa aplicação e facilitado algumas decisões de implementação e melhorias. Espero ter ajudado para que mais projetos também tenham estes benefícios. 
+Neste post meu objetivo foi demonstrar como é relativamente simples adicionar a feature de métricas a aplicações Go. Um ponto extra é o fato de estarmos usando a Clean Architecture, o que nos permite mudarmos do Prometheus para outra solução bastando criar uma nova implementação da interface `metric.UseCase` e alterar poucas linhas de configuração. Estas métricas tem nos ajudado a entender melhor o comportamento da nossa aplicação e facilitado algumas decisões de implementação e melhorias. Espero ter ajudado para que mais projetos também tenham estes benefícios.
 
 Os códigos apresentados neste post encontram-se no repositório [https://github.com/eminetto/clean-architecture-go](https://github.com/eminetto/clean-architecture-go)
-
-

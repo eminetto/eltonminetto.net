@@ -1,9 +1,11 @@
-+++
-title = "Object Calisthenics em Golang"
-subtitle = ""
-date = "2019-06-01T10:54:24+02:00"
-bigimg = ""
-+++
+---
+title: "Object Calisthenics em Golang"
+subtitle: ""
+date: "2019-06-01T10:54:24+02:00"
+bigimg: ""
+tags:
+  - go
+---
 
 O termo **Object Calisthenics** foi introduzido por [Jeff Bay](http://www.xpteam.com/jeff/) e publicado no livro [Thought Works Anthology](https://pragprog.com/book/twa/thoughtworks-anthology). Trata-se de um conjunto de boas práticas e regras de programação que podem ser aplicadas para melhorar a qualidade do código.
 
@@ -29,13 +31,13 @@ Mas afinal, quais são estas regras? São elas, na versão original:
 
 Como comentei anteriormente, elas foram inicialmente criadas tendo como base a linguagem Java e adaptações são necessárias para outros ambientes. Assim como Rafael e Guilherme fizeram para PHP, é preciso olhar para cada item e analisá-lo para vermos se faz sentido em Go.
 
-O primeiro ponto a considerar é o próprio nome. *Calisthenics* vem do grego e significa uma série de exercícios para atingir um fim, como melhorar o seu condicionamento físico. Neste contexto os exercícios servem para melhorar o condicionamento do nosso código. O porém é o termo *Object* pois este conceito não existe em Go. Por isso, proponho uma primeira mudança: de *Object Calisthenics* para *Code Calisthenics*. Deixo o espaço de comentários para discutirmos se essa é uma boa sugestão ou não. 
+O primeiro ponto a considerar é o próprio nome. _Calisthenics_ vem do grego e significa uma série de exercícios para atingir um fim, como melhorar o seu condicionamento físico. Neste contexto os exercícios servem para melhorar o condicionamento do nosso código. O porém é o termo _Object_ pois este conceito não existe em Go. Por isso, proponho uma primeira mudança: de _Object Calisthenics_ para _Code Calisthenics_. Deixo o espaço de comentários para discutirmos se essa é uma boa sugestão ou não.
 
 Vamos aos demais itens.
 
 ## One level of indentation per method
 
-Aplicar esta regra permite que o nosso código seja mais legível. 
+Aplicar esta regra permite que o nosso código seja mais legível.
 
 Vamos aplicar a regra ao código:
 
@@ -107,10 +109,9 @@ func (b *board) collectRow(buffer *bytes.Buffer, row int) {
 }
 ```
 
-
 ## Don't use the ELSE keyword
 
-A ideia deste item é evitarmos o uso da palavra chave *else*, gerando um código limpo e mais rápido, pois tem menos fluxos de execução.
+A ideia deste item é evitarmos o uso da palavra chave _else_, gerando um código limpo e mais rápido, pois tem menos fluxos de execução.
 
 Vejamos o código:
 
@@ -150,7 +151,7 @@ func addFlash(msgType, msg string) {
 }
 ```
 
-Podemos aplicar o conceito *‌Early Return* e remover o *else* da função *Login*:
+Podemos aplicar o conceito _‌Early Return_ e remover o _else_ da função _Login_:
 
 ```go
 
@@ -166,7 +167,7 @@ func (l *loginService) Login(userName, password string) {
 
 ## Wrap all primitives and Strings in classes
 
-Esta regra sugere que os tipos primitivos **que possuem comportamento** devem ser encapsulados, no nosso caso, em *structs* ou *types* e não em *classes*. Desta forma, a lógica do comportamento fica encapsulado e de fácil manutenção. Vamos ver o exemplo:
+Esta regra sugere que os tipos primitivos **que possuem comportamento** devem ser encapsulados, no nosso caso, em _structs_ ou _types_ e não em _classes_. Desta forma, a lógica do comportamento fica encapsulado e de fácil manutenção. Vamos ver o exemplo:
 
 ```go
 package ecommerce
@@ -189,7 +190,7 @@ func (o order) Submit() (int64, error) {
 }
 ```
 
-Aplicando a regra, usando *structs*:
+Aplicando a regra, usando _structs_:
 
 ```go
 package ecommerce
@@ -238,7 +239,7 @@ func (o order) Submit() (orderID, error) {
 }
 ```
 
-Outra possível refatoração, mais idiomática, usando *types* poderia ser:
+Outra possível refatoração, mais idiomática, usando _types_ poderia ser:
 
 ```go
 package ecommerce
@@ -519,19 +520,17 @@ func (b *board) BoardRepresentation() string {
 
 ```
 
-Esta regra reforça o uso da [*"Lei de Demeter"*](http://wiki.c2.com/?LawOfDemeter):
+Esta regra reforça o uso da [_"Lei de Demeter"_](http://wiki.c2.com/?LawOfDemeter):
 
 > Converse apenas com seus amigos imediatos
 
-
 ## Don't abbreviate
 
-Esta regra é uma das que não se aplica diretamente a Go. A comunidade tem suas próprias regras para a criação de nomes de variáveis, inclusive razões por usarmos nomes menores. Recomendo a leitura deste capítulo do ótimo [*‌Practical Go: Real world advice for writing maintainable Go programs*](https://dave.cheney.net/practical-go/presentations/qcon-china.html?utm_campaign=Golang%20Ninjas%20Newsletter&utm_medium=email&utm_source=Revue%20newsletter#_identifiers)
-
+Esta regra é uma das que não se aplica diretamente a Go. A comunidade tem suas próprias regras para a criação de nomes de variáveis, inclusive razões por usarmos nomes menores. Recomendo a leitura deste capítulo do ótimo [_‌Practical Go: Real world advice for writing maintainable Go programs_](https://dave.cheney.net/practical-go/presentations/qcon-china.html?utm_campaign=Golang%20Ninjas%20Newsletter&utm_medium=email&utm_source=Revue%20newsletter#_identifiers)
 
 ## Keep all classes less than 50 lines
 
-Apesar de não existir o conceito de *classes* em Go, a ideia desta regra é que as entidades sejam pequenas. Podemos adaptar a ideia para criarmos *structs* e *interfaces* pequenas e que podem ser usadas, via composição, para formar componentes maiores. Por exemplo, a *interface*:
+Apesar de não existir o conceito de _classes_ em Go, a ideia desta regra é que as entidades sejam pequenas. Podemos adaptar a ideia para criarmos _structs_ e _interfaces_ pequenas e que podem ser usadas, via composição, para formar componentes maiores. Por exemplo, a _interface_:
 
 ```go
 type Repository interface {
@@ -572,33 +571,29 @@ type Repository interface {
 	Writer
 }
 ```
- 
- Desta forma, as interfaces *Reader* e *Writer* podem ser reutilizadas por outras interfaces e cenários. 
- 
- 
+
+Desta forma, as interfaces _Reader_ e _Writer_ podem ser reutilizadas por outras interfaces e cenários.
+
 ## No classes with more than two instance variables
- 
- Esta regra não parece fazer sentido em Go, mas se tiver alguma sugestão por favor compartilhe.
- 
+
+Esta regra não parece fazer sentido em Go, mas se tiver alguma sugestão por favor compartilhe.
+
 ## No Getters/Setters
- 
- Assim como a regra anterior, esta também não parece ser adaptável a Go pois não é um costume da comunidade usar este recurso, como pode ser visto neste tópico do [Efetive Go](https://golang.org/doc/effective_go.html#Getters). Mas sugestões de adaptação são bem-vindas. 
- 
- Aplicando estas regras, entre outras boas práticas, é possível termos um código mais limpo, simples, performático e fácil de manter. Adoraria saber suas opiniões sobre as regras e desta sugestão de adaptação para a linguagem.
- 
+
+Assim como a regra anterior, esta também não parece ser adaptável a Go pois não é um costume da comunidade usar este recurso, como pode ser visto neste tópico do [Efetive Go](https://golang.org/doc/effective_go.html#Getters). Mas sugestões de adaptação são bem-vindas.
+
+Aplicando estas regras, entre outras boas práticas, é possível termos um código mais limpo, simples, performático e fácil de manter. Adoraria saber suas opiniões sobre as regras e desta sugestão de adaptação para a linguagem.
+
 ## Referências
- 
- [https://javflores.github.io/object-calisthenics/](https://javflores.github.io/object-calisthenics/)
- 
- [https://williamdurand.fr/2013/06/03/object-calisthenics/](https://williamdurand.fr/2013/06/03/object-calisthenics/)
- 
- [https://medium.com/web-engineering-vox/improving-code-quality-with-object-calisthenics-aa4ad67a61f1](https://medium.com/web-engineering-vox/improving-code-quality-with-object-calisthenics-aa4ad67a61f1)
- 
+
+[https://javflores.github.io/object-calisthenics/](https://javflores.github.io/object-calisthenics/)
+
+[https://williamdurand.fr/2013/06/03/object-calisthenics/](https://williamdurand.fr/2013/06/03/object-calisthenics/)
+
+[https://medium.com/web-engineering-vox/improving-code-quality-with-object-calisthenics-aa4ad67a61f1](https://medium.com/web-engineering-vox/improving-code-quality-with-object-calisthenics-aa4ad67a61f1)
+
 Alguns exemplos usados neste post foram adaptados a partir do repositório: [https://github.com/rafos/object-calisthenics-in-go](https://github.com/rafos/object-calisthenics-in-go)
- 
+
 ## Agradecimentos
- 
- Obrigado Wagner Riffel e Francisco Oliveira pelas sugestões de melhorias quanto aos exemplos. 
- 
- 
- 
+
+Obrigado Wagner Riffel e Francisco Oliveira pelas sugestões de melhorias quanto aos exemplos.

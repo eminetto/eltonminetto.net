@@ -2,14 +2,17 @@
 title: "Usando as interfaces da stdlib de Go"
 date: 2022-06-07T20:03:34-03:00
 draft: false
+tags:
+  - go
 ---
+
 Neste post vou mostrar como usar duas das features mais interessantes da linguagem Go: sua biblioteca padrão (a stdlib do título) e interfaces.
 
-Go é famosa por prover uma grande quantidade de funcionalidades nativamente, graças a sua biblioteca padrão poderosa. Cobrindo desde conversões de texto e json até bancos de dados e servidores HTTP, podemos desenvolver aplicações complexas sem a necessidade de importar pacotes de terceiros. 
+Go é famosa por prover uma grande quantidade de funcionalidades nativamente, graças a sua biblioteca padrão poderosa. Cobrindo desde conversões de texto e json até bancos de dados e servidores HTTP, podemos desenvolver aplicações complexas sem a necessidade de importar pacotes de terceiros.
 
 Outra característica importante da linguagem é o poder das suas interfaces. Diferente de linguagens orientadas a objetos, Go não possui a palavra-chave `extends` e permite que uma interface seja implementada por uma variável, struct, slice, etc. Basta que sejam implementadas as mesmas assinaturas de função definidas na interface e pronto.
 
-Vamos usar estas duas features para incrementar o código de nossas aplicações. 
+Vamos usar estas duas features para incrementar o código de nossas aplicações.
 
 ## Implementando a interface error
 
@@ -56,7 +59,7 @@ func divide(x, y int) (float64, error) {
 
 ```
 
-Neste exemplo criei a struct `MyError` e implementei a função `Error`, conforme a interface. Fazendo isso, a struct pode ser retornada como um erro na função `divide`.  Graças a essa feature podemos criar erros customizados para nossas aplicações, com informações extras, logs e outras funcionalidades. 
+Neste exemplo criei a struct `MyError` e implementei a função `Error`, conforme a interface. Fazendo isso, a struct pode ser retornada como um erro na função `divide`. Graças a essa feature podemos criar erros customizados para nossas aplicações, com informações extras, logs e outras funcionalidades.
 
 ## Implementando as interfaces fmt.Stringer e fmt.Formatter
 
@@ -158,7 +161,7 @@ fmt.Println(string(j))
 Mas o resultado não é exatamente o esperado, pois o `Level` foi gerado como um inteiro:
 
 ```json
-{"message":"Message log","level":6}
+{ "message": "Message log", "level": 6 }
 ```
 
 Para resolver isso de maneira fácil podemos implementar a interface `json.Marshaler`:
@@ -183,7 +186,7 @@ func (l Level) MarshalJSON() ([]byte, error) {
 E agora o resultado da impressão ficou como esperávamos:
 
 ```json
-{"message":"Message log","level":"ERROR"}
+{ "message": "Message log", "level": "ERROR" }
 ```
 
 ## Implementando a interface sort.Interface
@@ -250,7 +253,7 @@ E na função `main`, antes do loop que faz a impressão dos filmes:
 sort.Sort(byReleaseDate(movies))
 ```
 
-Podemos fazer o mesmo com outras ordenações. O código a seguir  é o exemplo completo, com mais de uma ordenação e também a implementação da interface `fmt.Stringer` para facilitar a impressão dos filmes:
+Podemos fazer o mesmo com outras ordenações. O código a seguir é o exemplo completo, com mais de uma ordenação e também a implementação da interface `fmt.Stringer` para facilitar a impressão dos filmes:
 
 ```go
 package main

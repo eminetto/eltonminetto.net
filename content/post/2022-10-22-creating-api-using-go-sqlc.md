@@ -2,7 +2,10 @@
 title: "Criando uma API usando Go e sqlc"
 date: 2022-10-22T13:00:19-03:00
 draft: false
+tags:
+  - go
 ---
+
 Ao escrever uma aplicação Go que trata dados em um banco de dados (neste post vou me concentrar em bancos de dados relacionais) temos algumas opções:
 
 - escrever as consultas SQL usando alguma lib que implemente as [interfaces da stdlib](https://pkg.go.dev/database/sql)
@@ -16,7 +19,7 @@ Ao escrever uma aplicação Go que trata dados em um banco de dados (neste post 
 2. Executar o comando `sqlc` para gerar o código que implementa interfaces `type-safe` para essas consultas
 3. Escrever o código do aplicativo que chama os métodos gerados pelo `sqlc`.
 
-Então vamos seguir estes passos para criar um exemplo, incluindo testes. 
+Então vamos seguir estes passos para criar um exemplo, incluindo testes.
 
 ## Instalando o sqlc
 
@@ -66,7 +69,7 @@ Para este post eu criei um projeto com a estrutura:
 
 ```
 
-Este projeto usa uma estrutura de diretórios que adotamos no [PicPay](https://picpay.com) e que vamos detalhar em um post que deve ser publicado em breve (e que eu vou divulgar aqui no meu site). Ele também usa uma forma de abstrair frameworks web que eu descrevi [neste post](https://medium.com/inside-picpay/abstraindo-bibliotecas-web-em-aplicações-go-764ebd2ba200). 
+Este projeto usa uma estrutura de diretórios que adotamos no [PicPay](https://picpay.com) e que vamos detalhar em um post que deve ser publicado em breve (e que eu vou divulgar aqui no meu site). Ele também usa uma forma de abstrair frameworks web que eu descrevi [neste post](https://medium.com/inside-picpay/abstraindo-bibliotecas-web-em-aplicações-go-764ebd2ba200).
 
 Vou destacar a seguir alguns arquivos que são importantes para este post.
 
@@ -117,7 +120,6 @@ Contém a definição das tabelas do banco de dados:
 create table if not exists person (id int AUTO_INCREMENT,first_name varchar(100), last_name varchar(100), created_at datetime, updated_at datetime, PRIMARY KEY (`id`)) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 ```
 
-
 ### person/query.sql
 
 Este é o arquivo mais importante para o `sqlc`. É nele que vamos descrever as `queries SQL` e o nome das funções que devem ser geradas, bem como o comportamento que elas devem ter. Para nosso exemplo o código ficou desta forma:
@@ -127,29 +129,29 @@ Este é o arquivo mais importante para o `sqlc`. É nele que vamos descrever as 
 select * from person where id = ?;
 
 -- name: List :many
-select id, first_name, last_name 
+select id, first_name, last_name
 from person
 order by first_name;
 
 -- name: Create :execresult
 insert into person (
     first_name, last_name, created_at
-) 
+)
 values(
     ?, ?, now()
 );
 
 -- name: Delete :exec
-delete from person 
+delete from person
 where id = ?;
 
 -- name: Update :exec
-update person 
-set first_name = ?, last_name = ?, updated_at = now() 
+update person
+set first_name = ?, last_name = ?, updated_at = now()
 where id = ?;
 
 -- name: Search :many
-select id, first_name, last_name from person 
+select id, first_name, last_name from person
 where first_name like ? or last_name like ?;
 ```
 
@@ -159,7 +161,7 @@ O `sqlc` usa os comentários no começo de cada `query` como insumo para a gera�
 
 Ao executarmos o comando `sqlc generate` este diretório vai ser gerado com os arquivos:
 
-- [db.go](https://github.com/eminetto/post-sqlc/blob/main/person/db/db.go) - contém as interfaces,  `structs` e construtores que são usados pelo pacote
+- [db.go](https://github.com/eminetto/post-sqlc/blob/main/person/db/db.go) - contém as interfaces, `structs` e construtores que são usados pelo pacote
 - [models.go](https://github.com/eminetto/post-sqlc/blob/main/person/db/models.go) - contém a `struct` que representa a tabela do banco de dados, que foi inferida pelo `sqlc` de acordo com a consulta `SQL`. A forma como a `struct` é gerada pode ser alterada no arquivo de configuração, conforme mostra a [documentação](https://docs.sqlc.dev/en/latest/reference/config.html#type-overriding).
 - [query.sql.go](https://github.com/eminetto/post-sqlc/blob/main/person/db/query.sql.go) - contém a implementação das interfaces e é o código que vamos usar no restante da aplicação.
 
@@ -305,11 +307,11 @@ func (s *Service) Delete(ctx context.Context, id ID) error {
 }
 ```
 
-Perceba que no seu construtor ele recebe uma instância de `*db.Queries`, o código que foi gerado pelo `sqlc`.  O serviço faz toda a lógica para traduzir os parâmetros recebidos para o formato que é necessário para o uso da camada de persistência gerada pelo `sqlc`. 
+Perceba que no seu construtor ele recebe uma instância de `*db.Queries`, o código que foi gerado pelo `sqlc`. O serviço faz toda a lógica para traduzir os parâmetros recebidos para o formato que é necessário para o uso da camada de persistência gerada pelo `sqlc`.
 
 ## internal/http/echo/handler.go
 
-Neste arquivo está a lógica dos `handlers http` da nossa aplicação: 
+Neste arquivo está a lógica dos `handlers http` da nossa aplicação:
 
 ```go
 package echo
@@ -347,9 +349,9 @@ func GetUser(s person.UseCase) echo.HandlerFunc {
 	}
 }
 
-```  
+```
 
-Ela faz uso da camada de serviço, que por sua vez faz o acesso ao banco de dados. 
+Ela faz uso da camada de serviço, que por sua vez faz o acesso ao banco de dados.
 
 ### cmd/api/main.go
 
@@ -646,7 +648,7 @@ func TruncateMySQL(ctx context.Context, db *sql.DB) error {
 }
 ```
 
-Ao executar o teste é possível visualizar o `container` sendo iniciado e as consultas sendo executadas. 
+Ao executar o teste é possível visualizar o `container` sendo iniciado e as consultas sendo executadas.
 
 **Vantagens**
 
@@ -660,11 +662,11 @@ Ao executar o teste é possível visualizar o `container` sendo iniciado e as co
 
 ## Conclusões
 
-Gostei bastante do uso do `sqlc` para a geração de código baseado nas consultas SQL do projeto. Acho interessante a ideia de focar nas consultas SQL e não em funções "mágicas" de um ORM, o que pode causar alguns problemas de performance. 
+Gostei bastante do uso do `sqlc` para a geração de código baseado nas consultas SQL do projeto. Acho interessante a ideia de focar nas consultas SQL e não em funções "mágicas" de um ORM, o que pode causar alguns problemas de performance.
 
-A documentação do `sqlc` é bem completa e fácil de se usar. Outro ponto que achei legal é que ele é bem focado e não tenta abraçar todas as features de um ORM. Por exemplo, a parte de migrações não é abordada por ele e a documentação cita [outras ferramentas](https://docs.sqlc.dev/en/latest/howto/ddl.html#handling-sql-migrations) que podem ser usadas para cumprir esse importante fim. 
+A documentação do `sqlc` é bem completa e fácil de se usar. Outro ponto que achei legal é que ele é bem focado e não tenta abraçar todas as features de um ORM. Por exemplo, a parte de migrações não é abordada por ele e a documentação cita [outras ferramentas](https://docs.sqlc.dev/en/latest/howto/ddl.html#handling-sql-migrations) que podem ser usadas para cumprir esse importante fim.
 
-Um ponto a ser considerado é que, ao escolher o `sqlc` como parte da arquitetura de um projeto estamos nos comprometendo com a decisão de usarmos um banco de dados relacional. Isso pode ser um problema caso exista a necessidade de alteração desta decisão no futuro. Para estes casos eu acredito que usar uma abordagem mais próxima de uma `clean architecture` possa ser mais interessante: 
+Um ponto a ser considerado é que, ao escolher o `sqlc` como parte da arquitetura de um projeto estamos nos comprometendo com a decisão de usarmos um banco de dados relacional. Isso pode ser um problema caso exista a necessidade de alteração desta decisão no futuro. Para estes casos eu acredito que usar uma abordagem mais próxima de uma `clean architecture` possa ser mais interessante:
 
 - criar uma interface `Repository`
 - usar essa interface como dependência para o `Service`, ao invés da struct `Query` como fiz neste exemplo
