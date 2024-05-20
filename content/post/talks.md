@@ -12,6 +12,16 @@ url = "/talks"
 
 # 2024
 
+### A tragetória de Elton Minetto, Principal Engineer na PicPay
+
+**Quando**: 09/05/2024
+
+**Onde**: Podcast escovando bits
+
+[Podcast](https://open.spotify.com/episode/1q1BOVv3z5RYwcN2X2bHcV)
+
+---
+
 ### Da ideia ao Speaker Deck
 
 **Quando**: 19/04/2024
