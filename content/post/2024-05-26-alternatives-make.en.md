@@ -1,33 +1,34 @@
 ---
-title: Alternativas ao make escritas em Go
+title: Alternatives to Makefiles written in Go
 date: 2024-05-26T08:00:43-03:00
 draft: false
 ---
-Começando do começo: o que é o `make`? Presente em todas as distribuições Linux e derivados do Unix como o macOS, o manual da ferramenta a descreve como:
+First things first: what is `make`? Present in all Linux distributions and Unix derivatives such as macOS, the tool's manual describes it as:
 
-> O objetivo do utilitário make é determinar automaticamente quais partes de um programa grande precisam ser recompiladas, e emitir os comandos para recompilá-los.
+> The purpose of the make utility is to determine automatically which pieces of a large program need to be recompiled, and issue the commands to recompile them.
 
-> Para se preparar para usar o make, você deve escrever um arquivo chamado makefile que descreve os relacionamentos entre os arquivos em seu programa e indica os comandos para atualizar cada arquivo.
+> To prepare to use make, you must write a file called the Makefile that describes the relationships among files in your program, and the states the commands for updating each file.
 
-Antes que me atirem pedras, eu gosto muito do `make` e praticamente todo projeto que eu construo tem um `Makefile` com automações para facilitar o meu trabalho.
 
-Mas então porque procurar alternativas a algo que existe e funciona há décadas? Acredito que aprender novas ferramentas faz parte do nosso trabalho como devs, além de nos manter atualizados de novas formas de automação. Além disso, para começar a usar o `make` é preciso aprender a sintaxe do `Makefile` e se pudermos usar algo que já conhecemos pode diminuir a carga cognitiva de novos profissionais.
+Before anyone throws stones at me, I like it, and practically every project I build has one `Makefile` with automation to make my work easier.
 
-Dito isso, vamos ver aqui duas alternativas, ambas escritas em Go.
+But then, why look for alternatives to something that has existed and worked for decades? Learning new tools is part of our job as developers and keeps us up to date with new forms of automation. Furthermore, to start using it, we must learn the syntax of the `Makefile`, and if we can use something we already know, it can reduce the cognitive load of new professionals.
+
+Let's look at two alternatives here, both written in Go.
 
 # Taskfile
 
-A primeira ferramenta que vamos testar chama-se `Taskfile` e pode ser encontrada no site [https://taskfile.dev/](https://taskfile.dev/). A ideia da ferramenta é executar tarefas descritas em um arquivo chamado `Taskfile.yaml` e, como o nome sugere, em formato `yaml`. 
+The first tool we will test is  `Taskfile`, found on the website [https://taskfile.dev/](https://taskfile.dev/). The tool's idea is to perform tasks described in a file called `Taskfile.yaml` and, as the name suggests, in `yaml`.
 
-O primeiro passo é realizar a instalação do executável `task`, que vamos utilizar. Para isso a documentação oficial mostra algumas alternativas, mas como estou usando macOS eu usei o comando:
+The first step is to install the executable `task`, which we will use. For this, the official documentation shows some alternatives, but as I'm using macOS, I used the command:
 
 ```bash
 ❯ brew install go-task
 ```
 
-Vamos agora descrever as nossas tarefas dentro de um novo arquivo chamado `Taskfile.yaml`. Para demonstrar um caso real, vamos reescrever o `Makefile` de um [projeto do meu Github](https://github.com/eminetto/api-o11y-gcp).
+Let's describe our tasks in a new `Taskfile.yaml` file. Let's rewrite one Makefile from a [project on my Github](https://github.com/eminetto/api-o11y-gcp) to demonstrate a real case.
 
-Este é o conteúdo original:
+The original content is:
 
 ```Makefile
 .PHONY: all
@@ -60,7 +61,7 @@ run-docker: build-docker
     docker run -d -p 8080:8080 api-o11y-gcp
 ```
 
-O conteúdo do `Taskfile.yaml` ficou desta forma:
+The content converted to the `Taskfile.yaml` is:
 
 ```yaml
 version: "3"
@@ -121,7 +122,7 @@ tasks:
 
 ```
 
-Podemos agora usar o comando `task` para listar as tarefas disponíveis:
+We can now use the command `task` to list the available tasks:
 
 ```bash
 ❯ task -l
@@ -135,7 +136,7 @@ task: Available tasks for this project:
 * test:                 Run tests
 ```
 
-Ao executar o comando `task` a tarefa `default` vai ser executada:
+When executing the command `task`, it will perform the `default` task:
 
 ```bash
 ❯ task
@@ -143,9 +144,9 @@ task: [install-deps] go mod tidy
 task: [default] go build -o bin/api-o11y-gcp cmd/api/main.go
 ```
 
-É possível ver que a tarefa executou primeiro a sua dependência, o `install-deps`, conforme descrito no `Taskfile.yaml`. 
+You can see that the task first executed its dependency, `install-deps`, as described in `Taskfile.yaml`.
 
-E podemos executar outras tarefas adicionando o seu nome ao final do comando:
+And we can perform other tasks by adding it to the end of the command:
 
 ```bash
 ❯ task build-linux
@@ -153,34 +154,35 @@ task: [install-deps] go mod tidy
 task: [build-linux] go build -a -installsuffix cgo -tags "netgo" -installsuffix netgo -o bin/api-o11y-gcp cmd/api/main.go
 ```
 
-No comando `build-linux` é possível também ver a utilização de `env vars` para configurar o ambiente no momento da compilação.
+The command `build-linux` also shows the use of `environment variables` to configure the environment at compilation time.
 
-Na [documentação](https://taskfile.dev/usage/) é possível ver outros exemplos mais avançados, além de um [guia de estilo](https://taskfile.dev/styleguide/) para escrever bons `Taskfile.yml`.
+The [documentation](https://taskfile.dev/usage/) includes other, more advanced examples and a style guide for writing a `Taskfile.yaml.`
 
-A principal vantagem em usar o `Taskfile` é que a grande maioria dos times atualmente tem experiência em escrever e usar arquivos no formato `YAML`, pois ele tornou-se o formato mais usado para arquivos de configuração (apesar de eu achar que o [formato TOML](https://toml.io/en/) é bem mais legal).
+
+The main advantage of using `Taskfile` is that most teams nowadays have experience writing and using files in `YAML`, which has become the most used format for configuration files (although I think the [TOML](https://toml.io/en/) format is much better ).
 
 ## Mage
 
-A segunda alternativa que quero demonstrar é o projeto [Mage](https://magefile.org/) que se descreve como 
+The second alternative I want to demonstrate is the [Mage](https://magefile.org/) project, which the site describes as
 
-> uma ferramenta de construção semelhante a make/rake usando Go
+> a make/rake-like build tool using Go
 
-O interessante desta ferramenta é que as tarefas são construídas em arquivos Go, com todo o poder que a linguagem nos fornece.
+The exciting thing about this tool is that the tasks are built in Go files, giving them all the power the language provides.
 
-O primeiro passo necessário é a instalação do executável `mage`. Para isso usei o comando a seguir no macOS, mas no site oficial é possível visualizar as opções para outros sistemas operacionais.
+The first necessary step is to install the executable `mage`. To do this, I used the following command on macOS, but you can view the options for other operating systems on the official website.
 
 ```bash
 ❯ brew install mage
 ```
 
-Vamos novamente reescrever as tarefas do `Makefile` neste novo formato. Para isso podemos criar um arquivo chamado `magefile.go` na raiz do projeto e adicionar a lógica dentro dele. Mas eu achei mais interessante outra opção documentada, a de criarmos um diretório chamado `magefiles` e dentro dele armazenar os arquivos. Achei que desta forma o projeto fica mais organizado. Para isso executei os comandos:
+Let's rewrite the tasks in `Makefile` in this new format. To do this, we can create a file called `magefile.go` at the project's root and add the logic inside it. However, another documented option is more interesting: creating a directory called `magefiles` and storing the files within it. I thought the project was more organized this way. To do this, I ran the commands:
 
 ```bash
 ❯ mkdir magefiles
 ❯ mage -init -d magefiles
 ```
 
-O segundo comando inicializa um arquivo `magefile.go` com um exemplo inicial para começarmos a descrever as tarefas:
+The second command initializes a `magefile.go` with an initial example to begin describing the tasks:
 
 ```go
 //go:build mage
@@ -230,13 +232,13 @@ func Clean() {
 
 ```
 
-Como as tarefas são descritas na forma de um script Go é necessário baixar a dependência do `Mage` usando o comando:
+As we will describe the tasks in the form of a Go program, it is necessary to download the dependency using the command:
 
 ```bash
 ❯ go get github.com/magefile/mage/mg
 ```
 
-Agora é possível listarmos as tarefas disponíveis, que o `Mage` chama de `targets`: 
+Now it is possible to list the available tasks, which `Mage` calls `targets`:
 
 ```bash
 ❯ mage -l
@@ -247,9 +249,9 @@ Targets:
   installDeps    Manage your deps, or running package managers.
 ```
 
-A linha de comentário de cada função torna-se a documentação do `target` como é possível visualizarmos na saída do comando `mage`. 
+Each function's comment line becomes a documentation of how we can view the command in the `mage` output message.
 
-Vamos agora converter o conteúdo do `Makefile` em um script no formato do `mage`:
+Let's now convert the `Makefile` into a script in the `mage` format:
 
 ```go
 //go:build mage
@@ -364,9 +366,9 @@ func removeGlob(path string) (err error) {
 }
 ```
 
-Neste arquivo é possível ver o uso das dependências, como no exemplo: `mg.Deps(BuildDocker)`. Também é possível ver o uso de lógica de programação Go, como na função `removeGlob(path string)`. Esta função poderia, por exemplo, estar em um pacote separado e ser utilizado por diversos arquivos dentro do diretório `magefiles`, fazendo uso das boas práticas da linguagem.
+In this file, you can see the use of dependencies, as in the example `mg.Deps(BuildDocker)`. You can also see the use of Go programming logic, such as in the `removeGlob(path string)`. This function could, for example, be in a separate package and used by different files within the directory `magefiles`, using suitable language practices.
 
-Podemos agora visualizar todos os `targets` disponíveis: 
+We can now view all `targets` available:
 
 ```bash
 ❯ mage -l
@@ -383,7 +385,8 @@ Targets:
 * default target
 ```
 
-Ao executar o comando `mage` a função indicada como `Default` vai ser executada, neste caso a `build`:
+When executing the `mage` command, the function indicated as `Default` will be executed, in this case the `build`:
+
 
 ```bash
 ❯ mage
@@ -394,12 +397,14 @@ Installing Deps...
 Building...
 ```
 
-Na segunda execução, ao adicionarmos o flag `-v` o resultado é mais detalhado pois são apresentados os logs do `target`.
+In the second execution, the result is more detailed when we add the flag `-v`, as we can see in the logs.
 
-Vejo duas vantagens ao usar o `mage` em um projeto. O primeiro é que se o projeto é escrito em Go não torna-se necessário que o time aprenda uma nova linguagem para descrever as tarefas automatizadas. O segundo benefício é termos a disposição uma linguagem de programação completa e não apenas comandos descritos em um arquivo `Makefile` ou `Taskfile.yaml`. Isso permite a execução de lógicas complexas de maneira muito mais fácil (já vi arquivos `Makefile` gigantes, com uma sintaxe pouco amigável para contornar essa necessidade).
+I see two advantages of using `mage` in a project. The first is that if the project is written in Go, the team does not need to learn a new language to describe the automated tasks. The second benefit is that we have a complete programming language, not just commands defined in a `Makefile` or `Taskfile.yaml` file. This power allows us to execute complex logic more easily (I've seen giant `Makefile` files with unfriendly syntax to get around this need).
 
-## Conclusões
 
-O `make` é uma ferramenta madura e usada por todos os principais projetos Open Sorce do mundo, e isso não deve mudar tão facilmente. Por isso continuo achando muito válido que o conhecimento desta ferramenta seja incentivado entre devs. Mas adicionar alternativas como as apresentadas aqui pode ser um passo bem importante para facilitar a criação de tarefas e automações graças as vantagens que comentei no texto.
+## Conclusions
 
-Conhece outras alternativas? Não concorda com a adoção de algo diferente do `make`? Compartilhei suas opiniões e experiências nos comentários.
+`Make` is a mature tool used by all the main Open Sorce projects worldwide, and this is not likely to change so quickly. That's why it's very valid that knowledge of this tool is encouraged among devs. However, adding alternatives like the ones presented here can be a crucial step in facilitating the creation of tasks and automation, thanks to the advantages I mentioned in the text.
+
+Do you know of other alternatives? Do you disagree with adopting something other than `make`? I shared your opinions and experiences in the comments.
+
