@@ -12,6 +12,16 @@ url = "/talks"
 
 # 2024
 
+### Observabilidade e Go
+
+**Quando**: 08/06/2024
+
+**Onde**: The Developer's Life Weekend 2024
+
+[Slides](https://docs.google.com/presentation/d/1B_2stLrdcJa1sP3GCalZi5NM98BFyb-bR_TbYZzxskQ/edit?usp=sharing)
+
+---
+
 ### A tragetória de Elton Minetto, Principal Engineer na PicPay
 
 **Quando**: 09/05/2024
