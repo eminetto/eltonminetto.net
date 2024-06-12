@@ -11,7 +11,7 @@ A parte que explodiu minha cabeça foi a afirmação:
 
 [![platform](/images/posts/go_is_a_platform.png)](/images/posts/go_is_a_platform.png)
 
-Ele começa falando sobre o ciclo de vida do desenvolvimento de software (SLDC):
+Ele começa falando sobre o “DevOps Life Cycle”:
 
 [![sldc](/images/posts/sldc.png)](/images/posts/sldc.png)
 
