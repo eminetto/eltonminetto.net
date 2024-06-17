@@ -12,6 +12,16 @@ url = "/talks"
 
 # 2024
 
+### ELTON MINETTO (Principal Software Engineer no PicPay)
+
+**Quando**: 17/06/2024
+
+**Onde**: Podcast Papinho Tech
+
+[Video](https://www.youtube.com/watch?v=dJQJqFe-DKQ)
+
+---
+
 ### Observabilidade e Go
 
 **Quando**: 08/06/2024
