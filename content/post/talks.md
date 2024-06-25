@@ -12,6 +12,16 @@ url = "/talks"
 
 # 2024
 
+###  Escreva monolitos, publique microsserviços usando Go e o Service Weaver
+
+**Quando**: 24/06/2024
+
+**Onde**: Evento interno do PicPay
+
+
+---
+
+
 ###  Arquitetura de Software com Rodrigo Branas e Elton Minetto
 
 **Quando**: 25/06/2024
