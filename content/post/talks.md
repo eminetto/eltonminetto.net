@@ -26,7 +26,7 @@ url = "/talks"
 
 **Quando**: 25/06/2024
 
-**Onde**: Podcast Dev Lab
+**Onde**: DevLab Cast
 
 [Video](https://www.youtube.com/watch?v=t4o1tOV3q78)
 
