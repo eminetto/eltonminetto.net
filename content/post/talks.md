@@ -12,6 +12,16 @@ url = "/talks"
 
 # 2024
 
+###  Arquitetura de Software com Rodrigo Branas e Elton Minetto
+
+**Quando**: 25/06/2024
+
+**Onde**: Podcast Dev Lab
+
+[Video](https://www.youtube.com/watch?v=t4o1tOV3q78)
+
+---
+
 ### ELTON MINETTO (Principal Software Engineer no PicPay)
 
 **Quando**: 17/06/2024
