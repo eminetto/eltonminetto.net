@@ -2,6 +2,9 @@
 title: Go é uma plataforma
 date: 2024-06-12T08:00:43-03:00
 draft: false
+tags:
+  - go
+
 ---
 Em Maio deste ano, graças ao programa Google Developer Experts, tive a oportunidade de participar do Google I/O em Mountain View/Califórnia. Dentre as várias talks que assisti, uma das minhas preferidas foi a **‌ Boost performance of Go applications with profile guided optimization**, que você pode assistir no [Youtube](https://www.youtube.com/watch?v=FwzE5Sdhhdw). 
 

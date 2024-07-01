@@ -2,6 +2,9 @@
 title: Alternativas ao make escritas em Go
 date: 2024-05-26T08:00:43-03:00
 draft: false
+tags:
+  - go
+
 ---
 Começando do começo: o que é o `make`? Presente em todas as distribuições Linux e derivados do Unix como o macOS, o manual da ferramenta a descreve como:
 
