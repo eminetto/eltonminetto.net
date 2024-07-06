@@ -14,6 +14,17 @@ url = "/talks"
 
 ###  Escreva monolitos, publique microsserviços usando Go e o Service Weaver
 
+**Quando**: 06/07/2024
+
+**Onde**: Google I/O Extended - Joinville
+
+[Slides](https://docs.google.com/presentation/d/1T1Noz8PVFLKQ2XAQhP1-K7PUNpDKpYF4mKDRFi7iJw0/edit?usp=sharing)
+
+---
+
+
+###  Escreva monolitos, publique microsserviços usando Go e o Service Weaver
+
 **Quando**: 24/06/2024
 
 **Onde**: Evento interno do PicPay
