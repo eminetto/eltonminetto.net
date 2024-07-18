@@ -12,6 +12,38 @@ url = "/talks"
 
 # 2024
 
+###  Monolitos, Microsserviços, Go +ServiceWeaver
+
+**Quando**: 18/07/2024
+
+**Onde**: Canal da Confloss no YouTube
+
+[Video](https://www.youtube.com/live/afVCsyIGTx4)
+
+---
+
+
+###  Arquiteturas Modulares em Go e Node.js
+
+**Quando**: 17/07/2024
+
+**Onde**: Canal do Dev Lab no YouTube
+
+[Video](https://www.youtube.com/live/_lVf836ZJ4o)
+
+---
+
+
+###  Arquiteturas Modulares em Go e Node.js
+
+**Quando**: 17/07/2024
+
+**Onde**: Canal do Dev Lab no YouTube
+
+[Video](https://www.youtube.com/live/_lVf836ZJ4o)
+
+---
+
 ###  Escreva monolitos, publique microsserviços usando Go e o Service Weaver
 
 **Quando**: 06/07/2024
