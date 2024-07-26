@@ -12,6 +12,15 @@ url = "/talks"
 
 # 2024
 
+###  dapr.io
+
+**Quando**: 25/07/2024
+
+**Onde**: Evento interno do PicPay
+
+---
+
+
 ###  Monolitos, Microsserviços, Go +ServiceWeaver
 
 **Quando**: 18/07/2024
