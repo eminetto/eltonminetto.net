@@ -46,7 +46,7 @@ Algumas comunidades que eu participo:
 
 Sou grande fã de newsletters como forma de me manter atualizado das novidades do mercado.
 
-[A semana Go](http://asemanago.com.br) - Lista semanal com curadoria deste ruivo que aqui escreve :)
+[A semana Go](https://asemanago.dev) - Lista semanal com curadoria deste ruivo que aqui escreve :)
 
 [Golang Weekly](https://golangweekly.com) - Lista bem extensa, em inglês.
 
