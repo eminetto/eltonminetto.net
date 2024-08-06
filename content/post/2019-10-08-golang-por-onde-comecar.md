@@ -20,7 +20,7 @@ Resolvi transformar esta resposta em um post, no intuito de ajudar mais pessoas.
 
 [A Tour of Go](https://tour.golang.org/welcome/1) - Este é um bom lugar para começar pois é um passo a passo para iniciar na linguagem. Usando o navegador você vai aprendendo o básico da linguagem.
 
-[Go by Example](https://gobyexample.com]) - Uma lista de exemplos separados por tópicos, desde os mais simples até mais complexos. Esse é um guia que eu uso constantemente, para relembrar algumas sintaxes mais avançadas.
+[Go by Example](https://gobyexample.com) - Uma lista de exemplos separados por tópicos, desde os mais simples até mais complexos. Esse é um guia que eu uso constantemente, para relembrar algumas sintaxes mais avançadas.
 
 [Go Proverbs](https://go-proverbs.github.io) - Essa eu considero uma das leituras mais importantes pois ela resume os princípios que nortearam a criação da linguagem e também as decisões adotadas pela comunidade.
 
