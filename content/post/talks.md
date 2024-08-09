@@ -12,6 +12,17 @@ url = "/talks"
 
 # 2024
 
+###  Coisas que estão me empolgando
+
+**Quando**: 09/08/2024
+
+**Onde**: Evento interno da Unochapecó
+
+[Slides](https://docs.google.com/presentation/d/1KxCcV_w_-FZ9Yi4o9yjKDZuQrUqyrCylvpMDjZhu5q4/edit?usp=sharing)
+
+---
+
+
 ###  dapr.io
 
 **Quando**: 25/07/2024
