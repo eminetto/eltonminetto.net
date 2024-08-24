@@ -6,10 +6,13 @@ summaryLength = 15
 # theme = "primula"
 theme = 'lowkey'
 author = "eminetto"
-googleAnalytics = "G-B6W400SFM4"
 paginate = 10
 staticDir = ['static', 'slides']
 defaultContentLanguage = 'pt'
+
+[services]
+[services.googleAnalytics]
+ID = 'G-B6W400SFM4'
 
 [languages]
 [languages.en]
