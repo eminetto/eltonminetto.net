@@ -12,6 +12,16 @@ url = "/talks"
 
 # 2024
 
+###  Escreva monolitos, publique microsserviços usando Go e o Service Weaver
+
+**Quando**: 24/08/2024
+
+**Onde**: Confloss 2024
+
+[Slides](https://docs.google.com/presentation/d/1T1Noz8PVFLKQ2XAQhP1-K7PUNpDKpYF4mKDRFi7iJw0/edit?usp=sharing)
+
+---
+
 ###  Coisas que estão me empolgando
 
 **Quando**: 09/08/2024
