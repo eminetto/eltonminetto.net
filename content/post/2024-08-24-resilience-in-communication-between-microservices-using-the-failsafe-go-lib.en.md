@@ -633,7 +633,7 @@ The output of `serviceA` is something similar to this:
 
 In the next step, we will combine the concepts we've seen to create a more resilient application.
 
-# Policy composition
+## Policy composition
 
 To do this, we need to change the code of `serviceA` so that it makes use of the policies we have seen so far:
 
@@ -801,7 +801,7 @@ go run main.go
 {"time":"2024-08-19T10:16:11.046026-03:00","level":"ERROR","msg":"500: Internal Server Error","request":{"time":"2024-08-19T10:16:01.043317-03:00","method":"GET","host":"localhost:3000","path":"/","query":"","params":{},"route":"/","ip":"[::1]:52544","referer":"","length":0},"response":{"time":"2024-08-19T10:16:11.045601-03:00","latency":10002596334,"status":500,"length":45},"id":""}
 ```
 
-# Conclusion
+## Conclusion
 
 One of the advantages of microservices architecture is that we can break a complex domain into smaller, specialized services that communicate with each other to complete the necessary logic. Ensuring that this communication is resilient and will continue to work even in the face of failures and unforeseen events is fundamental. Using libraries such as `failsafe-go` makes this process easier.
 
