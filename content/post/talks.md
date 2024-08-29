@@ -892,7 +892,7 @@ url = "/talks"
 
 **Onde**: Vida de Programador Weekend
 
-[Go e microserviços: nascidos um para o outro](https://www.slideshare.net/eminetto/go-e-microservios-nascidos-um-para-o-outro))
+[Go e microserviços: nascidos um para o outro](https://eltonminetto.dev/files/talks/microservices_go.pdf))
 
 ---
 
@@ -988,7 +988,7 @@ url = "/talks"
 
 **Onde**: Curitiba/PR
 
-[Golang e microserviços: nascidos um para o outro](https://www.slideshare.net/eminetto/go-e-microservios-nascidos-um-para-o-outro)
+[Golang e microserviços: nascidos um para o outro](https://eltonminetto.dev/files/talks/microservices_go.pdf)
 
 ---
 
@@ -998,7 +998,7 @@ url = "/talks"
 
 **Onde**: Florianópolis/SC
 
-[Golang e microserviços: nascidos um para o outro](https://www.slideshare.net/eminetto/go-e-microservios-nascidos-um-para-o-outro)
+[Golang e microserviços: nascidos um para o outro](https://eltonminetto.dev/files/talks/microservices_go.pdf)
 
 ---
 
@@ -1008,7 +1008,7 @@ url = "/talks"
 
 **Onde**: Joinville/SC
 
-[Golang e microserviços: nascidos um para o outro](https://www.slideshare.net/eminetto/go-e-microservios-nascidos-um-para-o-outro)
+[Golang e microserviços: nascidos um para o outro](https://eltonminetto.dev/files/talks/microservices_go.pdf)
 
 ---
 
@@ -1028,7 +1028,7 @@ url = "/talks"
 
 **Onde**: Florianópolis/SC
 
-[Object Calisthenics em Go](https://www.slideshare.net/eminetto/object-calisthenics-em-go)
+[Object Calisthenics em Go](https://eltonminetto/dev/files/talks/codecalisthenics.pdf)
 
 ---
 
