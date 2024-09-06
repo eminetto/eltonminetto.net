@@ -12,6 +12,7 @@ url = "/talks"
 
 # 2024
 
+
 ###  Painel - Skip level: de junior para pleno e de pleno para sênior
 
 **Quando**: 07/09/2024
@@ -19,6 +20,15 @@ url = "/talks"
 **Onde**: Codecon Summit
 
 ---
+
+###  Decision making: como tomar boas decisões
+
+**Quando**: 06/09/2024
+
+**Onde**: Evento interno do PicPay
+
+---
+
 
 ###  Escreva monolitos, publique microsserviços usando Go e o Service Weaver
 
