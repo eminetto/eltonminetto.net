@@ -12,6 +12,14 @@ url = "/talks"
 
 # 2024
 
+###  Painel - Skip level: de junior para pleno e de pleno para sênior
+
+**Quando**: 07/09/2024
+
+**Onde**: Codecon Summit
+
+---
+
 ###  Escreva monolitos, publique microsserviços usando Go e o Service Weaver
 
 **Quando**: 24/08/2024
