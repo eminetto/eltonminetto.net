@@ -17,4 +17,4 @@ wordpress_id: 386
 
 Ontem ministrei a palestra "Desenvolvendo aplicações Web escaláveis com PHP" na Semana Acadêmica de Computação/Sistemas de Informação na Udesc/Joinville. Galera bem participativa e legal. Ganhei até camiseta :D
 Publiquei os slides no Slideshare, então quem quiser dar uma olhada o link é esse:
-[http://www.slideshare.net/eminetto/desenvolvendo-aplicaes-web-escalveis-com-php](http://www.slideshare.net/eminetto/desenvolvendo-aplicaes-web-escalveis-com-php)
+[https://eltonminetto/dev/files/talks/appwebescalaveisudesc-090923091351-phpapp01.pdf](https://eltonminetto/dev/files/talks/appwebescalaveisudesc-090923091351-phpapp01.pdf)

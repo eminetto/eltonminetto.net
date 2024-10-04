@@ -17,6 +17,6 @@ A organização está de parabéns novamente, principalmente a galera do PHPSP q
 
 Eu já fiz a avaliação de cada uma das palestras que assisti no [Joind.in](http://joind.in/event/view/467) do evento e recomendo que faça também. É legal para o palestrante e para a organização saberem a sua opinião.
 
-O material que apresentei na minha palestra está no meu [Slideshare](http://www.slideshare.net/eminetto/ao-infinito-e-alm-com-php-memcached-e-gearman)
+O material que apresentei na minha palestra está no meu [Slideshare](https://eltonminetto/dev/files/talks/phpconf2010-101129062657-phpapp02.pdf)
 
 Já coloquei na agenda a minha participação em 2011. Realmente um evento imperdível.

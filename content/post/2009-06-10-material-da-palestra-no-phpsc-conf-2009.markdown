@@ -18,4 +18,4 @@ wordpress_id: 372
 
 Finalmente me organizei e fiz o upload dos slides da palestra que ministrei no PHPSC Conf 2009.
 Coloquei no Slideshare. Se alguém precisar do arquivo em outro formato é só me avisar.
-[Melhorando a performance de aplicações com o uso do MemCache](http://www.slideshare.net/eminetto/melhorando-a-performance-de-aplicaes-com-o-uso-do-memcache)
+[Melhorando a performance de aplicações com o uso do MemCache](https://eltonminetto/dev/files/talks/memcache-090610153348-phpapp01.pdf)

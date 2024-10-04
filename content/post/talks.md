@@ -12,6 +12,15 @@ url = "/talks"
 
 # 2024
 
+###  Observabilidade como o pilar de grandes arquiteturas
+
+**Quando**: 03/10/2024
+
+**Onde**: [Staff+ Conference](https://staff.escolaforja.com.br)
+
+[Slides](https://docs.google.com/presentation/d/1XEizX-K0AT1A-qXRAwZilRPEYDGm91U6cK695RVjUHw/edit?usp=sharing)
+
+--- 
 
 ###  Painel - Skip level: de junior para pleno e de pleno para sênior
 
@@ -1056,7 +1065,7 @@ url = "/talks"
 
 **Onde**: Joinville/SC
 
-[Programar != desenvolver software](https://www.slideshare.net/eminetto/programar-desenvolver-software-v2-152192472)
+[Programar != desenvolver software](https://eltonminetto/dev/files/talks/presentation-190627130649.pdf)
 
 ---
 
@@ -1096,7 +1105,7 @@ Microserviços
 
 **Onde**: São Paulo/SP
 
-[Full Stack vs Full Cycle Developer](https://www.slideshare.net/eminetto/full-stack-vs-full-cycle-developers)
+[Full Stack vs Full Cycle Developer](https://eltonminetto/dev/files/talks/presentation-190406122605.pdf)
 
 ---
 
@@ -1118,9 +1127,9 @@ Microserviços
 
 **Onde**: Porto Alegre/RS
 
-[Clean architecture](https://www.slideshare.net/eminetto/clean-architecture-118686697)
+[Clean architecture](https://eltonminetto/dev/files/talks/presentation-181008120945.pdf)
 
-[Programar != desenvolver software](https://www.slideshare.net/eminetto/programar-desenvolver-software/eminetto/programar-desenvolver-software)
+[Programar != desenvolver software](https://eltonminetto/dev/files/talks/presentation-180625112700.pdf)
 
 ---
 
@@ -1130,7 +1139,7 @@ Microserviços
 
 **Onde**: Florianópolis/SC
 
-[Gerenciando uma startup no Github Projects](https://www.slideshare.net/eminetto/gerenciando-uma-startup-no-github-projects)
+[Gerenciando uma startup no Github Projects](https://eltonminetto/dev/files/talks/presentation-181210172530.pdfs)
 
 ---
 
@@ -1140,7 +1149,7 @@ Microserviços
 
 **Onde**: São Paulo/SP
 
-[Clean Architecture](https://www.slideshare.net/eminetto/clean-architecture-118686697)
+[Clean Architecture](https://eltonminetto/dev/files/talks/presentation-181008120945.pdf)
 
 ---
 
@@ -1150,7 +1159,7 @@ Microserviços
 
 **Onde**: Florianópolis/SC
 
-[Serverless em Go](https://www.slideshare.net/eminetto/serverless-em-go)
+[Serverless em Go](https://eltonminetto/dev/files/talks/serverlessgo-181001130536.pdf)
 
 ---
 
@@ -1170,7 +1179,7 @@ Painel: As startups precisam morrer!
 
 **Onde**: São Paulo/SP
 
-[Clean architecture em Golang](https://www.slideshare.net/eminetto/clean-architecture-em-go-v2)
+[Clean architecture em Golang](https://eltonminetto/dev/files/talks/cleanarchitecturego-180723114140.pdf)
 
 ---
 
@@ -1200,7 +1209,7 @@ PHP: Tendências da linguagem para os próximos anos
 
 **Onde**: Joinville/SC
 
-[Programar != desenvolver software](https://www.slideshare.net/eminetto/programar-desenvolver-software)
+[Programar != desenvolver software](https://eltonminetto/dev/files/talks/presentation-180625112700.pdf)
 
 ---
 
@@ -1210,7 +1219,7 @@ PHP: Tendências da linguagem para os próximos anos
 
 **Onde**: Florianópolis/SC
 
-[Clean architecture em PHP](https://www.slideshare.net/eminetto/clean-architecture-em-php)
+[Clean architecture em PHP](https://eltonminetto/dev/files/talks/clean-architecture-php-180609141908.pdf)
 
 ---
 
@@ -1220,7 +1229,7 @@ PHP: Tendências da linguagem para os próximos anos
 
 **Onde**: Florianópolis/SC
 
-[Clean architecture em Golang](https://www.slideshare.net/eminetto/clean-architecture-in-golang)
+[Clean architecture em Golang](https://eltonminetto/dev/files/talks/cleanarchitecturego-180421171403.pdf)
 
 ---
 
@@ -1230,7 +1239,7 @@ PHP: Tendências da linguagem para os próximos anos
 
 **Onde**: Florianópolis/SC
 
-[Clean architecture em Golang](https://www.slideshare.net/eminetto/clean-architecture-in-golang)
+[Clean architecture em Golang](https://eltonminetto/dev/files/talks/cleanarchitecturego-180421171403.pdf)
 
 ---
 
@@ -1240,7 +1249,7 @@ PHP: Tendências da linguagem para os próximos anos
 
 **Onde**: Joinville/SC
 
-[A Jornada do desenvolvedor](https://www.slideshare.net/eminetto/a-jornada-do-desenvolvedor-92047194)
+[A Jornada do desenvolvedor](https://eltonminetto/dev/files/talks/devjourney-180327115955.pdf)
 
 ---
 
@@ -1250,7 +1259,7 @@ PHP: Tendências da linguagem para os próximos anos
 
 **Onde**: Blumenau/SC
 
-[Product and Technology: how to build a killer roadmap!](https://www.slideshare.net/eminetto/product-and-technology-91320524)
+[Product and Technology: how to build a killer roadmap!](https://eltonminetto/dev/files/talks/palestrapvtalks14-180320163353.pdf)
 
 ---
 
@@ -1260,7 +1269,7 @@ PHP: Tendências da linguagem para os próximos anos
 
 **Onde**: Florianópolis/SC
 
-[Code:Nation Tech Stack](https://www.slideshare.net/eminetto/codenation-tech-stack)
+[Code:Nation Tech Stack](https://eltonminetto/dev/files/talks/codenationtechstack-180307130131.pdf)
 
 ---
 
@@ -1272,7 +1281,7 @@ PHP: Tendências da linguagem para os próximos anos
 
 **Onde**: Osasco/SP
 
-[12 factor in the PHP world](https://www.slideshare.net/eminetto/12-factor-in-the-php-world)
+[12 factor in the PHP world](https://eltonminetto/dev/files/talks/12factorphp-171211100920.pdf)
 
 ---
 
@@ -1282,7 +1291,7 @@ PHP: Tendências da linguagem para os próximos anos
 
 **Onde**: Osasco/SP
 
-[Modernizando projetos legados usando APIs](https://www.slideshare.net/eminetto/modernizando-projetos-legados-usando-apis)
+[Modernizando projetos legados usando APIs](https://eltonminetto/dev/files/talks/modernizandolegadousandoapi-171211101201.pdf)
 
 ---
 
@@ -1292,7 +1301,7 @@ PHP: Tendências da linguagem para os próximos anos
 
 **Onde**: Joinville/SC
 
-[Building APIs using Go](https://www.slideshare.net/eminetto/building-apis-using-go)
+[Building APIs using Go](https://eltonminetto/dev/files/talks/apigo-171111011500.pdf)
 
 ---
 
@@ -1302,7 +1311,7 @@ PHP: Tendências da linguagem para os próximos anos
 
 **Onde**: Florianópolis/SC
 
-[Metodologias ágeis interativas](http://www.slideshare.net/eminetto/metodologias-geis-interativas)
+[Metodologias ágeis interativas](https://eltonminetto/dev/files/talks/metodologiasinterativas-170201121157.pdf)
 
 ---
 
@@ -1322,7 +1331,7 @@ PHP: Tendências da linguagem para os próximos anos
 
 **Onde**: Joinville/SC
 
-[Introdução a Go](https://www.slideshare.net/eminetto/introduo-a-go)
+[Introdução a Go](https://eltonminetto/dev/files/talks/go-170530112412.pdf)
 
 ---
 
@@ -1352,7 +1361,7 @@ Painel: Carreiras
 
 **Onde**: Joinville/SC
 
-Case Compufácil e AWS [Slides](https://www.slideshare.net/eminetto/o-case-da-compufcil-e-aws) [Video](https://youtu.be/GeySVDO8koA)
+Case Compufácil e AWS [Slides](https://eltonminetto/dev/files/talks/awscompufacil-170816204122.pdf) [Video](https://youtu.be/GeySVDO8koA)
 
 ---
 
@@ -1362,7 +1371,7 @@ Case Compufácil e AWS [Slides](https://www.slideshare.net/eminetto/o-case-da-co
 
 **Onde**: Joinville/SC
 
-[Dicas de carreira pra desenvolvedores em startups](https://www.slideshare.net/eminetto/start-you)
+[Dicas de carreira pra desenvolvedores em startups](https://eltonminetto/dev/files/talks/startyou-170816204518.pdf)
 
 ---
 
@@ -1372,7 +1381,7 @@ Case Compufácil e AWS [Slides](https://www.slideshare.net/eminetto/o-case-da-co
 
 **Onde**: São Luis/MA
 
-[Memórias das trincheiras - parte 2](https://www.slideshare.net/eminetto/memrias-das-trincheiras-parte-2)
+[Memórias das trincheiras - parte 2](https://eltonminetto/dev/files/talks/phpxp2017minetto-170329124222.pdf)
 
 ---
 
@@ -1392,7 +1401,7 @@ Case Compufácil e AWS [Slides](https://www.slideshare.net/eminetto/o-case-da-co
 
 **Onde**: Joinville/SC
 
-[Introdução a Go](https://www.slideshare.net/eminetto/introduo-a-go)
+[Introdução a Go](https://eltonminetto/dev/files/talks/go-170530112412.pdf)
 
 ---
 
@@ -1402,7 +1411,7 @@ Case Compufácil e AWS [Slides](https://www.slideshare.net/eminetto/o-case-da-co
 
 **Onde**: Criciúma/SC
 
-[Slides: Metodologias ágeis interativas](http://www.slideshare.net/eminetto/metodologias-geis-interativas)
+[Slides: Metodologias ágeis interativas](https://eltonminetto/dev/files/talks/metodologiasinterativas-170201121157.pdf)
 
 [Video: Metodologias ágeis interativas](https://www.youtube.com/watch?v=A6XDGqnBZlU&feature=youtu.be)
 
@@ -1414,7 +1423,7 @@ Case Compufácil e AWS [Slides](https://www.slideshare.net/eminetto/o-case-da-co
 
 **Onde**: Porto Alegre/RS
 
-[Metodologias ágeis interativas](http://www.slideshare.net/eminetto/metodologias-geis-interativas)
+[Metodologias ágeis interativas](https://eltonminetto/dev/files/talks/metodologiasinterativas-170201121157.pdf)
 
 ---
 
@@ -1424,7 +1433,7 @@ Case Compufácil e AWS [Slides](https://www.slideshare.net/eminetto/o-case-da-co
 
 **Onde**: Florianópolis/SC
 
-[Como extrair métricas do Trello](https://www.slideshare.net/eminetto/como-extrair-mtricas-do-trello)
+[Como extrair métricas do Trello](https://eltonminetto/dev/files/talks/metricastrello-170505145122.pdf)
 
 ---
 
@@ -1434,7 +1443,7 @@ Case Compufácil e AWS [Slides](https://www.slideshare.net/eminetto/o-case-da-co
 
 **Onde**: São Paulo/SP
 
-[Memórias das trincheiras - parte 2](https://www.slideshare.net/eminetto/memrias-das-trincheiras-parte-2)
+[Memórias das trincheiras - parte 2](https://eltonminetto/dev/files/talks/phpxp2017minetto-170329124222.pdf)
 
 ---
 
@@ -1444,7 +1453,7 @@ Case Compufácil e AWS [Slides](https://www.slideshare.net/eminetto/o-case-da-co
 
 **Onde**: SP/SP
 
-[Metodologias ágeis interativas](http://www.slideshare.net/eminetto/metodologias-geis-interativas)
+[Metodologias ágeis interativas](https://eltonminetto/dev/files/talks/metodologiasinterativas-170201121157.pdf)
 
 ---
 
@@ -1466,7 +1475,7 @@ Case Compufácil e AWS [Slides](https://www.slideshare.net/eminetto/o-case-da-co
 
 **Onde**: Concórdia/SC
 
-[6 questões que levam à inovação](http://www.slideshare.net/eminetto/6-questes-que-levam-inovao)
+[6 questões que levam à inovação](https://eltonminetto/dev/files/talks/6perguntasinovacao-161128152502.pdf)
 
 ---
 
@@ -1476,7 +1485,7 @@ Case Compufácil e AWS [Slides](https://www.slideshare.net/eminetto/o-case-da-co
 
 **Onde**: Florianópolis/SC
 
-[Desenvolvendo APIs em Go usando Middlewares](http://www.slideshare.net/eminetto/desenvolvendo-apis-em-go-usando-middlewares)
+[Desenvolvendo APIs em Go usando Middlewares](https://eltonminetto/dev/files/talks/middlewaresgo-161106214633.pdf)
 
 ---
 
@@ -1486,7 +1495,7 @@ Case Compufácil e AWS [Slides](https://www.slideshare.net/eminetto/o-case-da-co
 
 **Onde**: Indaial/SC
 
-[Do monolito ao micro serviço](http://www.slideshare.net/eminetto/do-monolito-ao-micro-servio)
+[Do monolito ao micro serviço](https://eltonminetto/dev/files/talks/domonolitoaomicroservico-160714120952.pdf)
 
 ---
 
@@ -1496,7 +1505,7 @@ Case Compufácil e AWS [Slides](https://www.slideshare.net/eminetto/o-case-da-co
 
 **Onde**: Araquari/SC
 
-[Do monolito ao micro serviço](http://www.slideshare.net/eminetto/do-monolito-ao-micro-servio)
+[Do monolito ao micro serviço](https://eltonminetto/dev/files/talks/domonolitoaomicroservico-160714120952.pdf)
 
 ---
 
@@ -1506,7 +1515,7 @@ Case Compufácil e AWS [Slides](https://www.slideshare.net/eminetto/o-case-da-co
 
 **Onde**: Umuarama/PR
 
-[De Padawan A Jedi](http://www.slideshare.net/eminetto/de-padawan-a-jedi-verso-2016)
+[De Padawan A Jedi](https://eltonminetto/dev/files/talks/depadawanajedi-161223195045.pdf)
 
 ---
 
@@ -1516,7 +1525,7 @@ Case Compufácil e AWS [Slides](https://www.slideshare.net/eminetto/o-case-da-co
 
 **Onde**: Joinville/SC
 
-[Do monolito ao micro serviço](http://www.slideshare.net/eminetto/do-monolito-ao-micro-servio)
+[Do monolito ao micro serviço](https://eltonminetto/dev/files/talks/domonolitoaomicroservico-160714120952.pdf)
 
 ---
 
@@ -1526,7 +1535,7 @@ Case Compufácil e AWS [Slides](https://www.slideshare.net/eminetto/o-case-da-co
 
 **Onde**: Joinville/SC
 
-[Let's Log](http://www.slideshare.net/eminetto/lets-log)
+[Let's Log](https://eltonminetto/dev/files/talks/letslog-160521130255.pdf)
 
 ---
 
@@ -1550,7 +1559,7 @@ Case Compufácil e AWS [Slides](https://www.slideshare.net/eminetto/o-case-da-co
 
 **Onde**: Osasco/SP
 
-[PSR-7, middlewares e o futuro dos frameworks](http://www.slideshare.net/eminetto/psr7-middlewares-e-o-futuro-dos-frameworks)
+[PSR-7, middlewares e o futuro dos frameworks](https://eltonminetto/dev/files/talks/psr7middlewares-151204105314-lva1-app6891.pdf)
 
 ---
 
@@ -1560,7 +1569,7 @@ Case Compufácil e AWS [Slides](https://www.slideshare.net/eminetto/o-case-da-co
 
 **Onde**: São Bento do Sul/SC
 
-[6 questões que levam a inovação](http://www.slideshare.net/eminetto/6-questes-que-levam-a-inovao)
+[6 questões que levam a inovação](https://eltonminetto/dev/files/talks/6questoesquelevamainovacao-151015184845-lva1-app6892.pdf)
 
 ---
 
@@ -1570,7 +1579,7 @@ Case Compufácil e AWS [Slides](https://www.slideshare.net/eminetto/o-case-da-co
 
 **Onde**: Joinville/SC
 
-[Escopo aberto x escopo fechado](http://www.slideshare.net/eminetto/escopo-aberto-x-escopo-fechado)
+[Escopo aberto x escopo fechado](https://eltonminetto/dev/files/talks/escopoabertoxescopofechado-160714115620.pdf)
 
 ---
 
@@ -1600,7 +1609,7 @@ PHPTalks - Apresentado "Talk show" entrevistando desenvolvedores PHP
 
 **Onde**: Joinville/SC
 
-[Os 12 fatores: uma metodologia para criação de projetos SaaS](http://www.slideshare.net/eminetto/12fatores)
+[Os 12 fatores: uma metodologia para criação de projetos SaaS](https://eltonminetto/dev/files/talks/12fatores-150529143625-lva1-app6891.pdf)
 
 ---
 
@@ -1612,7 +1621,7 @@ PHPTalks - Apresentado "Talk show" entrevistando desenvolvedores PHP
 
 **Onde**: Osasco
 
-[De Padawan a Jedi](http://www.slideshare.net/eminetto/de-padawana-jedi)
+[De Padawan a Jedi](https://eltonminetto/dev/files/talks/depadawanajedi-141209162943-conversion-gate01.pdf)
 
 ---
 
@@ -1642,7 +1651,7 @@ PHPTalks - Apresentado "Talk show" entrevistando desenvolvedores PHP
 
 **Onde**: Online
 
-[De Padawan a Jedi](http://www.slideshare.net/eminetto/de-padawana-jedi)
+[De Padawan a Jedi](https://eltonminetto/dev/files/talks/depadawanajedi-161223195045.pdf)
 
 ---
 
@@ -1652,7 +1661,7 @@ PHPTalks - Apresentado "Talk show" entrevistando desenvolvedores PHP
 
 **Onde**: Marilia/SP
 
-[Desenvolvimento Mobile](http://www.slideshare.net/eminetto/desenvolvimento-mobile-39094706)
+[Desenvolvimento Mobile](https://eltonminetto/dev/files/talks/desenvolvimentomobile2014-140915065344-phpapp01.pdf)
 
 ---
 
@@ -1672,7 +1681,7 @@ PHPTalks - Apresentado "Talk show" entrevistando desenvolvedores PHP
 
 **Onde**: Camboriú/SC
 
-[De Padawan a Jedi](http://www.slideshare.net/eminetto/de-padawana-jedi)
+[De Padawan a Jedi](https://eltonminetto/dev/files/talks/depadawanajedi-161223195045.pdf)
 
 ---
 
@@ -1682,7 +1691,7 @@ PHPTalks - Apresentado "Talk show" entrevistando desenvolvedores PHP
 
 **Onde**: Joinville/SC
 
-[Desenvolvimento de aplicativos para FirefoxOS](http://pt.slideshare.net/eminetto/firefox-os-30383274)
+[Desenvolvimento de aplicativos para FirefoxOS](https://eltonminetto/dev/files/talks/firefoxos-140124052657-phpapp02.pdf)
 
 ---
 
@@ -1694,7 +1703,7 @@ PHPTalks - Apresentado "Talk show" entrevistando desenvolvedores PHP
 
 **Onde**: São Paulo/SP
 
-[DevOps e PHP](http://www.slideshare.net/eminetto/devops-e-php)
+[DevOps e PHP](https://eltonminetto/dev/files/talks/devopsephp-131202053144-phpapp01.pdf)
 
 ---
 
@@ -1734,7 +1743,7 @@ PHPTalks - Apresentado "Talk show" entrevistando desenvolvedores PHP
 
 **Onde**: Maringá/PR
 
-[PHP like a Super Hero](http://www.slideshare.net/eminetto/php-like-a-super-hero-v3)
+[PHP like a Super Hero](https://eltonminetto/dev/files/talks/phpsuperherov3-130603093819-phpapp01.pdf)
 
 ---
 
@@ -1744,7 +1753,7 @@ PHPTalks - Apresentado "Talk show" entrevistando desenvolvedores PHP
 
 **Onde**: Salvador/BA
 
-[Criando aplicações RESTful com Zend Framework 2](http://www.slideshare.net/eminetto/rest-zf2-zendwebminar)
+[Criando aplicações RESTful com Zend Framework 2](https://eltonminetto/dev/files/talks/restzf2zendwebminar-130902211920-phpapp01.pdf)
 
 ---
 
@@ -1754,7 +1763,7 @@ PHPTalks - Apresentado "Talk show" entrevistando desenvolvedores PHP
 
 **Onde**: São Paulo/SP
 
-[Criando aplicações RESTful com Zend Framework 2](http://www.slideshare.net/eminetto/rest-zf2-zendwebminar)
+[Criando aplicações RESTful com Zend Framework 2](https://eltonminetto/dev/files/talks/restzf2zendwebminar-130902211920-phpapp01.pdf)
 
 ---
 
@@ -1764,7 +1773,7 @@ PHPTalks - Apresentado "Talk show" entrevistando desenvolvedores PHP
 
 **Onde**: Porto Alegre/RS
 
-[PHP like a Super Hero](http://www.slideshare.net/eminetto/php-like-a-super-hero-v3)
+[PHP like a Super Hero](https://eltonminetto/dev/files/talks/phpsuperherov3-130603093819-phpapp01.pdf)
 
 ---
 
@@ -1774,7 +1783,7 @@ PHPTalks - Apresentado "Talk show" entrevistando desenvolvedores PHP
 
 **Onde**: Online
 
-[Criando aplicações RESTful com Zend Framework 2](http://www.slideshare.net/eminetto/rest-zf2-zendwebminar)
+[Criando aplicações RESTful com Zend Framework 2](https://eltonminetto/dev/files/talks/restzf2zendwebminar-130902211920-phpapp01.pdf)
 
 ---
 
@@ -1784,7 +1793,7 @@ PHPTalks - Apresentado "Talk show" entrevistando desenvolvedores PHP
 
 **Onde**: Porto Alegre/RS
 
-[Criando aplicações RESTful com Zend Framework 2](http://www.slideshare.net/eminetto/rest-zf2-zendwebminar)
+[Criando aplicações RESTful com Zend Framework 2](https://eltonminetto/dev/files/talks/restzf2zendwebminar-130902211920-phpapp01.pdf)
 
 ---
 
@@ -1794,7 +1803,7 @@ PHPTalks - Apresentado "Talk show" entrevistando desenvolvedores PHP
 
 **Onde**: Blumenau/SC
 
-[PHP like a super hero](http://www.slideshare.net/eminetto/php-like-a-super-hero-v3)
+[PHP like a super hero](https://eltonminetto/dev/files/talks/phpsuperherov3-130603093819-phpapp01.pdf)
 
 ---
 
@@ -1804,7 +1813,7 @@ PHPTalks - Apresentado "Talk show" entrevistando desenvolvedores PHP
 
 **Onde**: Concórdia/SC
 
-[Inovação Tecnológica e Startups](http://www.slideshare.net/eminetto/inovacao-startups)
+[Inovação Tecnológica e Startups](https://eltonminetto/dev/files/talks/inovacaostartups-130603084121-phpapp02.pdf)
 
 ---
 
@@ -1967,7 +1976,7 @@ PHPSC Conference
 
 **Onde**: São Paulo/SP
 
-[Ao infinito e além com PHP, Memcached e Gearman](http://www.slideshare.net/eminetto/ao-infinito-e-alm-com-php-memcached-e-gearman)
+[Ao infinito e além com PHP, Memcached e Gearman](https://eltonminetto/dev/files/talks/phpconf2010-101129062657-phpapp02.pdf)
 
 ---
 
@@ -1977,7 +1986,7 @@ PHPSC Conference
 
 **Onde**: Foz do Iguaçu/PR
 
-[Ao infinito e além com PHP, Memcached e Gearman](http://www.slideshare.net/eminetto/ao-infinito-e-alm-com-php-memcached-e-gearman)
+[Ao infinito e além com PHP, Memcached e Gearman](https://eltonminetto/dev/files/talks/phpconf2010-101129062657-phpapp02.pdf)
 
 ---
 
@@ -1987,7 +1996,7 @@ PHPSC Conference
 
 **Onde**: Chapecó/SC
 
-Construindo uma rede social com PHP e Software Livre](http://www.slideshare.net/eminetto/drimiouniparpdf)
+Construindo uma rede social com PHP e Software Livre](https://eltonminetto/dev/files/talks/drimiouniparpdf2539.pdf)
 
 ---
 
@@ -1997,7 +2006,7 @@ Construindo uma rede social com PHP e Software Livre](http://www.slideshare.net/
 
 **Onde**: Florianópolis/SC
 
-[Entre na fila. Processamento distribuído usando Gearman](http://www.slideshare.net/eminetto/entre-na-fila-processamento-distribudo-usando-gearman-5544783)
+[Entre na fila. Processamento distribuído usando Gearman](https://eltonminetto/dev/files/talks/solisc2010-101024121328-phpapp02.pdf)
 
 ---
 
@@ -2007,7 +2016,7 @@ Construindo uma rede social com PHP e Software Livre](http://www.slideshare.net/
 
 **Onde**: Cianorte/PR
 
-[Frameworks de Desenvolvimento Web com PHP](http://www.slideshare.net/eminetto/frameworksuniparpdf)
+[Frameworks de Desenvolvimento Web com PHP](https://eltonminetto/dev/files/talks/frameworksuniparpdf2720.pdf)
 
 ---
 
@@ -2017,7 +2026,7 @@ Construindo uma rede social com PHP e Software Livre](http://www.slideshare.net/
 
 **Onde**: Cianorte/PR
 
-[Construindo uma Rede Social com PHP e Software Livre](http://www.slideshare.net/eminetto/drimiouniparpdf)
+[Construindo uma Rede Social com PHP e Software Livre](https://eltonminetto/dev/files/talks/drimiouniparpdf2539.pdf)
 
 ---
 
@@ -2069,7 +2078,7 @@ Construindo uma rede social com PHP e Software Livre](http://www.slideshare.net/
 
 **Onde**: Joinville/SC
 
-[Desenvolvendo aplicações web escaláveis](http://www.slideshare.net/eminetto/desenvolvendo-aplicaes-web-escalveis-com-php)
+[Desenvolvendo aplicações web escaláveis](https://eltonminetto/dev/files/talks/appwebescalaveisudesc-090923091351-phpapp01.pdf)
 
 ---
 
@@ -2079,7 +2088,7 @@ Construindo uma rede social com PHP e Software Livre](http://www.slideshare.net/
 
 **Onde**: Joinville/SC
 
-[Desenvolvendo aplicações web escaláveis](http://www.slideshare.net/eminetto/app-web-escalaveis-fisl)
+[Desenvolvendo aplicações web escaláveis](https://eltonminetto/dev/files/talks/appwebescalaveisfisl-090627132805-phpapp02.pdf)
 
 ---
 
@@ -2089,7 +2098,7 @@ Construindo uma rede social com PHP e Software Livre](http://www.slideshare.net/
 
 **Onde**: Joinville/SC
 
-[Melhorando a performance de aplicações com o uso do MemCache](http://www.slideshare.net/eminetto/melhorando-a-performance-de-aplicaes-com-o-uso-do-memcache)
+[Melhorando a performance de aplicações com o uso do MemCache](https://eltonminetto/dev/files/talks/memcache-090610153348-phpapp01.pdf)
 
 ---
 

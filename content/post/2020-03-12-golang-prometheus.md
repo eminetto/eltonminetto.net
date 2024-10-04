@@ -277,7 +277,7 @@ if err != nil {
 
 # Coletando métricas da API
 
-Agora vamos coletar as métricas da nossa API. Como queremos coletar métricas de todos os `endpoints`, podemos fazer uso do conceito de [middlewares](https://www.slideshare.net/eminetto/desenvolvendo-apis-em-go-usando-middlewares). Para isso vamos criar o arquivo `pkg/middleware/metrics.go`:
+Agora vamos coletar as métricas da nossa API. Como queremos coletar métricas de todos os `endpoints`, podemos fazer uso do conceito de [middlewares](https://eltonminetto/dev/files/talks/middlewaresgo-161106214633.pdf). Para isso vamos criar o arquivo `pkg/middleware/metrics.go`:
 
 ```go
 package middleware

@@ -12,4 +12,4 @@ wordpress_id: 434
 ---
 
 Coloquei no Slideshare o material da apresentação quer fiz no FISL 2010
-[Entre na fila. Processamento distribuído usando Gearman](http://www.slideshare.net/eminetto/entre-na-fila-processamento-distribudo-usando-gearman)
+[Entre na fila. Processamento distribuído usando Gearman](https://eltonminetto/dev/files/talks/solisc2010-101024121328-phpapp02.pdf)

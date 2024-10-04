@@ -10,7 +10,7 @@ Passamos horas e horas desenvolvendo aplicações nas nossas máquinas, cada vez
 
 Neste post quero apresentar uma ferramenta muito poderosa, que pode fazê-lo economizar bastante tempo no seu processo de desenvolvimento. Trata-se do [Tilt](https://tilt.dev), que recentemente foi [adquirida](https://www.docker.com/blog/welcome-tilt-fixing-the-pains-of-microservice-development-for-kubernetes/) pela Docker.
 
-Para demonstrar um pouco do que é possível fazer com o Tilt eu vou usar este meu [repositório](https://github.com/eminetto/talk-microservices-go) que usei em uma [palestra](https://www.slideshare.net/eminetto/go-e-microservios-nascidos-um-para-o-outro) sobre microsserviços. Os exemplos vão ser feitos em Go, mas na documentação oficial é possível visualizar como usá-lo com [outras tecnologias](https://docs.tilt.dev/example_static_html.html) e cenários.
+Para demonstrar um pouco do que é possível fazer com o Tilt eu vou usar este meu [repositório](https://github.com/eminetto/talk-microservices-go) que usei em uma [palestra](https://eltonminetto/dev/files/talks/presentation-190914144745.pdf) sobre microsserviços. Os exemplos vão ser feitos em Go, mas na documentação oficial é possível visualizar como usá-lo com [outras tecnologias](https://docs.tilt.dev/example_static_html.html) e cenários.
 
 ## Instalação
 

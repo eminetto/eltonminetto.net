@@ -15,4 +15,4 @@ Pude ficar pouco tempo no evento, mas consegui encontrar alguns amigos de longa 
 
 A minha palestra foi bem legal, com a galera fazendo perguntas interessantes e discutindo algumas idéias.
 
-Os slides da apresentação estão no meu [Slideshare](http://www.slideshare.net/eminetto/entre-na-fila-processamento-distribudo-usando-gearman-5544783)
+Os slides da apresentação estão no meu [Slideshare](https://eltonminetto/dev/files/talks/solisc2010-101024121328-phpapp02.pdf)
