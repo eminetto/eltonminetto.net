@@ -12,6 +12,15 @@ url = "/talks"
 
 # 2024
 
+###  Mentoria coletiva sobre carreira e Go
+
+**Quando**: 08/10/2024
+
+**Onde**: Meet da comunidade Manual do App
+
+--- 
+
+
 ###  Observabilidade como o pilar de grandes arquiteturas
 
 **Quando**: 03/10/2024
