@@ -12,6 +12,26 @@ url = "/talks"
 
 # 2024
 
+###  Entrevista com Alex Rios
+
+**Quando**: 28/10/2024
+
+**Onde**: Canal da Gophercon Latam
+
+[Video](https://www.youtube.com/watch?v=z-1UPVncwhA)
+
+--- 
+
+
+###  Mediação de painel sobre Developer Experience
+
+**Quando**: 25/10/2024
+
+**Onde**: Evento interno do PicPay
+
+--- 
+
+
 ###  Mentoria coletiva sobre carreira e Go
 
 **Quando**: 08/10/2024
