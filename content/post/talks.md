@@ -12,6 +12,17 @@ url = "/talks"
 
 # 2024
 
+###  A arte e a ciência de tomar decisões técnicas
+
+**Quando**: 09/11/2024
+
+**Onde**: Codecon Select Experience
+
+[Slides](https://docs.google.com/presentation/d/1yodfjXSfqexQ9yn3Ke-JMxilzGjv7k3wMrlECBS6hb0/edit?usp=sharing)
+
+--- 
+
+
 ###  Entrevista com Alex Rios
 
 **Quando**: 28/10/2024
