@@ -30,7 +30,7 @@ export PATH=$PATH:bin/k8s/1.28.0-darwin-arm64/
 
 O primeiro comando vai instalar o binário do `setup-envtest`, o segundo faz o download dos executáveis para o diretório do nosso projeto, e o terceiro comando adiciona os novos arquivos no _PATH_ do sistema operacional.
 
-O próximo passo é escrevermos o teste. Para isso o recomendado é criarmos um arquivo **\*kind**\_controller_test.go* dentro do diretório *controllers*. No nosso caso, o *application_controller_test.go\*. A estrutura básica do arquivo é mostrada abaixo. Nos próximos tópicos vamos criar cada um dos testes.
+O próximo passo é escrevermos o teste. Para isso o recomendado é criarmos um arquivo *kind_controller_test.go* dentro do diretório *controllers*. No nosso caso, o *application_controller_test.go*. A estrutura básica do arquivo é mostrada abaixo. Nos próximos tópicos vamos criar cada um dos testes.
 
 ```go
 package controllers

@@ -30,7 +30,7 @@ export PATH=$PATH:bin/k8s/1.28.0-darwin-arm64/
 
 The first command will install the binary setup-envtest, the second downloads the executables to our project directory, and the third adds the new files to the operating system's PATH.
 
-The next step is to write the test. The operator-sdk documentation recommends creating a **kind**\_controller_test.go file within the "controllers" directory. In our case, application_controller_test.go. Below, you can see the file's basic structure. In the following topics, we will create each of the tests.
+The next step is to write the test. The operator-sdk documentation recommends creating a *kind_controller_test.go* file within the "controllers" directory. In our case, *application_controller_test.go*. Below, you can see the file's basic structure. In the following topics, we will create each of the tests.
 
 ```go
 package controllers
