@@ -14,6 +14,17 @@ url = "/talks"
 
 ###  A arte e a ciência de tomar decisões técnicas
 
+**Quando**: 20/11/2024
+
+**Onde**: Meetup Codecon
+
+[Slides](https://docs.google.com/presentation/d/1yodfjXSfqexQ9yn3Ke-JMxilzGjv7k3wMrlECBS6hb0/edit?usp=sharing)
+
+--- 
+
+
+###  A arte e a ciência de tomar decisões técnicas
+
 **Quando**: 09/11/2024
 
 **Onde**: Codecon Select Experience
