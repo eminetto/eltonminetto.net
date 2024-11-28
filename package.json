@@ -13,7 +13,11 @@
     "type": "git",
     "url": "git+https://github.com/nixentric/Lowkey-Hugo-Theme.git"
   },
-  "keywords": ["hugo", "hugo-themes", "clean-themes"],
+  "keywords": [
+    "hugo",
+    "hugo-themes",
+    "clean-themes"
+  ],
   "bugs": {
     "url": "https://github.com/nixentric/Lowkey-Hugo-Theme/issues"
   },
