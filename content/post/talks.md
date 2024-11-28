@@ -12,6 +12,25 @@ url = "/talks"
 
 # 2024
 
+###  Observabilidade como o pilar de grandes arquiteturas
+
+**Quando**: 06/12/2024
+
+**Onde**: KCD Floripa 2024
+
+---
+
+###  A arte e a ciência de tomar decisões técnicas
+
+**Quando**: 25/11/2024
+
+**Onde**: Evento interno do PicPay
+
+[Slides](https://docs.google.com/presentation/d/1yodfjXSfqexQ9yn3Ke-JMxilzGjv7k3wMrlECBS6hb0/edit?usp=sharing)
+
+---
+
+
 ###  A arte e a ciência de tomar decisões técnicas
 
 **Quando**: 20/11/2024
@@ -20,7 +39,7 @@ url = "/talks"
 
 [Slides](https://docs.google.com/presentation/d/1yodfjXSfqexQ9yn3Ke-JMxilzGjv7k3wMrlECBS6hb0/edit?usp=sharing)
 
---- 
+---
 
 
 ###  A arte e a ciência de tomar decisões técnicas
@@ -31,7 +50,7 @@ url = "/talks"
 
 [Slides](https://docs.google.com/presentation/d/1yodfjXSfqexQ9yn3Ke-JMxilzGjv7k3wMrlECBS6hb0/edit?usp=sharing)
 
---- 
+---
 
 
 ###  Entrevista com Alex Rios
@@ -42,7 +61,7 @@ url = "/talks"
 
 [Video](https://www.youtube.com/watch?v=z-1UPVncwhA)
 
---- 
+---
 
 
 ###  Mediação de painel sobre Developer Experience
@@ -51,7 +70,7 @@ url = "/talks"
 
 **Onde**: Evento interno do PicPay
 
---- 
+---
 
 
 ###  Mentoria coletiva sobre carreira e Go
@@ -60,7 +79,7 @@ url = "/talks"
 
 **Onde**: Meet da comunidade Manual do App
 
---- 
+---
 
 
 ###  Observabilidade como o pilar de grandes arquiteturas
@@ -71,7 +90,7 @@ url = "/talks"
 
 [Slides](https://docs.google.com/presentation/d/1XEizX-K0AT1A-qXRAwZilRPEYDGm91U6cK695RVjUHw/edit?usp=sharing)
 
---- 
+---
 
 ###  Painel - Skip level: de junior para pleno e de pleno para sênior
 
@@ -141,16 +160,6 @@ url = "/talks"
 
 ---
 
-
-###  Arquiteturas Modulares em Go e Node.js
-
-**Quando**: 17/07/2024
-
-**Onde**: Canal do Dev Lab no YouTube
-
-[Video](https://www.youtube.com/live/_lVf836ZJ4o)
-
----
 
 ###  Escreva monolitos, publique microsserviços usando Go e o Service Weaver
 
