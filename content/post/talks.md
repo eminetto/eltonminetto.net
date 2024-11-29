@@ -20,6 +20,17 @@ url = "/talks"
 
 ---
 
+###  DVC 15 - Rest vs GraphQL vs gRPC com Elton Minetto
+
+**Quando**: 29/11/2024
+
+**Onde**: Canal do YouTube Dev Lab
+
+[Video](https://www.youtube.com/watch?v=47KxEv2F8TY)
+
+---
+
+
 ###  A arte e a ciência de tomar decisões técnicas
 
 **Quando**: 25/11/2024
