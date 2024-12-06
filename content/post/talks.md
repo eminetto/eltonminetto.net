@@ -18,6 +18,9 @@ url = "/talks"
 
 **Onde**: KCD Floripa 2024
 
+[Slides](https://docs.google.com/presentation/d/1XEizX-K0AT1A-qXRAwZilRPEYDGm91U6cK695RVjUHw/edit?usp=sharing)
+
+
 ---
 
 ###  DVC 15 - Rest vs GraphQL vs gRPC com Elton Minetto
