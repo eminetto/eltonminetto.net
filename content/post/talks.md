@@ -12,6 +12,17 @@ url = "/talks"
 
 # 2024
 
+###  ENGINEERING MANAGER vs STAFF+ ENGINEER
+
+**Quando**: 15/12/2024
+
+**Onde**: Podcast Tech Leadership Rocks
+
+[Video](https://www.youtube.com/watch?v=yfRTetI6Dv4)
+
+
+---
+
 ###  Observabilidade como o pilar de grandes arquiteturas
 
 **Quando**: 06/12/2024
