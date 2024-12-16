@@ -12,6 +12,16 @@ url = "/talks"
 
 # 2024
 
+###  Tem que acabar
+
+**Quando**: 16/12/2024
+
+**Onde**: Podcast escovando bits
+
+[Audio](https://open.spotify.com/episode/5ZllRpxmllmvAE1UbvZIv4?si=VJf84g3FRheHLImpAat8vw&nd=1&dlsi=9b855e6a9b2c4255)
+
+---
+
 ###  ENGINEERING MANAGER vs STAFF+ ENGINEER
 
 **Quando**: 15/12/2024
@@ -19,7 +29,6 @@ url = "/talks"
 **Onde**: Podcast Tech Leadership Rocks
 
 [Video](https://www.youtube.com/watch?v=yfRTetI6Dv4)
-
 
 ---
 
