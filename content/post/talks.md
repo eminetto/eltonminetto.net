@@ -10,6 +10,24 @@ url = "/talks"
 
 +++
 
+# 2025
+
+###  Introdução ao framework Encore.dev
+
+**Quando**: 20/01/2024
+
+**Onde**: Evento interno do PicPay
+
+---
+
+###  Decisões técnicas
+
+**Quando**: 16/01/2024
+
+**Onde**: Evento interno da Comunidade Tech Leaders Club
+
+---
+
 # 2024
 
 ###  Tem que acabar
