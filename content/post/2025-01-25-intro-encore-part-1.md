@@ -6,7 +6,7 @@ draft: false
 
 O [Encore.go](https://encore.dev/go) já está no meu “radar” tem um bom tempo, quando seu belo site e exemplos chamaram minha atenção em uma notícia no Hacker News. Mas minha empolgação realmente aumentou após [este post](https://encore.dev/blog/open-source-decoupled) publicado em Dezembro de 2024. Nele é anunciado que o framework, inicialmente vinculado à ferramenta [Encore Cloud](https://encore.cloud), iria se tornar um projeto independente. Eu acredito que essa decisão vai tornar o framework mais atrativo para empresas e desenvolvedores que queiram usá-lo em seus ambientes já existentes. Nada contra o Encore Cloud, que parece ser uma solução muito interessante e robusta, mas esta liberdade de escolha favorece a adoção em empresas de diferentes tamanhos.
 
-Dado este contexto inicial, eu resolvi portar um projeto que uso para escrever textos e palestras sobre microsserviços para o Encore.go e o resultado é uma séria de posts, sendo este o primeiro. A ideia inicial é dividir a série da seguinte forma:
+Dado este contexto inicial, eu resolvi portar um projeto que uso para escrever textos e palestras sobre microsserviços para o Encore.go e o resultado é uma série de posts, sendo este o primeiro. A ideia inicial é dividir a série da seguinte forma:
 
 1. Criando uma API com banco de dados (<--- você está aqui)
 2. Comunicação entre serviços e autenticação
