@@ -58,6 +58,7 @@ url = "/talks"
 
 [Slides](https://docs.google.com/presentation/d/1XEizX-K0AT1A-qXRAwZilRPEYDGm91U6cK695RVjUHw/edit?usp=sharing)
 
+[Video](https://www.youtube.com/watch?v=AyDTZnlQk24)
 
 ---
 
