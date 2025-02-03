@@ -12,6 +12,17 @@ url = "/talks"
 
 # 2025
 
+###  WTF is Soft Skills
+
+**Quando**: 30/01/2024
+
+**Onde**: Podcast Escovando Bits
+
+[Audio](https://open.spotify.com/episode/726t9Yjklvd8T3FTuOt8ry?go=1&sp_cid=7e1ba681deaf4947a1ec511f9d2fd59a&utm_source=embed_player_p&utm_medium=desktop)
+
+---
+
+
 ###  Introdução ao framework Encore.dev
 
 **Quando**: 20/01/2024
