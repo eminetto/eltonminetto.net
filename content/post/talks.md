@@ -12,6 +12,17 @@ url = "/talks"
 
 # 2025
 
+###  A evolução de júnior para pleno e de pleno para sênior
+
+**Quando**: 13/02/2024
+
+**Onde**: Podcast Escovando Bits
+
+[Audio](https://open.spotify.com/episode/54RxVEBWsy07u0KV8u9Qmr?go=1&sp_cid=a967092823aeaa2769859d9ec23cbdba&utm_source=embed_player_p&utm_medium=desktop&nd=1&dlsi=dab3e3afaf924839)
+
+---
+
+
 ###  WTF is Soft Skills
 
 **Quando**: 30/01/2024
