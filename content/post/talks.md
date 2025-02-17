@@ -1190,7 +1190,7 @@ url = "/talks"
 
 **Onde**: Florianópolis/SC
 
-[Object Calisthenics em Go](https://eltonminetto/dev/files/talks/codecalisthenics.pdf)
+[Object Calisthenics em Go](https://eltonminetto.dev/files/talks/codecalisthenics.pdf)
 
 ---
 
@@ -1200,7 +1200,7 @@ url = "/talks"
 
 **Onde**: Joinville/SC
 
-[Programar != desenvolver software](https://eltonminetto/dev/files/talks/presentation-190627130649.pdf)
+[Programar != desenvolver software](https://eltonminetto.dev/files/talks/presentation-190627130649.pdf)
 
 ---
 
@@ -1240,7 +1240,7 @@ Microserviços
 
 **Onde**: São Paulo/SP
 
-[Full Stack vs Full Cycle Developer](https://eltonminetto/dev/files/talks/presentation-190406122605.pdf)
+[Full Stack vs Full Cycle Developer](https://eltonminetto.dev/files/talks/presentation-190406122605.pdf)
 
 ---
 
@@ -1262,9 +1262,9 @@ Microserviços
 
 **Onde**: Porto Alegre/RS
 
-[Clean architecture](https://eltonminetto/dev/files/talks/presentation-181008120945.pdf)
+[Clean architecture](https://eltonminetto.dev/files/talks/presentation-181008120945.pdf)
 
-[Programar != desenvolver software](https://eltonminetto/dev/files/talks/presentation-180625112700.pdf)
+[Programar != desenvolver software](https://eltonminetto.dev/files/talks/presentation-180625112700.pdf)
 
 ---
 
@@ -1274,7 +1274,7 @@ Microserviços
 
 **Onde**: Florianópolis/SC
 
-[Gerenciando uma startup no Github Projects](https://eltonminetto/dev/files/talks/presentation-181210172530.pdfs)
+[Gerenciando uma startup no Github Projects](https://eltonminetto.dev/files/talks/presentation-181210172530.pdfs)
 
 ---
 
@@ -1284,7 +1284,7 @@ Microserviços
 
 **Onde**: São Paulo/SP
 
-[Clean Architecture](https://eltonminetto/dev/files/talks/presentation-181008120945.pdf)
+[Clean Architecture](https://eltonminetto.dev/files/talks/presentation-181008120945.pdf)
 
 ---
 
@@ -1294,7 +1294,7 @@ Microserviços
 
 **Onde**: Florianópolis/SC
 
-[Serverless em Go](https://eltonminetto/dev/files/talks/serverlessgo-181001130536.pdf)
+[Serverless em Go](https://eltonminetto.dev/files/talks/serverlessgo-181001130536.pdf)
 
 ---
 
@@ -1314,7 +1314,7 @@ Painel: As startups precisam morrer!
 
 **Onde**: São Paulo/SP
 
-[Clean architecture em Golang](https://eltonminetto/dev/files/talks/cleanarchitecturego-180723114140.pdf)
+[Clean architecture em Golang](https://eltonminetto.dev/files/talks/cleanarchitecturego-180723114140.pdf)
 
 ---
 
@@ -1344,7 +1344,7 @@ PHP: Tendências da linguagem para os próximos anos
 
 **Onde**: Joinville/SC
 
-[Programar != desenvolver software](https://eltonminetto/dev/files/talks/presentation-180625112700.pdf)
+[Programar != desenvolver software](https://eltonminetto.dev/files/talks/presentation-180625112700.pdf)
 
 ---
 
@@ -1354,7 +1354,7 @@ PHP: Tendências da linguagem para os próximos anos
 
 **Onde**: Florianópolis/SC
 
-[Clean architecture em PHP](https://eltonminetto/dev/files/talks/clean-architecture-php-180609141908.pdf)
+[Clean architecture em PHP](https://eltonminetto.dev/files/talks/clean-architecture-php-180609141908.pdf)
 
 ---
 
@@ -1364,7 +1364,7 @@ PHP: Tendências da linguagem para os próximos anos
 
 **Onde**: Florianópolis/SC
 
-[Clean architecture em Golang](https://eltonminetto/dev/files/talks/cleanarchitecturego-180421171403.pdf)
+[Clean architecture em Golang](https://eltonminetto.dev/files/talks/cleanarchitecturego-180421171403.pdf)
 
 ---
 
@@ -1374,7 +1374,7 @@ PHP: Tendências da linguagem para os próximos anos
 
 **Onde**: Florianópolis/SC
 
-[Clean architecture em Golang](https://eltonminetto/dev/files/talks/cleanarchitecturego-180421171403.pdf)
+[Clean architecture em Golang](https://eltonminetto.dev/files/talks/cleanarchitecturego-180421171403.pdf)
 
 ---
 
@@ -1384,7 +1384,7 @@ PHP: Tendências da linguagem para os próximos anos
 
 **Onde**: Joinville/SC
 
-[A Jornada do desenvolvedor](https://eltonminetto/dev/files/talks/devjourney-180327115955.pdf)
+[A Jornada do desenvolvedor](https://eltonminetto.dev/files/talks/devjourney-180327115955.pdf)
 
 ---
 
@@ -1394,7 +1394,7 @@ PHP: Tendências da linguagem para os próximos anos
 
 **Onde**: Blumenau/SC
 
-[Product and Technology: how to build a killer roadmap!](https://eltonminetto/dev/files/talks/palestrapvtalks14-180320163353.pdf)
+[Product and Technology: how to build a killer roadmap!](https://eltonminetto.dev/files/talks/palestrapvtalks14-180320163353.pdf)
 
 ---
 
@@ -1404,7 +1404,7 @@ PHP: Tendências da linguagem para os próximos anos
 
 **Onde**: Florianópolis/SC
 
-[Code:Nation Tech Stack](https://eltonminetto/dev/files/talks/codenationtechstack-180307130131.pdf)
+[Code:Nation Tech Stack](https://eltonminetto.dev/files/talks/codenationtechstack-180307130131.pdf)
 
 ---
 
@@ -1416,7 +1416,7 @@ PHP: Tendências da linguagem para os próximos anos
 
 **Onde**: Osasco/SP
 
-[12 factor in the PHP world](https://eltonminetto/dev/files/talks/12factorphp-171211100920.pdf)
+[12 factor in the PHP world](https://eltonminetto.dev/files/talks/12factorphp-171211100920.pdf)
 
 ---
 
@@ -1426,7 +1426,7 @@ PHP: Tendências da linguagem para os próximos anos
 
 **Onde**: Osasco/SP
 
-[Modernizando projetos legados usando APIs](https://eltonminetto/dev/files/talks/modernizandolegadousandoapi-171211101201.pdf)
+[Modernizando projetos legados usando APIs](https://eltonminetto.dev/files/talks/modernizandolegadousandoapi-171211101201.pdf)
 
 ---
 
@@ -1436,7 +1436,7 @@ PHP: Tendências da linguagem para os próximos anos
 
 **Onde**: Joinville/SC
 
-[Building APIs using Go](https://eltonminetto/dev/files/talks/apigo-171111011500.pdf)
+[Building APIs using Go](https://eltonminetto.dev/files/talks/apigo-171111011500.pdf)
 
 ---
 
@@ -1446,7 +1446,7 @@ PHP: Tendências da linguagem para os próximos anos
 
 **Onde**: Florianópolis/SC
 
-[Metodologias ágeis interativas](https://eltonminetto/dev/files/talks/metodologiasinterativas-170201121157.pdf)
+[Metodologias ágeis interativas](https://eltonminetto.dev/files/talks/metodologiasinterativas-170201121157.pdf)
 
 ---
 
@@ -1466,7 +1466,7 @@ PHP: Tendências da linguagem para os próximos anos
 
 **Onde**: Joinville/SC
 
-[Introdução a Go](https://eltonminetto/dev/files/talks/go-170530112412.pdf)
+[Introdução a Go](https://eltonminetto.dev/files/talks/go-170530112412.pdf)
 
 ---
 
@@ -1496,7 +1496,7 @@ Painel: Carreiras
 
 **Onde**: Joinville/SC
 
-Case Compufácil e AWS [Slides](https://eltonminetto/dev/files/talks/awscompufacil-170816204122.pdf) [Video](https://youtu.be/GeySVDO8koA)
+Case Compufácil e AWS [Slides](https://eltonminetto.dev/files/talks/awscompufacil-170816204122.pdf) [Video](https://youtu.be/GeySVDO8koA)
 
 ---
 
@@ -1506,7 +1506,7 @@ Case Compufácil e AWS [Slides](https://eltonminetto/dev/files/talks/awscompufac
 
 **Onde**: Joinville/SC
 
-[Dicas de carreira pra desenvolvedores em startups](https://eltonminetto/dev/files/talks/startyou-170816204518.pdf)
+[Dicas de carreira pra desenvolvedores em startups](https://eltonminetto.dev/files/talks/startyou-170816204518.pdf)
 
 ---
 
@@ -1516,7 +1516,7 @@ Case Compufácil e AWS [Slides](https://eltonminetto/dev/files/talks/awscompufac
 
 **Onde**: São Luis/MA
 
-[Memórias das trincheiras - parte 2](https://eltonminetto/dev/files/talks/phpxp2017minetto-170329124222.pdf)
+[Memórias das trincheiras - parte 2](https://eltonminetto.dev/files/talks/phpxp2017minetto-170329124222.pdf)
 
 ---
 
@@ -1536,7 +1536,7 @@ Case Compufácil e AWS [Slides](https://eltonminetto/dev/files/talks/awscompufac
 
 **Onde**: Joinville/SC
 
-[Introdução a Go](https://eltonminetto/dev/files/talks/go-170530112412.pdf)
+[Introdução a Go](https://eltonminetto.dev/files/talks/go-170530112412.pdf)
 
 ---
 
@@ -1546,7 +1546,7 @@ Case Compufácil e AWS [Slides](https://eltonminetto/dev/files/talks/awscompufac
 
 **Onde**: Criciúma/SC
 
-[Slides: Metodologias ágeis interativas](https://eltonminetto/dev/files/talks/metodologiasinterativas-170201121157.pdf)
+[Slides: Metodologias ágeis interativas](https://eltonminetto.dev/files/talks/metodologiasinterativas-170201121157.pdf)
 
 [Video: Metodologias ágeis interativas](https://www.youtube.com/watch?v=A6XDGqnBZlU&feature=youtu.be)
 
@@ -1558,7 +1558,7 @@ Case Compufácil e AWS [Slides](https://eltonminetto/dev/files/talks/awscompufac
 
 **Onde**: Porto Alegre/RS
 
-[Metodologias ágeis interativas](https://eltonminetto/dev/files/talks/metodologiasinterativas-170201121157.pdf)
+[Metodologias ágeis interativas](https://eltonminetto.dev/files/talks/metodologiasinterativas-170201121157.pdf)
 
 ---
 
@@ -1568,7 +1568,7 @@ Case Compufácil e AWS [Slides](https://eltonminetto/dev/files/talks/awscompufac
 
 **Onde**: Florianópolis/SC
 
-[Como extrair métricas do Trello](https://eltonminetto/dev/files/talks/metricastrello-170505145122.pdf)
+[Como extrair métricas do Trello](https://eltonminetto.dev/files/talks/metricastrello-170505145122.pdf)
 
 ---
 
@@ -1578,7 +1578,7 @@ Case Compufácil e AWS [Slides](https://eltonminetto/dev/files/talks/awscompufac
 
 **Onde**: São Paulo/SP
 
-[Memórias das trincheiras - parte 2](https://eltonminetto/dev/files/talks/phpxp2017minetto-170329124222.pdf)
+[Memórias das trincheiras - parte 2](https://eltonminetto.dev/files/talks/phpxp2017minetto-170329124222.pdf)
 
 ---
 
@@ -1588,7 +1588,7 @@ Case Compufácil e AWS [Slides](https://eltonminetto/dev/files/talks/awscompufac
 
 **Onde**: SP/SP
 
-[Metodologias ágeis interativas](https://eltonminetto/dev/files/talks/metodologiasinterativas-170201121157.pdf)
+[Metodologias ágeis interativas](https://eltonminetto.dev/files/talks/metodologiasinterativas-170201121157.pdf)
 
 ---
 
@@ -1610,7 +1610,7 @@ Case Compufácil e AWS [Slides](https://eltonminetto/dev/files/talks/awscompufac
 
 **Onde**: Concórdia/SC
 
-[6 questões que levam à inovação](https://eltonminetto/dev/files/talks/6perguntasinovacao-161128152502.pdf)
+[6 questões que levam à inovação](https://eltonminetto.dev/files/talks/6perguntasinovacao-161128152502.pdf)
 
 ---
 
@@ -1620,7 +1620,7 @@ Case Compufácil e AWS [Slides](https://eltonminetto/dev/files/talks/awscompufac
 
 **Onde**: Florianópolis/SC
 
-[Desenvolvendo APIs em Go usando Middlewares](https://eltonminetto/dev/files/talks/middlewaresgo-161106214633.pdf)
+[Desenvolvendo APIs em Go usando Middlewares](https://eltonminetto.dev/files/talks/middlewaresgo-161106214633.pdf)
 
 ---
 
@@ -1630,7 +1630,7 @@ Case Compufácil e AWS [Slides](https://eltonminetto/dev/files/talks/awscompufac
 
 **Onde**: Indaial/SC
 
-[Do monolito ao micro serviço](https://eltonminetto/dev/files/talks/domonolitoaomicroservico-160714120952.pdf)
+[Do monolito ao micro serviço](https://eltonminetto.dev/files/talks/domonolitoaomicroservico-160714120952.pdf)
 
 ---
 
@@ -1640,7 +1640,7 @@ Case Compufácil e AWS [Slides](https://eltonminetto/dev/files/talks/awscompufac
 
 **Onde**: Araquari/SC
 
-[Do monolito ao micro serviço](https://eltonminetto/dev/files/talks/domonolitoaomicroservico-160714120952.pdf)
+[Do monolito ao micro serviço](https://eltonminetto.dev/files/talks/domonolitoaomicroservico-160714120952.pdf)
 
 ---
 
@@ -1650,7 +1650,7 @@ Case Compufácil e AWS [Slides](https://eltonminetto/dev/files/talks/awscompufac
 
 **Onde**: Umuarama/PR
 
-[De Padawan A Jedi](https://eltonminetto/dev/files/talks/depadawanajedi-161223195045.pdf)
+[De Padawan A Jedi](https://eltonminetto.dev/files/talks/depadawanajedi-161223195045.pdf)
 
 ---
 
@@ -1660,7 +1660,7 @@ Case Compufácil e AWS [Slides](https://eltonminetto/dev/files/talks/awscompufac
 
 **Onde**: Joinville/SC
 
-[Do monolito ao micro serviço](https://eltonminetto/dev/files/talks/domonolitoaomicroservico-160714120952.pdf)
+[Do monolito ao micro serviço](https://eltonminetto.dev/files/talks/domonolitoaomicroservico-160714120952.pdf)
 
 ---
 
@@ -1670,7 +1670,7 @@ Case Compufácil e AWS [Slides](https://eltonminetto/dev/files/talks/awscompufac
 
 **Onde**: Joinville/SC
 
-[Let's Log](https://eltonminetto/dev/files/talks/letslog-160521130255.pdf)
+[Let's Log](https://eltonminetto.dev/files/talks/letslog-160521130255.pdf)
 
 ---
 
@@ -1694,7 +1694,7 @@ Case Compufácil e AWS [Slides](https://eltonminetto/dev/files/talks/awscompufac
 
 **Onde**: Osasco/SP
 
-[PSR-7, middlewares e o futuro dos frameworks](https://eltonminetto/dev/files/talks/psr7middlewares-151204105314-lva1-app6891.pdf)
+[PSR-7, middlewares e o futuro dos frameworks](https://eltonminetto.dev/files/talks/psr7middlewares-151204105314-lva1-app6891.pdf)
 
 ---
 
@@ -1704,7 +1704,7 @@ Case Compufácil e AWS [Slides](https://eltonminetto/dev/files/talks/awscompufac
 
 **Onde**: São Bento do Sul/SC
 
-[6 questões que levam a inovação](https://eltonminetto/dev/files/talks/6questoesquelevamainovacao-151015184845-lva1-app6892.pdf)
+[6 questões que levam a inovação](https://eltonminetto.dev/files/talks/6questoesquelevamainovacao-151015184845-lva1-app6892.pdf)
 
 ---
 
@@ -1714,7 +1714,7 @@ Case Compufácil e AWS [Slides](https://eltonminetto/dev/files/talks/awscompufac
 
 **Onde**: Joinville/SC
 
-[Escopo aberto x escopo fechado](https://eltonminetto/dev/files/talks/escopoabertoxescopofechado-160714115620.pdf)
+[Escopo aberto x escopo fechado](https://eltonminetto.dev/files/talks/escopoabertoxescopofechado-160714115620.pdf)
 
 ---
 
@@ -1744,7 +1744,7 @@ PHPTalks - Apresentado "Talk show" entrevistando desenvolvedores PHP
 
 **Onde**: Joinville/SC
 
-[Os 12 fatores: uma metodologia para criação de projetos SaaS](https://eltonminetto/dev/files/talks/12fatores-150529143625-lva1-app6891.pdf)
+[Os 12 fatores: uma metodologia para criação de projetos SaaS](https://eltonminetto.dev/files/talks/12fatores-150529143625-lva1-app6891.pdf)
 
 ---
 
@@ -1756,7 +1756,7 @@ PHPTalks - Apresentado "Talk show" entrevistando desenvolvedores PHP
 
 **Onde**: Osasco
 
-[De Padawan a Jedi](https://eltonminetto/dev/files/talks/depadawanajedi-141209162943-conversion-gate01.pdf)
+[De Padawan a Jedi](https://eltonminetto.dev/files/talks/depadawanajedi-141209162943-conversion-gate01.pdf)
 
 ---
 
@@ -1786,7 +1786,7 @@ PHPTalks - Apresentado "Talk show" entrevistando desenvolvedores PHP
 
 **Onde**: Online
 
-[De Padawan a Jedi](https://eltonminetto/dev/files/talks/depadawanajedi-161223195045.pdf)
+[De Padawan a Jedi](https://eltonminetto.dev/files/talks/depadawanajedi-161223195045.pdf)
 
 ---
 
@@ -1796,7 +1796,7 @@ PHPTalks - Apresentado "Talk show" entrevistando desenvolvedores PHP
 
 **Onde**: Marilia/SP
 
-[Desenvolvimento Mobile](https://eltonminetto/dev/files/talks/desenvolvimentomobile2014-140915065344-phpapp01.pdf)
+[Desenvolvimento Mobile](https://eltonminetto.dev/files/talks/desenvolvimentomobile2014-140915065344-phpapp01.pdf)
 
 ---
 
@@ -1816,7 +1816,7 @@ PHPTalks - Apresentado "Talk show" entrevistando desenvolvedores PHP
 
 **Onde**: Camboriú/SC
 
-[De Padawan a Jedi](https://eltonminetto/dev/files/talks/depadawanajedi-161223195045.pdf)
+[De Padawan a Jedi](https://eltonminetto.dev/files/talks/depadawanajedi-161223195045.pdf)
 
 ---
 
@@ -1826,7 +1826,7 @@ PHPTalks - Apresentado "Talk show" entrevistando desenvolvedores PHP
 
 **Onde**: Joinville/SC
 
-[Desenvolvimento de aplicativos para FirefoxOS](https://eltonminetto/dev/files/talks/firefoxos-140124052657-phpapp02.pdf)
+[Desenvolvimento de aplicativos para FirefoxOS](https://eltonminetto.dev/files/talks/firefoxos-140124052657-phpapp02.pdf)
 
 ---
 
@@ -1838,7 +1838,7 @@ PHPTalks - Apresentado "Talk show" entrevistando desenvolvedores PHP
 
 **Onde**: São Paulo/SP
 
-[DevOps e PHP](https://eltonminetto/dev/files/talks/devopsephp-131202053144-phpapp01.pdf)
+[DevOps e PHP](https://eltonminetto.dev/files/talks/devopsephp-131202053144-phpapp01.pdf)
 
 ---
 
@@ -1878,7 +1878,7 @@ PHPTalks - Apresentado "Talk show" entrevistando desenvolvedores PHP
 
 **Onde**: Maringá/PR
 
-[PHP like a Super Hero](https://eltonminetto/dev/files/talks/phpsuperherov3-130603093819-phpapp01.pdf)
+[PHP like a Super Hero](https://eltonminetto.dev/files/talks/phpsuperherov3-130603093819-phpapp01.pdf)
 
 ---
 
@@ -1888,7 +1888,7 @@ PHPTalks - Apresentado "Talk show" entrevistando desenvolvedores PHP
 
 **Onde**: Salvador/BA
 
-[Criando aplicações RESTful com Zend Framework 2](https://eltonminetto/dev/files/talks/restzf2zendwebminar-130902211920-phpapp01.pdf)
+[Criando aplicações RESTful com Zend Framework 2](https://eltonminetto.dev/files/talks/restzf2zendwebminar-130902211920-phpapp01.pdf)
 
 ---
 
@@ -1898,7 +1898,7 @@ PHPTalks - Apresentado "Talk show" entrevistando desenvolvedores PHP
 
 **Onde**: São Paulo/SP
 
-[Criando aplicações RESTful com Zend Framework 2](https://eltonminetto/dev/files/talks/restzf2zendwebminar-130902211920-phpapp01.pdf)
+[Criando aplicações RESTful com Zend Framework 2](https://eltonminetto.dev/files/talks/restzf2zendwebminar-130902211920-phpapp01.pdf)
 
 ---
 
@@ -1908,7 +1908,7 @@ PHPTalks - Apresentado "Talk show" entrevistando desenvolvedores PHP
 
 **Onde**: Porto Alegre/RS
 
-[PHP like a Super Hero](https://eltonminetto/dev/files/talks/phpsuperherov3-130603093819-phpapp01.pdf)
+[PHP like a Super Hero](https://eltonminetto.dev/files/talks/phpsuperherov3-130603093819-phpapp01.pdf)
 
 ---
 
@@ -1918,7 +1918,7 @@ PHPTalks - Apresentado "Talk show" entrevistando desenvolvedores PHP
 
 **Onde**: Online
 
-[Criando aplicações RESTful com Zend Framework 2](https://eltonminetto/dev/files/talks/restzf2zendwebminar-130902211920-phpapp01.pdf)
+[Criando aplicações RESTful com Zend Framework 2](https://eltonminetto.dev/files/talks/restzf2zendwebminar-130902211920-phpapp01.pdf)
 
 ---
 
@@ -1928,7 +1928,7 @@ PHPTalks - Apresentado "Talk show" entrevistando desenvolvedores PHP
 
 **Onde**: Porto Alegre/RS
 
-[Criando aplicações RESTful com Zend Framework 2](https://eltonminetto/dev/files/talks/restzf2zendwebminar-130902211920-phpapp01.pdf)
+[Criando aplicações RESTful com Zend Framework 2](https://eltonminetto.dev/files/talks/restzf2zendwebminar-130902211920-phpapp01.pdf)
 
 ---
 
@@ -1938,7 +1938,7 @@ PHPTalks - Apresentado "Talk show" entrevistando desenvolvedores PHP
 
 **Onde**: Blumenau/SC
 
-[PHP like a super hero](https://eltonminetto/dev/files/talks/phpsuperherov3-130603093819-phpapp01.pdf)
+[PHP like a super hero](https://eltonminetto.dev/files/talks/phpsuperherov3-130603093819-phpapp01.pdf)
 
 ---
 
@@ -1948,7 +1948,7 @@ PHPTalks - Apresentado "Talk show" entrevistando desenvolvedores PHP
 
 **Onde**: Concórdia/SC
 
-[Inovação Tecnológica e Startups](https://eltonminetto/dev/files/talks/inovacaostartups-130603084121-phpapp02.pdf)
+[Inovação Tecnológica e Startups](https://eltonminetto.dev/files/talks/inovacaostartups-130603084121-phpapp02.pdf)
 
 ---
 
@@ -2111,7 +2111,7 @@ PHPSC Conference
 
 **Onde**: São Paulo/SP
 
-[Ao infinito e além com PHP, Memcached e Gearman](https://eltonminetto/dev/files/talks/phpconf2010-101129062657-phpapp02.pdf)
+[Ao infinito e além com PHP, Memcached e Gearman](https://eltonminetto.dev/files/talks/phpconf2010-101129062657-phpapp02.pdf)
 
 ---
 
@@ -2121,7 +2121,7 @@ PHPSC Conference
 
 **Onde**: Foz do Iguaçu/PR
 
-[Ao infinito e além com PHP, Memcached e Gearman](https://eltonminetto/dev/files/talks/phpconf2010-101129062657-phpapp02.pdf)
+[Ao infinito e além com PHP, Memcached e Gearman](https://eltonminetto.dev/files/talks/phpconf2010-101129062657-phpapp02.pdf)
 
 ---
 
@@ -2131,7 +2131,7 @@ PHPSC Conference
 
 **Onde**: Chapecó/SC
 
-Construindo uma rede social com PHP e Software Livre](https://eltonminetto/dev/files/talks/drimiouniparpdf2539.pdf)
+Construindo uma rede social com PHP e Software Livre](https://eltonminetto.dev/files/talks/drimiouniparpdf2539.pdf)
 
 ---
 
@@ -2141,7 +2141,7 @@ Construindo uma rede social com PHP e Software Livre](https://eltonminetto/dev/f
 
 **Onde**: Florianópolis/SC
 
-[Entre na fila. Processamento distribuído usando Gearman](https://eltonminetto/dev/files/talks/solisc2010-101024121328-phpapp02.pdf)
+[Entre na fila. Processamento distribuído usando Gearman](https://eltonminetto.dev/files/talks/solisc2010-101024121328-phpapp02.pdf)
 
 ---
 
@@ -2151,7 +2151,7 @@ Construindo uma rede social com PHP e Software Livre](https://eltonminetto/dev/f
 
 **Onde**: Cianorte/PR
 
-[Frameworks de Desenvolvimento Web com PHP](https://eltonminetto/dev/files/talks/frameworksuniparpdf2720.pdf)
+[Frameworks de Desenvolvimento Web com PHP](https://eltonminetto.dev/files/talks/frameworksuniparpdf2720.pdf)
 
 ---
 
@@ -2161,7 +2161,7 @@ Construindo uma rede social com PHP e Software Livre](https://eltonminetto/dev/f
 
 **Onde**: Cianorte/PR
 
-[Construindo uma Rede Social com PHP e Software Livre](https://eltonminetto/dev/files/talks/drimiouniparpdf2539.pdf)
+[Construindo uma Rede Social com PHP e Software Livre](https://eltonminetto.dev/files/talks/drimiouniparpdf2539.pdf)
 
 ---
 
@@ -2213,7 +2213,7 @@ Construindo uma rede social com PHP e Software Livre](https://eltonminetto/dev/f
 
 **Onde**: Joinville/SC
 
-[Desenvolvendo aplicações web escaláveis](https://eltonminetto/dev/files/talks/appwebescalaveisudesc-090923091351-phpapp01.pdf)
+[Desenvolvendo aplicações web escaláveis](https://eltonminetto.dev/files/talks/appwebescalaveisudesc-090923091351-phpapp01.pdf)
 
 ---
 
@@ -2223,7 +2223,7 @@ Construindo uma rede social com PHP e Software Livre](https://eltonminetto/dev/f
 
 **Onde**: Joinville/SC
 
-[Desenvolvendo aplicações web escaláveis](https://eltonminetto/dev/files/talks/appwebescalaveisfisl-090627132805-phpapp02.pdf)
+[Desenvolvendo aplicações web escaláveis](https://eltonminetto.dev/files/talks/appwebescalaveisfisl-090627132805-phpapp02.pdf)
 
 ---
 
@@ -2233,7 +2233,7 @@ Construindo uma rede social com PHP e Software Livre](https://eltonminetto/dev/f
 
 **Onde**: Joinville/SC
 
-[Melhorando a performance de aplicações com o uso do MemCache](https://eltonminetto/dev/files/talks/memcache-090610153348-phpapp01.pdf)
+[Melhorando a performance de aplicações com o uso do MemCache](https://eltonminetto.dev/files/talks/memcache-090610153348-phpapp01.pdf)
 
 ---
 
