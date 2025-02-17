@@ -2,6 +2,8 @@
 title: Introdução ao Encore.go
 date: 2025-01-25T07:10:00-03:00
 draft: false
+tags:
+  - go
 ---
 
 O [Encore.go](https://encore.dev/go) já está no meu “radar” tem um bom tempo, quando seu belo site e exemplos chamaram minha atenção em uma notícia no Hacker News. Mas minha empolgação realmente aumentou após [este post](https://encore.dev/blog/open-source-decoupled) publicado em Dezembro de 2024. Nele é anunciado que o framework, inicialmente vinculado à ferramenta [Encore Cloud](https://encore.cloud), iria se tornar um projeto independente. Eu acredito que essa decisão vai tornar o framework mais atrativo para empresas e desenvolvedores que queiram usá-lo em seus ambientes já existentes. Nada contra o Encore Cloud, que parece ser uma solução muito interessante e robusta, mas esta liberdade de escolha favorece a adoção em empresas de diferentes tamanhos.
@@ -13,14 +15,14 @@ Dado este contexto inicial, eu resolvi portar um projeto que uso para escrever t
 3. Comunicação via Pub/Sub
 4. Deploy
 
-É possível que durante a escrita das próximas partes eu resolva criar novos posts, mas o plano inicial está definido. Então vamos para a primeira parte. 
+É possível que durante a escrita das próximas partes eu resolva criar novos posts, mas o plano inicial está definido. Então vamos para a primeira parte.
 
 ## Criando uma API com banco de dados
 
 Para fazermos uso do Encore uma peça fundamental é sua CLI, que vamos utilizar durante todo o ciclo de desenvolvimento. Como uso macOS, eu fiz a instalação usando o comando:
 
 	brew install encoredev/tap/encore
-	
+
 Na [documentação](https://encore.dev/docs/ts/install) é possível ver as outras formas possíveis de instalação.
 
 Com a CLI instalada podemos usá-la para criar o projeto:
@@ -45,7 +47,7 @@ Por enquanto não vai ser necessário alterarmos nada no `encore.app`, então va
 ❯ touch user/api.go
 ```
 
-Além de criar o diretório também inicializamos um arquivo chamado `api.go` onde vamos definir nossa API. O conteúdo da primeira versão ficou desta forma: 
+Além de criar o diretório também inicializamos um arquivo chamado `api.go` onde vamos definir nossa API. O conteúdo da primeira versão ficou desta forma:
 
 ```go
 package user
@@ -110,9 +112,9 @@ type API struct{}
 
 ```
 
-Outra característica comum a frameworks como o Encore é a existência de convenções. A primeira que vamos encontrar aqui é a inicialização de serviços. Como definimos um serviço chamado `API` podemos criar uma função chamada `initAPI` que será invocada pelo framework. É nesta função que vamos injetar as dependências do serviço, como vamos fazer mais a frente no projeto. 
+Outra característica comum a frameworks como o Encore é a existência de convenções. A primeira que vamos encontrar aqui é a inicialização de serviços. Como definimos um serviço chamado `API` podemos criar uma função chamada `initAPI` que será invocada pelo framework. É nesta função que vamos injetar as dependências do serviço, como vamos fazer mais a frente no projeto.
 
-A próxima `annotation` que vemos no código é a que faz a definição de uma API, como no exemplo: 
+A próxima `annotation` que vemos no código é a que faz a definição de uma API, como no exemplo:
 
 ```go
 // Auth authenticates a user and returns a token
@@ -285,7 +287,7 @@ Nesta nova versão é possível ver que inicializamos o serviço (na função `i
 
 ### Testes
 
-Outra vantagem em usarmos um framework como o Encore é que ele entrega algumas funcionalidades que auxiliam na importante tarefa de escrita de testes. Nesta primeira versão temos dois importantes componentes para testar: 
+Outra vantagem em usarmos um framework como o Encore é que ele entrega algumas funcionalidades que auxiliam na importante tarefa de escrita de testes. Nesta primeira versão temos dois importantes componentes para testar:
 
 **service_test.go**
 
@@ -330,8 +332,8 @@ func TestService(t *testing.T) {
 }
 
 ```
-	
-O destaque é o uso do pacote `"encore.dev/et"` que fornece uma forma de garantirmos que os testes podem ser executados em paralelo (`et.EnableServiceInstanceIsolation()`) e a facilidade de uso de um banco de dados exclusivo para os testes (`testDB, err := et.NewTestDatabase(ctx, "user")`). O interessante é que as migrations são usadas automaticamente, então o teste fica muito mais simples de escrever e executar. 
+
+O destaque é o uso do pacote `"encore.dev/et"` que fornece uma forma de garantirmos que os testes podem ser executados em paralelo (`et.EnableServiceInstanceIsolation()`) e a facilidade de uso de um banco de dados exclusivo para os testes (`testDB, err := et.NewTestDatabase(ctx, "user")`). O interessante é que as migrations são usadas automaticamente, então o teste fica muito mais simples de escrever e executar.
 
 **api_test.go**
 
@@ -383,7 +385,7 @@ func TestIntegration(t *testing.T) {
 
 ```
 
-Neste teste não foi necessário utilizar nada do framework, sendo apenas o bom e velho Go, com suas vantagens nativas. 
+Neste teste não foi necessário utilizar nada do framework, sendo apenas o bom e velho Go, com suas vantagens nativas.
 
 Um detalhe importante: para executar os testes é necessário usar a CLI. Por isso, ao invés de executá-los usando o comando:
 
@@ -397,6 +399,6 @@ Existe um plugin para o Goland que permite a execução direto pela IDE, mas ain
 
 ## Conclusão
 
-Neste primeiro post o objetivo era apresentar o básico do framework e instigar sua curiosidade para os próximos capítulos desta série. 
+Neste primeiro post o objetivo era apresentar o básico do framework e instigar sua curiosidade para os próximos capítulos desta série.
 
-Vou deixar para tecer minhas opiniões sobre o framework na última parte da série, assim posso trazer mais argumentos para dizer se gostei ou não da experiência. Mas posso adiantar que estou me divertindo bastante com os primeiros passos. E você, nobre leitor(a)? O que está achando do Encore.go até o momento? Deixe suas impressões nos comentários. 
+Vou deixar para tecer minhas opiniões sobre o framework na última parte da série, assim posso trazer mais argumentos para dizer se gostei ou não da experiência. Mas posso adiantar que estou me divertindo bastante com os primeiros passos. E você, nobre leitor(a)? O que está achando do Encore.go até o momento? Deixe suas impressões nos comentários.

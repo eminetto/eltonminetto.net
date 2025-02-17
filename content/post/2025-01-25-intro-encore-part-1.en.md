@@ -2,9 +2,11 @@
 title: Getting Started with Encore.go
 date: 2025-01-25T07:10:00-03:00
 draft: false
+tags:
+  - go
 ---
 
-[Encore.go](https://encore.dev/go) has been on my radar for quite some time, when its beautiful website and examples caught my attention in a news article on Hacker News. But my excitement really increased after [this post](https://encore.dev/blog/open-source-decoupled) was published in December 2024. It announced that the framework would become an independent project, separated from the Encore Cloud tool. 
+[Encore.go](https://encore.dev/go) has been on my radar for quite some time, when its beautiful website and examples caught my attention in a news article on Hacker News. But my excitement really increased after [this post](https://encore.dev/blog/open-source-decoupled) was published in December 2024. It announced that the framework would become an independent project, separated from the Encore Cloud tool.
 This decision can make the framework more attractive to companies and developers who want to use it in their existing environments. I have nothing against [Encore Cloud](https://encore.cloud), which seems to be a very interesting and robust solution, but this freedom of choice favors adoption in companies of different sizes.
 
 Given this initial context, I decided to port a project that I use to write texts and lectures about microservices to Encore, and the result is a series of posts, this being the first. The initial idea is to divide the series as follows:
@@ -24,7 +26,7 @@ To use Encore, we need to install its CLI, which we will use throughout the deve
 	brew install encoredev/tap/encore
 
 In the [documentation](https://encore.dev/docs/ts/install), you can see the other possible installation methods.
-	
+
 
 With the CLI installed, we can use it to create the project:
 
@@ -130,8 +132,8 @@ func (a *API) Auth(ctx context.Context, p *AuthParams) (*AuthResponse, error) {
 }
 ```
 
-This declaration tells the framework that this is a public API (we'll see more about this in the following parts of this series) whose path is `/v1/auth` and that it will be accessed via the `POST` method. 
-An API is a function that receives a context and a parameter struct (in this case, `AuthParams`) and returns a response struct (in this case, `AuthResponse`). 
+This declaration tells the framework that this is a public API (we'll see more about this in the following parts of this series) whose path is `/v1/auth` and that it will be accessed via the `POST` method.
+An API is a function that receives a context and a parameter struct (in this case, `AuthParams`) and returns a response struct (in this case, `AuthResponse`).
 
 One of the interesting features of the framework is the ease of accessing the parameter values: we can use the values ​​as `p.Email`, which is part of the received struct, without needing to convert the received JSON. More details about parameter handling and examples can be found in the official [documentation](https://encore.dev/docs/go/primitives/defining-apis).
 
@@ -342,7 +344,7 @@ func TestService(t *testing.T) {
 }
 
 ```
-	
+
 The highlight is the use of the package `encore.dev/et`, which provides a way to ensure that tests can be executed in parallel (`et.EnableServiceInstanceIsolation()`) and the ease of using an exclusive database for tests (`testDB, err:= et.NewTestDatabase(ctx, "user")`).
 
 The interesting thing is that migrations are used automatically, making the test easier to write and execute.
