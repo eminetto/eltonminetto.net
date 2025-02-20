@@ -12,6 +12,16 @@ url = "/talks"
 
 # 2025
 
+###  Pare de dizer que você é fullstack
+
+**Quando**: 20/02/2024
+
+**Onde**: Podcast Escovando Bits
+
+[Audio](https://open.spotify.com/episode/0KdzXIPUMu4GcqigfCVMzw?go=1&sp_cid=49fcd9b3f6e64bb14e209186a5c2fb28&utm_source=embed_player_p&utm_medium=desktop)
+
+---
+
 ###  A evolução de júnior para pleno e de pleno para sênior
 
 **Quando**: 13/02/2024
