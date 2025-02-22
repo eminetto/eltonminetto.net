@@ -2,6 +2,8 @@
 title: Criando uma API com autenticação usando Encore.go
 date: 2025-02-22T07:10:00-03:00
 draft: false
+tags:
+  - go
 ---
 
 Esta é a segunda parte de uma série de posts sobre o framework [Encore.go](https://encore.dev/docs/go): 
