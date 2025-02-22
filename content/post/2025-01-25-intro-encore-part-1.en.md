@@ -11,7 +11,7 @@ Given this initial context, I decided to port a project that I use to write text
 
 
 1. Creating an API with a database (<— you are here)
-2. Interservice communication and authentication
+2. Creating an API with authentication
 3. Communication via Pub/Sub
 4. Deploy
 

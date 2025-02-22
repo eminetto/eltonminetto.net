@@ -9,7 +9,7 @@ O [Encore.go](https://encore.dev/go) já está no meu “radar” tem um bom tem
 Dado este contexto inicial, eu resolvi portar um projeto que uso para escrever textos e palestras sobre microsserviços para o Encore.go e o resultado é uma série de posts, sendo este o primeiro. A ideia inicial é dividir a série da seguinte forma:
 
 1. Criando uma API com banco de dados (<--- você está aqui)
-2. Comunicação entre serviços e autenticação
+2. Criando uma API com autenticação
 3. Comunicação via Pub/Sub
 4. Deploy
 
