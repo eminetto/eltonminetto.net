@@ -12,6 +12,28 @@ url = "/talks"
 
 # 2025
 
+###  Live com Carlos Becker
+
+**Quando**: 26/02/2024
+
+**Onde**: Canal do Youtube da Gophercon Latam
+
+[Video](https://www.youtube.com/watch?v=aVH1DECyHPc)
+
+---
+
+
+###  Insights sobre Observabilidade
+
+**Quando**: 25/02/2024
+
+**Onde**: Evento de pré-lançamento do TDC Floripa 2025
+
+[Slides](https://eltonminetto.dev/files/talks/InsightsO11y.pdf)
+
+---
+
+
 ###  Pare de dizer que você é fullstack
 
 **Quando**: 20/02/2024
@@ -1064,7 +1086,7 @@ url = "/talks"
 
 **Onde**: Vida de Programador Weekend
 
-[Go e microserviços: nascidos um para o outro](https://eltonminetto.dev/files/talks/microservices_go.pdf))
+[Go e microserviços: nascidos um para o outro](https://eltonminetto.dev/files/talks/microservices_go.pdf)
 
 ---
 
