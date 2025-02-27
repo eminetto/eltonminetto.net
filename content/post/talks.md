@@ -12,6 +12,16 @@ url = "/talks"
 
 # 2025
 
+###  Melhorias de performance que fazem sentido ft. Martin Spier
+
+**Quando**: 27/02/2024
+
+**Onde**: Podcast Escovando Bits
+
+[Audio](https://open.spotify.com/episode/2Na6IYTTgsjLAaB8FOLENm?go=1&sp_cid=49fcd9b3f6e64bb14e209186a5c2fb28&utm_source=embed_player_p&utm_medium=desktop)
+
+---
+
 ###  Live com Carlos Becker
 
 **Quando**: 26/02/2024
