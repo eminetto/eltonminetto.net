@@ -6,7 +6,7 @@ summaryLength = 15
 # theme = "primula"
 theme = 'lowkey'
 author = "eminetto"
-paginate = 10
+pagination.pagerSize = 10
 staticDir = ['static', 'slides']
 defaultContentLanguage = 'pt'
 
