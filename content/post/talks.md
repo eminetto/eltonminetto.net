@@ -12,6 +12,16 @@ url = "/talks"
 
 # 2025
 
+###  O servidor caiu, por onde eu começo?
+
+**Quando**: 03/04/2025
+
+**Onde**: Podcast Escovando Bits
+
+[Audio](https://open.spotify.com/episode/2aBI50bVxw6zNXZOqOIOw0?go=1&sp_cid=9912ddf5ff55e9fa4cdccd4a72b13bf4&utm_source=embed_player_p&utm_medium=desktop&nd=1&dlsi=9d98b7804e81417a)
+
+---
+
 ###  Boas práticas em organização de projetos Go
 
 **Quando**: 26/03/2025
