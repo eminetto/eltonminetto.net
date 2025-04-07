@@ -5,7 +5,7 @@ draft: false
 ---
 Você percebe que está ficando velho quando começam a te pedir dicas de carreira 🙂
 
-Brincadeiras a parte, esse é um assunto que me [interessa bastante](https://leanpub.com/dicas-carreira-devs), e nestes papos de carreira, uma pergunta aparece frequentemente: 
+Brincadeiras a parte, esse é um assunto que me [interessa bastante](https://dicasdecarreira.dev), e nestes papos de carreira, uma pergunta aparece frequentemente: 
 
 > Dentre tantas opções de assuntos e tecnologias existentes, como eu escolho o que estudar primeiro?
 
