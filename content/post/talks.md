@@ -12,9 +12,29 @@ url = "/talks"
 
 # 2025
 
+###  O servidor caiu, por onde eu começo?
+
+**Quando**: 03/04/2025
+
+**Onde**: Podcast Escovando Bits
+
+[Audio](https://open.spotify.com/episode/2aBI50bVxw6zNXZOqOIOw0?go=1&sp_cid=9912ddf5ff55e9fa4cdccd4a72b13bf4&utm_source=embed_player_p&utm_medium=desktop&nd=1&dlsi=9d98b7804e81417a)
+
+---
+
+###  Boas práticas em organização de projetos Go
+
+**Quando**: 26/03/2025
+
+**Onde**: Canal do Youtube da Gophercon Latam
+
+[Video](https://www.youtube.com/watch?v=-5ybqdnlOrg)
+
+---
+
 ###  Melhorias de performance que fazem sentido ft. Martin Spier
 
-**Quando**: 27/02/2024
+**Quando**: 27/02/2025
 
 **Onde**: Podcast Escovando Bits
 
@@ -24,7 +44,7 @@ url = "/talks"
 
 ###  Live com Carlos Becker
 
-**Quando**: 26/02/2024
+**Quando**: 26/02/2025
 
 **Onde**: Canal do Youtube da Gophercon Latam
 
@@ -35,7 +55,7 @@ url = "/talks"
 
 ###  Insights sobre Observabilidade
 
-**Quando**: 25/02/2024
+**Quando**: 25/02/2025
 
 **Onde**: Evento de pré-lançamento do TDC Floripa 2025
 
@@ -46,7 +66,7 @@ url = "/talks"
 
 ###  Pare de dizer que você é fullstack
 
-**Quando**: 20/02/2024
+**Quando**: 20/02/2025
 
 **Onde**: Podcast Escovando Bits
 
@@ -56,7 +76,7 @@ url = "/talks"
 
 ###  A evolução de júnior para pleno e de pleno para sênior
 
-**Quando**: 13/02/2024
+**Quando**: 13/02/2025
 
 **Onde**: Podcast Escovando Bits
 
@@ -67,7 +87,7 @@ url = "/talks"
 
 ###  WTF is Soft Skills
 
-**Quando**: 30/01/2024
+**Quando**: 30/01/2025
 
 **Onde**: Podcast Escovando Bits
 
@@ -78,7 +98,7 @@ url = "/talks"
 
 ###  Introdução ao framework Encore.dev
 
-**Quando**: 20/01/2024
+**Quando**: 20/01/2025
 
 **Onde**: Evento interno do PicPay
 
@@ -86,7 +106,7 @@ url = "/talks"
 
 ###  Decisões técnicas
 
-**Quando**: 16/01/2024
+**Quando**: 16/01/2025
 
 **Onde**: Evento interno da Comunidade Tech Leaders Club
 

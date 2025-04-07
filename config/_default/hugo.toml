@@ -55,7 +55,7 @@ url = "https://maisquesenior.dev"
 weight = 1
 [[languages.pt.menu.main]]
 name = "A Semana Go"
-url = "http://asemanago.com.br"
+url = "https://asemanago.dev"
 weight = 2
 [[languages.pt.menu.main]]
 "name" = "Dicas de Carreira"
