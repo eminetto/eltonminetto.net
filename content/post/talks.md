@@ -12,6 +12,16 @@ url = "/talks"
 
 # 2025
 
+###  Como programar em Go para dispositivos embarcados com Carlos Gandarez
+
+**Quando**: 09/04/2025
+
+**Onde**: Canal do Youtube da Gophercon Latam
+
+[Video](https://www.youtube.com/watch?v=5IsA8gUUWho)
+
+---
+
 ###  O servidor caiu, por onde eu começo?
 
 **Quando**: 03/04/2025
