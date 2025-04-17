@@ -12,6 +12,17 @@ url = "/talks"
 
 # 2025
 
+###  Como organizar um roadmap de aprendizado sem se perder no caos
+
+**Quando**: 17/04/2025
+
+**Onde**: Podcast Escovando Bits
+
+[Audio](https://open.spotify.com/episode/1PTBx9QGd6isIU5DyBllZ8?go=1&sp_cid=dc96c3c0ae2940487a8a254332007d6d&utm_source=embed_player_p&utm_medium=desktop&nd=1&dlsi=55b769ace1c84d66)
+
+---
+
+
 ###  Como programar em Go para dispositivos embarcados com Carlos Gandarez
 
 **Quando**: 09/04/2025
