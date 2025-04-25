@@ -12,6 +12,14 @@ url = "/talks"
 
 # 2025
 
+###  Live: A maneira Go
+
+**Quando**: 23/04/2025
+
+**Onde**: Live da comunidade Tech Leads Club
+
+--- 
+
 ###  Como organizar um roadmap de aprendizado sem se perder no caos
 
 **Quando**: 17/04/2025
