@@ -238,7 +238,7 @@ A mesma pergunta pode ser feita em inglês e o resultado é o esperado:
 
 [![claude_mcp_3.png](/images/posts/claude_mcp_3.png)](/images/posts/claude_mcp_3.png)
 
-Como o MCP se propõe, podemos usar o mesmo *Server* com outros *Hosts*. Para testar isso usei o [Cursor](https://www.cursor.com), famosa IDE baseada em IA. Para configurá-la também é bem simples, bastando clicar no ícone de configurações (a universal engrenajem). Na tela de configurações existe uma opção “MCP” e dentro dela a “Add new global MCP Server”. A IDE vai abrir um arquivo `mcp.json` onde vamos preencher com o mesmo conteúdo que usamos para configurar o Claude. Podemos agora usar o chat da IDE para fazer a mesma pergunta que fizemos anteriormente e temos o mesmo resultado:
+Como o MCP se propõe, podemos usar o mesmo *Server* com outros *Hosts*. Para testar isso usei o [Cursor](https://www.cursor.com), famosa IDE baseada em IA. Para configurá-la também é bem simples, bastando clicar no ícone de configurações (a universal engrenagem). Na tela de configurações existe uma opção “MCP” e dentro dela a “Add new global MCP Server”. A IDE vai abrir um arquivo `mcp.json` onde vamos preencher com o mesmo conteúdo que usamos para configurar o Claude. Podemos agora usar o chat da IDE para fazer a mesma pergunta que fizemos anteriormente e temos o mesmo resultado:
 
 [![cursor_mcp.png](/images/posts/cursor_mcp.png)](/images/posts/cursor_mcp.png)
 
