@@ -12,7 +12,15 @@ url = "/talks"
 
 # 2025
 
-###  Live: A maneira Go
+### Organizador e host da GopherCon Latam
+
+**Quando**: 05 e 06/05/2025
+
+**Onde**: Florianópolis/SC
+
+--- 
+
+### Live: A maneira Go
 
 **Quando**: 23/04/2025
 
@@ -20,7 +28,7 @@ url = "/talks"
 
 --- 
 
-###  Como organizar um roadmap de aprendizado sem se perder no caos
+### Como organizar um roadmap de aprendizado sem se perder no caos
 
 **Quando**: 17/04/2025
 
@@ -31,7 +39,7 @@ url = "/talks"
 ---
 
 
-###  Como programar em Go para dispositivos embarcados com Carlos Gandarez
+### Como programar em Go para dispositivos embarcados com Carlos Gandarez
 
 **Quando**: 09/04/2025
 
@@ -41,7 +49,7 @@ url = "/talks"
 
 ---
 
-###  O servidor caiu, por onde eu começo?
+### O servidor caiu, por onde eu começo?
 
 **Quando**: 03/04/2025
 
@@ -51,7 +59,7 @@ url = "/talks"
 
 ---
 
-###  Boas práticas em organização de projetos Go
+### Boas práticas em organização de projetos Go
 
 **Quando**: 26/03/2025
 
@@ -61,7 +69,7 @@ url = "/talks"
 
 ---
 
-###  Melhorias de performance que fazem sentido ft. Martin Spier
+### Melhorias de performance que fazem sentido ft. Martin Spier
 
 **Quando**: 27/02/2025
 
@@ -71,7 +79,7 @@ url = "/talks"
 
 ---
 
-###  Live com Carlos Becker
+### Live com Carlos Becker
 
 **Quando**: 26/02/2025
 
@@ -82,7 +90,7 @@ url = "/talks"
 ---
 
 
-###  Insights sobre Observabilidade
+### Insights sobre Observabilidade
 
 **Quando**: 25/02/2025
 
@@ -93,7 +101,7 @@ url = "/talks"
 ---
 
 
-###  Pare de dizer que você é fullstack
+### Pare de dizer que você é fullstack
 
 **Quando**: 20/02/2025
 
@@ -103,7 +111,7 @@ url = "/talks"
 
 ---
 
-###  A evolução de júnior para pleno e de pleno para sênior
+### A evolução de júnior para pleno e de pleno para sênior
 
 **Quando**: 13/02/2025
 
@@ -114,7 +122,7 @@ url = "/talks"
 ---
 
 
-###  WTF is Soft Skills
+### WTF is Soft Skills
 
 **Quando**: 30/01/2025
 
@@ -125,7 +133,7 @@ url = "/talks"
 ---
 
 
-###  Introdução ao framework Encore.dev
+### Introdução ao framework Encore.dev
 
 **Quando**: 20/01/2025
 
@@ -133,7 +141,7 @@ url = "/talks"
 
 ---
 
-###  Decisões técnicas
+### Decisões técnicas
 
 **Quando**: 16/01/2025
 
@@ -143,7 +151,7 @@ url = "/talks"
 
 # 2024
 
-###  Tem que acabar
+### Tem que acabar
 
 **Quando**: 16/12/2024
 
@@ -153,7 +161,7 @@ url = "/talks"
 
 ---
 
-###  ENGINEERING MANAGER vs STAFF+ ENGINEER
+### ENGINEERING MANAGER vs STAFF+ ENGINEER
 
 **Quando**: 15/12/2024
 
@@ -163,7 +171,7 @@ url = "/talks"
 
 ---
 
-###  Observabilidade como o pilar de grandes arquiteturas
+### Observabilidade como o pilar de grandes arquiteturas
 
 **Quando**: 06/12/2024
 
@@ -175,7 +183,7 @@ url = "/talks"
 
 ---
 
-###  DVC 15 - Rest vs GraphQL vs gRPC com Elton Minetto
+### DVC 15 - Rest vs GraphQL vs gRPC com Elton Minetto
 
 **Quando**: 29/11/2024
 
@@ -186,7 +194,7 @@ url = "/talks"
 ---
 
 
-###  A arte e a ciência de tomar decisões técnicas
+### A arte e a ciência de tomar decisões técnicas
 
 **Quando**: 25/11/2024
 
@@ -197,7 +205,7 @@ url = "/talks"
 ---
 
 
-###  A arte e a ciência de tomar decisões técnicas
+### A arte e a ciência de tomar decisões técnicas
 
 **Quando**: 20/11/2024
 
@@ -208,7 +216,7 @@ url = "/talks"
 ---
 
 
-###  A arte e a ciência de tomar decisões técnicas
+### A arte e a ciência de tomar decisões técnicas
 
 **Quando**: 09/11/2024
 
@@ -219,7 +227,7 @@ url = "/talks"
 ---
 
 
-###  Entrevista com Alex Rios
+### Entrevista com Alex Rios
 
 **Quando**: 28/10/2024
 
@@ -230,7 +238,7 @@ url = "/talks"
 ---
 
 
-###  Mediação de painel sobre Developer Experience
+### Mediação de painel sobre Developer Experience
 
 **Quando**: 25/10/2024
 
@@ -239,7 +247,7 @@ url = "/talks"
 ---
 
 
-###  Mentoria coletiva sobre carreira e Go
+### Mentoria coletiva sobre carreira e Go
 
 **Quando**: 08/10/2024
 
@@ -248,7 +256,7 @@ url = "/talks"
 ---
 
 
-###  Observabilidade como o pilar de grandes arquiteturas
+### Observabilidade como o pilar de grandes arquiteturas
 
 **Quando**: 03/10/2024
 
@@ -258,7 +266,7 @@ url = "/talks"
 
 ---
 
-###  Painel - Skip level: de junior para pleno e de pleno para sênior
+### Painel - Skip level: de junior para pleno e de pleno para sênior
 
 **Quando**: 07/09/2024
 
@@ -266,7 +274,7 @@ url = "/talks"
 
 ---
 
-###  Decision making: como tomar boas decisões
+### Decision making: como tomar boas decisões
 
 **Quando**: 06/09/2024
 
@@ -275,7 +283,7 @@ url = "/talks"
 ---
 
 
-###  Escreva monolitos, publique microsserviços usando Go e o Service Weaver
+### Escreva monolitos, publique microsserviços usando Go e o Service Weaver
 
 **Quando**: 24/08/2024
 
@@ -285,7 +293,7 @@ url = "/talks"
 
 ---
 
-###  Coisas que estão me empolgando
+### Coisas que estão me empolgando
 
 **Quando**: 09/08/2024
 
@@ -296,7 +304,7 @@ url = "/talks"
 ---
 
 
-###  dapr.io
+### dapr.io
 
 **Quando**: 25/07/2024
 
@@ -305,7 +313,7 @@ url = "/talks"
 ---
 
 
-###  Monolitos, Microsserviços, Go +ServiceWeaver
+### Monolitos, Microsserviços, Go +ServiceWeaver
 
 **Quando**: 18/07/2024
 
@@ -316,7 +324,7 @@ url = "/talks"
 ---
 
 
-###  Arquiteturas Modulares em Go e Node.js
+### Arquiteturas Modulares em Go e Node.js
 
 **Quando**: 17/07/2024
 
@@ -327,7 +335,7 @@ url = "/talks"
 ---
 
 
-###  Escreva monolitos, publique microsserviços usando Go e o Service Weaver
+### Escreva monolitos, publique microsserviços usando Go e o Service Weaver
 
 **Quando**: 06/07/2024
 
@@ -338,7 +346,7 @@ url = "/talks"
 ---
 
 
-###  Escreva monolitos, publique microsserviços usando Go e o Service Weaver
+### Escreva monolitos, publique microsserviços usando Go e o Service Weaver
 
 **Quando**: 24/06/2024
 
@@ -348,7 +356,7 @@ url = "/talks"
 ---
 
 
-###  Arquitetura de Software com Rodrigo Branas e Elton Minetto
+### Arquitetura de Software com Rodrigo Branas e Elton Minetto
 
 **Quando**: 25/06/2024
 
@@ -1973,7 +1981,7 @@ PHPTalks - Apresentado "Talk show" entrevistando desenvolvedores PHP
 
 ---
 
-###Seminário PHP 2013, 10ª edição
+### Seminário PHP 2013, 10ª edição
 
 **Quando**: 31/08/2013
 
