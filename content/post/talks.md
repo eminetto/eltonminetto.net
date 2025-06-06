@@ -12,6 +12,17 @@ url = "/talks"
 
 # 2025
 
+###  Produção de conteúdo: por que devs devem fazer isso?`
+
+**Quando**: 05/06/2025
+
+**Onde**: Podcast Escovando Bits
+
+[Audio](https://open.spotify.com/episode/6ewQ2PsdVcHDBPsV9TvlQK?go=1&sp_cid=9912ddf5ff55e9fa4cdccd4a72b13bf4&utm_source=embed_player_p&utm_medium=desktop&nd=1&dlsi=4ed5bca1514340c4)
+
+---
+
+
 ### Organizador e host da GopherCon Latam
 
 **Quando**: 05 e 06/05/2025
