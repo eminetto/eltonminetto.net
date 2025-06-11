@@ -12,7 +12,18 @@ url = "/talks"
 
 # 2025
 
-###  Produção de conteúdo: por que devs devem fazer isso?`
+###  Código, carreira e comunidade: A jornada de um Dev Sênior
+
+**Quando**: 10/06/2025
+
+**Onde**: Canal do DesbugaCast
+
+[Video](https://www.youtube.com/watch?v=hlRJtf-v4Vc)
+
+---
+
+
+###  Produção de conteúdo: por que devs devem fazer isso?
 
 **Quando**: 05/06/2025
 
