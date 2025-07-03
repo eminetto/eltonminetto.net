@@ -12,6 +12,17 @@ url = "/talks"
 
 # 2025
 
+###  O real dev 10x faz todo o time ser melhor
+
+**Quando**: 03/06/2025
+
+**Onde**: Podcast Escovando Bits
+
+[Audio](https://open.spotify.com/episode/18gjDk7Gu3hOXVRiiO8W77?go=1&sp_cid=9912ddf5ff55e9fa4cdccd4a72b13bf4&utm_source=embed_player_p&utm_medium=desktop)
+
+---
+
+
 ###  Código, carreira e comunidade: A jornada de um Dev Sênior
 
 **Quando**: 10/06/2025
