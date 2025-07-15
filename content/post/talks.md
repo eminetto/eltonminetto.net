@@ -12,6 +12,17 @@ url = "/talks"
 
 # 2025
 
+###  GO! #engineeringsessions #summer #s02e01 #golang #go
+
+**Quando**: 14/07/2025
+
+**Onde**: Canal do Youtube do Carlos Nogueira
+
+[Video](https://www.youtube.com/watch?v=sE2C6mHgn8M)
+
+---
+
+
 ###  O real dev 10x faz todo o time ser melhor
 
 **Quando**: 03/06/2025
@@ -51,7 +62,7 @@ url = "/talks"
 
 **Onde**: Florianópolis/SC
 
---- 
+---
 
 ### Live: A maneira Go
 
@@ -59,7 +70,7 @@ url = "/talks"
 
 **Onde**: Live da comunidade Tech Leads Club
 
---- 
+---
 
 ### Como organizar um roadmap de aprendizado sem se perder no caos
 
