@@ -12,6 +12,14 @@ url = "/talks"
 
 # 2025
 
+###  Painel Como organizar um roadmap de aprendizados sem se perder no caos
+
+**Quando**: 19/07/2025
+
+**Onde**: Codecon Summit
+
+---
+
 ###  GO! #engineeringsessions #summer #s02e01 #golang #go
 
 **Quando**: 14/07/2025
