@@ -12,6 +12,16 @@ url = "/talks"
 
 # 2025
 
+###  Latino Talks Session | 01 | 2025 - Que competências preciso ter no " Mercado de trabalho - 2025"
+
+**Quando**: 24/07/2025
+
+**Onde**: Canal Latinotalks
+
+[Video](https://www.youtube.com/watch?v=ByctlloQw3Q)
+
+---
+
 ###  Painel Como organizar um roadmap de aprendizados sem se perder no caos
 
 **Quando**: 19/07/2025
