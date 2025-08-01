@@ -12,6 +12,17 @@ url = "/talks"
 
 # 2025
 
+###  Como foi a Codecon Summit 2025
+
+**Quando**: 31/07/2025
+
+**Onde**: Podcast Escovando Bits
+
+[Audio](https://open.spotify.com/episode/18N5KXRHgjOqqUIHuUwHjs?go=1&sp_cid=9912ddf5ff55e9fa4cdccd4a72b13bf4&utm_source=embed_player_p&utm_medium=desktop)
+
+---
+
+
 ###  Latino Talks Session | 01 | 2025 - Que competências preciso ter no " Mercado de trabalho - 2025"
 
 **Quando**: 24/07/2025
