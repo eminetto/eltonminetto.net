@@ -12,6 +12,18 @@ url = "/talks"
 
 # 2025
 
+###  Go, por onde começar
+
+**Quando**: 19/08/2025
+
+**Onde**: Meetup Codecon
+
+[Slides](https://eltonminetto.dev/files/talks/go_por_onde_comecar.pdf)
+
+---
+
+
+
 ###  Como foi a Codecon Summit 2025
 
 **Quando**: 31/07/2025
