@@ -12,6 +12,17 @@ url = "/talks"
 
 # 2025
 
+###  The Go Way
+
+**Quando**: 22/08/2025
+
+**Onde**: Meetup interno da empresa Motorista PX
+
+[Código](https://github.com/eminetto/talk-the-go-way)
+
+---
+
+
 ###  Go, por onde começar
 
 **Quando**: 19/08/2025
