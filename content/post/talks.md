@@ -12,6 +12,14 @@ url = "/talks"
 
 # 2025
 
+###  Painel: Mercado de trabalho para Senior+
+
+**Quando**: 16/09/2025
+
+**Onde**: Tech Leads Club (TLC) Commit Florianópolis
+
+---
+
 ###  The Go Way
 
 **Quando**: 22/08/2025
