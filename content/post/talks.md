@@ -12,6 +12,17 @@ url = "/talks"
 
 # 2025
 
+###  Go, por onde começar?
+
+**Quando**: 27/09/2025
+
+**Onde**: Youtube
+
+[Video](https://youtu.be/FVaJ4XpOmlA)
+
+---
+
+
 ###  Painel: Mercado de trabalho para Senior+
 
 **Quando**: 16/09/2025
